@@ -491,7 +491,7 @@
           "type": "text",
           "settings": {
             "text": "<p>PODX GO has different models to give you a variety of solutions to meet your budget and lifestyle<\/p>",
-            "font-weight": 400,
+            "font-weight": 900,
             "font_size": 26,
             "text_color": "#000"
           }
