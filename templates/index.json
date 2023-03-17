@@ -746,6 +746,7 @@
       "blocks": {
         "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "PODX GO Academy",
             "text_color": "#000",
@@ -755,6 +756,7 @@
         },
         "5ed01a38-46c3-443e-a8f6-6ab70911b0fe": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Having questions about start your tiny home journey?                          No worries. We are here to help.",
             "text_color": "#000",
@@ -785,8 +787,8 @@
           "type": "picture_card",
           "settings": {
             "picture_item": "shopify:\/\/shop_images\/deserted-farm-housing-in-baren-lands.jpg",
-            "heading_1": "How to properly",
-            "heading_2": "zone your tiny house?",
+            "heading_1": "Zoning, Insurances, Loan...",
+            "heading_2": "",
             "button_label_1": "Learn More",
             "button_link_1": "shopify:\/\/blogs\/zoning\/how-to-properly-zone-insure-your-tiny-house-in-the-us-a-step-by-step-guide"
           }
