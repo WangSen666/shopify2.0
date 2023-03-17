@@ -383,10 +383,10 @@
           "settings": {
             "heading": "Defender Mode",
             "head_size": 24,
-            "head_weight": 700,
+            "head_weight": 100,
             "text": "Our security system includes external cameras that detect security events and promptly report them to you, as well as hazard detectors that guard against fire, smoke, floods, and break-ins",
             "text_size": 20,
-            "text_weight": 400
+            "text_weight": 100
           }
         },
         "998fcd02-6231-4679-b859-6e47bdcb85ac": {
@@ -394,10 +394,10 @@
           "settings": {
             "heading": "Privacy Matters",
             "head_size": 24,
-            "head_weight": 700,
+            "head_weight": 100,
             "text": "Your choice to be offline to protect your privacy. All PODX GO pre-equipped smart devices and plugs are only connected to you. NOT us.",
             "text_size": 20,
-            "text_weight": 400
+            "text_weight": 100
           }
         }
       },
