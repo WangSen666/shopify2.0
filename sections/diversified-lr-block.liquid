@@ -246,7 +246,31 @@
               style="color:{{block.settings.font_color}};font-size:{{block.settings.font_size}}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-bottom}}px;font-weight:{{ block.settings.font_weight }};">
               <span>{{ block.settings.text | escape }}</span>
             </div>
-            {%- when 'buttons' -%}
+            
+          {%- endcase -%}
+        {%- endfor -%}
+
+
+        <div class="card-flex-box">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+
+              {%- when 'pictureCard' -%}
+              <div class="img-box">
+                <img
+                  src="{{ block.settings.picture-card-item  | image_url }}"
+                  width="{{block.settings.image_width }}"
+                  loading="lazy" />
+              </div>
+
+            {%- endcase -%}
+
+          {%- endfor -%}
+        </div>
+
+        {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'buttons' -%}
             <div
               class="banner__buttons lr-blockcomponent__button {% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
               {{ block.shopify_attributes }}
@@ -279,26 +303,9 @@
               {%- endif -%}
 
             </div>
-          {%- endcase -%}
-        {%- endfor -%}
-
-
-        <div class="card-flex-box">
-          {%- for block in section.blocks -%}
-            {%- case block.type -%}
-
-              {%- when 'pictureCard' -%}
-              <div class="img-box">
-                <img
-                  src="{{ block.settings.picture-card-item  | image_url }}"
-                  width="{{block.settings.image_width }}"
-                  loading="lazy" />
-              </div>
-
             {%- endcase -%}
 
           {%- endfor -%}
-        </div>
       </div>
       {%- if section.settings.is_lr == 'true' -%}
         <div class="banner__box-item" style="{% if section.settings.is_imgBg == 'true' %} width:100%;height:100%;background:#5F6061;display: flex;justify-content: center;align-items: center;margin-top:0 !important;{% endif %}">
