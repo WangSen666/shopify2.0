@@ -595,7 +595,7 @@
             "text_style": "body",
             "font_size": 24,
             "font_weight": 400,
-            "margin-top": 0,
+            "margin-top": 32,
             "margin-bottom": 0,
             "font_color": "#000"
           }
