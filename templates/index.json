@@ -54,16 +54,16 @@
           "settings": {
             "banner_button_label": "Back us on Indiegogo",
             "banner_button_link": "",
-            "font_size": 20,
+            "font_size": 16,
             "button_color": "#fff"
           }
         },
         "template--15628744425572__ca120a8e-6056-4d50-b607-91789f1091d2-1678262074544c543d-3": {
           "type": "buttons",
           "settings": {
-            "banner_button_label": "Back us on Indiegogo",
+            "banner_button_label": "Download Floorplan",
             "banner_button_link": "",
-            "font_size": 20,
+            "font_size": 16,
             "button_color": "#9ED835"
           }
         },
