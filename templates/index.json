@@ -735,7 +735,7 @@
       ],
       "settings": {
         "is_border": "false",
-        "is_background_radius": "true",
+        "is_background_radius": "false",
         "padding_top": 40,
         "padding_bottom": 52
       }
