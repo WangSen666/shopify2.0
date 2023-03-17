@@ -606,7 +606,7 @@
             "text": "PODX  is changing that.",
             "font_style": "italic",
             "text_style": "body",
-            "font_size": 24,
+            "font_size": 22,
             "font_weight": 400,
             "margin-top": 60,
             "margin-bottom": 0,
@@ -650,7 +650,7 @@
         "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Button label",
+            "button_label_1": "Meet our Team",
             "button_link_1": "",
             "button_style_secondary_1": false,
             "button_label_2": "",
