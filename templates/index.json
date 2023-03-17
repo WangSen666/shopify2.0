@@ -591,6 +591,7 @@
           "type": "text",
           "settings": {
             "text": "The high cost of constructing a conventional home exerts financial strains on the buyer globally. Nontraditional housing options are becoming increasingly popular, especially among the young generations. And yet, brands available in the market today are often priced at a level and long waiting list that makes them inaccessible to many families that would benefit from them.",
+            "font_style": "normal",
             "text_style": "body",
             "font_size": 24,
             "font_weight": 400,
@@ -603,6 +604,7 @@
           "type": "text",
           "settings": {
             "text": "PODX  is changing that.",
+            "font_style": "italic",
             "text_style": "body",
             "font_size": 24,
             "font_weight": 400,
