@@ -295,8 +295,8 @@
       "settings": {
         "is_border": "true",
         "is_background_radius": "true",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 54,
+        "padding_bottom": 40
       }
     },
     "ac6d006e-525a-4248-88c0-918455f7a860": {
