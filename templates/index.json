@@ -273,7 +273,7 @@
           "settings": {
             "heading": "<p>In a Limited Space Every Inch Counts<\/p>",
             "heading_size": "h1",
-            "font-weight": 400,
+            "font-weight": 0,
             "font_size": 48,
             "heading_color": "#000"
           }
