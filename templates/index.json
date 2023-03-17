@@ -786,8 +786,8 @@
         "max_width": "",
         "is_showTitle": "true",
         "layout": "big_image_first",
-        "padding_top": 10,
-        "padding_bottom": 10
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "2fc4a141-20b7-4e60-a81a-cb54d29e005b": {
