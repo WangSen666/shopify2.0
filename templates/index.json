@@ -578,7 +578,7 @@
         "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-0": {
           "type": "heading",
           "settings": {
-            "heading": "Why PODX GO?",
+            "heading": "Thank You for Your Support on the Tiny Home's Big Dreams!",
             "heading_size": "h1",
             "font-weight": 600,
             "font_size": 36,
@@ -609,20 +609,6 @@
             "margin-top": 22,
             "margin-bottom": 28,
             "font_color": "#000"
-          }
-        },
-        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Meet Our Team",
-            "button_link_1": "shopify:\/\/pages\/about-podx-go",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "button_color": "#000",
-            "margin_top": 0,
-            "margin_bottom": 0
           }
         },
         "7f5f2768-0cb7-42c2-a7f2-9e96447c3a7b": {
@@ -670,25 +656,39 @@
             "picture-card-item": "shopify:\/\/shop_images\/logo_53a2c645-3706-43bd-8d39-93403bc003a9.png",
             "image_width": 82
           }
+        },
+        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Meet Our Team",
+            "button_link_1": "shopify:\/\/pages\/about-podx-go",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_color": "#000",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
         }
       },
       "block_order": [
         "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-0",
         "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-1",
         "b455aa90-8c8e-4419-bd53-1855e2b3826d",
-        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-2",
         "7f5f2768-0cb7-42c2-a7f2-9e96447c3a7b",
         "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-4",
         "7a10bc36-f177-48f5-a62e-42f4f9502449",
         "5b7c54e2-a9d8-4f54-9b32-e1808bfe7ee0",
         "45e6768c-14cb-4922-b671-55636001640a",
-        "c4478edd-4b96-4cc2-a9b7-3ba16c88bd1e"
+        "c4478edd-4b96-4cc2-a9b7-3ba16c88bd1e",
+        "template--15597986676836__8bd58e50-4c4c-4374-9837-2903a599cddb-16760969358f309929-2"
       ],
       "settings": {
         "image_overlay_opacity": 0,
         "is_lr": "true",
         "show_text_box": true,
-        "layout": "text_first",
+        "layout": "image_first",
         "is_imgBg": "false"
       }
     },
