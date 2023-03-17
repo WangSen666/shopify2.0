@@ -744,35 +744,6 @@
     "817a5069-6e91-49ec-aff0-da615eb133ea": {
       "type": "picture-card-with-bg",
       "blocks": {
-        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "PODX GO Academy",
-            "text_color": "#000",
-            "font_size": 36,
-            "font_weight": 600
-          }
-        },
-        "5ed01a38-46c3-443e-a8f6-6ab70911b0fe": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Having questions about start your tiny home journey?                          No worries. We are here to help.",
-            "text_color": "#000",
-            "font_size": 20,
-            "font_weight": 400
-          }
-        },
-        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-1": {
-          "type": "heading_1",
-          "settings": {
-            "heading_1": "We are here to help",
-            "text_color": "#B5EF35",
-            "font_size": 78,
-            "font_weight": 900
-          }
-        },
         "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-2": {
           "type": "picture_card_big",
           "settings": {
@@ -805,9 +776,6 @@
         }
       },
       "block_order": [
-        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-0",
-        "5ed01a38-46c3-443e-a8f6-6ab70911b0fe",
-        "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-1",
         "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-2",
         "template--15597986676836__817a5069-6e91-49ec-aff0-da615eb133ea-1676359880f2ac42d9-3",
         "c9f46c3c-d9e5-4e1d-9806-02dafdb10b29"
