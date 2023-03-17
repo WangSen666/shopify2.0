@@ -697,6 +697,7 @@
         "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-6"
       ],
       "settings": {
+        "background_color": "#fff",
         "is_rotation_list": "false",
         "heading": "",
         "heading_size": 36,
