@@ -420,6 +420,8 @@
             "heading": "Earthquake & Hurricane",
             "head_size": 24,
             "head_weight": 600,
+            "margin_top": 0,
+            "margin_bottom": 20,
             "text": "Resistant Structure Design The xx-gauge steel structure provides strength, durability and resistance to mold, termites, and other pests.",
             "text_size": 20,
             "text_weight": 0
@@ -431,6 +433,8 @@
             "heading": "Energy Efficiency  and Noise Reduction Design",
             "head_size": 24,
             "head_weight": 600,
+            "margin_top": 0,
+            "margin_bottom": 20,
             "text": "and Noise Reduction Design The insulating polyurethane panel-built walls and roof have a high R-value to keep your home comfortable in all seasons.",
             "text_size": 20,
             "text_weight": 0
@@ -442,6 +446,8 @@
             "heading": "One Button Control 15 Mins Setup On-site",
             "head_size": 24,
             "head_weight": 600,
+            "margin_top": 0,
+            "margin_bottom": 20,
             "text": "The auto-hydraulic system allows a simple push of a button to easy setup and takedown, and automatic leveling.",
             "text_size": 20,
             "text_weight": 0
@@ -459,6 +465,7 @@
         "head_size": 58,
         "head_weight": 0,
         "margin_top": 64,
+        "margin_bottom": 0,
         "image": "shopify:\/\/shop_images\/CB9E108C-D8F4-4EAA-A61E-BC439E8B3390.png",
         "button_label": "learn more",
         "button_link": "",
