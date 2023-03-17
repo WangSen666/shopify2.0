@@ -93,3 +93,18 @@
   font-family: 'impact';
   src: url('impact-2.ttf') format('truetype')
 }
+
+@font-face {
+  font-family: 'KumbhSans-Bold';
+  src: url("KumbhSans-Bold.ttf") format('truetype')
+}
+
+@font-face {
+  font-family: 'KumbhSans-Light';
+  src: url("KumbhSans-Light.ttf") format('truetype')
+}
+
+@font-face {
+  font-family: 'KumbhSans-Regular';
+  src: url("KumbhSans-Regular.ttf") format('truetype')
+}
