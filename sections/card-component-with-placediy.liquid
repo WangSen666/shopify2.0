@@ -1,0 +1,370 @@
+<style>
+  .with_bg_card_placediy {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+/*     background:#F7F7F5; */
+  }
+  .with_bg_card_placediy-box {
+    position: relative;
+    width: 33%;
+
+  }
+  .with_bg_card_placediy-img {
+    height: 62rem;
+  }
+  .with_bg_card_placediy-img img {
+
+    width: 100%;
+    height: 100%;
+  }
+  .with_bg_card_placediy-item {
+/*     position: absolute;
+    top: 0;
+    left: 0; */
+    width: 100%;
+/*     height: 100%; */
+    height: 850px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    
+  }
+  .with_bg_card_placediy-item-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+/*     width: 90%; */
+    text-align: center;
+    color: #fff;
+    transform: translate(-50%, -50%);
+  }
+
+/*   内容所在位置 */
+  .with_bg_card_placediy .center{
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+/*     transform:unset; */
+    
+  }
+ .with_bg_card_placediy .left-bottom{
+    bottom:44px;
+    left:44px;
+    top:unset;
+    text-align:left;
+    transform:unset;
+  }
+ .with_bg_card_placediy .right-bottom{
+    bottom:44px;
+    right:44px;
+    top:unset;
+    transform:unset;
+    text-align:right;
+  }
+  
+  .with_bg_card_placediy .button {
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 6px 14px;
+  }
+  .with_bg_card_placediy .button img {
+    margin-left: 6px;
+  }
+  @media screen and (max-width: 1080px) {
+    .with_bg_card_placediy-item-wrapper h2{
+      font-size:38px !important;
+    }
+    .with_bg_card_placediy-item-wrapper div{
+      font-size:18px !important;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .with_bg_card_placediy{
+      flex-wrap:wrap;
+    }
+    .with_bg_card_placediy-item{
+      max-height: 46rem !important;
+    }
+    .with_bg_card_placediy-item-wrapper h2{
+      font-size:32px !important;
+    }
+    .with_bg_card_placediy-item-wrapper div{
+      font-size:16px !important;
+      font-weight:normal !important;
+    }
+    .width_bg_card{
+      flex-wrap:wrap;
+    }
+   .with_bg_card_placediy-box{
+      width:98% !important;
+      margin:0 auto;
+      
+    }
+   .with_bg_card_placediy .left-bottom{
+      bottom:24px;
+      left:24px;
+    }
+   .with_bg_card_placediy .right-bottom{
+      bottom:24px;
+      right:24px;
+    }
+    
+  }
+</style>
+
+<div id="with_bg_card_placediy-{{ section.id }}" class="with_bg_card_placediy color-{{ section.settings.color_scheme }} ">
+  <div class="with_bg_card_placediy ">
+    {%- for block in section.blocks -%}
+      <div class="with_bg_card_placediy-box" @onclick="clickWithBgCard(event)">
+      <script>
+
+     
+      // window.onload=function(){
+      //   let with_bg_card_placediy_box=document.getElementsByClassName("with_bg_card_placediy-box");
+      //   let tabIndex=0;
+      //   for(let i=0;i<=with_bg_card_placediy_box.length;i++){
+      //   console.log("with_bg_card_placediy_box[i]",with_bg_card_placediy_box[i])
+      //     with_bg_card_placediy_box[i].setAttribute('index',i)
+      //   }
+      // }
+
+      
+      
+        var clickWithBgCard=function(event){
+          console.log("event",event.target.parentNode)
+          event.stopPropagation()
+          let wWidth = document.documentElement.clientWidth;
+        let scrollTop = document.documentElement.scrollTop;
+        if (wWidth >= 990) {
+          if(event.target.className!='with_bg_card_placediy-item'){
+            return ;
+          }else{
+             $('.with_bg_card_placediy-box').siblings().css({
+                "width":"33%"
+             })
+              event.target.parentNode.style.width="45%"
+          } 
+
+        }
+         
+          
+        }
+        window.onload=function(){
+          var withBgCard=$(".with_bg_card_placediy");
+          
+          console.log("dadaa",withBgCard);
+         
+           
+        }
+        
+      </script>
+<!--         <div class="with_bg_card_placediy-img">
+          <img src="{{ block.settings.picture-card-item|image_url }}" />
+        </div> -->
+        <div class="with_bg_card_placediy-item" style="background:rgba(0,0,0,{{block.settings.bg_opcity}});background-image:url({{ block.settings.picture-card-item|image_url }});background-size:cover;">
+          <div class="with_bg_card_placediy-item-wrapper {{ block.settings.wrapper_place }}">
+            <h2 style="color:{{block.settings.font_color}};font-size:{{block.settings.font_size}}px;">{{ block.settings.heading }}</h2>
+            {%  if block.settings.button_label_1!=blank %}
+              <a {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
+                <img
+                  src="{{'button_logo_1.png'  | asset_url }}"
+                  width="12"
+                  height="12" />
+              </a>
+            {% endif %}
+            {%  if block.settings.heading_1!=blank %}
+              <div style="color:#fff;font-size:{{ block.settings.text_font_size }}px;font-weight:{{ block.settings.text_font_weight }}">
+                {{ block.settings.heading_1 }}
+              </div>
+              
+            {% endif %}
+            {%  if block.settings.heading_2!=blank %}
+              <div style="color:#fff;font-size:{{ block.settings.text_font_size }}px;font-weight:{{ block.settings.text_font_weight }}">
+                {{ block.settings.heading_2 }}
+              </div>
+            {% endif %}
+            {%  if block.settings.heading_3!=blank %}
+              <div style="color:#fff;font-size:{{ block.settings.text_font_size }}px;font-weight:{{ block.settings.text_font_weight }}">
+                {{ block.settings.heading_3 }}
+              </div>
+            {% endif %}
+            
+          </div>
+        </div>
+      </div>
+    {%- endfor -%}
+
+  </div>
+
+
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "带图片背景可设置内容位置的卡片",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "select",
+        "id": "color_scheme",
+        "options": [
+          {
+            "value": "accent-1",
+            "label": "t:sections.all.colors.accent_1.label"
+          },
+          {
+            "value": "accent-2",
+            "label": "t:sections.all.colors.accent_2.label"
+          },
+          {
+            "value": "background-1",
+            "label": "t:sections.all.colors.background_1.label"
+          },
+          {
+            "value": "background-2",
+            "label": "t:sections.all.colors.background_2.label"
+          }, {
+            "value": "inverse",
+            "label": "t:sections.all.colors.inverse.label"
+          }
+        ],
+        "default": "background-1",
+        "label": "t:sections.all.colors.label"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "with_bg_card_placediy",
+        "name": "图片卡片",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "picture-card-item",
+            "label": "背景图片"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "标题内容"
+          },
+           {
+            "type": "range",
+            "id": "font_size",
+            "label": "标题字体大小",
+            "min": 12,
+            "max": 60,
+            "step": 2,
+            "default": 20
+          },
+          {
+            "type": "select",
+            "id": "font_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "字体颜色"
+          }, 
+          {
+            "type": "select",
+            "id": "wrapper_place",
+            "options": [
+              {
+                "value": "center",
+                "label": "居中"
+              }, {
+                "value": "left-bottom",
+                "label": "左下方"
+              }, {
+                "value": "right-bottom",
+                "label": "右下方"
+              }
+            ],
+            "default": "center",
+            "label": "内容位置"
+          }, 
+          {
+            "type": "text",
+            "id": "heading_1",
+            "label": "副标题内容行1"
+          },
+          {
+            "type": "text",
+            "id": "heading_2",
+            "label": "副标题内容行2"
+          },
+          {
+            "type": "text",
+            "id": "heading_3",
+            "label": "副标题内容行3"
+          },
+          {
+            "type":"range",
+            "id":"text_font_size",
+            "max":30,
+            "min":12,
+            "default":14,
+            "step":2,
+            "label":"副标题字体大小"
+          },
+          {
+            "type":"range",
+            "id":"text_font_weight",
+            "max":900,
+            "min":100,
+            "default":400,
+            "step":100,
+            "label":"副标题字体粗细"
+          },
+          
+         {
+            "type": "range",
+            "id": "bg_opcity",
+            "label": "阴影程度",
+            "min": 0,
+            "max": 1,
+            "step": 0.1,
+            "default": 0
+          }, {
+            "type": "text",
+            "id": "button_label_1",
+            "default": "Button label",
+            "label": "按钮文案",
+            "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+          }, {
+            "type": "url",
+            "id": "button_link_1",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+          }
+
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "带图片背景可设置内容位置的卡片",
+        "blocks": [
+          {
+            "type": "with_bg_card_placediy"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

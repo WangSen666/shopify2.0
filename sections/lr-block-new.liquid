@@ -1,0 +1,668 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+
+{%- style -%}
+  .lr-block-new{
+    padding:64px 24px;
+    margin:54px auto;
+    background:#F1F1F1;
+  }
+.lr-block-new-top-body{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+.top-body-item{
+  width:45%;
+}
+.top-body-item:last-child{
+  width:50%;
+}
+.img-wrapper{
+  width:628px;
+  height:422px;
+/*   margin:0 auto; */
+}
+/* 单图 */
+  .only-img{
+    max-width:796px;
+    height:528px;
+  }
+  
+
+.lr-block-new-bottom-body{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}  
+.lr-block-new-bottom-body .bottom-body-item{
+  max-width:378px;
+  position:relative;
+   margin-top:88px;
+}
+.bottom-body-item .button{
+  background:none;
+  border:1px solid #333333;
+  color:#333333 !important;
+  padding:14px 24px;
+  border-radius:34px;
+  margin: 24px auto;
+  display:block;
+  max-width:170px;
+/*   position:absolute; */
+  top:10%;
+}
+.bottom-body-item .button img{
+  width:14px;
+  height:14px;
+  margin-left:6px;
+  vertical-align:middle;
+}
+
+@media screen and (max-width: 750px){
+  .lr-block-new{
+    padding:24px 10px;
+    margin:24px auto;
+  }
+  .top-heading{
+    font-size:28px !important;
+  }
+  .top-body-item{
+    width:98%;
+  }
+  .top-body-item:last-child{
+    width:98%;
+  }
+  .img-wrapper{
+    width:100%;
+    height:288px;
+    margin:0 auto;
+  }
+  .only-img{
+    width:100%;
+    height:308px;
+    
+  }
+  .lr-block-new-bottom-body .bottom-body-item{
+    width:100%;
+    max-width:unset !important;
+    margin:14px auto !important;
+  }
+}
+{%- endstyle -%}
+
+<div
+  id="Banner-{{ section.id }}"
+  style=""
+  class="lr-block-new ">
+  <div class="page-width">
+      <div class="lr-block-new-top-body" style="flex-direction:{% if section.settings.picture_place=="left"  %}row-reserve {% endif %};  ">
+        <div class="top-body-item">
+          <div class="img-wrapper" style="background:url({{  section.settings.image|image_url   }}) no-repeat center center;background-size:cover;">
+    <!--         <img src="{{ section.settings.image|image_url }}" /> -->
+          </div>
+          <div class="top-heading" style="font-size:{{ section.settings.head_size }}px;font-weight:{{ section.settings.head_weight }};margin-top:{{ section.settings.margin_top }}px;margin-bottom:{{ section.settings.margin_bottom }}px;">
+            {{ section.settings.heading }}
+          </div>
+          <div class="top-heading" style="font-size:{{ section.settings.head_size }}px;font-weight:{{ section.settings.head_weight }};margin-top:{{ section.settings.margin_top }}px;margin-bottom:{{ section.settings.margin_bottom }}px;">
+            {{ section.settings.heading_1 }}
+          </div>
+        </div>
+        <div class="top-body-item">
+          <div class="only-img" style="background:url({{  section.settings.image_1|image_url   }}) no-repeat center center;background-size:cover;">
+    <!--         <img src="" /> -->
+          </div>
+        </div>
+      </div>
+    
+      <div class="lr-block-new-bottom-body">
+        {% for block in section.blocks %}
+          {%  case block.type %}
+            {% when 'bottom-body-item' %}
+              <div class="bottom-body-item">
+                <div class="head" style="font-size:{{ block.settings.head_size }}px;font-weight:{{ block.settings.head_weight }};margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
+                  {{ block.settings.heading }}
+                </div>
+                <div class="text" style="font-size:{{ block.settings.text_size }}px;font-weight:{{ block.settings.text_weight }}">
+                  {{ block.settings.text }}
+                </div>
+                
+              </div>
+          {%endcase %}
+        {% endfor %}
+       
+        <div class="bottom-body-item">
+          {%- if section.settings.button_label != blank -%}
+              <a  {% if section.settings.button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ section.settings.button_link }}"{% endif %}class="button{% if section.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.button_label | escape }}
+                  <img
+                    src="{{   'button_logo_2.png' | asset_url }}"
+                    width="12"
+                    height="12" />
+              </a>
+          {% endif %}
+        </div>
+      </div>
+    
+  </div>
+  
+  
+</div>
+
+{% schema %}
+  {
+    "name": "lr-block-new",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {"type":"text","id":"heading","label":"分块带图片位置标题内容"},
+      {"type":"text","id":"heading_1","label":"分块带图片位置标题内容"},
+      
+      {
+            "type": "range",
+            "id": "head_size",
+            "min": 12,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
+          },
+          {
+            "type": "range",
+            "id": "head_weight",
+            "min": 0,
+            "max": 900,
+            "step": 100,
+            "label": "字体加粗",
+            "default": 400
+          },
+          {
+            "type": "range",
+            "id": "margin-top",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "上边距",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "margin-bottom",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "下边距",
+            "default": 0
+          },
+      
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "t:sections.image-banner.settings.image.label"
+      },
+      {
+        "type":"text",
+        "id":"button_label",
+        "label":"底部文案列表中的按钮"
+      },
+      {
+        "type":"url",
+        "id":"button_link",
+        "label":"底部文案列表中的按钮链接"
+      },
+      
+      {
+        "type": "image_picker",
+        "id": "image_1",
+        "label": "单图内容"
+      },
+      {
+        "type": "select",
+        "id": "picture_place",
+        "options": [
+          {
+            "value": "left",
+            "label": "左边"
+          }, {
+            "value": "right",
+            "label": "右边"
+          }
+        ],
+        "default": "right",
+        "label": "单图所在位置"
+      },
+       {
+          "type": "select",
+          "id": "is_imgBg",
+          "options": [
+            {
+              "value": "true",
+              "label": "是"
+            }, {
+              "value": "false",
+              "label": "否"
+            }
+          ],
+          "default": "false",
+          "label": "分块图片是否有背景色"
+        }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "t:sections.image-banner.blocks.heading.name",
+        "limit": 5,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "default": "Image banner",
+            "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+          },
+          {
+            "type": "select",
+            "id": "heading_size",
+            "options": [
+              {
+                "value": "h2",
+                "label": "t:sections.all.heading_size.options__1.label"
+              }, {
+                "value": "h1",
+                "label": "t:sections.all.heading_size.options__2.label"
+              }, {
+                "value": "h0",
+                "label": "t:sections.all.heading_size.options__3.label"
+              }
+            ],
+            "default": "h1",
+            "label": "t:sections.all.heading_size.label"
+          },
+          {
+            "type": "range",
+            "id": "font-weight",
+            "min": 0,
+            "max": 900,
+            "step": 100,
+            "label": "字体加粗",
+            "default": 400
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 12,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
+          }, {
+            "type": "range",
+            "id": "margin-top",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "上边距",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "margin-bottom",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "下边距",
+            "default": 0
+          }, {
+            "type": "select",
+            "id": "font_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "字体颜色"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "t:sections.image-banner.blocks.text.name",
+        "limit": 5,
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "default": "Give customers details about the banner image(s) or content on the template.",
+            "label": "t:sections.image-banner.blocks.text.settings.text.label"
+          },
+          {
+            "type": "select",
+            "id": "text_style",
+            "options": [
+              {
+                "value": "body",
+                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__1.label"
+              }, {
+                "value": "subtitle",
+                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__2.label"
+              }, {
+                "value": "caption-with-letter-spacing",
+                "label": "t:sections.image-banner.blocks.text.settings.text_style.options__3.label"
+              }
+            ],
+            "default": "body",
+            "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 12,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
+          },
+          {
+            "type": "range",
+            "id": "font_weight",
+            "min": 0,
+            "max": 900,
+            "step": 100,
+            "label": "字体加粗",
+            "default": 400
+          },
+          {
+            "type": "range",
+            "id": "margin-top",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "上边距",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "margin-bottom",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "下边距",
+            "default": 0
+          }, {
+            "type": "select",
+            "id": "font_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "字体颜色"
+          }
+        ]
+      },
+      {
+        "type": "buttons",
+        "name": "t:sections.image-banner.blocks.buttons.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "button_label_1",
+            "default": "Button label",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+            "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+          },
+          {
+            "type": "url",
+            "id": "button_link_1",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+          },
+          {
+            "type": "checkbox",
+            "id": "button_style_secondary_1",
+            "default": false,
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
+          },
+          {
+            "type": "text",
+            "id": "button_label_2",
+            "default": "Button label",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_label_2.label",
+            "info": "t:sections.image-banner.blocks.buttons.settings.button_label_2.info"
+          }, {
+            "type": "url",
+            "id": "button_link_2",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_link_2.label"
+          }, {
+            "type": "checkbox",
+            "id": "button_style_secondary_2",
+            "default": false,
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
+          }, {
+            "type": "select",
+            "id": "button_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "按钮颜色"
+          }, {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "上边距",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "下边距",
+            "default": 0
+          }
+        ]
+      },
+      {
+        "type": "image_wrapper",
+        "limit": 1,
+        "name": "图片内容",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_1",
+            "label": "第一张图片"
+          }
+        ]
+      },
+      {
+        "type": "pictureCard",
+        "name": "图片卡片",
+        "limit": 5,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "picture-card-item",
+            "label": "图片卡片"
+          }, {
+            "type": "range",
+            "id": "image_width",
+            "min": 10,
+            "max": 150,
+            "step": 4,
+            "label": "图片宽度",
+            "default": 10
+          }
+        ]
+      },
+      {
+        "type": "right_text_wrapper",
+        "name": "右边文案内容",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "right_text",
+            "label": "文案内容"
+          }, {
+            "type": "range",
+            "id": "font_size",
+            "min": 12,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
+          }, {
+            "type": "select",
+            "id": "is_border",
+            "options": [
+              {
+                "value": "true",
+                "label": "是"
+              }, {
+                "value": "false",
+                "label": "否"
+              }
+            ],
+            "default": "false",
+            "label": "是否有下边框"
+          }
+        ]
+      },
+      {
+        "type":"bottom-body-item",
+        "name":"底部文案列表",
+        "settings":[
+          {
+            "type":"text",
+            "id":"heading",
+            "label":"文案标题"
+          },
+          {
+            "type": "range",
+            "id": "head_size",
+            "min": 12,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
+          },
+          {
+            "type": "range",
+            "id": "head_weight",
+            "min": 0,
+            "max": 900,
+            "step": 100,
+            "label": "字体加粗",
+            "default": 400
+          },
+          {
+            "type": "range",
+            "id": "margin-top",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "上边距",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "margin-bottom",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "下边距",
+            "default": 0
+          },
+          {
+            "type":"text",
+            "id":"text",
+            "label":"文案内容"
+          },
+          {
+            "type": "range",
+            "id": "text_size",
+            "min": 12,
+            "max": 100,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
+          },
+          {
+            "type": "range",
+            "id": "text_weight",
+            "min": 0,
+            "max": 900,
+            "step": 100,
+            "label": "字体加粗",
+            "default": 400
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "lr-block-new",
+        "blocks": [
+          {
+            "type": "heading"
+          },
+          {
+            "type": "text"
+          },
+          {
+            "type": "buttons"
+          },
+          {
+            "type": "image_wrapper"
+          }, {
+            "type": "pictureCard"
+          }, {
+            "type": "right_text_wrapper"
+          },
+          {
+            "type":"bottom-body-item"
+          }
+
+        ]
+      }
+    ]
+  }
+{% endschema %}

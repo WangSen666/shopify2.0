@@ -1,0 +1,310 @@
+
+<style>
+  .podx-go-card-head{
+    max-width:1150px;
+    margin:44px auto;
+    text-align:center;
+  }
+  .podx-go-card-rotation{
+    position:relative;
+    max-width:1680px;
+    margin:0 auto;
+    padding:100px 0;
+    height:626px;
+  }
+  .left-icon{
+    top:50%;
+    left:24px;
+    transform:translateY(-50%);
+    position:absolute;
+  }
+   .right-icon{
+    top:50%;
+    right:24px;
+    transform:translateY(-50%);
+    position:absolute;
+  }
+  .podx-go-card-rotation-list{
+    width:1260px;
+    height:406px;
+    position:absolute;
+    overflow:hidden;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:10;
+  }
+  .podx-go-card-rotation-list-box{
+    height:406px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:absolute;
+  }
+ .podx-go-card-rotation-item{
+    width:332px;
+    height:332px;
+    float:left;
+  }
+  .podx-go-card-rotation-item:hover{
+    box-shadow: 0 0 8px #333333;
+    
+  }
+ 
+  @media screen and (max-width:1180px){
+    .podx-go-card-rotation-title{
+      font-size:36px !important;
+    }
+    .podx-go-card-subtitle{
+      font-size:20px !important;
+    }
+    .podx-go-card-rotation-list{
+      width:100%;
+    }
+    .podx-go-card-rotation-item{
+      width:200px;
+      height:150px;
+   
+    }
+    .podx-go-card-rotation-item img{
+      max-width:40px;
+    }
+    .text-wrapper{
+      font-size:16px !important;
+    }
+  }
+
+  @media screen and (max-width:750px){
+    .podx-go-card-rotation{
+      padding:24px 0;
+      height:424px;
+    }
+    .podx-go-card-rotation-list{
+      width:100%;
+      position:relaive;
+    }
+   .podx-go-card-rotation-title{
+      font-size:32px !important;
+/*      padding:0 14px; */
+    }
+    .podx-go-card-subtitle{
+      font-size:16px !important;
+    }
+    .podx-go-card-head{
+      margin:44px auto 24px;
+    }
+    .text-wrapper{
+     font-size:14px !important;
+    }
+   .left-icon{
+     display:none;
+   }
+    .right-icon{
+      display:none;
+    }
+  }
+</style>
+
+
+<div class="podx-go-card-head">
+  <div class="podx-go-card-rotation-title" style="font-size:{{section.settings.heading_size  }}px;">
+    {{ section.settings.heading }}
+  </div>
+  <div class="podx-go-card-subtitle" style="font-size:{{section.settings.text_size  }}px;">
+    {{ section.settings.text_1 }}
+  </div>
+</div>
+<div class="podx-go-card-rotation">
+  <img class="left-icon" onclick="tabChangePrev()" src="https://cdn.shopify.com/s/files/1/0596/2249/0212/files/leftIcon.png?v=1678695161" />
+  <img class="right-icon" onclick="tabChangeNext()" src="https://cdn.shopify.com/s/files/1/0596/2249/0212/files/rightIcon.png?v=1678695165" />
+  <div class="podx-go-card-rotation-list">
+    <div class="podx-go-card-rotation-list-box">
+        {% for block in section.blocks %}
+          
+          <div class="podx-go-card-rotation-item" style="background:url('{{  block.settings.image_1 | image_url  }}') no-repeat center center;background-size:cover;">
+            
+          </div>
+        {% endfor %}
+    </div>
+    
+  </div>
+
+  
+
+  
+</div>
+
+<script>
+  var thisIndex = 0;
+   $(function () {
+
+      var imgList = document.querySelector('.podx-go-card-rotation-list-box');
+      var windowWidth=document.documentElement.clientWidth;
+      
+     if(windowWidth>=750){
+             $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+               "width":"596px",
+               "height":"406px"
+             }).siblings().css({
+               "width":"336px",
+               "height":"336px"
+             }) 
+            }else{
+              $(".podx-go-card-rotation-item").eq(thisIndex).css({
+                 "width":"596px",
+                 "height":"406px"
+               }).siblings().css({
+                 "width":"336px",
+                 "height":"336px"
+               })
+            }
+      var flag = true;
+      imgList.style.width = ((imgList.children.length-1) * 336+556) + 'px';
+     
+     // 手动切换轮播图
+     tabChangePrev=function(){
+       console.log(imgList.children.length,thisIndex)
+       
+       if(thisIndex == -1){
+          thisIndex = imgList.children.length-1;
+          // $(".podx-go-card-rotation-item").eq(thisIndex).css({
+          //      "width":"596px",
+          //      "height":"406px"
+          //    }).siblings().css({
+          //      "width":"336px",
+          //      "height":"336px"
+          //    })
+        }
+       
+        thisIndex--;
+        $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+               "width":"596px",
+               "height":"406px"
+             }).siblings().css({
+               "width":"336px",
+               "height":"336px"
+             })
+        slow(imgList, -thisIndex *336, function () {
+          flag = true;
+        });
+     }
+     tabChangeNext=function(){
+       ++thisIndex;
+        if (thisIndex >= imgList.children.length-1) {
+            thisIndex = -1;
+        }
+       
+        $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+               "width":"596px",
+               "height":"406px"
+             }).siblings().css({
+               "width":"336px",
+               "height":"336px"
+             })
+       console.log(imgList.children.length,thisIndex)
+       
+        slow(imgList, -thisIndex * 336, function () {
+          flag = true;
+        });
+      }
+      function antoChange() {
+        setInterval(function () {
+          if (flag) {
+            flag = false;
+            if (thisIndex >= imgList.children.length) {
+              thisIndex = 0;
+              $(".podx-go-card-rotation-item").eq(thisIndex).css({
+               "width":"596px",
+               "height":"406px"
+             }).siblings().css({
+               "width":"336px",
+               "height":"336px"
+             })
+            }
+            if(windowWidth>=750){
+             $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+               "width":"596px",
+               "height":"406px"
+             }).siblings().css({
+               "width":"336px",
+               "height":"336px"
+             }) 
+            }else{
+              $(".podx-go-card-rotation-item").eq(thisIndex).css({
+                 "width":"596px",
+                 "height":"406px"
+               }).siblings().css({
+                 "width":"336px",
+                 "height":"336px"
+               })
+            }
+            slow(imgList, -thisIndex * 336, function () {
+              flag = true;
+            });
+            
+            // circleChange();
+            thisIndex++;
+          }
+        }, 3000);
+      }
+      function slow(obj, target, callback) {
+        obj.myInter = setInterval(function () {
+          var offsetLeft = obj.offsetLeft;
+          var num = (target - offsetLeft) / 10;
+          num > 0 ? num = Math.ceil(num) : num = Math.floor(num);
+          if (offsetLeft == target) {
+            clearInterval(obj.myInter);
+            callback && callback();
+          } else {
+            obj.style.left = offsetLeft + num + 'px';
+          }
+          
+        }, 10)
+      }
+      
+      if(windowWidth<=750){
+        
+        antoChange();
+      }
+      // antoChange();
+    })
+  </script>
+
+{% schema %}
+  {
+    "name": "podx-go轮播图",
+    "tag": "section",
+    "class": "section",
+    "settings":[
+      {"type":"text","id":"heading","label":"标题"},
+      {"type":"range","id":"heading_size","min":12,"max":60,"default":24,"step":2,"label":"标题尺寸"},
+      {"type":"text","id":"text_1","label":"副标题"},
+      {"type":"range","id":"text_size","min":12,"max":60,"default":24,"step":2,"label":"副标题尺寸"}
+    ],
+    "blocks":[
+      {
+        "type":"rotation_item",
+        "name":"轮播图片",
+        "limit":5,
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"image_1",
+            "label":"选择轮播图片"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "podx-go轮播图",
+        "blocks": [
+          {
+            "type":"rotation_item"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+

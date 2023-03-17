@@ -1,0 +1,850 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+{%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
+  {%- style -%}
+    @media screen and (max-width: 749px) {
+      #Banner-{{ section.id }}: : before, #Banner-{{ section.id }}.banner__media::before, #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner-component__content::before  {
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+        content: '';
+        display: block;
+      }
+    }
+    @media screen and (min-width: 750px) {
+      #Banner-{{ section.id }}: : before, #Banner-{{ section.id }}.banner__media::before {
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+        content: '';
+        display: block;
+      }
+
+    }
+  {%- endstyle -%}
+{%- endif -%}
+
+{%- style -%}
+  #Banner-{{ section.id }}::after {
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+  }
+
+ 
+
+  /* banner 组件 */
+  .banner-new-rotation {
+    position: relative
+  }
+  .banner-new-rotation .banner-component__content {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    text-align: left;
+  }
+/*   轮播图处理 */
+  .rotation-banner {
+      width: 100%;
+      margin: auto;
+      /* border: 10px solid greenyellow; */
+/*       height: 350px; */
+      position: relative;
+      overflow: hidden;
+    }
+  .imgList {
+      margin-top:0 !important;
+      display:flex;
+      list-style: none;
+      /* width: 2480px; */
+      position: absolute;
+      /* left:-620px; */
+    padding:0 !important;
+    }
+    .rotation-img-wrapper{
+      
+    }
+    .imgList img {
+/*       width: 600px;
+      height: 350px; */
+    }
+
+    .imgList li {
+      float: left !important;
+/*       margin-right: 20px; */
+    }
+
+    .circle {
+      z-index:9;
+      position: absolute !important;
+      bottom: 15px !important;
+      left: 50% !important;
+      transform: translateX(-50%);
+      height: 40px !important;
+      width: unset !important;
+      top: unset !important;
+    }
+
+    .circle a {
+      width: 15px;
+      height: 15px;
+      background: #fff;
+      display: block;
+      border-radius: 50%;
+      opacity: .5;
+      float: left;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    .circle a.hover {
+      background: #9ED835;
+      opacity: .8;
+    }
+
+
+
+
+  
+  .banner-new-rotation .banner-component__content .banner-new-rotation__box {
+    padding: 24px;
+    width: 50%;
+    position: absolute;
+/*     height:70%; */
+    top: 50%;
+/*     left: 50%; */
+    transform: translateY(-50%);
+    background: none;
+    text-align: left;
+  }
+  .banner-new-rotation .banner-component__content .banner-new-rotation__box--left {
+    padding: 0;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: none;
+    text-align: left;
+  }
+  .banner-new-rotation .banner-component__content .banner-new-rotation__box--right {
+    padding: 0;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: right;
+    transform: translateY(-50%);
+    background: none;
+    text-align: right;
+  }
+  .banner-new-rotation .banner-component__media {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .banner-new-rotation-bottom-info {
+    display: flex;
+    width:calc(100% - 24px);
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 0 14px;
+    
+    position:absolute;
+    bottom:10%;
+  }
+  .banner__left_bottom_info {
+    max-width:50%;
+  }
+  .banner-new-rotation-bottom-info .banner__right_bottom_info {
+    display: flex;
+    justify-content: space-around;
+   
+  }
+ .banner__right_bottom_info_btn {
+    padding: 0 14px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    margin: 14px;
+   display:inline-block;
+  }
+  .banner-href-icon-item{
+    text-decoration:none;
+    margin:14px 24px;
+  }
+  
+  .banner-new-rotation-button {
+    font-size: 18px;
+    background: none;
+    padding: 0 14px;
+  }
+ .banner-href-icon{
+    display:flex;
+    justify-content:space-between;
+    max-width:100%;
+  }
+  @media screen and (max-width: 750px) {
+
+    .banner-new-rotation .banner-component__content .banner-new-rotation__box{
+      width:calc(100%);
+      left:50%;
+      transform:translate(-50%,-50%);
+    }
+    .banner-new-rotation-bottom-info {
+      border: none !important;
+      flex-wrap: wrap;
+      position:relative;
+      width:90% !important;
+      left:50%;
+      transform:translateX(-50%);
+    }
+    .banner-new-rotation .banner-component__media {
+      min-height: 80rem;
+      width: 100%;
+    }
+    .banner-new-rotation .banner-component__content{
+      padding:0 !important;
+    }
+    .banner__right_bottom_info {
+      flex-wrap: wrap;
+    }
+    .banner__right_bottom_info_btn {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .banner-new-rotation-button {
+      font-size: 16px !important;
+      padding: 0 10px;
+    }
+    
+    .banner-component__content h2 {
+      width: 100% !important;
+      font-size:36px !important;
+    }
+    .banner__left_bottom_info{
+      width:98% !important;
+      max-width:unset !important;
+    }
+    .banner-new-rotation__box{
+/*       height:80% !important; */
+      
+    }
+    .banner-new-rotation-bottom-info{
+      text-align:left;
+      padding:0 !important;
+    }
+    .banner-component-text{
+      width:100% !important;
+      font-size:20px !important;
+    }
+    .banner-href-icon-item img{
+      width:40px;
+      height:40px;
+    }
+    .banner-href-icon-item-text{
+      font-size:14px !important;
+    }
+    .picture-card-item-button{
+      margin:14px 0;
+    }
+  }
+  
+
+ 
+{%- endstyle -%}
+
+<div id="Banner-{{ section.id }}"= class="bg_wrapper banner-new-rotation   banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
+  {%- if section.settings.image_1 == blank -%}
+    <div class="banner-component__media media ">
+      <div class="rotation-banner">
+        <ul class="imgList">
+            {% for block in section.blocks %}
+              {%- case block.type -%}
+                {%- when 'rotation-banner-img' -%}
+                    <li class="rotation-img-wrapper" style="background:url({{block.settings.rotation-banner-img-item|image_url  }}) no-repeat center center;background-size:cover;">
+                    </li>
+                {% endcase %}
+            {% endfor %}
+           
+          </ul>
+          
+            <div class="circle">
+            </div>
+      </div>
+        
+      
+    </div>
+
+  {%- endif -%}
+  <div class="banner-component__content  page-width">
+    <div class="banner-new-rotation__box banner-new-rotation__box--{{ section.settings.desktop_content_position }} content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient" style="right:{% if section.settings.text_place=="right" %} 0; {% endif %}">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'heading' -%}
+          <h2
+            class="banner-component-heading"
+            {{ block.shopify_attributes }}
+            style="text-align:left;font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
+            <span>{{ block.settings.heading | escape }}</span>
+          </h2>
+
+          {% when "text" %}
+          <div>
+            <p
+            class="banner-component-text"
+            {{ block.shopify_attributes }}
+            style=text-align:left;font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
+            <span>{{ block.settings.text | escape }}</span>
+            </p>
+          </div>
+          {%  when 'buttons' %}
+          {% if block.settings.banner_button_label != blank %}
+            <div class="banner__right_bottom_info_btn" {{ block.shopify_attributes }} style="{% if block.settings.button_color=="#9ED835" %}background:{{ block.settings.button_color }};border:1px solid {{ block.settings.button_color }};{% endif %}">
+              <a style="font-size:{{ block.settings.font_size }}px;" {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %}class="button banner-new-rotation-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
+            </div>
+            {% endif %}
+          
+        {%- endcase -%}
+      {%- endfor -%}
+      
+    </div>
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+      {%- when 'bannerComponentBottomInfo' -%}
+          <div class="banner-new-rotation-bottom-info" style="{% if block.settings.is_border == 'true' %}border-bottom: 1px solid #fff;{% endif %} {% if block.settings.banner_button_place=="left" %}flex-direction: row-reverse{% endif %};">
+            <div class="banner__left_bottom_info " {{ block.shopify_attributes }}>
+            {% if block.settings.heading!=blank %}
+              <p>{{ block.settings.heading | escape }}</p>
+            {% endif %}
+            {% if block.settings.heading==blank %}
+              <div class="banner-href-icon">
+                  {%- for block_child in section.blocks -%}
+                  {%- case block_child.type -%}
+                    {%- when 'banner_href_icon' -%}
+                      <a class="banner-href-icon-item" href="#{{ block_child.settings.href_id }}">
+                          <div class="" style="text-align:center;">
+                            <img src="{{ block_child.settings.icon_item | image_url }}" width="{{ block_child.settings.icon_width }}" />
+                            <div class="banner-href-icon-item-text" style="font-size:{{ block_child.settings.font_size }}px;color:#fff;">
+                              {{ block_child.settings.banner_href_text}}
+                            </div>
+                          </div>
+                          
+                      </a>
+                  {%- endcase -%}
+                {%- endfor -%}
+              </div>
+            {% endif %}
+            
+              {% comment %} <p>{{ block.settings.heading_1 | escape }}<span class="price">{{ block.settings.price | escape }}</span>
+              </p> {% endcomment %}
+            </div>
+            <div class="banner__right_bottom_info">
+          {% if block.settings.banner_button_label != blank %}
+              <div class="banner__right_bottom_info_btn" {{ block.shopify_attributes }}>
+                <a {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %}class="button banner-new-rotation-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
+                <img
+                  src="{{'button_logo_1.png'  | asset_url }}"
+                  width="12"
+                  height="12" />
+              </div>
+              {% endif %}
+              {% if block.settings.banner_button_label_1 != blank %}
+                <div class="banner__right_bottom_info_btn" {{ block.shopify_attributes }}>
+                  <a {% if block.settings.banner_button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link_1 }}"{% endif %}class="button banner-new-rotation-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label_1 | escape }}</a>
+                  <img
+                    src="{{'button_logo_1.png'  | asset_url }}"
+                    width="12"
+                    height="12" />
+                </div>
+              {% endif %}
+            </div>
+          </div>
+
+       {%- endcase -%}
+      {%- endfor -%}
+  </div>
+  
+</div>
+
+
+{% schema %}
+  {
+    "name": "轮播图banner",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "背景图"
+      },
+      {
+        "type":"select",
+        "id":"text_place",
+        "options":[
+          {"value":"left","label":"左边"},
+          {"value":"right","label":"右边"}
+        ],
+        "default":"left",
+        "label":"文案内容位置"
+      },
+      {
+        "type": "range",
+        "id": "image_overlay_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 10,
+        "unit": "%",
+        "label": "t:sections.image-banner.settings.image_overlay_opacity.label",
+        "default": 0
+      },
+      {
+        "type": "select",
+        "id": "image_height",
+        "options": [
+          {
+            "value": "small",
+            "label": "t:sections.image-banner.settings.image_height.options__1.label"
+          }, {
+            "value": "medium",
+            "label": "t:sections.image-banner.settings.image_height.options__2.label"
+          }, {
+            "value": "large",
+            "label": "t:sections.image-banner.settings.image_height.options__3.label"
+          }
+        ],
+        "default": "medium",
+        "label": "t:sections.image-banner.settings.image_height.label",
+        "info": "t:sections.image-banner.settings.image_height.info"
+      },
+      {
+        "type": "checkbox",
+        "id": "adapt_height_first_image",
+        "default": false,
+        "label": "t:sections.image-banner.settings.adapt_height_first_image.label",
+        "info": "t:sections.image-banner.settings.adapt_height_first_image.info"
+      }, {
+        "type": "select",
+        "id": "desktop_content_position",
+        "options": [
+          {
+            "value": "left",
+            "label": "居左"
+          }, {
+            "value": "center",
+            "label": "居中"
+          }, {
+            "value": "right",
+            "label": "居右"
+          }
+        ],
+        "default": "center",
+        "label": "t:sections.image-banner.settings.desktop_content_position.label"
+      }, {
+        "type": "checkbox",
+        "id": "show_text_box",
+        "default": true,
+        "label": "t:sections.image-banner.settings.show_text_box.label"
+      }, {
+        "type": "select",
+        "id": "desktop_content_alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "t:sections.image-banner.settings.desktop_content_alignment.options__1.label"
+          }, {
+            "value": "center",
+            "label": "t:sections.image-banner.settings.desktop_content_alignment.options__2.label"
+          }, {
+            "value": "right",
+            "label": "t:sections.image-banner.settings.desktop_content_alignment.options__3.label"
+          }
+        ],
+        "default": "center",
+        "label": "t:sections.image-banner.settings.desktop_content_alignment.label"
+      }, {
+        "type": "select",
+        "id": "color_scheme",
+        "options": [
+          {
+            "value": "accent-1",
+            "label": "t:sections.all.colors.accent_1.label"
+          },
+          {
+            "value": "accent-2",
+            "label": "t:sections.all.colors.accent_2.label"
+          },
+          {
+            "value": "background-1",
+            "label": "t:sections.all.colors.background_1.label"
+          },
+          {
+            "value": "background-2",
+            "label": "t:sections.all.colors.background_2.label"
+          }, {
+            "value": "inverse",
+            "label": "t:sections.all.colors.inverse.label"
+          }
+        ],
+        "default": "background-1",
+        "label": "t:sections.all.colors.label",
+        "info": "t:sections.image-banner.settings.color_scheme.info"
+      }, {
+        "type": "header",
+        "content": "t:sections.image-banner.settings.header.content"
+      }, {
+        "type": "select",
+        "id": "mobile_content_alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "t:sections.image-banner.settings.mobile_content_alignment.options__1.label"
+          }, {
+            "value": "center",
+            "label": "t:sections.image-banner.settings.mobile_content_alignment.options__2.label"
+          }, {
+            "value": "right",
+            "label": "t:sections.image-banner.settings.mobile_content_alignment.options__3.label"
+          }
+        ],
+        "default": "center",
+        "label": "t:sections.image-banner.settings.mobile_content_alignment.label"
+      }, {
+        "type": "checkbox",
+        "id": "stack_images_on_mobile",
+        "default": true,
+        "label": "t:sections.image-banner.settings.stack_images_on_mobile.label"
+      }, {
+        "type": "checkbox",
+        "id": "show_text_below",
+        "default": true,
+        "label": "t:sections.image-banner.settings.show_text_below.label"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "t:sections.image-banner.blocks.heading.name",
+        "limit": 6,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "default": "Image banner",
+            "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+          },
+          {
+            "type": "select",
+            "id": "heading_size",
+            "options": [
+              {
+                "value": "h2",
+                "label": "t:sections.all.heading_size.options__1.label"
+              }, {
+                "value": "h1",
+                "label": "t:sections.all.heading_size.options__2.label"
+              }, {
+                "value": "h0",
+                "label": "t:sections.all.heading_size.options__3.label"
+              }
+            ],
+            "default": "h1",
+            "label": "t:sections.all.heading_size.label"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 0,
+            "max": 200,
+            "step": 4,
+            "unit": "px",
+            "label": "文本字体大小",
+            "default": 24
+          },
+          {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "文本上边距",
+            "default": 24
+          }, {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "文本下边距",
+            "default": 24
+          }, {
+            "type": "select",
+            "id": "heading_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "黑色"
+          }, {
+            "type": "range",
+            "id": "font_weight",
+            "min": 400,
+            "max": 900,
+            "step": 100,
+            "label": "字体加粗",
+            "default": 400
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "banner副标题",
+        "limit": 6,
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "default": "Image banner",
+            "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 0,
+            "max": 200,
+            "step": 4,
+            "unit": "px",
+            "label": "文本字体大小",
+            "default": 24
+          },
+          {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "文本上边距",
+            "default": 24
+          }, {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": 0,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "文本下边距",
+            "default": 24
+          }, {
+            "type": "select",
+            "id": "heading_color",
+            "options": [
+              {
+                "value": "#B5EF35",
+                "label": "主题色"
+              }, {
+                "value": "#fff",
+                "label": "白色"
+              }, {
+                "value": "#000",
+                "label": "黑色"
+              }
+            ],
+            "default": "#000",
+            "label": "黑色"
+          }, {
+            "type": "range",
+            "id": "font_weight",
+            "min": 400,
+            "max": 900,
+            "step": 100,
+            "label": "字体加粗",
+            "default": 400
+          }
+        ]
+      },
+      {
+        "type":"rotation-banner-img",
+        "name":"轮播图背景",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"rotation-banner-img-item",
+            "label":"选择图片"
+          }
+        ]
+      },
+      {
+        "type": "bannerComponentBottomInfo",
+        "name": "banner底部内容",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "default": "FUll SIZE",
+            "label": "标题1"
+          },
+          {
+            "type":"select",
+            "id":"banner_button_place",
+            "options":[
+              {"value":"left","label":"左边"},
+              {"value":"right","label":"右边"}
+            ],
+            "default":"right",
+            "label":"按钮所在位置"
+          },
+          {
+            "type": "text",
+            "id": "heading_1",
+            "default": "Kitchen/Bedroom/Great Room",
+            "label": "副标题"
+          },
+          {
+            "type": "text",
+            "label": "价格",
+            "id": "price"
+          },
+          {
+            "type": "url",
+            "label": "按钮",
+            "id": "banner_button_link"
+          }, {
+            "type": "text",
+            "label": "按钮文案",
+            "id": "banner_button_label"
+          }, {
+            "type": "url",
+            "label": "按钮",
+            "id": "banner_button_link_1"
+          }, {
+            "type": "text",
+            "label": "按钮文案",
+            "id": "banner_button_label_1"
+          },
+          {
+            "type":"select",
+            "id":"is_border",
+            "options":[
+              {
+                "value": "true",
+                "label": "是"
+              }, {
+                "value": "false",
+                "label": "否"
+              }
+            ],
+           "default":"true",
+            "label":"是否展示底部边框"
+          }
+        ]
+      },
+      {
+        "type": "buttons",
+        "name": "t:sections.image-banner.blocks.buttons.name",
+        "limit": 2,
+        "settings": [
+          {
+            "type": "text",
+            "id": "banner_button_label",
+            "default": "Button label",
+            "label": "按钮文案",
+            "info": "按钮文案"
+          },
+          {
+            "type": "url",
+            "id": "banner_button_link",
+            "label": "按钮链接地址"
+          }, {
+            "type": "range",
+            "id": "font_size",
+            "min": 0,
+            "max": 36,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
+          },
+          {
+            "type": "select",
+            "id": "button_color",
+            "options":[
+              {"value":"#9ED835","label":"主题色"},
+              {"value":"#fff","label":"白色"}
+            ],
+            "default":"#fff",
+            "label":"按钮颜色"
+          }
+        ]
+      },
+      {
+        "type":"banner_href_icon",
+        "name":"banner超链接图标",
+        "limit":3,
+        "settings":[
+          {
+            "type":"range",
+            "id":"icon_width",
+            "min":10,
+            "max":110,
+            "step":2,
+            "default":40,
+            "label":"超链接图标宽度"
+          },
+          {
+            "type":"text",
+            "id":"banner_href_text",
+            "label":"图标下面的文字"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "min": 0,
+            "max": 36,
+            "step": 2,
+            "unit": "px",
+            "label": "字体大小",
+            "default": 24
+          },
+          {
+            "type":"image_picker",
+            "id":"icon_item",
+            "label":"选择超链接图标"
+          },
+          {
+            "type":"text",
+            "id":"href_id",
+            "label":"超链接模块id名称"
+          }
+        ]
+      }
+      
+    ],
+    "presets": [
+      {
+        "name": "轮播图banner",
+        "blocks": [
+          {
+            "type": "heading"
+          }, {
+            "type": "bannerComponentBottomInfo"
+          },
+          {"type":"text"},
+          {"type":"buttons"},
+          {"type":"banner_href_icon"},
+          {"type":"rotation-banner-img"}
+        ]
+      }
+    ]
+  }
+{% endschema %}

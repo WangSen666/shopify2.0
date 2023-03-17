@@ -1,0 +1,206 @@
+<style>
+  .edge-look-around{
+    padding:0 0 24px;
+  }
+.edge-look-around-picture{
+  width:100%;
+  height:732px;
+}
+.edge-look-around-text{
+  display:flex;
+  justify-content:space-between;
+  margin:40px auto;
+  flex-wrap:wrap;
+}
+  .edge-look-around-item{
+    width:40%;
+    text-align:left;
+  }
+  .edge-look-around .button{
+    background:none;
+    border:1px solid #333333;
+    color:#333333 !important;
+    padding:14px 24px;
+    border-radius:34px;
+    margin: 24px auto;
+    display:block;
+    max-width:170px;
+  }
+  .edge-look-around .button img{
+    width:14px;
+    height:14px;
+    margin-left:6px;
+    vertical-align:middle;
+  }
+  @media screen and (max-width: 750px){
+    .edge-look-around-picture{
+      height:432px;
+    }
+    .edge-look-around-item{
+      width:90%;
+      margin:14px auto;
+    }
+  }
+</style>
+
+
+
+<div class="edge-look-around">
+  {% if section.settings.image_1 != blank %}
+    <div class="edge-look-around-picture" style="background:url({{ section.settings.image_1 | image_url }}) no-repeat center center;background-size:cover;">
+<!--       {%-liquid
+        assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
+        if section.settings.image_1 != blank
+          assign image_class = "banner__media-image-half"
+        endif
+        if section.settings.image_1 != blank and section.settings.stack_images_on_mobile
+          assign sizes = "(min-width: 750px) 50vw, 100vw"
+        elsif section.settings.image_1 != blank
+          assign sizes = "50vw"
+        else
+          assign sizes = "100vw"
+        endif
+      -%}
+      {{ section.settings.image_1 | image_url: width: 1500 | image_tag: 
+       loading: 'lazy'
+       , width: section.settings.image.width
+       , height: image_height
+       , class: image_class
+       , sizes: sizes
+       , widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+       , alt: section.settings.image.alt | escape }} -->
+    </div>
+  {% endif %}
+
+<div class="edge-look-around-text page-width">
+
+  {% for block in section.blocks %}
+    {% case block.type %}
+        {% when 'edge-look-around-item' %}
+        <div class="edge-look-around-item">
+          <div class="heading" style="font-size:{{ block.settings.head_size }}px;font-weight:{{ block.settings.head_weight }}">
+            {{ block.settings.heading }}
+          </div>
+          <div class="text" style="font-size:{{ block.settings.text_size }}px;font-weight:{{ block.settings.text_weight }}">
+            {{ block.settings.text }}
+          </div>
+        </div>
+    {% endcase %}
+  {% endfor %}
+  
+</div>
+
+  {%- if section.settings.button_label != blank -%}
+      <a  {% if section.settings.button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ section.settings.button_link }}"{% endif %}class="button{% if section.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.button_label | escape }}
+          <img
+            src="{{   'button_logo_2.png' | asset_url }}"
+            width="12"
+            height="12" />
+      </a>
+  {% endif %}
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "edge-look-around",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"image_1",
+        "label":"选择图片"
+      },
+      {
+        "type":"text",
+        "id":"button_label",
+        "label":"按钮文案"
+      },
+      {
+        "type":"url",
+        "id":"button_link",
+        "label":"按钮链接地址"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"edge-look-around-item",
+        "name":"环视文案内容",
+        "settings":[
+          {
+            "type":"text",
+            "id":"heading",
+            "label":"edge look around heading"
+          },
+          {
+            "type":"range",
+            "id":"head_size",
+            "min":14,
+            "max":100,
+            "step":2,
+            "default":20,
+            "unit":"px",
+            "label":"字体大小"
+          },
+           {
+            "type":"range",
+            "id":"head_weight",
+            "min":100,
+            "max":900,
+            "step":100,
+            "default":400,
+            "label":"字体粗细"
+          },
+          {
+            "type":"text",
+            "id":"text",
+            "label":"edge look around text"
+          },
+          {
+            "type":"range",
+            "id":"text_size",
+            "min":14,
+            "max":100,
+            "step":2,
+            "default":20,
+            "unit":"px",
+            "label":"字体大小"
+          },
+          {
+            "type":"range",
+            "id":"text_weight",
+            "min":100,
+            "max":900,
+            "step":100,
+            "default":400,
+            "label":"字体粗细"
+          }
+         
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"edge-look-around",
+        "blocks":[
+          {"type":"edge-look-around-item"}
+        ]
+        
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

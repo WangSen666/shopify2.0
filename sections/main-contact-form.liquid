@@ -1,0 +1,333 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
+    px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
+    px;
+  }
+  .podxgo-partner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 30px 0;
+    min-height:800px;
+  }
+  .become-a-partner,
+  .why-podxgo {
+    width: 100%;
+    padding: 36px 20px;
+/*     background: #fff; */
+    border-radius: 24px;
+    margin:0 auto;
+  }
+  .why-podxgo {
+    width: 35%;
+  }
+  .become-a-partner .title,
+  .why-podxgo .why-podxgo-header {
+    color: black;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bolder;
+  }
+  .become-a-partner .field {
+    display: block;
+  }
+  .become-a-partner .field input,
+  #ContactForm-body {
+    background: #E0E6E6;
+    border-radius: 14px;
+  }
+  .become-a-partner .field .field-title {
+    display: block;
+    color: black;
+    font-weight: bolder;
+  }
+  .become-a-partner .field .field-tip {
+    color: #737373;
+  }
+
+  .become-a-partner .contact__button .button {
+    margin: 14px auto;
+    background: #B5EF35;
+    border-radius: 40px;
+    font-weight: bolder;
+    padding: 14px 34px;
+    font-size: 20px;
+  }
+
+
+  .why-podxgo-content {
+    padding-top: 46px;
+  }
+  .why-podxgo-cell {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .why-podxgo-cell img {
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 50px;
+  }
+  .why-podxgo-cell .why-podxgo-cell-content {
+    font-weight: bolder;
+    color: black;
+  }
+  @media screen and (max-width: 1660px) {
+    .podxgo-partner {
+      width: 90%;
+    }
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}
+      px;
+      padding-bottom: {{ section.settings.padding_bottom }}
+      px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .podxgo-partner {
+      width: 98%;
+      flex-wrap: wrap;
+
+    }
+    .become-a-partner {
+      width: 100%;
+      margin: 24px auto 14px;
+      padding: 16px 14px;
+      height:660px;
+    }
+    .become-a-partner .title {
+      font-size: 30px;
+    }
+    .contact .field {
+      margin-bottom: 0.5rem;
+    }
+    .why-podxgo {
+      width: 100%;
+    }
+    .why-podxgo .why-podxgo-header {
+      font-size: 30px;
+    }
+  }
+{%- endstyle -%}
+<!--background:rgb(247,247,245) !important  -->
+<div class="color-{{ section.settings.color_scheme }} gradient " style="padding:24px 0;">
+  <div class="podxgo-partner">
+<!--     <div class="why-podxgo">
+      <div class="why-podxgo-header">Why PODX GO?</div>
+      <div class="why-podxgo-content">
+        {%- if section.settings.image != blank -%}
+          <div class="why-podxgo-cell">
+            <img src="{{ section.settings.image | image_url: width: 100 }}" />
+            <div class="why-podxgo-cell-content">Marketing Support</div>
+          </div>
+        {% endif %}
+        {%- if section.settings.image_1 != blank -%}
+          <div class="why-podxgo-cell">
+            <img src="{{ section.settings.image_1 | image_url: width: 100 }}" />
+            <div class="why-podxgo-cell-content">Customization Support</div>
+          </div>
+        {% endif %}
+        {%- if section.settings.image_2 != blank -%}
+          <div class="why-podxgo-cell">
+            <img src="{{ section.settings.image_2 | image_url: width: 100 }}" />
+            <div class="why-podxgo-cell-content">Quality Warranty</div>
+          </div>
+        {% endif %}
+        {%- if section.settings.image_3 != blank -%}
+          <div class="why-podxgo-cell">
+            <img src="{{ section.settings.image_3 | image_url: width: 100 }}" />
+            <div class="why-podxgo-cell-content">Drop-shipping Support</div>
+          </div>
+        {% endif %}
+      </div>
+    </div> -->
+
+    <div class="contact become-a-partner page-width page-width--narrow section-{{ section.id }}-padding" id="become-a-partner">
+      <iframe src="https://www.jotform.ca/223471536193457" style="width:100%;height:100%;"></iframe>
+  </div>
+
+</div>
+  <script>
+    window.onload=function(){
+      console.log("document.getElementById(become-a-partner)",document.getElementById("become-a-partner"))
+      document.getElementById("become-a-partner").load("https://www.jotform.ca/223471536193457")
+    }
+  </script>
+{% javascript %}
+ class LocalizationForm extends HTMLElement {
+    constructor() {
+      super();
+      this.elements = {
+        input: this.querySelector('input[name="locale_code"], input[name="country_code"]'),
+        button: this.querySelector('button'),
+        panel: this.querySelector('.disclosure__list-wrapper'),
+      };
+      this.elements.button.addEventListener('click', this.openSelector.bind(this));
+      this.elements.button.addEventListener('focusout', this.closeSelector.bind(this));
+      this.addEventListener('keyup', this.onContainerKeyUp.bind(this));
+
+      this.querySelectorAll('a').forEach(item => item.addEventListener('click', this.onItemClick.bind(this)));
+    }
+
+    hidePanel() {
+      this.elements.button.setAttribute('aria-expanded', 'false');
+      this.elements.panel.setAttribute('hidden', true);
+    }
+
+    onContainerKeyUp(event) {
+      if (event.code.toUpperCase() !== 'ESCAPE') return;
+
+      this.hidePanel();
+      this.elements.button.focus();
+    }
+
+    onItemClick(event) {
+      event.preventDefault();
+      const form = this.querySelector('form');
+      this.elements.input.value = event.currentTarget.dataset.value;
+      console.log("this.elements.input.value",this.elements.input.value)
+      
+      if (form) form.submit();
+      console.log("form",form)
+      
+    }
+
+    openSelector() {
+      this.elements.button.focus();
+      this.elements.panel.toggleAttribute('hidden');
+      this.elements.button.setAttribute('aria-expanded', (this.elements.button.getAttribute('aria-expanded') === 'false').toString());
+    }
+
+    closeSelector(event) {
+      const shouldClose = event.relatedTarget && event.relatedTarget.nodeName === 'BUTTON';
+      if (event.relatedTarget === null || shouldClose) {
+        this.hidePanel();
+      }
+    }
+  }
+
+  customElements.define('localization-form', LocalizationForm);
+{% endjavascript %}
+
+{% schema %}
+  {
+    "name": "成为合作伙伴",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+       {
+        "type": "range",
+        "id": "font-weight",
+        "min": 0,
+        "max": 900,
+        "step": 100,
+        "unit": "px",
+        "label": "字体加粗",
+        "default": 400
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "default": "Become A Partner",
+        "label": "Heading"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "第一张照片"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_1",
+        "label": "第二张照片"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_2",
+        "label": "第三张照片"
+      }, {
+        "type": "image_picker",
+        "id": "image_3",
+        "label": "第四张照片"
+      }, {
+        "type": "select",
+        "id": "heading_size",
+        "options": [
+          {
+            "value": "h2",
+            "label": "t:sections.all.heading_size.options__1.label"
+          }, {
+            "value": "h1",
+            "label": "t:sections.all.heading_size.options__2.label"
+          }, {
+            "value": "h0",
+            "label": "t:sections.all.heading_size.options__3.label"
+          }
+        ],
+        "default": "h1",
+        "label": "t:sections.all.heading_size.label"
+      }, {
+        "type": "select",
+        "id": "color_scheme",
+        "options": [
+          {
+            "value": "accent-1",
+            "label": "t:sections.all.colors.accent_1.label"
+          },
+          {
+            "value": "accent-2",
+            "label": "t:sections.all.colors.accent_2.label"
+          },
+          {
+            "value": "background-1",
+            "label": "t:sections.all.colors.background_1.label"
+          },
+          {
+            "value": "background-2",
+            "label": "t:sections.all.colors.background_2.label"
+          }, {
+            "value": "inverse",
+            "label": "t:sections.all.colors.inverse.label"
+          }
+        ],
+        "default": "background-1",
+        "label": "t:sections.all.colors.label"
+      }, {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "成为合作伙伴"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,207 @@
+{% stylesheet %}
+
+
+@media screen and (min-width:750px){}
+.diversified-and-multi-column{
+  padding:106px 0 ;
+/*   border-top:4px solid black;
+  border-bottom:4px solid black; */
+}
+  
+  .diversified-and-multi-column-heading{
+    text-align:center;
+    margin-bottom:106px;
+  }
+  .diversified-and-multi-column-heading img{
+    width:148px;
+    height:20px;
+  }
+  .diversified-and-multi-column-list{
+    display:flex;
+    justify-content:space-between;
+  }
+  .diversified-and-multi-column-item{
+    width:362px;
+    height:390px;
+    margin:14px 0;
+    text-align:center;
+    border-radius:14px;
+    box-shadow:0 0 10px #D0D0D0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#EAEAEA;
+    color:#808080 !important;
+    
+    
+  }
+  
+  .diversified-and-multi-column-item img{
+    height:60px;
+    max-width:60px;
+    margin: 0 auto 54px;
+  }
+  .diversified-and-multi-column-item-heading{
+    margin:0 auto 38px;
+  }
+
+
+  @media screen and (max-width:750px){
+  .diversified-and-multi-column{
+    padding:44px 0 !important;
+  }
+  .diversified-and-multi-column-list{
+    flex-wrap:wrap;
+  }
+  .diversified-and-multi-column-heading{
+    margin-bottom:44px;
+    padding:0  14px;
+    font-size:24px !important;
+  }
+  .diversified-and-multi-column-heading h2{
+    width:80% !important;
+    margin:0 auto;
+    text-align:left !important;
+  }
+  .diversified-and-multi-column-item-heading{
+    margin:0 auto 24px;
+  }
+  .diversified-and-multi-column-item{
+    width:300px !important;
+    height:290px !important;
+    margin:14px auto !important;
+  }
+  .diversified-and-multi-column-item img{
+    height:40px;
+    margin:0 auto 24px;
+  }
+}
+{% endstylesheet %}
+
+
+
+
+
+<div class="diversified-and-multi-column " style="background:#F1F1F1;">
+    <div class="page-width">
+       <div class="diversified-and-multi-column-heading" style="font-weight:{{ section.settings.font_weight }};font-size:{{ section.settings.font_size }}px;color:#333333;">{{ section.settings.heading }}</div>
+      <div class="diversified-and-multi-column-list">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {%  when 'column_item' %}
+            <div class="diversified-and-multi-column-item">
+              <img src="{{ block.settings.image_1|image_url }}" />
+              <div class="diversified-and-multi-column-item-heading" style="font-size:{{ block.settings.heading_size }}px;">{{ block.settings.heading_1 }}</div>
+              <div style="font-size:{{ block.settings.text_size }}px;">
+                {{ block.settings.text_1 }}
+              </div>
+              <div style="font-size:{{ block.settings.text_size }}px;">
+                {{ block.settings.text_2 }}
+              </div>
+              
+            </div>
+          {% endcase %}
+        {% endfor %}
+      </div>  
+  
+      
+    </div>
+ 
+</div>
+
+
+{% schema %}
+  {
+    "name": "多样化多列",
+    "tag":"section",
+    "class":"setion",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"image",
+        "label":"图片元素"
+      },
+      {
+        "type":"text",
+        "id":"heading",
+        "label":"标题"
+      },
+      {
+        "type":"range",
+        "id": "font_size",
+        "min": 12,
+        "max": 100,
+        "step": 2,
+        "label":"标题字体大小",
+        "default":24
+      },
+      {
+        "type":"range",
+        "id": "font_weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label":"标题字体粗细",
+        "default":400
+      }
+    ],
+    "blocks":[
+      {
+        "type":"column_item",
+        "name":"多列元素",
+        "limit":4,
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"image_1",
+            "label":"多列中的图片元素"
+          },
+          {
+            "type":"text",
+            "id":"heading_1",
+            "label":"多列头部标题"
+          },
+          {
+             "type":"range",
+            "id":"heading_size",
+            "min":10,
+            "max":100,
+            "step":2,
+            "default":14,
+            "label":"多列头部标题字体大小"
+          },
+          {
+            "type":"text",
+            "id":"text_1",
+            "label":"多列文案1"
+          },
+          {
+            "type":"text",
+            "id":"text_2",
+            "label":"多列文案2"
+          },
+          {
+             "type":"range",
+            "id":"text_size",
+            "min":10,
+            "max":100,
+            "step":2,
+            "default":14,
+            "label":"多列文案字体大小"
+          }
+        ]
+      }
+    ],
+     "presets":[
+       {
+         "name":"多样化多列",
+         "blocks":[
+           {"type":"column_item"}
+         ]
+       }
+     ]
+  }
+{% endschema %}
+
+
