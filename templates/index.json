@@ -692,6 +692,106 @@
         "is_imgBg": "false"
       }
     },
+    "040c1abe-c06e-4ca3-9224-21358c1f6de1": {
+      "type": "diversified-lr-block",
+      "blocks": {
+        "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Thank You for Your Support on the Tiny Home's Big Dreams!",
+            "heading_size": "h1",
+            "font-weight": 400,
+            "font_size": 50,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-1": {
+          "type": "text",
+          "settings": {
+            "text": "The high cost of constructing a conventional home exerts financial strains on the buyer globally. Nontraditional housing options are becoming increasingly popular, especially among the young generations. And yet, brands available in the market today are often priced at a level and long waiting list that makes them inaccessible to many families that would benefit from them.",
+            "text_style": "body",
+            "font_size": 24,
+            "font_weight": 400,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "27be7fd3-cb03-4eee-a377-2a1e565d3f3a": {
+          "type": "text",
+          "settings": {
+            "text": "PODX  is changing that.",
+            "text_style": "body",
+            "font_size": 24,
+            "font_weight": 400,
+            "margin-top": 60,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-3": {
+          "type": "image_wrapper",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/tiny_house_on_wheels_folding.png"
+          }
+        },
+        "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-4": {
+          "type": "pictureCard",
+          "settings": {
+            "image_width": 10
+          }
+        },
+        "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_color": "#000",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-5": {
+          "type": "right_text_wrapper",
+          "settings": {
+            "right_text": "",
+            "font_size": 24,
+            "is_border": "false"
+          }
+        },
+        "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-6": {
+          "type": "bottom-rotation-item",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-0",
+        "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-1",
+        "27be7fd3-cb03-4eee-a377-2a1e565d3f3a",
+        "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-3",
+        "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-4",
+        "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-2",
+        "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-5",
+        "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-6"
+      ],
+      "settings": {
+        "is_rotation_list": "true",
+        "heading": "",
+        "heading_size": 36,
+        "image_overlay_opacity": 0,
+        "is_lr": "false",
+        "show_text_box": true,
+        "layout": "image_first",
+        "is_imgBg": "false"
+      }
+    },
     "5af20d81-606b-473f-9b3c-47412699d454": {
       "type": "rich-text-new",
       "blocks": {
@@ -852,6 +952,7 @@
     "1eacd94a-6754-446e-9ffb-6cb94f388979",
     "60f671a1-7f8e-412f-b0f6-056de9bc85bc",
     "8bd58e50-4c4c-4374-9837-2903a599cddb",
+    "040c1abe-c06e-4ca3-9224-21358c1f6de1",
     "5af20d81-606b-473f-9b3c-47412699d454",
     "817a5069-6e91-49ec-aff0-da615eb133ea",
     "2fc4a141-20b7-4e60-a81a-cb54d29e005b"
