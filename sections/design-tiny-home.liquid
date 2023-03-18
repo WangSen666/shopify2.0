@@ -14,110 +14,127 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
+    px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
+    px;
   }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top }}
+      px;
+      padding-bottom: {{ section.settings.padding_bottom }}
+      px;
     }
   }
 
- @media screen and (max-width: 1080px) {
-    .design-tiny-home .design-tiny-home__heading{font-size:28px !important;}
-    .design-tiny-home-card-group{font-size:18px !important;flex-wrap:wrap;}
+  @media screen and (max-width: 1080px) {
+    .design-tiny-home .design-tiny-home__heading {
+      font-size: 28px !important;
+    }
+    .design-tiny-home-card-group {
+      font-size: 18px !important;
+      flex-wrap: wrap;
+    }
   }
 
-.design-tiny-home__wrapper{
-  margin:0 auto;
-  padding:66px 0;
-}
- 
-/* 富文本卡片组 */
-.design-tiny-home__blocks{
-  max-width:1150px;
-  margin:0 auto;
-  text-align:center;
-  display:flex;
-  justify-content:space-between;
-  flex-wrap:wrap;
-}
-  .design-tiny-home__body{
-    padding:4px 24px;
-     margin:24px 0;
-    
-    border-radius:14px;
-    box-shadow:0 0 4px #333333;
+  .design-tiny-home__wrapper {
+    margin: 0 auto;
+    padding: 66px 0;
   }
- .design-tiny-home__blocks .icon{
-    display:flex;
-   align-items:center;
+
+  /* 富文本卡片组 */
+  .design-tiny-home__blocks {
+    /* max-width: 1150px; */
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
-   .design-tiny-home__blocks .icon:last-child{
-     display:none;
-   }
-.design-tiny-home{
-  background:#F1F1F1;
-}
-  .design-tiny-home__wrapper .button{
-    background:none;
-    padding:4px 14px;
-    border-radius:14px;
-    margin:40px auto 0;
-    max-width:330px;
-    display:flex;
-    justify-content:space-between;
+  .design-tiny-home__body {
+    padding: 4px 24px;
+    margin: 24px 0;
+    font-family: "KumbhSans-Bold" !important;
+    border-radius: 14px;
+    box-shadow: 0 0 4px #333333;
   }
-/* .design-tiny-home__wrapper .button img{
+  .design-tiny-home__blocks .icon {
+    display: flex;
+    align-items: center;
+  }
+  .design-tiny-home__blocks .icon .right-icon {
+    width: 30px;
+    margin: 0 16px;
+    /* height: */
+  }
+  .design-tiny-home__blocks .icon:last-child {
+    display: none;
+  }
+  .design-tiny-home {
+    background: #F1F1F1;
+  }
+  .design-tiny-home__wrapper .button {
+    background: none;
+    padding: 14px 24px;
+    border-radius: 80px;
+    margin: 40px auto 0;
+    max-width: 310px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "KumbhSans-Bold" !important;
+
+  }
+  /* .design-tiny-home__wrapper .button img{
   margin-left:14px;
 } */
- @media screen and (max-width: 750px) {
-   .design-tiny-home__wrapper{
-     padding:24px 0;
-   }
-   .design-tiny-home__body{
-     margin:14px 0;
-   }
-  .design-tiny-home__blocks {
-    padding:0 10px !important;
+  @media screen and (max-width: 750px) {
+    .design-tiny-home__wrapper {
+      padding: 24px 0;
+    }
+    .design-tiny-home__body {
+      margin: 14px 0;
+    }
+    .design-tiny-home__blocks {
+      padding: 0 10px !important;
+    }
+    .design-tiny-home__wrapper .button {
+      margin: 24px auto 14px;
+    }
+    .design-tiny-home__text {
+      font-size: 18px !important;
+    }
   }
-   .design-tiny-home__wrapper .button{
-     margin:24px auto 14px;
-   }
-   .design-tiny-home__text{
-     font-size:18px !important;
-   }
-}
-
 {%- endstyle -%}
 
-  <div class="design-tiny-home" style="background:#F1F1F1;">
-    <div class="design-tiny-home__wrapper page-width {% if section.settings.is_background_radius=="true" %}text-border-radius{% endif %}  design-tiny-home__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
-      <div class="design-tiny-home__blocks {{ section.settings.content_alignment }}">
-        {%- for block in section.blocks -%}
-          {%- case block.type -%}
-            {%- when 'richtext' -%}
-            <div
-              class="design-tiny-home__body rte {{ block.settings.heading_size }}"
-              {{ block.shopify_attributes }}
-              style="text-align:{{ section.settings.content_alignment }};font-weight:{{ block.settings.font-weight }};color:{{ block.settings.text_color }};font-size:{{ block.settings.font_size }}px;">
-              {{ block.settings.text | replace: 'p>', 'span>' }}
-            </div>
-            <div class="icon"> --> </div>
-            {%- endcase -%}
-        {%- endfor -%}
-      </div>
-      <a style="border:1px solid #333333;color:#333333;" {% if section.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %}class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">
-      {{ section.settings.button_label_1 | escape }}
-          <img
-            src="{{   'button_logo_2.png' | asset_url }}"
-            width="12"
-            height="12" />
-      </a>
+<div class="design-tiny-home" style="background:#F1F1F1;">
+  <div class="design-tiny-home__wrapper page-width {% if section.settings.is_background_radius=="true" %}text-border-radius{% endif %}  design-tiny-home__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
+    <div class="design-tiny-home__blocks {{ section.settings.content_alignment }}">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'richtext' -%}
+          <div
+            class="design-tiny-home__body rte {{ block.settings.heading_size }}"
+            {{ block.shopify_attributes }}
+            style="text-align:{{ section.settings.content_alignment }};font-weight:{{ block.settings.font-weight }};color:{{ block.settings.text_color }};font-size:{{ block.settings.font_size }}px;">
+            {{ block.settings.text | replace: 'p>', 'span>' }}
+          </div>
+          <div class="icon">
+            <img class="right-icon" src="{{'rightIcon.png'|asset_url}}" />
+          </div>
+        {%- endcase -%}
+      {%- endfor -%}
     </div>
+    <a style="border:1px solid #333333;color:#333333;" {% if section.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %}class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">
+      {{ section.settings.button_label_1 | escape }}
+      <img
+        src="{{   'button_logo_2.png' | asset_url }}"
+        width="12"
+        height="12" />
+    </a>
   </div>
+</div>
 
 
 {% schema %}
@@ -127,18 +144,18 @@
     "class": "section",
     "settings": [
       {
-        "type":"text",
-        "id":"button_label_1",
-        "label":"按钮文案"
+        "type": "text",
+        "id": "button_label_1",
+        "label": "按钮文案"
       },
       {
-        "type":"url",
-        "id":"button_link_1",
-        "label":"按钮链接地址"
+        "type": "url",
+        "id": "button_link_1",
+        "label": "按钮链接地址"
       },
       {
-        "type":"range",
-        "id":"button_size",
+        "type": "range",
+        "id": "button_size",
         "min": 0,
         "max": 60,
         "step": 2,
@@ -146,7 +163,7 @@
         "label": "按钮字体大小",
         "default": 24
       },
-     {
+      {
         "type": "range",
         "id": "padding_top",
         "min": 0,
@@ -185,8 +202,7 @@
             "step": 100,
             "label": "字体加粗",
             "default": 400
-          },
-          {
+          }, {
             "type": "range",
             "id": "font_size",
             "min": 0,
@@ -195,9 +211,8 @@
             "unit": "px",
             "label": "字体大小",
             "default": 20
-          },
-          {
-            "type":"select",
+          }, {
+            "type": "select",
             "id": "text_color",
             "options": [
               {
@@ -221,7 +236,7 @@
       {
         "name": "design tiny home",
         "blocks": [
-           {
+          {
             "type": "richtext"
           }
         ]
