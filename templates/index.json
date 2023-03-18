@@ -7,7 +7,7 @@
           "type": "text",
           "settings": {
             "text": "Expand your tiny home from a trailer to a",
-            "font_size": 20,
+            "font_size": 24,
             "margin_top": 0,
             "margin_bottom": 0,
             "heading_color": "#fff",
@@ -19,7 +19,7 @@
           "settings": {
             "heading": "3X larger",
             "heading_size": "h1",
-            "font_size": 52,
+            "font_size": 72,
             "margin_top": 0,
             "margin_bottom": 0,
             "heading_color": "#fff",
@@ -30,7 +30,7 @@
           "type": "text",
           "settings": {
             "text": "Apartment with the push of a button in",
-            "font_size": 20,
+            "font_size": 24,
             "margin_top": 36,
             "margin_bottom": 0,
             "heading_color": "#fff",
@@ -42,7 +42,7 @@
           "settings": {
             "heading": "15 mins DIY",
             "heading_size": "h1",
-            "font_size": 52,
+            "font_size": 72,
             "margin_top": 0,
             "margin_bottom": 0,
             "heading_color": "#fff",
