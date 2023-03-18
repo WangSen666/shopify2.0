@@ -30,7 +30,7 @@
           "type": "text",
           "settings": {
             "text": "Apartment with the push of a button in",
-            "font_size": 24,
+            "font_size": 20,
             "margin_top": 36,
             "margin_bottom": 0,
             "heading_color": "#fff",
