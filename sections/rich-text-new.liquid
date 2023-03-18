@@ -108,7 +108,7 @@
           {%- case block.type -%}
             {%- when 'heading' -%}
             <h2
-              class="rich-text-new__heading rte {{ block.settings.heading_size }}"
+              class="rich-text-new__heading rte"
               {{ block.shopify_attributes }}
               style="text-align:{{ section.settings.content_alignment }};font-weight:{{ block.settings.font-weight }};color:{{ block.settings.heading_color }};font-size:{{ block.settings.font_size }}px;">
               {{ block.settings.heading | replace: 'p>', 'span>' }}
