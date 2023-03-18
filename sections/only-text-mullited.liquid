@@ -86,7 +86,7 @@
 {%- endstyle -%}
 
 <div class="isolate{% unless section.settings.full_width %}  {% endunless %}">
-  <div class="text-only-mullited content-container color-{{ section.settings.color_scheme }} container-box gradient{% if section.settings.full_width %} text-only-mullited--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
+  <div class="text-only-mullited  color-{{ section.settings.color_scheme }} container-box gradient{% if section.settings.full_width %} text-only-mullited--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
       <div class="text-only-mullited__blocks  page-width {{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
