@@ -183,7 +183,7 @@
         "heading_size": "h1",
         "cover_image": "shopify:\/\/shop_images\/welcome.png",
         "video_url": "",
-        "button_label": "",
+        "button_label": "player",
         "padding_top": 36,
         "padding_bottom": 36,
         "font_size": 20,
