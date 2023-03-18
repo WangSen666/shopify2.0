@@ -170,7 +170,7 @@
             "font_size": 52,
             "margin_top": 0,
             "margin_bottom": 0,
-            "heading_color": "#000",
+            "heading_color": "#333333",
             "font_weight": 400
           }
         },
@@ -182,7 +182,7 @@
             "font_size": 52,
             "margin_top": 0,
             "margin_bottom": 24,
-            "heading_color": "#000",
+            "heading_color": "#333333",
             "font_weight": 400
           }
         },
