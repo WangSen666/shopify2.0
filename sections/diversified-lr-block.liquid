@@ -68,12 +68,12 @@
     font-family: "KumbhSans-Bold" !important;
   }
 
-   .diversified-lr-blocks-banner__box  .lr-blockcomponent__button{
+   .diversified-lr-blocks-banner__box  .lr-block-component__button{
       width:100%;
       max-width:unset !important;
      display:flex;
    }
-  .diversified-lr-blocks-banner__box  .lr-blockcomponent__button .button {
+  .diversified-lr-blocks-banner__box  .lr-block-component__button .button {
 
      background:none;
     border:1px solid #333333;
@@ -88,7 +88,7 @@
     font-size:28px;
     margin:24px 0;
   }
-  .diversified-lr-blocks-banner__box  .lr-blockcomponent__button .button img {
+  .diversified-lr-blocks-banner__box  .lr-block-component__button .button img {
     margin-left: 14px;
     vertical-align: middle;
   }
@@ -271,7 +271,7 @@
             {%- case block.type -%}
               {%- when 'buttons' -%}
             <div
-              class="banner__buttons lr-blockcomponent__button {% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
+              class="banner__buttons lr-block-component__button {% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
               {{ block.shopify_attributes }}
               style="margin-top:{{  block.settings.margin_top }}px;margin-bottom:{{  block.settings.margin_bottom }}px;">
               {%- if block.settings.button_label_1 != blank -%}
