@@ -1,1 +1,442 @@
-{"sections":{"0da83049-6252-4c9e-bb96-1e20ad28e25b":{"type":"banner-new-rotation","blocks":{"template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-0":{"type":"heading","settings":{"heading":"To Access Living Freedom in","heading_size":"h1","font_size":72,"margin_top":24,"margin_bottom":24,"heading_color":"#fff","font_weight":400}},"848265dd-60d4-48cd-89f3-33ae6d095bae":{"type":"heading","settings":{"heading":"Your Backyard","heading_size":"h1","font_size":72,"margin_top":32,"margin_bottom":24,"heading_color":"#B5EF35","font_weight":400}},"template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-2":{"type":"text","settings":{"text":"We are a visionary tech leader on a mission to solve global housing affordability and create a comfortable home full of possibilities and freedom to dwell in.","font_size":24,"margin_top":24,"margin_bottom":24,"heading_color":"#fff","font_weight":400}},"template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-3":{"type":"buttons","settings":{"banner_button_label":"Design Your Tiny Home Now","banner_button_link":"","font_size":24,"button_color":"#fff"}},"template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-5":{"type":"rotation-banner-img","settings":{"rotation-banner-img-item":"shopify:\/\/shop_images\/tiny_house_sewage_water.png"}},"dba28ed0-069b-45ba-aa65-a791e3d52e3d":{"type":"rotation-banner-img","settings":{"rotation-banner-img-item":"shopify:\/\/shop_images\/CB9E108C-D8F4-4EAA-A61E-BC439E8B3390.png"}},"f3e08948-3b41-43ca-937a-d946f96c4da9":{"type":"rotation-banner-img","settings":{"rotation-banner-img-item":"shopify:\/\/shop_images\/tiny_house_on_wheels_folding.png"}}},"block_order":["template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-0","848265dd-60d4-48cd-89f3-33ae6d095bae","template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-2","template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-3","template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-5","dba28ed0-069b-45ba-aa65-a791e3d52e3d","f3e08948-3b41-43ca-937a-d946f96c4da9"],"settings":{"text_place":"left","image_overlay_opacity":0,"image_height":"medium","adapt_height_first_image":false,"desktop_content_position":"center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"background-1","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"main":{"type":"main-page","disabled":true,"settings":{"padding_top":28,"padding_bottom":28}},"d0246beb-e0ff-47bc-a147-a968c210eff1":{"type":"diversified-lr-block","blocks":{"template--15628744491108__d0246beb-e0ff-47bc-a147-a968c210eff1-1678949783cf129751-0":{"type":"heading","settings":{"heading":"People Behind PODX GO","heading_size":"h1","font-weight":400,"font_size":50,"margin-top":0,"margin-bottom":44,"font_color":"#000"}},"template--15628744491108__d0246beb-e0ff-47bc-a147-a968c210eff1-1678949783cf129751-1":{"type":"text","settings":{"text":"PODX GO is a U.S. and China-based global company with a team of avid RVers, designers, architects, and technologists and we have over a decade of experience in renewable energy, RVing, AIoT, and sustainability.","text_style":"body","font_size":24,"font_weight":400,"margin-top":0,"margin-bottom":50,"font_color":"#000"}},"912ce4cb-48c6-43e0-9ba6-6845a7ab2779":{"type":"text","settings":{"text":"Every day, we actively work to create an eco-conscious and true prefab home with foldable, mobility, smart, proven durability, and appealing aesthetics that you can order online and visit our local partner showroom.","text_style":"body","font_size":24,"font_weight":400,"margin-top":0,"margin-bottom":50,"font_color":"#000"}},"715ad735-e2be-4443-b4f9-ffdd4b8aa51b":{"type":"text","settings":{"text":"We believe the intersection of the rising housing pressures, visibility and disruptive effects of climate change, and desires of living with a minimalist and sustainable lifestyle offer PODX GO a unique opportunity of imbuing our brand with the urgency and drive of a social movement.","text_style":"body","font_size":24,"font_weight":400,"margin-top":0,"margin-bottom":50,"font_color":"#000"}},"template--15628744491108__d0246beb-e0ff-47bc-a147-a968c210eff1-1678949783cf129751-2":{"type":"buttons","settings":{"button_label_1":"We're Hiring","button_link_1":"","button_style_secondary_1":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false,"button_color":"#000","margin_top":0,"margin_bottom":0}},"template--15628744491108__d0246beb-e0ff-47bc-a147-a968c210eff1-1678949783cf129751-3":{"type":"image_wrapper","settings":{"image_1":"shopify:\/\/shop_images\/1_f669edab-3fde-47bd-a64a-933e2aadd012.png"}}},"block_order":["template--15628744491108__d0246beb-e0ff-47bc-a147-a968c210eff1-1678949783cf129751-0","template--15628744491108__d0246beb-e0ff-47bc-a147-a968c210eff1-1678949783cf129751-1","912ce4cb-48c6-43e0-9ba6-6845a7ab2779","715ad735-e2be-4443-b4f9-ffdd4b8aa51b","template--15628744491108__d0246beb-e0ff-47bc-a147-a968c210eff1-1678949783cf129751-2","template--15628744491108__d0246beb-e0ff-47bc-a147-a968c210eff1-1678949783cf129751-3"],"settings":{"is_rotation_list":"false","heading":"","heading_size":36,"image_overlay_opacity":0,"is_lr":"true","show_text_box":true,"layout":"image_first","is_imgBg":"false"}},"c17fce45-651b-48b6-8d30-5140858d7f13":{"type":"lr-block-component","disabled":true,"blocks":{"template--15619111583844__c17fce45-651b-48b6-8d30-5140858d7f13-16771584801b59cb2c-0":{"type":"heading","settings":{"heading":"People Behind PODX GO","heading_size":"h1","font-weight":600,"font_size":36,"margin-top":0,"margin-bottom":0,"font_color":"#000"}},"template--15619111583844__c17fce45-651b-48b6-8d30-5140858d7f13-16771584801b59cb2c-1":{"type":"text","settings":{"text":"PODX GO is a U.S. and China-based global company with a team of avid RVers, designers, architects, and technologists and we have over a decade of experience in renewable energy, RVing, AIoT, and sustainability.","text_style":"body","font_size":18,"font_weight":200,"margin-top":18,"margin-bottom":0,"font_color":"#000"}},"ba09deb5-5c02-4db9-a39c-4f595046e65d":{"type":"text","settings":{"text":"Every day, we actively work to create an eco-conscious and true prefab home with foldable, mobility, smart, proven durability, and appealing aesthetics that you can order online and visit our local partner showroom.","text_style":"body","font_size":18,"font_weight":200,"margin-top":12,"margin-bottom":12,"font_color":"#000"}},"9177513a-747c-4c14-b92a-ae2401636f61":{"type":"text","settings":{"text":"We believe the intersection of the rising housing pressures, visibility and disruptive effects of climate change, and desires of living with a minimalist and sustainable lifestyle offer PODX GO a unique opportunity of imbuing our brand with the urgency and drive of a social movement.","text_style":"body","font_size":18,"font_weight":200,"margin-top":0,"margin-bottom":14,"font_color":"#000"}},"template--15619111583844__c17fce45-651b-48b6-8d30-5140858d7f13-16771584801b59cb2c-2":{"type":"buttons","settings":{"button_label_1":"","button_link_1":"","button_style_secondary_1":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false,"button_color":"#000","margin_top":0,"margin_bottom":0}},"2e658b18-adfb-42b9-95a0-0505ecc996ec":{"type":"image_wrapper","settings":{"image_1":"shopify:\/\/shop_images\/99E8E4CD-50A1-44c9-A234-44CFE6132DFC_30ea0c6a-4792-4860-b266-5ee9fd5ca2f5.png"}}},"block_order":["template--15619111583844__c17fce45-651b-48b6-8d30-5140858d7f13-16771584801b59cb2c-0","template--15619111583844__c17fce45-651b-48b6-8d30-5140858d7f13-16771584801b59cb2c-1","ba09deb5-5c02-4db9-a39c-4f595046e65d","9177513a-747c-4c14-b92a-ae2401636f61","template--15619111583844__c17fce45-651b-48b6-8d30-5140858d7f13-16771584801b59cb2c-2","2e658b18-adfb-42b9-95a0-0505ecc996ec"],"settings":{"image_overlay_opacity":0,"is_lr":"true","show_text_box":true,"layout":"image_first","is_imgBg":"false"}},"65f1146e-d301-4118-a2ae-08e56e320c2a":{"type":"rich-text-new","blocks":{"template--15628744491108__65f1146e-d301-4118-a2ae-08e56e320c2a-16789525430b13aebe-2":{"type":"text-with-logo","settings":{"logo":"shopify:\/\/shop_images\/logo_dark_T.png","text":"<p>homes are completed up to 99% in our automation factory and delivered to you within 90 days.<\/p>","font-weight":400,"font_size":20,"text_color":"#000"}},"5f74b120-7883-4ffc-bfb1-35662bf641aa":{"type":"text-with-logo","settings":{"text":"<p>  Our unique approach to tiny homes reduces construction and delivery costs by up to 70% and reduces the assessment time from days to only 15 mins DIY experience. It is also equipped with smart home devices and off-grid energy solutions that give you the freedom to live wherever you want.<\/p>","font-weight":400,"font_size":20,"text_color":"#000"}}},"block_order":["template--15628744491108__65f1146e-d301-4118-a2ae-08e56e320c2a-16789525430b13aebe-2","5f74b120-7883-4ffc-bfb1-35662bf641aa"],"settings":{"is_border":"false","is_background_radius":"true","padding_top":40,"padding_bottom":52}},"fa599715-e482-4b74-8734-d01fcee0e969":{"type":"video","settings":{"heading":"","heading_size":"h1","cover_image":"shopify:\/\/shop_images\/tiny_house_sewage_water.png","video_url":"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc","description":"","full_width":false,"button_label":"Visit Our Factory","color_scheme":"background-1","padding_top":36,"padding_bottom":36,"font_size":20,"font_weight":400}},"ae5562b8-bef6-4424-a0a5-78ca060d5999":{"type":"diversified-and-multi-column","blocks":{"ff38da4e-67f9-4da5-9f56-33c2a74b63ce":{"type":"column_item","settings":{"image_1":"shopify:\/\/shop_images\/1__1_cd7c4359-e7aa-478b-ae54-51346a38f155.png","heading_1":"Address","heading_size":20,"text_1":"5050 S Archibald Ave","text_2":"Ontario, CA 91762","text_size":14}},"a702b323-a1ae-4d37-b4dd-7e42f5a81ee7":{"type":"column_item","settings":{"image_1":"shopify:\/\/shop_images\/1__1_50775ca4-c474-42d0-9f6e-867d6cfe842b.png","heading_1":"Business Hours","heading_size":20,"text_1":"Monday to Friday","text_2":"8:30am to 5:00pm PST","text_size":14}},"template--15619111583844__ae5562b8-bef6-4424-a0a5-78ca060d5999-1677158786a8b776a2-0":{"type":"column_item","settings":{"image_1":"shopify:\/\/shop_images\/1__1_2_13d2d278-013c-4ecf-90cb-9630b98de378.png","heading_1":"Chat Online","heading_size":20,"text_1":"Monday to Friday","text_2":"8:00am to 3:00pm PST","text_size":14}},"5b686877-eb2a-4cac-9e46-b46f3295017b":{"type":"column_item","settings":{"image_1":"shopify:\/\/shop_images\/1__1_3.png","heading_1":"Email","heading_size":20,"text_1":"support@podxgo.com","text_2":"dealer@podxgo.com","text_size":14}}},"block_order":["ff38da4e-67f9-4da5-9f56-33c2a74b63ce","a702b323-a1ae-4d37-b4dd-7e42f5a81ee7","template--15619111583844__ae5562b8-bef6-4424-a0a5-78ca060d5999-1677158786a8b776a2-0","5b686877-eb2a-4cac-9e46-b46f3295017b"],"settings":{"image":"shopify:\/\/shop_images\/1_5c272315-9fca-41ee-ad6d-0799cad64bd8.png","heading":"PODX GO loves to hear from and support our customers and partners","font_size":40,"font_weight":400}},"5c57af59-058a-4c4c-90ed-26b075562c84":{"type":"newsletter","blocks":{"template--15619111583844__5c57af59-058a-4c4c-90ed-26b075562c84-16771590610a154dba-0":{"type":"heading","settings":{"heading":"Don’t Miss Out","heading_size":"h1"}},"template--15619111583844__5c57af59-058a-4c4c-90ed-26b075562c84-16771590610a154dba-1":{"type":"paragraph","settings":{"text":"<p>Shared info about products developing, interior design, and speical discounts.<\/p>"}},"template--15619111583844__5c57af59-058a-4c4c-90ed-26b075562c84-16771590610a154dba-2":{"type":"email_form","settings":{}}},"block_order":["template--15619111583844__5c57af59-058a-4c4c-90ed-26b075562c84-16771590610a154dba-0","template--15619111583844__5c57af59-058a-4c4c-90ed-26b075562c84-16771590610a154dba-1","template--15619111583844__5c57af59-058a-4c4c-90ed-26b075562c84-16771590610a154dba-2"],"settings":{"is_background_radius":"true","color_scheme":"background-1","full_width":true,"padding_top":40,"padding_bottom":52}}},"order":["0da83049-6252-4c9e-bb96-1e20ad28e25b","main","d0246beb-e0ff-47bc-a147-a968c210eff1","c17fce45-651b-48b6-8d30-5140858d7f13","65f1146e-d301-4118-a2ae-08e56e320c2a","fa599715-e482-4b74-8734-d01fcee0e969","ae5562b8-bef6-4424-a0a5-78ca060d5999","5c57af59-058a-4c4c-90ed-26b075562c84"]}
+{
+  "sections": {
+    "0da83049-6252-4c9e-bb96-1e20ad28e25b": {
+      "type": "banner-new-rotation",
+      "blocks": {
+        "template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "To Access Living Freedom in",
+            "heading_size": "h1",
+            "font_size": 72,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#fff",
+            "font_weight": 400
+          }
+        },
+        "848265dd-60d4-48cd-89f3-33ae6d095bae": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Backyard",
+            "heading_size": "h1",
+            "font_size": 72,
+            "margin_top": 32,
+            "margin_bottom": 24,
+            "heading_color": "#B5EF35",
+            "font_weight": 400
+          }
+        },
+        "template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-2": {
+          "type": "text",
+          "settings": {
+            "text": "We are a visionary tech leader on a mission to solve global housing affordability and create a comfortable home full of possibilities and freedom to dwell in.",
+            "font_size": 24,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "heading_color": "#fff",
+            "font_weight": 400
+          }
+        },
+        "template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-3": {
+          "type": "buttons",
+          "settings": {
+            "banner_button_label": "Design Your Tiny Home Now",
+            "banner_button_link": "",
+            "font_size": 24,
+            "button_color": "#fff"
+          }
+        },
+        "template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-5": {
+          "type": "rotation-banner-img",
+          "settings": {
+            "rotation-banner-img-item": "shopify:\/\/shop_images\/tiny_house_sewage_water.png"
+          }
+        },
+        "dba28ed0-069b-45ba-aa65-a791e3d52e3d": {
+          "type": "rotation-banner-img",
+          "settings": {
+            "rotation-banner-img-item": "shopify:\/\/shop_images\/CB9E108C-D8F4-4EAA-A61E-BC439E8B3390.png"
+          }
+        },
+        "f3e08948-3b41-43ca-937a-d946f96c4da9": {
+          "type": "rotation-banner-img",
+          "settings": {
+            "rotation-banner-img-item": "shopify:\/\/shop_images\/tiny_house_on_wheels_folding.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-0",
+        "848265dd-60d4-48cd-89f3-33ae6d095bae",
+        "template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-2",
+        "template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-3",
+        "template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-5",
+        "dba28ed0-069b-45ba-aa65-a791e3d52e3d",
+        "f3e08948-3b41-43ca-937a-d946f96c4da9"
+      ],
+      "settings": {
+        "text_place": "left",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "d0246beb-e0ff-47bc-a147-a968c210eff1": {
+      "type": "diversified-lr-block",
+      "blocks": {
+        "template--15628744491108__d0246beb-e0ff-47bc-a147-a968c210eff1-1678949783cf129751-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "People Behind PODX GO",
+            "heading_size": "h1",
+            "font-weight": 400,
+            "font_size": 50,
+            "margin-top": 0,
+            "margin-bottom": 44,
+            "font_color": "#000"
+          }
+        },
+        "template--15628744491108__d0246beb-e0ff-47bc-a147-a968c210eff1-1678949783cf129751-1": {
+          "type": "text",
+          "settings": {
+            "text": "PODX GO is a U.S. and China-based global company with a team of avid RVers, designers, architects, and technologists and we have over a decade of experience in renewable energy, RVing, AIoT, and sustainability.",
+            "font_style": "normal",
+            "text_style": "body",
+            "font_size": 24,
+            "font_weight": 400,
+            "margin-top": 0,
+            "margin-bottom": 50,
+            "font_color": "#000"
+          }
+        },
+        "912ce4cb-48c6-43e0-9ba6-6845a7ab2779": {
+          "type": "text",
+          "settings": {
+            "text": "Every day, we actively work to create an eco-conscious and true prefab home with foldable, mobility, smart, proven durability, and appealing aesthetics that you can order online and visit our local partner showroom.",
+            "font_style": "normal",
+            "text_style": "body",
+            "font_size": 24,
+            "font_weight": 400,
+            "margin-top": 0,
+            "margin-bottom": 50,
+            "font_color": "#000"
+          }
+        },
+        "715ad735-e2be-4443-b4f9-ffdd4b8aa51b": {
+          "type": "text",
+          "settings": {
+            "text": "We believe the intersection of the rising housing pressures, visibility and disruptive effects of climate change, and desires of living with a minimalist and sustainable lifestyle offer PODX GO a unique opportunity of imbuing our brand with the urgency and drive of a social movement.",
+            "font_style": "normal",
+            "text_style": "body",
+            "font_size": 24,
+            "font_weight": 400,
+            "margin-top": 0,
+            "margin-bottom": 50,
+            "font_color": "#000"
+          }
+        },
+        "template--15628744491108__d0246beb-e0ff-47bc-a147-a968c210eff1-1678949783cf129751-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "We're Hiring",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_color": "#000",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "template--15628744491108__d0246beb-e0ff-47bc-a147-a968c210eff1-1678949783cf129751-3": {
+          "type": "image_wrapper",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/1_f669edab-3fde-47bd-a64a-933e2aadd012.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--15628744491108__d0246beb-e0ff-47bc-a147-a968c210eff1-1678949783cf129751-0",
+        "template--15628744491108__d0246beb-e0ff-47bc-a147-a968c210eff1-1678949783cf129751-1",
+        "912ce4cb-48c6-43e0-9ba6-6845a7ab2779",
+        "715ad735-e2be-4443-b4f9-ffdd4b8aa51b",
+        "template--15628744491108__d0246beb-e0ff-47bc-a147-a968c210eff1-1678949783cf129751-2",
+        "template--15628744491108__d0246beb-e0ff-47bc-a147-a968c210eff1-1678949783cf129751-3"
+      ],
+      "settings": {
+        "background_color": "#fff",
+        "is_rotation_list": "false",
+        "heading": "",
+        "heading_size": 36,
+        "image_overlay_opacity": 0,
+        "is_lr": "true",
+        "show_text_box": true,
+        "layout": "image_first",
+        "is_imgBg": "false"
+      }
+    },
+    "c17fce45-651b-48b6-8d30-5140858d7f13": {
+      "type": "lr-block-component",
+      "disabled": true,
+      "blocks": {
+        "template--15619111583844__c17fce45-651b-48b6-8d30-5140858d7f13-16771584801b59cb2c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "People Behind PODX GO",
+            "heading_size": "h1",
+            "font-weight": 600,
+            "font_size": 36,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "template--15619111583844__c17fce45-651b-48b6-8d30-5140858d7f13-16771584801b59cb2c-1": {
+          "type": "text",
+          "settings": {
+            "text": "PODX GO is a U.S. and China-based global company with a team of avid RVers, designers, architects, and technologists and we have over a decade of experience in renewable energy, RVing, AIoT, and sustainability.",
+            "text_style": "body",
+            "font_size": 18,
+            "font_weight": 200,
+            "margin-top": 18,
+            "margin-bottom": 0,
+            "font_color": "#000"
+          }
+        },
+        "ba09deb5-5c02-4db9-a39c-4f595046e65d": {
+          "type": "text",
+          "settings": {
+            "text": "Every day, we actively work to create an eco-conscious and true prefab home with foldable, mobility, smart, proven durability, and appealing aesthetics that you can order online and visit our local partner showroom.",
+            "text_style": "body",
+            "font_size": 18,
+            "font_weight": 200,
+            "margin-top": 12,
+            "margin-bottom": 12,
+            "font_color": "#000"
+          }
+        },
+        "9177513a-747c-4c14-b92a-ae2401636f61": {
+          "type": "text",
+          "settings": {
+            "text": "We believe the intersection of the rising housing pressures, visibility and disruptive effects of climate change, and desires of living with a minimalist and sustainable lifestyle offer PODX GO a unique opportunity of imbuing our brand with the urgency and drive of a social movement.",
+            "text_style": "body",
+            "font_size": 18,
+            "font_weight": 200,
+            "margin-top": 0,
+            "margin-bottom": 14,
+            "font_color": "#000"
+          }
+        },
+        "template--15619111583844__c17fce45-651b-48b6-8d30-5140858d7f13-16771584801b59cb2c-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_color": "#000",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "2e658b18-adfb-42b9-95a0-0505ecc996ec": {
+          "type": "image_wrapper",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/99E8E4CD-50A1-44c9-A234-44CFE6132DFC_30ea0c6a-4792-4860-b266-5ee9fd5ca2f5.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--15619111583844__c17fce45-651b-48b6-8d30-5140858d7f13-16771584801b59cb2c-0",
+        "template--15619111583844__c17fce45-651b-48b6-8d30-5140858d7f13-16771584801b59cb2c-1",
+        "ba09deb5-5c02-4db9-a39c-4f595046e65d",
+        "9177513a-747c-4c14-b92a-ae2401636f61",
+        "template--15619111583844__c17fce45-651b-48b6-8d30-5140858d7f13-16771584801b59cb2c-2",
+        "2e658b18-adfb-42b9-95a0-0505ecc996ec"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "is_lr": "true",
+        "show_text_box": true,
+        "layout": "image_first",
+        "is_imgBg": "false"
+      }
+    },
+    "65f1146e-d301-4118-a2ae-08e56e320c2a": {
+      "type": "rich-text-new",
+      "blocks": {
+        "template--15628744491108__65f1146e-d301-4118-a2ae-08e56e320c2a-16789525430b13aebe-2": {
+          "type": "text-with-logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo_dark_T.png",
+            "text": "<p>homes are completed up to 99% in our automation factory and delivered to you within 90 days.<\/p>",
+            "font-weight": 400,
+            "font_size": 20,
+            "text_color": "#000"
+          }
+        },
+        "5f74b120-7883-4ffc-bfb1-35662bf641aa": {
+          "type": "text-with-logo",
+          "settings": {
+            "text": "<p>  Our unique approach to tiny homes reduces construction and delivery costs by up to 70% and reduces the assessment time from days to only 15 mins DIY experience. It is also equipped with smart home devices and off-grid energy solutions that give you the freedom to live wherever you want.<\/p>",
+            "font-weight": 400,
+            "font_size": 20,
+            "text_color": "#000"
+          }
+        }
+      },
+      "block_order": [
+        "template--15628744491108__65f1146e-d301-4118-a2ae-08e56e320c2a-16789525430b13aebe-2",
+        "5f74b120-7883-4ffc-bfb1-35662bf641aa"
+      ],
+      "settings": {
+        "is_border": "false",
+        "is_background_radius": "true",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "fa599715-e482-4b74-8734-d01fcee0e969": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/tiny_house_sewage_water.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "button_label": "Visit Our Factory",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "font_size": 20,
+        "font_weight": 400
+      }
+    },
+    "ae5562b8-bef6-4424-a0a5-78ca060d5999": {
+      "type": "diversified-and-multi-column",
+      "blocks": {
+        "ff38da4e-67f9-4da5-9f56-33c2a74b63ce": {
+          "type": "column_item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/1__1_cd7c4359-e7aa-478b-ae54-51346a38f155.png",
+            "heading_1": "Address",
+            "heading_size": 20,
+            "text_1": "5050 S Archibald Ave",
+            "text_2": "Ontario, CA 91762",
+            "text_size": 14
+          }
+        },
+        "a702b323-a1ae-4d37-b4dd-7e42f5a81ee7": {
+          "type": "column_item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/1__1_50775ca4-c474-42d0-9f6e-867d6cfe842b.png",
+            "heading_1": "Business Hours",
+            "heading_size": 20,
+            "text_1": "Monday to Friday",
+            "text_2": "8:30am to 5:00pm PST",
+            "text_size": 14
+          }
+        },
+        "template--15619111583844__ae5562b8-bef6-4424-a0a5-78ca060d5999-1677158786a8b776a2-0": {
+          "type": "column_item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/1__1_2_13d2d278-013c-4ecf-90cb-9630b98de378.png",
+            "heading_1": "Chat Online",
+            "heading_size": 20,
+            "text_1": "Monday to Friday",
+            "text_2": "8:00am to 3:00pm PST",
+            "text_size": 14
+          }
+        },
+        "5b686877-eb2a-4cac-9e46-b46f3295017b": {
+          "type": "column_item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/1__1_3.png",
+            "heading_1": "Email",
+            "heading_size": 20,
+            "text_1": "support@podxgo.com",
+            "text_2": "dealer@podxgo.com",
+            "text_size": 14
+          }
+        }
+      },
+      "block_order": [
+        "ff38da4e-67f9-4da5-9f56-33c2a74b63ce",
+        "a702b323-a1ae-4d37-b4dd-7e42f5a81ee7",
+        "template--15619111583844__ae5562b8-bef6-4424-a0a5-78ca060d5999-1677158786a8b776a2-0",
+        "5b686877-eb2a-4cac-9e46-b46f3295017b"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1_5c272315-9fca-41ee-ad6d-0799cad64bd8.png",
+        "heading": "PODX GO loves to hear from and support our customers and partners",
+        "font_size": 40,
+        "font_weight": 400
+      }
+    },
+    "5c57af59-058a-4c4c-90ed-26b075562c84": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15619111583844__5c57af59-058a-4c4c-90ed-26b075562c84-16771590610a154dba-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Don’t Miss Out",
+            "heading_size": "h1"
+          }
+        },
+        "template--15619111583844__5c57af59-058a-4c4c-90ed-26b075562c84-16771590610a154dba-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Shared info about products developing, interior design, and speical discounts.<\/p>"
+          }
+        },
+        "template--15619111583844__5c57af59-058a-4c4c-90ed-26b075562c84-16771590610a154dba-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15619111583844__5c57af59-058a-4c4c-90ed-26b075562c84-16771590610a154dba-0",
+        "template--15619111583844__5c57af59-058a-4c4c-90ed-26b075562c84-16771590610a154dba-1",
+        "template--15619111583844__5c57af59-058a-4c4c-90ed-26b075562c84-16771590610a154dba-2"
+      ],
+      "settings": {
+        "is_background_radius": "true",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "0da83049-6252-4c9e-bb96-1e20ad28e25b",
+    "main",
+    "d0246beb-e0ff-47bc-a147-a968c210eff1",
+    "c17fce45-651b-48b6-8d30-5140858d7f13",
+    "65f1146e-d301-4118-a2ae-08e56e320c2a",
+    "fa599715-e482-4b74-8734-d01fcee0e969",
+    "ae5562b8-bef6-4424-a0a5-78ca060d5999",
+    "5c57af59-058a-4c4c-90ed-26b075562c84"
+  ]
+}
