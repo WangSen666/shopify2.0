@@ -233,7 +233,7 @@
   style=" background:#EDEDED;margin-top:{{ section.settings.margin_top }}px;margin-bottom:{{ section.settings.margin_bottom }}px;"
   class="banner {% if section.settings.image != blank %}  bg_wrapper {% endif %} banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
 
-  <div class="banner__content lr-blocks-rotation-banner__content banner__content--{{ section.settings.desktop_content_position }} page-width" style="{% if section.settings.is_imgBg == 'false' %} {% endif %}">
+  <div class="banner__content lr-blocks-rotation-banner__content banner__content--{{ section.settings.desktop_content_position }} " style="{% if section.settings.is_imgBg == 'false' %} {% endif %}">
     <div class=" lr-blocks-rotation-banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient " style="{% if section.settings.layout=='image_first' %} flex-direction:row-reverse !important;{% endif %}">
       <div class="banner__box-item">
         <div class="banner__box-item-wrapper">
