@@ -304,6 +304,9 @@
                    "width":"294px",
                    "height":"294px"
                  }) 
+                slow(imgList, -thisIndex * 294, function () {
+                  flag = true;
+                });
                }
                else if(windowWidth<=1440&&windowWidth>1366){
                  $(".podx-go-card-rotation-item").eq(thisIndex).css({
@@ -313,6 +316,9 @@
                      "width":"252px",
                      "height":"252px"
                    }) 
+                   slow(imgList, -thisIndex * 252, function () {
+                    flag = true;
+                  });
                }else if(windowWidth<=1366){ 
                  $(".podx-go-card-rotation-item").eq(thisIndex).css({
                      "width":"394px",
@@ -321,6 +327,9 @@
                      "width":"222px",
                      "height":"222px"
                    }) 
+                   slow(imgList, -thisIndex * 222, function () {
+                    flag = true;
+                  });
                }
             }
             if(windowWidth>=750){
