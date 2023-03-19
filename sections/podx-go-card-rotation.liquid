@@ -145,48 +145,96 @@
       var windowWidth=document.documentElement.clientWidth;
       
      if(windowWidth>=750){
-             $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-               "width":"596px",
-               "height":"406px"
+         if(windowWidth<=1600&&windowWidth>1440){
+           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+             "width":"522px",
+             "height":"354px"
+           }).siblings().css({
+             "width":"294px",
+             "height":"294px"
+           }) 
+         }
+         else if(windowWidth<=1440&&windowWidth>1366){
+           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+               "width":"448px",
+               "height":"304px"
              }).siblings().css({
-               "width":"336px",
-               "height":"336px"
+               "width":"252px",
+               "height":"252px"
              }) 
-            }else{
-              $(".podx-go-card-rotation-item").eq(thisIndex).css({
-                 "width":"596px",
-                 "height":"406px"
-               }).siblings().css({
-                 "width":"336px",
-                 "height":"336px"
-               })
-            }
+         }else if(windowWidth<=1366){ 
+           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+               "width":"394px",
+               "height":"268px"
+             }).siblings().css({
+               "width":"222px",
+               "height":"222px"
+             }) 
+         }
+             
+      }else{
+        $(".podx-go-card-rotation-item").eq(thisIndex).css({
+           "width":"596px",
+           "height":"406px"
+         }).siblings().css({
+           "width":"336px",
+           "height":"336px"
+         })
+      }
       var flag = true;
+     if(windowWidth<=1600&&windowWidth>1440){
+      imgList.style.width = ((imgList.children.length-1) * 294+522) + 'px';
+     }
+     else if(windowWidth<=1440&&windowWidth>1366){
+      imgList.style.width = ((imgList.children.length-1) * 252+448) + 'px';
+       
+     }else if(windowWidth<=1366){ 
+       imgList.style.width = ((imgList.children.length-1) * 222+394) + 'px';
+       
+     }else{
       imgList.style.width = ((imgList.children.length-1) * 336+556) + 'px';
-     
+     }
      // 手动切换轮播图
      tabChangePrev=function(){
        console.log(imgList.children.length,thisIndex)
        
        if(thisIndex == -1){
           thisIndex = imgList.children.length-1;
-          // $(".podx-go-card-rotation-item").eq(thisIndex).css({
-          //      "width":"596px",
-          //      "height":"406px"
-          //    }).siblings().css({
-          //      "width":"336px",
-          //      "height":"336px"
-          //    })
         }
-       
         thisIndex--;
-        $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-               "width":"596px",
-               "height":"406px"
+       if(windowWidth<=1600&&windowWidth>1440){
+           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+             "width":"522px",
+             "height":"354px"
+           }).siblings().css({
+             "width":"294px",
+             "height":"294px"
+           }) 
+         }
+         else if(windowWidth<=1440&&windowWidth>1366){
+           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+               "width":"448px",
+               "height":"304px"
              }).siblings().css({
-               "width":"336px",
-               "height":"336px"
-             })
+               "width":"252px",
+               "height":"252px"
+             }) 
+         }else if(windowWidth<=1366){ 
+           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+               "width":"394px",
+               "height":"268px"
+             }).siblings().css({
+               "width":"222px",
+               "height":"222px"
+             }) 
+         }
+        // $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+        //        "width":"596px",
+        //        "height":"406px"
+        //      }).siblings().css({
+        //        "width":"336px",
+        //        "height":"336px"
+        //      })
         slow(imgList, -thisIndex *336, function () {
           flag = true;
         });
@@ -196,14 +244,39 @@
         if (thisIndex >= imgList.children.length-1) {
             thisIndex = -1;
         }
-       
-        $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-               "width":"596px",
-               "height":"406px"
+      if(windowWidth<=1600&&windowWidth>1440){
+           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+             "width":"522px",
+             "height":"354px"
+           }).siblings().css({
+             "width":"294px",
+             "height":"294px"
+           }) 
+         }
+         else if(windowWidth<=1440&&windowWidth>1366){
+           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+               "width":"448px",
+               "height":"304px"
              }).siblings().css({
-               "width":"336px",
-               "height":"336px"
-             })
+               "width":"252px",
+               "height":"252px"
+             }) 
+         }else if(windowWidth<=1366){ 
+           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+               "width":"394px",
+               "height":"268px"
+             }).siblings().css({
+               "width":"222px",
+               "height":"222px"
+             }) 
+         }
+        // $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+        //        "width":"596px",
+        //        "height":"406px"
+        //      }).siblings().css({
+        //        "width":"336px",
+        //        "height":"336px"
+        //      })
        console.log(imgList.children.length,thisIndex)
        
         slow(imgList, -thisIndex * 336, function () {
@@ -216,22 +289,60 @@
             flag = false;
             if (thisIndex >= imgList.children.length) {
               thisIndex = 0;
-              $(".podx-go-card-rotation-item").eq(thisIndex).css({
-               "width":"596px",
-               "height":"406px"
-             }).siblings().css({
-               "width":"336px",
-               "height":"336px"
-             })
+              if(windowWidth<=1600&&windowWidth>1440){
+                 $(".podx-go-card-rotation-item").eq(thisIndex).css({
+                   "width":"522px",
+                   "height":"354px"
+                 }).siblings().css({
+                   "width":"294px",
+                   "height":"294px"
+                 }) 
+               }
+               else if(windowWidth<=1440&&windowWidth>1366){
+                 $(".podx-go-card-rotation-item").eq(thisIndex).css({
+                     "width":"448px",
+                     "height":"304px"
+                   }).siblings().css({
+                     "width":"252px",
+                     "height":"252px"
+                   }) 
+               }else if(windowWidth<=1366){ 
+                 $(".podx-go-card-rotation-item").eq(thisIndex).css({
+                     "width":"394px",
+                     "height":"268px"
+                   }).siblings().css({
+                     "width":"222px",
+                     "height":"222px"
+                   }) 
+               }
             }
             if(windowWidth>=750){
-             $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-               "width":"596px",
-               "height":"406px"
-             }).siblings().css({
-               "width":"336px",
-               "height":"336px"
-             }) 
+             if(windowWidth<=1600&&windowWidth>1440){
+                 $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+                   "width":"522px",
+                   "height":"354px"
+                 }).siblings().css({
+                   "width":"294px",
+                   "height":"294px"
+                 }) 
+               }
+               else if(windowWidth<=1440&&windowWidth>1366){
+                 $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+                     "width":"448px",
+                     "height":"304px"
+                   }).siblings().css({
+                     "width":"252px",
+                     "height":"252px"
+                   }) 
+               }else if(windowWidth<=1366){ 
+                 $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+                     "width":"394px",
+                     "height":"268px"
+                   }).siblings().css({
+                     "width":"222px",
+                     "height":"222px"
+                   }) 
+               }
             }else{
               $(".podx-go-card-rotation-item").eq(thisIndex).css({
                  "width":"596px",
