@@ -184,8 +184,8 @@
   }
 
   .podx-go-card-rotation-item {
-    width: 294px !important;
-    height: 294px !important;
+    width: 294px;
+    height: 294px;
   }
 }
 
@@ -406,8 +406,8 @@
   }
 
   .podx-go-card-rotation-item {
-    width: 252px !important;
-    height: 252px !important;
+    width: 252px;
+    height: 252px;
   }
 
 }
@@ -606,7 +606,7 @@
   }
 
   .podx-go-card-rotation-item {
-    width: 222px !important;
-    height: 222px !important;
+    width: 222px;
+    height: 222px;
   }
 }
