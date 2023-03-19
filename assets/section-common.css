@@ -1,4 +1,4 @@
-@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1600px) {
 
   /* diversified-lr-block */
   .rotation-image-wrapper {
@@ -13,8 +13,8 @@
     font-size: 44px !important;
   }
 
-  .lr-blockcomponent__button .button {
-    padding: 14px 18px 14px 28px;
+  .lr-block-component__button .button {
+    padding: 14px 18px 14px 28px !important;
     font-size: 26px !important;
   }
 
@@ -109,10 +109,19 @@
     font-size: 62px !important;
   }
 
+  /* only-text-mullited */
+  .only-card-mullited-item {
+    /* width: 366px !important; */
+    margin: 32px 0 !important;
+  }
+
+  .text-only-mullited__heading {
+    font-size: 26px !important;
+  }
 }
 
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1440px) {
 
   /* diversified-lr-block */
   .rotation-image-wrapper {
@@ -129,8 +138,8 @@
     margin: 30px auto !important;
   }
 
-  .lr-blockcomponent__button .button {
-    padding: 12px 16px 12px 24px;
+  .lr-block-component__button .button {
+    padding: 12px 16px 12px 24px !important;
     font-size: 22px !important;
   }
 
@@ -242,6 +251,18 @@
   .banner-component__content h2 {
     font-size: 54px !important;
   }
+
+  /* only-text-mullited */
+  .only-card-mullited-item {
+    /* width: 314px !important; */
+    margin: 26px 0 !important;
+  }
+
+  .text-only-mullited__heading {
+    font-size: 24px !important;
+  }
+
+
 }
 
 
@@ -262,8 +283,8 @@
     margin: 20px auto !important;
   }
 
-  .lr-blockcomponent__button .button {
-    padding: 10px 14px 10px 20px;
+  .lr-block-component__button .button {
+    padding: 10px 14px 10px 20px !important;
     font-size: 22px !important;
   }
 
@@ -274,9 +295,7 @@
 
   }
 
-  .diversified-lr-blocks-banner__box .banner__box-item {
-   
-  }
+  .diversified-lr-blocks-banner__box .banner__box-item {}
 
   /* .with_bg_card-item */
   .with_bg_card-item {
@@ -333,7 +352,7 @@
 
   .bottom-body-item .button {
     padding: 10px 14px 10px 20px;
-    font-size: 20px !important;
+    font-size: 18px !important;
     max-width: 190px !important;
   }
 
@@ -368,5 +387,19 @@
   .card-item-subtitle {
     font-size: 14px !important;
     line-height: 28px !important;
+  }
+
+  /* only-text-mullited */
+  .only-card-mullited-item {
+    /* width: 276px !important; */
+    margin: 20px 0 !important;
+  }
+
+  .text-only-mullited__heading {
+    font-size: 20px !important;
+  }
+
+  .text-only-mullited__text {
+    font-size: 18px !important;
   }
 }
