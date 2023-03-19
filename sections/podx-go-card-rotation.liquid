@@ -236,6 +236,17 @@
            slow(imgList, -thisIndex *222, function () {
               flag = true;
             });
+         }else{
+            $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+               "width":"596px",
+               "height":"406px"
+             }).siblings().css({
+               "width":"336px",
+               "height":"336px"
+             }) 
+           slow(imgList, -thisIndex * 336, function () {
+              flag = true;
+            });
          }
         // $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
         //        "width":"596px",
@@ -288,7 +299,7 @@
          }else{
            $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
                "width":"596px",
-               "height":"402px"
+               "height":"406px"
              }).siblings().css({
                "width":"336px",
                "height":"336px"
@@ -343,30 +354,31 @@
                }
             }
             if(windowWidth>=750){
-             if(windowWidth<=1600&&windowWidth>1440){
-                 $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-                   "width":"522px",
-                   "height":"354px"
-                 }).siblings().css({
-                   "width":"294px",
-                   "height":"294px"
-                 }) 
-                 slow(imgList, -thisIndex * 294, function () {
-                  flag = true;
-                });
-               }
-               else if(windowWidth<=1440&&windowWidth>1366){
-                 $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-                     "width":"448px",
-                     "height":"304px"
+              if(windowWidth<=1600&&windowWidth>1440){
+                   $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+                     "width":"522px",
+                     "height":"354px"
                    }).siblings().css({
-                     "width":"252px",
-                     "height":"252px"
-                   })
-                 slow(imgList, -thisIndex * 252, function () {
+                     "width":"294px",
+                     "height":"294px"
+                   }) 
+                   slow(imgList, -thisIndex * 294, function () {
                     flag = true;
                   });
-               }else if(windowWidth<=1366){ 
+                 }
+              else if(windowWidth<=1440&&windowWidth>1366){
+                   $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+                       "width":"448px",
+                       "height":"304px"
+                     }).siblings().css({
+                       "width":"252px",
+                       "height":"252px"
+                     })
+                   slow(imgList, -thisIndex * 252, function () {
+                      flag = true;
+                    });
+                 }
+              else if(windowWidth<=1366){ 
                  $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
                      "width":"394px",
                      "height":"268px"
@@ -374,10 +386,10 @@
                      "width":"222px",
                      "height":"222px"
                    }) 
+                slow(imgList, -thisIndex * 222, function () {
+                  flag = true;
+                });
                }
-              slow(imgList, -thisIndex * 222, function () {
-                flag = true;
-              });
             }else{
               $(".podx-go-card-rotation-item").eq(thisIndex).css({
                  "width":"596px",
