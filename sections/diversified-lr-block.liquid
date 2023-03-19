@@ -389,29 +389,9 @@
             if (thisIndex >= imgList.children.length) {
               thisIndex = 0;
             }
-            // slow(imgList, -thisIndex * 520, function () {
-            //   flag = true;
-            // });
-            if(windowWidth>750){
-              if(windowWidth<=1600&&windowWidth>1440){
-                slow(imgList, -thisIndex * 454, function () {
+            slow(imgList, -thisIndex * 342, function () {
                   flag = true;
                 });
-             }
-             else if(windowWidth<=1440&&windowWidth>1366){
-               slow(imgList, -thisIndex * 390, function () {
-                  flag = true;
-                });
-               
-             }else if(windowWidth<=1366){ 
-               slow(imgList, -thisIndex * 342, function () {
-                  flag = true;
-                });
-               
-             }else{
-              imgList.style.width = ((imgList.children.length) * 520+20) + 'px';;
-             }
-            }
             // circleChange();
             thisIndex++;
           }
