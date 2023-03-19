@@ -251,7 +251,7 @@
         if (thisIndex >= imgList.children.length-1) {
             thisIndex = -1;
         }
-      if(windowWidth<=1600&&windowWidth>1440){
+        if(windowWidth<=1600&&windowWidth>1440){
            $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
              "width":"522px",
              "height":"354px"
@@ -283,6 +283,17 @@
                "height":"222px"
              }) 
            slow(imgList, -thisIndex * 222, function () {
+              flag = true;
+            });
+         }else{
+           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+               "width":"596px",
+               "height":"402px"
+             }).siblings().css({
+               "width":"336px",
+               "height":"336px"
+             }) 
+           slow(imgList, -thisIndex * 336, function () {
               flag = true;
             });
          }
