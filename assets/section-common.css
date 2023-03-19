@@ -112,7 +112,7 @@
 }
 
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1600px) {
 
   /* diversified-lr-block */
   .rotation-image-wrapper {
@@ -245,7 +245,7 @@
 }
 
 
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1366px) {
 
   /* diversified-lr-block */
   .rotation-image-wrapper {
@@ -275,10 +275,7 @@
   }
 
   .diversified-lr-blocks-banner__box .banner__box-item {
-    /*       width: 98% !important; */
-    /*       margin: 14px auto !important;;
-      text-align: center !important;
-      background:none !important; */
+   
   }
 
   /* .with_bg_card-item */
