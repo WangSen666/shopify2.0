@@ -376,7 +376,21 @@
   $(function() {
     var head_rotation = $(".heading-rotation span");
       let head_rotation_text = head_rotation.text();
-      console.log("head_rotation_text", head_rotation_text)
+      
+      function textTransform(){
+        $(".heading-rotation span").text("")
+        var timer=setInterVal(function(){
+          
+        },300)
+        // if(flag === false){
+        //     str = arr[index];
+        //     endIndex2 = endIndex1;
+        //     $input.val(str.substring(0, endIndex1++));
+        //     if($input.val().length === arr[index].length){//若当前字符串全部显示完毕，则设置flag为true
+        //         flag = true;
+        //     }
+        // }
+      }
   })
 </script>
 
