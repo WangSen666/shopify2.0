@@ -62,7 +62,7 @@
           "type": "buttons",
           "settings": {
             "banner_button_label": "Download Floorplan",
-            "banner_button_link": "https:\/\/form.jotform.com\/230568117037454",
+            "banner_button_link": "",
             "font_size": 16,
             "button_color": "#9ED835"
           }
@@ -493,7 +493,7 @@
           "type": "heading",
           "settings": {
             "heading": "<p>Whether you're a first-time homeowner, looking to travel and take your home with you, <br\/>or just want to downsize and have an extra home in the backyard<br\/><\/p>",
-            "heading_size": "h1",
+            "heading_size": "h2",
             "font-weight": 300,
             "font_size": 22,
             "heading_color": "#333333"
