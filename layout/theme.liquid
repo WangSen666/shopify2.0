@@ -573,7 +573,8 @@
       window.addEventListener('scroll', function() {
         // let header = document.getElementsByClassName("header-wrapper")[0];
         let header = document.getElementsByClassName("nav-top")[0];
-        
+        let black_search_icon=document.getElementsByClassName("black-search-icon");
+        console.log("black_search_icon",black_search_icon)
         let wWidth = document.documentElement.clientWidth;
         let scrollTop = document.documentElement.scrollTop;
         if (scrollTop > 10 && wWidth >= 990) {
