@@ -33,7 +33,7 @@
 
   .lr-block-component__button .button {
     padding: 14px 18px 14px 28px !important;
-    font-size: 26px !important;
+    font-size: 24px !important;
   }
 
   .bottom-rotation-list {
@@ -272,6 +272,11 @@
     /* margin: 30px auto !important; */
   }
 
+  .lr-block-component__button .button {
+    padding: 10px 16px 10px 24px !important;
+    font-size: 20px !important;
+  }
+
   .bottom-rotation-list {
     margin: 30px auto !important;
     height: 224px !important;
@@ -286,10 +291,10 @@
     height: 224px !important;
   }
 
-  .lr-block-component__button .button {
+  /* .lr-block-component__button .button {
     padding: 12px 16px 12px 24px !important;
-    font-size: 22px !important;
-  }
+    font-size: 20px !important;
+  } */
 
 
   /* with_bg_card-item */
@@ -402,7 +407,7 @@
   }
 
   .banner-component__content h2 {
-    font-size: 50px !important;
+    font-size: 46px !important;
   }
 
   .banner-component-text {
@@ -539,6 +544,16 @@
     max-width: 46px !important;
     margin: 0 auto 40px !important;
   }
+
+  /* picture-card-item-button */
+  .picture-card-item-button {
+    font-size: 16px !important;
+  }
+
+  .picture-card-item-button img {
+    width: 10px !important;
+    height: 10px !important;
+  }
 }
 
 
@@ -576,7 +591,7 @@
 
   .lr-block-component__button .button {
     padding: 10px 14px 10px 20px !important;
-    font-size: 22px !important;
+    font-size: 18px !important;
   }
 
   .diversified-lr-blocks-banner__box {
@@ -586,6 +601,10 @@
 
   }
 
+  /* .lr-block-component__button .button {
+      padding: 10px 16px 10px 24px !important;
+      font-size: 20px !important;
+    } */
   .diversified-lr-blocks-banner__box .banner__box-item {}
 
   /* .with_bg_card-item */
@@ -703,6 +722,10 @@
     height: 736px !important;
   }
 
+  .banner-component__content h2 {
+    font-size: 40px !important;
+  }
+
   .banner__text_body {
     font-size: 18px !important;
     margin: 24px auto !important;
@@ -796,14 +819,15 @@
 
   /* .design-tiny-home__body {
     font-size: 16px !important;
-  }
+  } */
 
   .icon .right-icon {
-    width: 20px !important;
+    width: 18px !important;
   }
 
-  .design-tiny-home__wrapper .button {
+  /* .design-tiny-home__wrapper .button {
     font-size: 14px !important;
     max-width: 290px !important;
   } */
+
 }
