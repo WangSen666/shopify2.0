@@ -23,12 +23,14 @@
         },
         "5d7e473b-943c-4e7b-bb50-994399697b94": {
           "type": "rotation-banner-img",
+          "disabled": true,
           "settings": {
             "rotation-banner-img-item": "shopify:\/\/shop_images\/16_1.png"
           }
         },
         "79b21d14-4c0c-4375-8a53-3265202a5e3f": {
           "type": "rotation-banner-img",
+          "disabled": true,
           "settings": {
             "rotation-banner-img-item": "shopify:\/\/shop_images\/s2.png"
           }
