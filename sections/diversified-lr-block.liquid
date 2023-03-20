@@ -233,7 +233,7 @@
     </div>
 
   {%- endif -%}
-  <div class=" diversified-lr-blocks-banner__content  page-width" style="{% if section.settings.is_imgBg == 'false' %} {% endif %}">
+  <div class=" diversified-lr-blocks-banner__content{% if section.settings.is_all_screen=="false" %}  page-width"{% endif %} style="{% if section.settings.is_imgBg == 'false' %} {% endif %}">
     {% if section.settings.heading!=blank %}
       <div class="diversified-lr-blocks-heading" style="font-size:{{ section.settings.heading_size }}px;">
         {{ section.settings.heading }}
@@ -430,6 +430,16 @@
         ],
         "default":"true",
         "label":"是否显示轮播图列表"
+      },
+      {
+        "type":"select",
+        "id":"is_all_screen",
+        "options":[
+          {"value":"true","label":"是"},
+          {"value":"false","label":"否"}
+        ],
+        "default":"false",
+        "label":"是否全屏"
       },
       {
         "type": "image_picker",
