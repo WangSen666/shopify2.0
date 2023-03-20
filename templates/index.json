@@ -486,47 +486,6 @@
         "is_imgBg": "false"
       }
     },
-    "1eacd94a-6754-446e-9ffb-6cb94f388979": {
-      "type": "rich-text-new",
-      "blocks": {
-        "58fe6df7-3e23-46de-a09d-2622f5e43535": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Whether you're a first-time homeowner, looking to travel and take your home with you, <br\/>or just want to downsize and have an extra home in the backyard<br\/><\/p>",
-            "heading_size": "h2",
-            "font-weight": 300,
-            "font_size": 22,
-            "heading_color": "#333333"
-          }
-        },
-        "cf5b3a5a-fa7f-4a5e-b7b5-bd8242e6872b": {
-          "type": "yellow_border",
-          "settings": {
-          }
-        },
-        "b7f13876-37bd-4042-a71e-d945f012bfe8": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>PODX GO has different models to give you a variety of solutions to meet your budget and lifestyle<\/p>",
-            "heading_size": "h1",
-            "font-weight": 400,
-            "font_size": 22,
-            "heading_color": "#333333"
-          }
-        }
-      },
-      "block_order": [
-        "58fe6df7-3e23-46de-a09d-2622f5e43535",
-        "cf5b3a5a-fa7f-4a5e-b7b5-bd8242e6872b",
-        "b7f13876-37bd-4042-a71e-d945f012bfe8"
-      ],
-      "settings": {
-        "is_border": "true",
-        "is_background_radius": "true",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "15eff337-14f9-4074-9835-664493722bd5": {
       "type": "rich-text-new-small",
       "blocks": {
@@ -896,7 +855,6 @@
     "173f7bc5-99e2-4305-8c3e-d260ec72970b",
     "2ffd37a5-4f5b-4096-a422-e43721007a4b",
     "4be96fc5-4fd6-4afa-9417-e5f1d32c60b9",
-    "1eacd94a-6754-446e-9ffb-6cb94f388979",
     "15eff337-14f9-4074-9835-664493722bd5",
     "60f671a1-7f8e-412f-b0f6-056de9bc85bc",
     "040c1abe-c06e-4ca3-9224-21358c1f6de1",
