@@ -718,6 +718,7 @@
       "settings": {
         "background_color": "#fff",
         "is_rotation_list": "false",
+        "is_all_screen": "true",
         "heading": "",
         "heading_size": 36,
         "image_overlay_opacity": 0,
