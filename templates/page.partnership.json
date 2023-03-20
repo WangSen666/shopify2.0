@@ -29,17 +29,19 @@
         "template--15628744753252__e48fd847-2abc-4be2-8deb-4599e48837bb-1678861415d751d74f-5": {
           "type": "rotation-banner-img",
           "settings": {
-            "rotation-banner-img-item": "shopify:\/\/shop_images\/Home_Lavida_Tiny_House_V.png"
+            "rotation-banner-img-item": "shopify:\/\/shop_images\/tiny_house_banner_4.png"
           }
         },
         "49304f8d-2b6a-4267-af0d-f7cdbfecb5d9": {
           "type": "rotation-banner-img",
+          "disabled": true,
           "settings": {
             "rotation-banner-img-item": "shopify:\/\/shop_images\/18.jpg"
           }
         },
         "5908f509-26f0-4d8e-82d4-e7fcde36c1bc": {
           "type": "rotation-banner-img",
+          "disabled": true,
           "settings": {
             "rotation-banner-img-item": "shopify:\/\/shop_images\/16_1.png"
           }
