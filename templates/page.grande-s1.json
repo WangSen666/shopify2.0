@@ -547,7 +547,7 @@
           "settings": {
             "text": "<p>Having questions about start your tiny home journey? <\/p>",
             "font-weight": 400,
-            "font_size": 20,
+            "font_size": 28,
             "text_color": "#000"
           }
         },
@@ -555,7 +555,7 @@
           "type": "text",
           "settings": {
             "text": "<p>No worries. We are here to help. <\/p>",
-            "font-weight": 400,
+            "font-weight": 800,
             "font_size": 50,
             "text_color": "#000"
           }
