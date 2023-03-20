@@ -829,5 +829,7 @@
     font-size: 14px !important;
     max-width: 290px !important;
   } */
-
+  .edge-look-around .button {
+    font-size: 20px !important;
+  }
 }
