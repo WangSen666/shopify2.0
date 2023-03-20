@@ -739,19 +739,20 @@
             "text_color": "#000"
           }
         },
-        "79c8ebd5-00b8-46ff-bab8-61621622940b": {
-          "type": "text",
+        "4107ccbc-e4a8-4b2e-9bc8-7efa0c60d265": {
+          "type": "heading",
           "settings": {
-            "text": "<p>No worries. We are here to help. <\/p>",
-            "font-weight": 800,
+            "heading": "<p>No worries. We are here to help. <\/p>",
+            "heading_size": "h1",
+            "font-weight": 400,
             "font_size": 46,
-            "text_color": "#000"
+            "heading_color": "#333333"
           }
         }
       },
       "block_order": [
         "template--15628744425572__5af20d81-606b-473f-9b3c-47412699d454-167845793474395b98-1",
-        "79c8ebd5-00b8-46ff-bab8-61621622940b"
+        "4107ccbc-e4a8-4b2e-9bc8-7efa0c60d265"
       ],
       "settings": {
         "is_border": "false",
