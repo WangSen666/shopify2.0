@@ -113,7 +113,7 @@
   </div>
 
   <div class="podx-go-card-title" style="font-size:12px;color:#808080;margin-top:20px;">
-    Support  >  <span style="color:#9AD435;">Learning Center</span>
+    Support  > <a href="{{ section.settings.button_url }}" target="_blank"><span style="color:#9AD435;">Learning Center</span></a> 
   </div>
   
 
@@ -127,6 +127,9 @@
     "name": "podx-go浮动卡片组",
     "tag": "section",
     "class": "section",
+    "settings":[
+      {"type":"url","id":"button_url","label":"链接地址"}
+    ],
     "blocks":[
       {
         "type":"card_item",
