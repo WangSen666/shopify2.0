@@ -527,6 +527,47 @@
         "padding_bottom": 52
       }
     },
+    "15eff337-14f9-4074-9835-664493722bd5": {
+      "type": "rich-text-new-small",
+      "blocks": {
+        "template--15634989285476__15eff337-14f9-4074-9835-664493722bd5-16793068663eb96d6c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Whether you're a first-time homeowner, looking to travel and take your home with you, <br\/>or just want to downsize and have an extra home in the backyard<\/p>",
+            "heading_size": "h1",
+            "font-weight": 400,
+            "font_size": 48,
+            "heading_color": "#333333"
+          }
+        },
+        "template--15634989285476__15eff337-14f9-4074-9835-664493722bd5-16793068663eb96d6c-2": {
+          "type": "yellow_border",
+          "settings": {
+          }
+        },
+        "75cf45cd-6521-442c-8cbc-7090a13f2d78": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>PODX GO has different models to give you a variety of solutions to meet your budget and lifestyle<\/p>",
+            "heading_size": "h1",
+            "font-weight": 400,
+            "font_size": 48,
+            "heading_color": "#333333"
+          }
+        }
+      },
+      "block_order": [
+        "template--15634989285476__15eff337-14f9-4074-9835-664493722bd5-16793068663eb96d6c-0",
+        "template--15634989285476__15eff337-14f9-4074-9835-664493722bd5-16793068663eb96d6c-2",
+        "75cf45cd-6521-442c-8cbc-7090a13f2d78"
+      ],
+      "settings": {
+        "is_border": "true",
+        "is_background_radius": "true",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "60f671a1-7f8e-412f-b0f6-056de9bc85bc": {
       "type": "card-component-with-bg",
       "blocks": {
@@ -856,6 +897,7 @@
     "2ffd37a5-4f5b-4096-a422-e43721007a4b",
     "4be96fc5-4fd6-4afa-9417-e5f1d32c60b9",
     "1eacd94a-6754-446e-9ffb-6cb94f388979",
+    "15eff337-14f9-4074-9835-664493722bd5",
     "60f671a1-7f8e-412f-b0f6-056de9bc85bc",
     "040c1abe-c06e-4ca3-9224-21358c1f6de1",
     "5af20d81-606b-473f-9b3c-47412699d454",
