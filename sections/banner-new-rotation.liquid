@@ -288,7 +288,13 @@
             style="text-align:left;font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
             <span>{{ block.settings.heading | escape }}</span>
           </h2>
-
+          {% when 'heading_rotation' %}
+          <h2
+            class="banner-component-heading heading-rotation"
+            {{ block.shopify_attributes }}
+            style="text-align:left;font-size:{{ block.settings.font_size }}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;color:{{ block.settings.heading_color }}; font-weight: {{ block.settings.font_weight }};">
+            <span>{{ block.settings.heading | escape }}</span>
+          </h2>
           {% when "text" %}
           <div>
             <p
@@ -925,6 +931,9 @@
             "type": "heading"
           }, {
             "type": "bannerComponentBottomInfo"
+          },
+          {
+            "type":"heading_rotation"
           },
           {"type":"text"},
           {"type":"buttons"},
