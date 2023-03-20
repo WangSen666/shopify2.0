@@ -496,7 +496,7 @@
             "heading_size": "h1",
             "font-weight": 300,
             "font_size": 22,
-            "heading_color": "#000"
+            "heading_color": "#333333"
           }
         },
         "cf5b3a5a-fa7f-4a5e-b7b5-bd8242e6872b": {
@@ -511,7 +511,7 @@
             "heading_size": "h1",
             "font-weight": 400,
             "font_size": 22,
-            "heading_color": "#000"
+            "heading_color": "#333333"
           }
         }
       },
