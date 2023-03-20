@@ -151,9 +151,9 @@
               {{ block.shopify_attributes }}
               style="font-weight:{{ block.settings.font-weight }};font-size:{{ block.settings.font_size }}px;display:flex;align-items:center;">
               
-              <div>
+              <div class="rich-text-new-logo-box">
                 {% if block.settings.logo !=blank %}<img class="text-with-logo" src="{{ block.settings.logo|image_url }}" />{% endif %}
-                <span>{{ block.settings.text }}</span>
+                {{ block.settings.text }}
               </div>
             </div>
 
@@ -164,6 +164,14 @@
   </div>
 </div>
 
+<script>
+  $(function(){
+    // let logo_box=document.querySelector(".rich-text-new-logo-box");
+    $('.rich-text-new-logo-box p').replaceWith(function(){
+        return $("<span />", {html: $(this).html(), class:$(this).attr('class')});
+    });
+  })
+</script>
 
 {% schema %}
   {
