@@ -15,13 +15,13 @@
             "font_weight": 400
           }
         },
-        "848265dd-60d4-48cd-89f3-33ae6d095bae": {
-          "type": "heading",
+        "ee3d4715-58b7-416e-8732-0aafb33a91d8": {
+          "type": "heading_rotation",
           "settings": {
             "heading": "Your Backyard",
             "heading_size": "h1",
             "font_size": 72,
-            "margin_top": 32,
+            "margin_top": 24,
             "margin_bottom": 24,
             "heading_color": "#B5EF35",
             "font_weight": 400
@@ -70,7 +70,7 @@
       },
       "block_order": [
         "template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-0",
-        "848265dd-60d4-48cd-89f3-33ae6d095bae",
+        "ee3d4715-58b7-416e-8732-0aafb33a91d8",
         "template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-2",
         "template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-3",
         "template--15628744491108__0da83049-6252-4c9e-bb96-1e20ad28e25b-1678954324a8d7fa6f-5",
@@ -185,6 +185,7 @@
       "settings": {
         "background_color": "#fff",
         "is_rotation_list": "false",
+        "is_all_screen": "false",
         "heading": "",
         "heading_size": 36,
         "image_overlay_opacity": 0,
