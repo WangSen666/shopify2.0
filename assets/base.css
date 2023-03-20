@@ -2278,7 +2278,7 @@ input[type='checkbox'] {
   }
 }
 
-@media screen and (min-width: 1500px) and (max-width: 1388px) {
+@media screen and (max-width: 1500px) and (min-width: 1388px) {
   .header--middle-left {
     grid-template-areas: 'heading navigation icons';
     grid-template-columns: 500px 1fr;
