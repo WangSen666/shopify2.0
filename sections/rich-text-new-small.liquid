@@ -5,12 +5,12 @@
   onload="this.media='all'">
 <link
   rel="stylesheet"
-  href="{{ 'section-rich-text-new.css' | asset_url }}"
+  href="{{ 'section-rich-text-new-small.css' | asset_url }}"
   media="print"
   onload="this.media='all'">
 
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'section-rich-text-new.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'section-rich-text-new-small.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -26,21 +26,21 @@
   }
 
 /*  @media screen and (max-width: 1080px) {
-    .rich-text-new .rich-text-new__heading{font-size:28px !important;}
-    .rich-text-new-card-group{font-size:18px !important;flex-wrap:wrap;}
+    .rich-text-new-small .rich-text-new-small__heading{font-size:28px !important;}
+    .rich-text-new-small-card-group{font-size:18px !important;flex-wrap:wrap;}
   } */
 
-.rich-text-new__wrapper{
+.rich-text-new-small__wrapper{
   margin:0 auto;
 }
  
 /* 富文本卡片组 */
-.rich-text-new__blocks{
+.rich-text-new-small__blocks{
   max-width:58%;
   margin:0 auto;
   text-align:center
 }
-.rich-text-new{
+.rich-text-new-small{
   background:#F1F1F1;
 }
 .yellow-boder{
@@ -56,11 +56,11 @@
     height:30px !important;
     vertical-align:middle;
   }
-  .rich-text-new__heading span{
+  .rich-text-new-small__heading span{
      font-family: "KumbhSans-Bold" !important;
   }
  @media screen and (max-width: 1680px){
-   .rich-text-new__heading{
+   .rich-text-new-small__heading{
      font-size:42px !important;
    }
    .yellow-boder{
@@ -69,7 +69,7 @@
    }
  }
  @media screen and (max-width: 1500px){
-    .rich-text-new__heading{
+    .rich-text-new-small__heading{
      font-size:36px !important;
      
    }
@@ -79,7 +79,7 @@
    }
  }
  @media screen and (max-width: 1380px){
-    .rich-text-new__heading{
+    .rich-text-new-small__heading{
      font-size:32px !important;
    }
     .yellow-boder{
@@ -88,15 +88,15 @@
    }
  }
  @media screen and (max-width: 750px) {
-  .rich-text-new__blocks {
+  .rich-text-new-small__blocks {
     padding:0 10px !important;
     max-width:98%;
   }
-   .rich-text-new__text{
+   .rich-text-new-small__text{
      font-size:18px !important;
      display:block !important;
    }
-   .rich-text-new__heading{
+   .rich-text-new-small__heading{
 /*      font-size:28px !important; */
    }
 }
@@ -104,14 +104,14 @@
 {%- endstyle -%}
 
 <div class="isolate{% unless section.settings.full_width %}  {% endunless %}">
-  <div class="rich-text-new content-container color-{{ section.settings.color_scheme }}  gradient{% if section.settings.full_width %} rich-text-new--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
-    <div class="rich-text-new__wrapper {% if section.settings.is_background_radius=="true" %}text-border-radius{% endif %}  rich-text-new__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
-      <div class="rich-text-new__blocks {{ section.settings.content_alignment }}">
+  <div class="rich-text-new-small content-container color-{{ section.settings.color_scheme }}  gradient{% if section.settings.full_width %} rich-text-new-small--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
+    <div class="rich-text-new-small__wrapper {% if section.settings.is_background_radius=="true" %}text-border-radius{% endif %}  rich-text-new-small__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
+      <div class="rich-text-new-small__blocks {{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
             <h2
-              class="rich-text-new__heading rte"
+              class="rich-text-new-small__heading rte"
               {{ block.shopify_attributes }}
               style="text-align:{{ section.settings.content_alignment }};font-weight:{{ block.settings.font-weight }};color:{{ block.settings.heading_color }};font-size:{{ block.settings.font_size }}px;">
               {{ block.settings.heading | replace: 'p>', 'span>' }}
@@ -120,7 +120,7 @@
               <div class="yellow-boder"></div>
             {%- when 'text' -%}
               <div
-                class="rich-text-new__text rte"
+                class="rich-text-new-small__text rte"
                 {{ block.shopify_attributes }}
                 style="font-weight:{{ block.settings.font-weight }};font-size:{{ block.settings.font_size }}px;">
                 {{ block.settings.text }}
@@ -138,7 +138,7 @@
             <div class="yellow-boder"></div>
             {%- when 'text' -%}
             <div
-              class="rich-text-new__text rte"
+              class="rich-text-new-small__text rte"
               {{ block.shopify_attributes }}
               style="font-weight:{{ block.settings.font-weight }};font-size:{{ block.settings.font_size }}px;">
               {{ block.settings.text }}
@@ -150,11 +150,11 @@
         {%- case block.type -%}   
             {%- when 'text-with-logo' -%}
             <div
-              class="rich-text-new__text rte"
+              class="rich-text-new-small__text rte"
               {{ block.shopify_attributes }}
               style="font-weight:{{ block.settings.font-weight }};font-size:{{ block.settings.font_size }}px;display:flex;align-items:center;">
               
-              <div class="rich-text-new-logo-box">
+              <div class="rich-text-new-small-logo-box">
                 {% if block.settings.logo !=blank %}<img class="text-with-logo" src="{{ block.settings.logo|image_url }}" />{% endif %}
                 {{ block.settings.text }}
               </div>
@@ -169,8 +169,8 @@
 
 <script>
   $(function(){
-    // let logo_box=document.querySelector(".rich-text-new-logo-box");
-    $('.rich-text-new-logo-box p').replaceWith(function(){
+    // let logo_box=document.querySelector(".rich-text-new-small-logo-box");
+    $('.rich-text-new-small-logo-box p').replaceWith(function(){
         return $("<span />", {html: $(this).html(), class:$(this).attr('class')});
     });
   })
