@@ -198,7 +198,7 @@
         "template--15628744687716__adcf793c-7215-47db-b4c5-2a1a116c2315-16786750899a6fa3f1-0": {
           "type": "with_bg_card_placediy",
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/tiny_house_design_6dde8f30-5553-4945-9665-19f9becd3f93.png",
+            "picture-card-item": "shopify:\/\/shop_images\/compact_trailer.png",
             "heading": "Compact Tailer",
             "font_size": 42,
             "font_color": "#fff",
@@ -234,7 +234,7 @@
         "66e4201c-8775-4442-ba3e-ab1d7ab4e474": {
           "type": "with_bg_card_placediy",
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/Home_Grande_Tiny_House_V.png",
+            "picture-card-item": "shopify:\/\/shop_images\/364_home.png",
             "heading": "364 ft² Home",
             "font_size": 42,
             "font_color": "#fff",
