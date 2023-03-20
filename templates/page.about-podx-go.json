@@ -42,7 +42,7 @@
           "type": "buttons",
           "settings": {
             "banner_button_label": "Design Your Tiny Home Now",
-            "banner_button_link": "",
+            "banner_button_link": "https:\/\/form.jotform.com\/PODX\/co-creation-lab",
             "font_size": 24,
             "button_color": "#fff"
           }
@@ -55,12 +55,14 @@
         },
         "dba28ed0-069b-45ba-aa65-a791e3d52e3d": {
           "type": "rotation-banner-img",
+          "disabled": true,
           "settings": {
             "rotation-banner-img-item": "shopify:\/\/shop_images\/CB9E108C-D8F4-4EAA-A61E-BC439E8B3390.png"
           }
         },
         "f3e08948-3b41-43ca-937a-d946f96c4da9": {
           "type": "rotation-banner-img",
+          "disabled": true,
           "settings": {
             "rotation-banner-img-item": "shopify:\/\/shop_images\/tiny_house_on_wheels_folding.png"
           }
@@ -288,7 +290,7 @@
           "type": "text-with-logo",
           "settings": {
             "logo": "shopify:\/\/shop_images\/logo_dark_T.png",
-            "text": "<p>homes are completed up to 99% in our automation factory and delivered to you within 90 days.<\/p>",
+            "text": "<p>homes are completed up to 99% in our automation factory and delivered to you within 90 days.  Our unique approach to tiny homes reduces construction and delivery costs by up to 70% and reduces the assessment time from days to only 15 mins DIY experience. It is also equipped with smart home devices and off-grid energy solutions that give you the freedom to live wherever you want.<\/p>",
             "font-weight": 400,
             "font_size": 20,
             "text_color": "#000"
@@ -297,7 +299,7 @@
         "5f74b120-7883-4ffc-bfb1-35662bf641aa": {
           "type": "text-with-logo",
           "settings": {
-            "text": "<p>  Our unique approach to tiny homes reduces construction and delivery costs by up to 70% and reduces the assessment time from days to only 15 mins DIY experience. It is also equipped with smart home devices and off-grid energy solutions that give you the freedom to live wherever you want.<\/p>",
+            "text": "",
             "font-weight": 400,
             "font_size": 20,
             "text_color": "#000"

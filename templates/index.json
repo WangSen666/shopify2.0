@@ -278,6 +278,11 @@
             "heading_color": "#000"
           }
         },
+        "2892042e-7c97-4491-964c-0fa4d3dbe22f": {
+          "type": "yellow_border",
+          "settings": {
+          }
+        },
         "template--15628744425572__a905fa08-6ddb-4eba-accc-fe594715c917-1678349954f9865326-1": {
           "type": "text",
           "settings": {
@@ -290,6 +295,7 @@
       },
       "block_order": [
         "template--15628744425572__a905fa08-6ddb-4eba-accc-fe594715c917-1678349954f9865326-0",
+        "2892042e-7c97-4491-964c-0fa4d3dbe22f",
         "template--15628744425572__a905fa08-6ddb-4eba-accc-fe594715c917-1678349954f9865326-1"
       ],
       "settings": {
@@ -305,19 +311,19 @@
         "template--15628744425572__ac6d006e-525a-4248-88c0-918455f7a860-167835962426bd5986-0": {
           "type": "video-pic-item",
           "settings": {
-            "video-pic": "shopify:\/\/shop_images\/tiny_house_sewage_water.png"
+            "video-pic": "shopify:\/\/shop_images\/tiny_house_storage_1.png"
           }
         },
         "049a910a-3798-4e9c-ba6d-ead3b6abd6f9": {
           "type": "video-pic-item",
           "settings": {
-            "video-pic": "shopify:\/\/shop_images\/tiny_house_design_6dde8f30-5553-4945-9665-19f9becd3f93.png"
+            "video-pic": "shopify:\/\/shop_images\/tiny_house_storage_2.png"
           }
         },
         "89b19278-f9e6-44e5-a9df-12cef62e4d19": {
           "type": "video-pic-item",
           "settings": {
-            "video-pic": "shopify:\/\/shop_images\/rooftops-and-pools-of-a-florida-residential-neighbourhood.jpg"
+            "video-pic": "shopify:\/\/shop_images\/tiny_house_storage_3.png"
           }
         }
       },
@@ -337,8 +343,8 @@
         "padding_bottom": 52,
         "font_size": 20,
         "font_weight": 400,
-        "button_label_1": "learn more",
-        "button_link_1": ""
+        "button_label_1": "Learn More",
+        "button_link_1": "shopify:\/\/pages\/grande-s1"
       }
     },
     "173f7bc5-99e2-4305-8c3e-d260ec72970b": {
@@ -354,6 +360,11 @@
             "heading_color": "#000"
           }
         },
+        "8e1a5c42-1f2d-4fd0-9acb-92cee7bb5219": {
+          "type": "yellow_border",
+          "settings": {
+          }
+        },
         "template--15628744425572__173f7bc5-99e2-4305-8c3e-d260ec72970b-167841978023a3d895-1": {
           "type": "text",
           "settings": {
@@ -366,6 +377,7 @@
       },
       "block_order": [
         "template--15628744425572__173f7bc5-99e2-4305-8c3e-d260ec72970b-167841978023a3d895-0",
+        "8e1a5c42-1f2d-4fd0-9acb-92cee7bb5219",
         "template--15628744425572__173f7bc5-99e2-4305-8c3e-d260ec72970b-167841978023a3d895-1"
       ],
       "settings": {
@@ -406,9 +418,9 @@
         "998fcd02-6231-4679-b859-6e47bdcb85ac"
       ],
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/tiny_house_on_wheels_folding.png",
-        "button_label": "learn more",
-        "button_link": ""
+        "image_1": "shopify:\/\/shop_images\/edge_one_smart_tiny_house_547342df-25c8-42fb-812b-417ef6c50a36.png",
+        "button_label": "Learn More",
+        "button_link": "shopify:\/\/pages\/grande-s1"
       }
     },
     "4be96fc5-4fd6-4afa-9417-e5f1d32c60b9": {
@@ -467,8 +479,8 @@
         "margin_top": 64,
         "margin_bottom": 0,
         "image": "shopify:\/\/shop_images\/CB9E108C-D8F4-4EAA-A61E-BC439E8B3390.png",
-        "button_label": "learn more",
-        "button_link": "",
+        "button_label": "Learn More",
+        "button_link": "shopify:\/\/pages\/grande-s1",
         "image_1": "shopify:\/\/shop_images\/tiny_house_design_6dde8f30-5553-4945-9665-19f9becd3f93.png",
         "picture_place": "right",
         "is_imgBg": "false"
@@ -481,25 +493,32 @@
           "type": "heading",
           "settings": {
             "heading": "<p>Whether you're a first-time homeowner, looking to travel and take your home with you, <br\/>or just want to downsize and have an extra home in the backyard<br\/><\/p>",
-            "heading_size": "h1",
-            "font-weight": 400,
-            "font_size": 26,
-            "heading_color": "#000"
+            "heading_size": "h2",
+            "font-weight": 300,
+            "font_size": 22,
+            "heading_color": "#333333"
           }
         },
-        "cea53903-fb27-423a-8e02-8ee43ec7a5e8": {
-          "type": "text",
+        "cf5b3a5a-fa7f-4a5e-b7b5-bd8242e6872b": {
+          "type": "yellow_border",
           "settings": {
-            "text": "<p>PODX GO has different models to give you a variety of solutions to meet your budget and lifestyle<\/p>",
-            "font-weight": 900,
-            "font_size": 26,
-            "text_color": "#000"
+          }
+        },
+        "b7f13876-37bd-4042-a71e-d945f012bfe8": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>PODX GO has different models to give you a variety of solutions to meet your budget and lifestyle<\/p>",
+            "heading_size": "h1",
+            "font-weight": 400,
+            "font_size": 22,
+            "heading_color": "#333333"
           }
         }
       },
       "block_order": [
         "58fe6df7-3e23-46de-a09d-2622f5e43535",
-        "cea53903-fb27-423a-8e02-8ee43ec7a5e8"
+        "cf5b3a5a-fa7f-4a5e-b7b5-bd8242e6872b",
+        "b7f13876-37bd-4042-a71e-d945f012bfe8"
       ],
       "settings": {
         "is_border": "true",
@@ -616,7 +635,7 @@
         "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-3": {
           "type": "image_wrapper",
           "settings": {
-            "image_1": "shopify:\/\/shop_images\/tiny_house_on_wheels_folding.png"
+            "image_1": "shopify:\/\/shop_images\/tiny_house_-_flag.png"
           }
         },
         "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-4": {
@@ -651,7 +670,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Meet our Team",
-            "button_link_1": "",
+            "button_link_1": "shopify:\/\/pages\/about-podx-go",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -720,19 +739,20 @@
             "text_color": "#000"
           }
         },
-        "79c8ebd5-00b8-46ff-bab8-61621622940b": {
-          "type": "text",
+        "4107ccbc-e4a8-4b2e-9bc8-7efa0c60d265": {
+          "type": "heading",
           "settings": {
-            "text": "<p>No worries. We are here to help. <\/p>",
-            "font-weight": 500,
-            "font_size": 40,
-            "text_color": "#000"
+            "heading": "<p>No worries. We are here to help. <\/p>",
+            "heading_size": "h1",
+            "font-weight": 400,
+            "font_size": 46,
+            "heading_color": "#333333"
           }
         }
       },
       "block_order": [
         "template--15628744425572__5af20d81-606b-473f-9b3c-47412699d454-167845793474395b98-1",
-        "79c8ebd5-00b8-46ff-bab8-61621622940b"
+        "4107ccbc-e4a8-4b2e-9bc8-7efa0c60d265"
       ],
       "settings": {
         "is_border": "false",

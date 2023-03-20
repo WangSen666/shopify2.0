@@ -18,17 +18,19 @@
         "template--15628744687716__ea8479d2-0c1d-4e21-8752-556731abf541-1678514253ebb87161-5": {
           "type": "rotation-banner-img",
           "settings": {
-            "rotation-banner-img-item": "shopify:\/\/shop_images\/4_06c2cb2e-e827-4b8f-aecd-290857b6e9d0.jpg"
+            "rotation-banner-img-item": "shopify:\/\/shop_images\/tiny_house_banner_2.png"
           }
         },
         "5d7e473b-943c-4e7b-bb50-994399697b94": {
           "type": "rotation-banner-img",
+          "disabled": true,
           "settings": {
             "rotation-banner-img-item": "shopify:\/\/shop_images\/16_1.png"
           }
         },
         "79b21d14-4c0c-4375-8a53-3265202a5e3f": {
           "type": "rotation-banner-img",
+          "disabled": true,
           "settings": {
             "rotation-banner-img-item": "shopify:\/\/shop_images\/s2.png"
           }
@@ -38,7 +40,7 @@
           "settings": {
             "banner_button_label": "Price Starts at $49,000",
             "banner_button_link": "",
-            "font_size": 24,
+            "font_size": 32,
             "button_color": "#9ED835"
           }
         },
@@ -166,7 +168,7 @@
           "type": "button",
           "settings": {
             "button_label_1": "Download Floorplan",
-            "button_link_1": "",
+            "button_link_1": "https:\/\/form.jotform.com\/230568117037454",
             "button_style_secondary_1": false,
             "button_color": "#000",
             "margin_top": 0,
@@ -196,7 +198,7 @@
         "template--15628744687716__adcf793c-7215-47db-b4c5-2a1a116c2315-16786750899a6fa3f1-0": {
           "type": "with_bg_card_placediy",
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/tiny_house_design_6dde8f30-5553-4945-9665-19f9becd3f93.png",
+            "picture-card-item": "shopify:\/\/shop_images\/compact_trailer.png",
             "heading": "Compact Tailer",
             "font_size": 42,
             "font_color": "#fff",
@@ -214,7 +216,7 @@
         "d22b28e9-0cb0-4385-9032-e7da08a1d85a": {
           "type": "with_bg_card_placediy",
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/contact_podx_go_tiny_house.png",
+            "picture-card-item": "shopify:\/\/shop_images\/free_to_move_tiny_house.png",
             "heading": "Free to Move",
             "font_size": 42,
             "font_color": "#fff",
@@ -232,14 +234,14 @@
         "66e4201c-8775-4442-ba3e-ab1d7ab4e474": {
           "type": "with_bg_card_placediy",
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/Home_Grande_Tiny_House_V.png",
+            "picture-card-item": "shopify:\/\/shop_images\/364_home.png",
             "heading": "364 ft² Home",
             "font_size": 42,
             "font_color": "#fff",
             "wrapper_place": "left-bottom",
             "heading_1": "19'0.7\" x 23'0.4\" x 10'7.5\"",
-            "heading_2": "Simple push of a button to easy setup and takedown,",
-            "heading_3": "and automatic leveling.",
+            "heading_2": "Simple push of a button to easy setup and takedown, and automatic leveling.",
+            "heading_3": "",
             "text_font_size": 20,
             "text_font_weight": 400,
             "bg_opcity": 0,
@@ -410,31 +412,31 @@
         "template--15628744687716__29ac9adf-b455-4c37-8929-631cd309bf80-167876074482a92fd6-6": {
           "type": "img_rotation",
           "settings": {
-            "img_rotation": "shopify:\/\/shop_images\/off-grid_tiny_house.png"
+            "img_rotation": "shopify:\/\/shop_images\/edge_one_tiny_house_control.png"
           }
         },
         "9793f59f-382f-4a82-a4b4-a5974590f3ae": {
           "type": "img_rotation",
           "settings": {
-            "img_rotation": "shopify:\/\/shop_images\/contact_podx_go_tiny_house.png"
+            "img_rotation": "shopify:\/\/shop_images\/1_4f318e4e-35f3-4629-b1a6-8a0126a3866f.png"
           }
         },
         "438c5f72-eba4-4c8d-bbc4-06b728e9fd10": {
           "type": "img_rotation",
           "settings": {
-            "img_rotation": "shopify:\/\/shop_images\/tiny_house_design_6dde8f30-5553-4945-9665-19f9becd3f93.png"
+            "img_rotation": "shopify:\/\/shop_images\/2_3e7d64c8-a27e-4a84-aa45-dd541d9f4954.png"
           }
         },
         "2eebd45e-42a6-48d7-93a5-d1423fc07252": {
           "type": "img_rotation",
           "settings": {
-            "img_rotation": "shopify:\/\/shop_images\/s2_2.jpg"
+            "img_rotation": "shopify:\/\/shop_images\/3_daae3879-1b19-411b-bd98-6de73e1a61ad.png"
           }
         },
         "e1ae0dfc-0b3e-475e-9fb1-c1bcfbeae43b": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Thanks to Edge ONE, the all-in-one solution for home automation, security system, and energy management, now everything will be under your control with only ONE command touchpad!",
             "text_style": "body",
             "font_size": 24,
             "font_weight": 400,
@@ -531,46 +533,35 @@
     "8e9745a6-c196-473d-b0bb-baed509eb47e": {
       "type": "rich-text-new",
       "blocks": {
-        "template--15628744687716__8e9745a6-c196-473d-b0bb-baed509eb47e-1678762114c2d9a833-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
-            "heading_size": "h1",
-            "font-weight": 400,
-            "font_size": 48,
-            "heading_color": "#000"
-          }
-        },
         "template--15628744687716__8e9745a6-c196-473d-b0bb-baed509eb47e-1678762114c2d9a833-1": {
           "type": "text",
           "settings": {
             "text": "<p>Having questions about start your tiny home journey? <\/p>",
             "font-weight": 400,
-            "font_size": 20,
+            "font_size": 30,
             "text_color": "#000"
           }
         },
-        "972c9cee-fe0e-4b17-ae2a-c45b63e5c3b2": {
-          "type": "text",
+        "template--15628744687716__8e9745a6-c196-473d-b0bb-baed509eb47e-1678762114c2d9a833-0": {
+          "type": "heading",
           "settings": {
-            "text": "<p>No worries. We are here to help. <\/p>",
+            "heading": "<p>No worries. We are here to help. <\/p>",
+            "heading_size": "h1",
             "font-weight": 400,
-            "font_size": 50,
-            "text_color": "#000"
+            "font_size": 46,
+            "heading_color": "#000"
           }
         }
       },
       "block_order": [
-        "template--15628744687716__8e9745a6-c196-473d-b0bb-baed509eb47e-1678762114c2d9a833-0",
         "template--15628744687716__8e9745a6-c196-473d-b0bb-baed509eb47e-1678762114c2d9a833-1",
-        "972c9cee-fe0e-4b17-ae2a-c45b63e5c3b2"
+        "template--15628744687716__8e9745a6-c196-473d-b0bb-baed509eb47e-1678762114c2d9a833-0"
       ],
       "settings": {
         "is_border": "false",
         "is_background_radius": "false",
         "padding_top": 86,
-        "padding_bottom": 88
+        "padding_bottom": 84
       }
     },
     "main": {

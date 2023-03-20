@@ -113,15 +113,26 @@
               style="text-align:{{ section.settings.content_alignment }};font-weight:{{ block.settings.font-weight }};color:{{ block.settings.heading_color }};font-size:{{ block.settings.font_size }}px;">
               {{ block.settings.heading | replace: 'p>', 'span>' }}
             </h2>
+             {% when 'yellow_border' %}
+              <div class="yellow-boder"></div>
+            {%- when 'text' -%}
+              <div
+                class="rich-text-new__text rte"
+                {{ block.shopify_attributes }}
+                style="font-weight:{{ block.settings.font-weight }};font-size:{{ block.settings.font_size }}px;">
+                {{ block.settings.text }}
+              </div>
             {%- endcase -%}
         {%- endfor -%}
         
-        {% if section.settings.is_border=="true" %}
+<!--         {% if section.settings.is_border=="true" %}
           <div class="yellow-boder"></div>
-        {% endif %}
+        {% endif %} -->
         
-        {%- for block in section.blocks -%}
-        {%- case block.type -%}   
+<!--         {%- for block in section.blocks -%}
+        {%- case block.type -%}  
+            {% when 'yellow_border' %}
+            <div class="yellow-boder"></div>
             {%- when 'text' -%}
             <div
               class="rich-text-new__text rte"
@@ -131,7 +142,7 @@
             </div>
 
           {%- endcase -%}
-        {%- endfor -%}
+        {%- endfor -%} -->
         {%- for block in section.blocks -%}
         {%- case block.type -%}   
             {%- when 'text-with-logo' -%}
@@ -139,8 +150,11 @@
               class="rich-text-new__text rte"
               {{ block.shopify_attributes }}
               style="font-weight:{{ block.settings.font-weight }};font-size:{{ block.settings.font_size }}px;display:flex;align-items:center;">
-              {% if block.settings.logo !=blank %}<img class="text-with-logo" src="{{ block.settings.logo|image_url }}" />{% endif %}
-              <div>{{ block.settings.text }}</div>
+              
+              <div class="rich-text-new-logo-box">
+                {% if block.settings.logo !=blank %}<img class="text-with-logo" src="{{ block.settings.logo|image_url }}" />{% endif %}
+                {{ block.settings.text }}
+              </div>
             </div>
 
           {%- endcase -%}
@@ -150,6 +164,14 @@
   </div>
 </div>
 
+<script>
+  $(function(){
+    // let logo_box=document.querySelector(".rich-text-new-logo-box");
+    $('.rich-text-new-logo-box p').replaceWith(function(){
+        return $("<span />", {html: $(this).html(), class:$(this).attr('class')});
+    });
+  })
+</script>
 
 {% schema %}
   {
@@ -212,6 +234,14 @@
     ],
     "blocks": [
       {
+        "type":"yellow_border",
+        "name":"黄色底",
+        "limit":1,
+        "settings":[
+          
+        ]
+      },
+      {
         "type": "heading",
         "name": "富文本标题",
         "limit": 3,
@@ -271,11 +301,11 @@
                 "value": "#fff",
                 "label": "白色"
               }, {
-                "value": "#000",
+                "value": "#333333",
                 "label": "黑色"
               }
             ],
-            "default": "#000",
+            "default": "#333333",
             "label": "黑色"
           }
         ]
@@ -321,11 +351,11 @@
                 "value": "#fff",
                 "label": "白色"
               }, {
-                "value": "#000",
+                "value": "#333333",
                 "label": "黑色"
               }
             ],
-            "default": "#000",
+            "default": "#333333",
             "label": "黑色"
           }
         ]
@@ -392,7 +422,7 @@
           {
             "type": "text"
           },
-          
+          {"type":"yellow_border"},
           {"type":"text-with-logo"}
         ]
       }
