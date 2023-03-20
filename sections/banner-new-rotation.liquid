@@ -183,7 +183,10 @@
     justify-content:space-between;
     max-width:100%;
   }
-
+.heading-rotation{
+  display:block !important;
+  height:72px !important;
+}
   @media screen and (max-width: 750px) {
 
     .banner-new-rotation .banner-component__content .banner-new-rotation__box{
@@ -372,7 +375,28 @@
   </div>
   
 </div>
-
+<script>
+  $(function() {
+    var head_rotation = $(".heading-rotation span");
+      let head_rotation_text = head_rotation.text();
+      let index=0;
+      function textTransform(){
+        $(".heading-rotation span").text("")
+        var timer=setInterval(function(){
+          
+          if(index==head_rotation_text.length){
+           index=0;
+            $(".heading-rotation span").text("")
+          }else{
+            index++;
+            $(".heading-rotation span").text(head_rotation_text.slice(0,index));
+          }
+        },300)
+      }
+    
+    textTransform();
+  })
+</script>
 
 {% schema %}
   {
