@@ -191,18 +191,23 @@
          })
       }
       var flag = true;
-     if(windowWidth<=1600&&windowWidth>1440){
-      imgList.style.width = ((imgList.children.length-1) * 294+522) + 'px';
-     }
-     else if(windowWidth<=1440&&windowWidth>1366){
-      imgList.style.width = ((imgList.children.length-1) * 252+448) + 'px';
-       
-     }else if(windowWidth<=1366){ 
-       imgList.style.width = ((imgList.children.length-1) * 222+394) + 'px';
-       
+     if(windowWidth>750){
+        if(windowWidth<=1600&&windowWidth>1440){
+        imgList.style.width = ((imgList.children.length-1) * 294+522) + 'px';
+       }
+       else if(windowWidth<=1440&&windowWidth>1366){
+        imgList.style.width = ((imgList.children.length-1) * 252+448) + 'px';
+         
+       }else if(windowWidth<=1366){ 
+         imgList.style.width = ((imgList.children.length-1) * 222+394) + 'px';
+         
+       }else{
+        imgList.style.width = ((imgList.children.length-1) * 336+556) + 'px';
+       }
      }else{
-      imgList.style.width = ((imgList.children.length-1) * 336+556) + 'px';
+        imgList.style.width = ((imgList.children.length-1) * 336+360) + 'px';
      }
+    
      // 手动切换轮播图
      tabChangePrev=function(){
        console.log(imgList.children.length,thisIndex)
@@ -391,7 +396,8 @@
                   flag = true;
                 });
                }
-            }else{
+            }
+            else{
               $(".podx-go-card-rotation-item").eq(thisIndex).css({
                  "width":"596px",
                  "height":"406px"
