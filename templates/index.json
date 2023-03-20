@@ -360,6 +360,11 @@
             "heading_color": "#000"
           }
         },
+        "8e1a5c42-1f2d-4fd0-9acb-92cee7bb5219": {
+          "type": "yellow_border",
+          "settings": {
+          }
+        },
         "template--15628744425572__173f7bc5-99e2-4305-8c3e-d260ec72970b-167841978023a3d895-1": {
           "type": "text",
           "settings": {
@@ -372,6 +377,7 @@
       },
       "block_order": [
         "template--15628744425572__173f7bc5-99e2-4305-8c3e-d260ec72970b-167841978023a3d895-0",
+        "8e1a5c42-1f2d-4fd0-9acb-92cee7bb5219",
         "template--15628744425572__173f7bc5-99e2-4305-8c3e-d260ec72970b-167841978023a3d895-1"
       ],
       "settings": {
