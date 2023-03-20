@@ -162,7 +162,8 @@
                "width":"252px",
                "height":"252px"
              }) 
-         }else if(windowWidth<=1366){ 
+         }
+         else if(windowWidth<=1366){ 
            $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
                "width":"394px",
                "height":"268px"
@@ -180,6 +181,14 @@
            "height":"336px"
          })
       } 
+      }else{
+       $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
+           "width":"596px",
+           "height":"406px"
+         }).siblings().css({
+           "width":"336px",
+           "height":"336px"
+         })
       }
       var flag = true;
      if(windowWidth<=1600&&windowWidth>1440){
