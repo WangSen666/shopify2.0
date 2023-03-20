@@ -573,8 +573,9 @@
       window.addEventListener('scroll', function() {
         // let header = document.getElementsByClassName("header-wrapper")[0];
         let header = document.getElementsByClassName("nav-top")[0];
-        let black_search_icon=document.getElementsByClassName("black-search-icon");
-        console.log("black_search_icon",black_search_icon)
+        let black_search_icon=document.getElementsByClassName("black-search-icon")[0];
+        let search_icon=document.getElementsByClassName("search-icon")[0];
+        
         let wWidth = document.documentElement.clientWidth;
         let scrollTop = document.documentElement.scrollTop;
         if (scrollTop > 10 && wWidth >= 990) {
@@ -582,9 +583,9 @@
           $(".header__menu-item span").css({"color": "black"})
           $(".default_logo").css({"display":"none"});
           $(".scrollTop_logo").css({"display":"block"});
-          $(".header__search .search-icon").css({"dispay":"none !important;"});
-          $(".header__search .black-search-icon").css({"dispay":"block !important;"})
-          // console.log("search-icon",$(".search-icon"))
+          black_search_icon.style.display="block";
+          search_icon.style.display="none";
+          
             ;
           $('.header__menu-item').hover(function(){
              $('.header__menu-item span').css({color:"black"})
@@ -595,8 +596,8 @@
            $('.header__menu-item').hover(function(){
              $('.header__menu-item span').css({color:"#fff"})
           })
-          $(".header__search .search-icon").css({"dispay":"black !important;"});
-          $(".header__search .black-search-icon").css({"dispay":"none !important;"});
+          black_search_icon.style.display="none";
+          search_icon.style.display="block";
            $(".default_logo").css({"display":"block"});
           $(".scrollTop_logo").css({"display":"none"});
 
