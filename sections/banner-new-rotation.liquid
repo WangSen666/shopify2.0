@@ -382,21 +382,15 @@
         var timer=setInterval(function(){
           
           if(index==head_rotation_text.length){
-            clearInterval(timer)
+           index=0;
+            $(".heading-rotation span").text("")
           }else{
             index++;
             $(".heading-rotation span").text(head_rotation_text.slice(0,index));
           }
         },300)
-        // if(flag === false){
-        //     str = arr[index];
-        //     endIndex2 = endIndex1;
-        //     $input.val(str.substring(0, endIndex1++));
-        //     if($input.val().length === arr[index].length){//若当前字符串全部显示完毕，则设置flag为true
-        //         flag = true;
-        //     }
-        // }
       }
+    
     textTransform();
   })
 </script>
