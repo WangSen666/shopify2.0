@@ -499,8 +499,14 @@
     font-size: 36px !important;
   }
 
+  /* design-tiny-home */
+  .design-tiny-home__wrapper {
+    padding: 50px 0 !important;
+  }
+
   .design-tiny-home__body {
     font-size: 16px !important;
+    padding: 4px 14px !important;
   }
 
   .icon .right-icon {
@@ -782,4 +788,22 @@
     max-width: 40px !important;
     margin: 0 auto 36px !important;
   }
+
+  /* design-tiny-home */
+  .design-tiny-home__wrapper {
+    padding: 30px 0 !important;
+  }
+
+  /* .design-tiny-home__body {
+    font-size: 16px !important;
+  }
+
+  .icon .right-icon {
+    width: 20px !important;
+  }
+
+  .design-tiny-home__wrapper .button {
+    font-size: 14px !important;
+    max-width: 290px !important;
+  } */
 }
