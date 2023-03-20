@@ -207,7 +207,7 @@
           "type": "bannerComponentBottomCard",
           "settings": {
             "heading": "Free to Move",
-            "heading_size": 22,
+            "heading_size": 24,
             "subtitle": "Towable with F250 or equivalent Assemble on-site in 15 minutes with DIY",
             "subtitle_size": 20
           }
@@ -216,7 +216,7 @@
           "type": "bannerComponentBottomCard",
           "settings": {
             "heading": "NOAH Certified",
-            "heading_size": 22,
+            "heading_size": 24,
             "subtitle": "Allow you to move virtually anywhere that's permissible by zoning regulations.",
             "subtitle_size": 20
           }
@@ -225,7 +225,7 @@
           "type": "bannerComponentBottomCard",
           "settings": {
             "heading": "3 Floorplans",
-            "heading_size": 22,
+            "heading_size": 24,
             "subtitle": "Completed interior design with healthy materials",
             "subtitle_size": 20
           }
@@ -234,8 +234,8 @@
           "type": "bannerComponentBottomCard",
           "settings": {
             "heading": "Spaces to Live, Work and Relax",
-            "heading_size": 22,
-            "subtitle": "Spaces to live, work and relax      Fully furnished and air conditioned home",
+            "heading_size": 24,
+            "subtitle": "Spaces to Live, Work and Relax Fully furnished and air conditioned home",
             "subtitle_size": 20
           }
         }
@@ -478,10 +478,10 @@
         "head_weight": 0,
         "margin_top": 64,
         "margin_bottom": 0,
-        "image": "shopify:\/\/shop_images\/durability_1_tiny_house.png",
+        "image": "shopify:\/\/shop_images\/CB9E108C-D8F4-4EAA-A61E-BC439E8B3390.png",
         "button_label": "Learn More",
         "button_link": "shopify:\/\/pages\/grande-s1",
-        "image_1": "shopify:\/\/shop_images\/durability_tiny_house_2.png",
+        "image_1": "shopify:\/\/shop_images\/tiny_house_design_6dde8f30-5553-4945-9665-19f9becd3f93.png",
         "picture_place": "right",
         "is_imgBg": "false"
       }
@@ -492,7 +492,7 @@
         "template--15634989285476__15eff337-14f9-4074-9835-664493722bd5-16793068663eb96d6c-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Whether you're a first-time homeowner, looking to travel and take your home with you, <br\/>or just want to downsize and have an extra home in the backyard<\/p>",
+            "heading": "<p>Whether you're a first-time homeowner, looking to travel and take your home with you, or just want to downsize and have an extra home in the backyard<\/p>",
             "heading_size": "h1",
             "font-weight": 400,
             "font_size": 48,
@@ -510,7 +510,7 @@
             "heading": "<p>PODX GO has different models to give you a variety of solutions to meet your budget and lifestyle<\/p>",
             "heading_size": "h1",
             "font-weight": 400,
-            "font_size": 48,
+            "font_size": 24,
             "heading_color": "#333333"
           }
         }
