@@ -2273,7 +2273,7 @@ input[type='checkbox'] {
 @media screen and (max-width: 1800px) and (min-width: 1500px) {
   .header--middle-left {
     grid-template-areas: 'heading navigation icons';
-    grid-template-columns: 600px 1fr;
+    grid-template-columns: 500px 1fr;
     column-gap: 2rem;
   }
 }
@@ -2281,7 +2281,7 @@ input[type='checkbox'] {
 @media screen and (max-width: 1500px) and (min-width: 1388px) {
   .header--middle-left {
     grid-template-areas: 'heading navigation icons';
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 400px 1fr;
     column-gap: 2rem;
   }
 }
