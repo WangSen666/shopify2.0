@@ -376,11 +376,17 @@
   $(function() {
     var head_rotation = $(".heading-rotation span");
       let head_rotation_text = head_rotation.text();
-      
+      let index=0;
       function textTransform(){
         $(".heading-rotation span").text("")
         var timer=setInterval(function(){
           
+          if(index==head_rotation_text.length){
+            clearInterval(timer)
+          }else{
+            index++;
+            $(".heading-rotation span").text(head_rotation_text.slice(0,index));
+          }
         },300)
         // if(flag === false){
         //     str = arr[index];
