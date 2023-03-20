@@ -531,17 +531,6 @@
     "8e9745a6-c196-473d-b0bb-baed509eb47e": {
       "type": "rich-text-new",
       "blocks": {
-        "template--15628744687716__8e9745a6-c196-473d-b0bb-baed509eb47e-1678762114c2d9a833-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
-            "heading_size": "h1",
-            "font-weight": 400,
-            "font_size": 48,
-            "heading_color": "#000"
-          }
-        },
         "template--15628744687716__8e9745a6-c196-473d-b0bb-baed509eb47e-1678762114c2d9a833-1": {
           "type": "text",
           "settings": {
@@ -551,26 +540,26 @@
             "text_color": "#000"
           }
         },
-        "972c9cee-fe0e-4b17-ae2a-c45b63e5c3b2": {
-          "type": "text",
+        "template--15628744687716__8e9745a6-c196-473d-b0bb-baed509eb47e-1678762114c2d9a833-0": {
+          "type": "heading",
           "settings": {
-            "text": "<p>No worries. We are here to help. <\/p>",
-            "font-weight": 800,
+            "heading": "<p>No worries. We are here to help. <\/p>",
+            "heading_size": "h1",
+            "font-weight": 400,
             "font_size": 46,
-            "text_color": "#000"
+            "heading_color": "#000"
           }
         }
       },
       "block_order": [
-        "template--15628744687716__8e9745a6-c196-473d-b0bb-baed509eb47e-1678762114c2d9a833-0",
         "template--15628744687716__8e9745a6-c196-473d-b0bb-baed509eb47e-1678762114c2d9a833-1",
-        "972c9cee-fe0e-4b17-ae2a-c45b63e5c3b2"
+        "template--15628744687716__8e9745a6-c196-473d-b0bb-baed509eb47e-1678762114c2d9a833-0"
       ],
       "settings": {
         "is_border": "false",
         "is_background_radius": "false",
         "padding_top": 86,
-        "padding_bottom": 88
+        "padding_bottom": 84
       }
     },
     "main": {
