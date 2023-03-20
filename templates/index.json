@@ -499,19 +499,26 @@
             "heading_color": "#000"
           }
         },
-        "cea53903-fb27-423a-8e02-8ee43ec7a5e8": {
-          "type": "text",
+        "cf5b3a5a-fa7f-4a5e-b7b5-bd8242e6872b": {
+          "type": "yellow_border",
           "settings": {
-            "text": "<p>PODX GO has different models to give you a variety of solutions to meet your budget and lifestyle<\/p>",
-            "font-weight": 100,
-            "font_size": 20,
-            "text_color": "#000"
+          }
+        },
+        "b7f13876-37bd-4042-a71e-d945f012bfe8": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>PODX GO has different models to give you a variety of solutions to meet your budget and lifestyle<\/p>",
+            "heading_size": "h1",
+            "font-weight": 400,
+            "font_size": 22,
+            "heading_color": "#000"
           }
         }
       },
       "block_order": [
         "58fe6df7-3e23-46de-a09d-2622f5e43535",
-        "cea53903-fb27-423a-8e02-8ee43ec7a5e8"
+        "cf5b3a5a-fa7f-4a5e-b7b5-bd8242e6872b",
+        "b7f13876-37bd-4042-a71e-d945f012bfe8"
       ],
       "settings": {
         "is_border": "true",
