@@ -2262,7 +2262,7 @@ input[type='checkbox'] {
   align-items: center;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1800px) {
   .header--middle-left {
     grid-template-areas: 'heading navigation icons';
     grid-template-columns: 700px 1fr;
@@ -2270,7 +2270,23 @@ input[type='checkbox'] {
   }
 }
 
-@media screen and (max-width: 1500px) and (min-width: 990px) {
+@media screen and (max-width: 1800px) and (min-width: 1500px) {
+  .header--middle-left {
+    grid-template-areas: 'heading navigation icons';
+    grid-template-columns: 600px 1fr;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1388px) {
+  .header--middle-left {
+    grid-template-areas: 'heading navigation icons';
+    grid-template-columns: 500px 1fr;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1388px) and (min-width: 990px) {
   .header--middle-left {
     grid-template-areas: 'heading navigation icons';
     grid-template-columns: 300px 1fr;
