@@ -207,7 +207,7 @@
           "type": "bannerComponentBottomCard",
           "settings": {
             "heading": "Free to Move",
-            "heading_size": 24,
+            "heading_size": 22,
             "subtitle": "Towable with F250 or equivalent Assemble on-site in 15 minutes with DIY",
             "subtitle_size": 20
           }
@@ -216,7 +216,7 @@
           "type": "bannerComponentBottomCard",
           "settings": {
             "heading": "NOAH Certified",
-            "heading_size": 24,
+            "heading_size": 22,
             "subtitle": "Allow you to move virtually anywhere that's permissible by zoning regulations.",
             "subtitle_size": 20
           }
@@ -225,7 +225,7 @@
           "type": "bannerComponentBottomCard",
           "settings": {
             "heading": "3 Floorplans",
-            "heading_size": 24,
+            "heading_size": 22,
             "subtitle": "Completed interior design with healthy materials",
             "subtitle_size": 20
           }
