@@ -725,7 +725,7 @@
           "settings": {
             "text": "<p>No worries. We are here to help. <\/p>",
             "font-weight": 800,
-            "font_size": 42,
+            "font_size": 46,
             "text_color": "#000"
           }
         }
