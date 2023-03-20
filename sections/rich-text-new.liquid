@@ -150,8 +150,11 @@
               class="rich-text-new__text rte"
               {{ block.shopify_attributes }}
               style="font-weight:{{ block.settings.font-weight }};font-size:{{ block.settings.font_size }}px;display:flex;align-items:center;">
-              {% if block.settings.logo !=blank %}<img class="text-with-logo" src="{{ block.settings.logo|image_url }}" />{% endif %}
-              <div>{{ block.settings.text }}</div>
+              
+              <div>
+                {% if block.settings.logo !=blank %}<img class="text-with-logo" src="{{ block.settings.logo|image_url }}" />{% endif %}
+                {{ block.settings.text }}
+              </div>
             </div>
 
           {%- endcase -%}
