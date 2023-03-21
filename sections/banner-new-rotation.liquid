@@ -378,22 +378,32 @@
 <script>
   $(function() {
     var head_rotation = $(".heading-rotation span");
-      let head_rotation_text = head_rotation.text();
-      let index=0;
-      function textTransform(){
-        $(".heading-rotation span").text("")
-        var timer=setInterval(function(){
-          
-          if(index==head_rotation_text.length){
-           index=0;
-            $(".heading-rotation span").text("")
-          }else{
-            index++;
-            $(".heading-rotation span").text(head_rotation_text.slice(0,index));
+    let head_rotation_text = head_rotation.text();
+    let textWord = ["Your Backyard ", "On the Road", "Campground", "Tiny Home Community"]
+    let index = 0;
+    let arrayIndex = 0;
+    let curWord = textWord[arrayIndex];
+    function textTransform() {
+      $(".heading-rotation span").text("")
+      var timer = setInterval(function() {
+
+        if (index == curWord.length) {
+          if (arrayIndex == textWord.length - 1) {
+            arrayIndex = 0;
+            curWord = textWord[arrayIndex]
+          } else {
+            arrayIndex++;
+            curWord = textWord[arrayIndex]
           }
-        },300)
-      }
-    
+          $(".heading-rotation span").text("")
+          index = 0;
+        } else {
+          index++;
+          $(".heading-rotation span").text(curWord.slice(0, index));
+        }
+      }, 300)
+    }
+
     textTransform();
   })
 </script>
