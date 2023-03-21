@@ -92,7 +92,7 @@
   }
 {%- endstyle -%}
 
-<div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
+<div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}" id="{{ sections.settings.href_id }}">
   <div style="--color-foreground:none;" class="newsletter__wrapper  color-{{ section.settings.color_scheme }} {% if section.settings.is_background_radius=="true" %}text-border-radius{% endif %} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
 <!--     background:rgb(247,247,245) !important; -->
     {%- for block in section.blocks -%}
@@ -149,6 +149,7 @@
     "tag": "section",
     "class": "section",
     "settings": [
+      {"type":"text","id":"href_id","label":"链接id"},
       {
         "type":"select",
         "id":"is_background_radius",
