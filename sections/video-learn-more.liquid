@@ -243,7 +243,7 @@
           {% endcase %}
         {% endfor %}
         <div class="video-learn-more-item">
-            <a {% if section.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ section.settings.button_link_1 }}"{% endif %} class="button{% if section.settings.button_style_secondary_2 %}  button--secondary{% else %} button--primary{% endif %}">
+            <a target="_blank" {% if section.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ section.settings.button_link_1 }}"{% endif %} class="button{% if section.settings.button_style_secondary_2 %}  button--secondary{% else %} button--primary{% endif %}">
             {{ section.settings.button_label_1 | escape }}
               <img
                 src="{{'button_logo_2.png'  | asset_url }}"
