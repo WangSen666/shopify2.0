@@ -78,7 +78,7 @@
 
 {%- endstyle -%}
 
-<div class="isolate{% unless section.settings.full_width %}  {% endunless %}">
+<div class="isolate{% unless section.settings.full_width %}  {% endunless %}" id="{{ section.settings.href_id }}">
   <div class="going-tiny content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} going-tiny--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
     <div class="going-tiny__wrapper {% if section.settings.is_background_radius=="true" %}text-border-radius{% endif %}  going-tiny__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
       <div class="going-tiny__blocks {{ section.settings.content_alignment }}">
@@ -142,7 +142,7 @@
     "class": "section",
     "settings": [
      
-      
+       {"type":"text","id":"href_id","label":"链接id"},
       {
         "type": "select",
         "id": "color_scheme",
