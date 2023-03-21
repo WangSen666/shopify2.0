@@ -406,6 +406,10 @@
     padding: 0 10px;
   }
 
+  .banner__right_bottom_info_btn {
+    padding: 14px 24px !important;
+  }
+
   .banner-component__content h2 {
     font-size: 46px !important;
   }
@@ -554,6 +558,7 @@
     width: 10px !important;
     height: 10px !important;
   }
+
 }
 
 
@@ -833,7 +838,17 @@
     font-size: 14px !important;
     max-width: 290px !important;
   } */
+
+  /*  edge-look-around */
   .edge-look-around .button {
     font-size: 20px !important;
+    max-width: 210px !important;
+  }
+
+  /* banner-new-rotation */
+
+
+  .banner__right_bottom_info_btn {
+    padding: 10px 20px !important;
   }
 }
