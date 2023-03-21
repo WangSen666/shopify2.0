@@ -356,7 +356,7 @@
               {% endif %}
               {% if block.settings.banner_button_label_1 != blank %}
                 <div class="banner__right_bottom_info_btn" {{ block.shopify_attributes }}>
-                  <a {% if block.settings.banner_button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link_1 }}"{% endif %}class="button banner-component-new-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label_1 | escape }}</a>
+                  <a  target="_blank" {% if block.settings.banner_button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link_1 }}"{% endif %}class="button banner-component-new-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label_1 | escape }}</a>
                   <img
                     src="{{'button_logo_1.png'  | asset_url }}"
                     width="12"
