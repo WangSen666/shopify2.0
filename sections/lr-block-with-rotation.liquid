@@ -340,8 +340,8 @@
 <script>
    $(function () {
       var imgListBoth=document.getElementsByClassName("lr_block_rotation_imgList");
-     imgListBoth.forEach((v,index)=>{
-       var mySwiper_`{$index}` = new Swiper('.swiper', {
+     for(let i=0;i<=imgListBoth.length-1;i++){
+       var mySwiper_index = new Swiper('.swiper', {
             direction: 'horizontal', // 垂直切换选项
             loop: true, // 循环模式选项
 
@@ -361,7 +361,8 @@
                 el: '.swiper-scrollbar',
             },
         })
-     })
+     }
+       
      var mySwiper = new Swiper('.swiper', {
             direction: 'horizontal', // 垂直切换选项
             loop: true, // 循环模式选项
@@ -381,7 +382,7 @@
             scrollbar: {
                 el: '.swiper-scrollbar',
             },
-        })       
+        // })       
        var windowWidth=document.documentElement.clientWidth;
       var thisIndex = 0;
       var flag = true;
