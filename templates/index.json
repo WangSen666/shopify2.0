@@ -721,6 +721,8 @@
         "is_all_screen": "true",
         "heading": "",
         "heading_size": 36,
+        "padding_top": 74,
+        "padding_bottom": 74,
         "image_overlay_opacity": 0,
         "is_lr": "true",
         "show_text_box": true,
@@ -839,6 +841,7 @@
         "template--15597986676836__2fc4a141-20b7-4e60-a81a-cb54d29e005b-167688511937fd4f31-2"
       ],
       "settings": {
+        "href_id": "",
         "is_background_radius": "true",
         "color_scheme": "background-1",
         "full_width": true,
