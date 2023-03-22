@@ -386,21 +386,23 @@
     function textTransform() {
       $(".heading-rotation span").text("")
       var timer = setInterval(function() {
+        curWord = textWord[arrayIndex]
+          console.log("(curWord",curWord.split(""))
 
-        if (index == curWord.length) {
-          if (arrayIndex == textWord.length - 1) {
-            arrayIndex = 0;
-            curWord = textWord[arrayIndex]
-          } else {
-            arrayIndex++;
-            curWord = textWord[arrayIndex]
-          }
-          $(".heading-rotation span").text("")
-          index = 0;
-        } else {
-          index++;
-          $(".heading-rotation span").text(curWord.slice(0, index));
-        }
+        // if (index == curWord.length-1) {
+        //   if (arrayIndex == textWord.length - 1) {
+        //     arrayIndex = 0;
+        //     curWord = textWord[arrayIndex]
+        //   } else {
+        //     arrayIndex++;
+        //     curWord = textWord[arrayIndex]
+        //   }
+        //   $(".heading-rotation span").text("")
+        //   index = 0;
+        // } else {
+        //   index++;
+        //   $(".heading-rotation span").text(curWord.slice(0, index));
+        // }
       }, 300)
     }
 
