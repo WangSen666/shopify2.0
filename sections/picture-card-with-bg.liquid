@@ -240,7 +240,7 @@ onload="this.media='all'"> {% endcomment %}
       {% for block in section.blocks %}
         {% case block.type %}
           {% when "picture_card" %}
-          <div class="picture-card-item picture-card-item-small" style="height:380px;background:url({{ block.settings.picture_item | image_url }}) no-repeat center center;background-size:cover;">
+          <div class="picture-card-item picture-card-item-small" style="height:{{ block.settings.item_height }}px;background:url({{ block.settings.picture_item | image_url }}) no-repeat center center;background-size:cover;">
 <!--             <img
               class="picture-card-item-small-img"
               src="{{ block.settings.picture_item | image_url }}"
@@ -525,6 +525,11 @@ onload="this.media='all'"> {% endcomment %}
             "type": "text",
             "id": "heading_2",
             "label": "文案内容2"
+          },
+          {
+            "type":"text",
+            "id":"item_height",
+            "label":"元素高度"
           },
           {
             "type": "text",
