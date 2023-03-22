@@ -379,31 +379,35 @@
   $(function() {
     var head_rotation = $(".heading-rotation span");
     let head_rotation_text = head_rotation.text();
-    let textWord = ["Your Backyard ", "On the Road", "Campground", "Tiny Home Community"]
+    let textWord = ["Your Backyard", "On the Road", "Campground", "Tiny Home Community"]
     let index = 0;
     let arrayIndex = 0;
     let curWord = textWord[arrayIndex];
+    var timeIndex=0;
+    let flag=true;
     function textTransform() {
       $(".heading-rotation span").text("")
-      var timer = setInterval(function() {
-        // curWord = textWord[arrayIndex]
-          console.log("(curWord",curWord.split(" "))
-
-        // if (index == curWord.length-1) {
-        //   if (arrayIndex == textWord.length - 1) {
-        //     arrayIndex = 0;
-        //     curWord = textWord[arrayIndex]
-        //   } else {
-        //     arrayIndex++;
-        //     curWord = textWord[arrayIndex]
-        //   }
-        //   $(".heading-rotation span").text("")
-        //   index = 0;
-        // } else {
-        //   index++;
-        //   $(".heading-rotation span").text(curWord.slice(0, index));
-        // }
-      }, 300)
+        var timer = setInterval(function() {
+        timeIndex++;
+          if(timeIndex==curWord.split(" ").length+4){
+            timeIndex=0;
+          }
+        if (index == curWord.split(" ").length-1) {
+          if (arrayIndex == textWord.length - 1) {
+            arrayIndex = 0;
+            
+            curWord = textWord[arrayIndex]
+          } else {
+            arrayIndex++;
+            curWord = textWord[arrayIndex]
+          }
+          $(".heading-rotation span").text("")
+          index = 0;
+        } else if(timeIndex==0){
+          index++;
+          $(".heading-rotation span").text(ccurWord.split(" ")[index]);
+        }
+      }, 500)
     }
 
     textTransform();
