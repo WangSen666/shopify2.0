@@ -248,8 +248,8 @@
           "type": "picture_card_big",
           "settings": {
             "picture_item": "shopify:\/\/shop_images\/tiny_house_smart_home.png",
-            "heading_1": "What's Edge ONE?",
-            "heading_2": "More Than a Collection of Smart Gadgets",
+            "heading_1": "Order Process",
+            "heading_2": "",
             "button_label_1": "",
             "button_link_1": ""
           }
@@ -258,8 +258,8 @@
           "type": "picture_card",
           "settings": {
             "picture_item": "shopify:\/\/shop_images\/off-roading-on-volcanic-sand-field.jpg",
-            "heading_1": "What type of vehicle do I need",
-            "heading_2": "to move with my PODX GO home?",
+            "heading_1": "Download Grande S1 Floorplan",
+            "heading_2": "",
             "item_height": "180",
             "button_label_1": "",
             "button_link_1": ""
@@ -269,7 +269,7 @@
           "type": "picture_card",
           "settings": {
             "picture_item": "shopify:\/\/shop_images\/tiny_house_sewage_water.png",
-            "heading_1": "How are water, sewage and power handled?",
+            "heading_1": "View Option Kit",
             "heading_2": "",
             "item_height": "200",
             "button_label_1": "",
@@ -285,11 +285,11 @@
       "settings": {
         "is_titleBlock": "false",
         "href_url_id": "﻿partnership-id1",
-        "max_width": "",
+        "max_width": "1150",
         "is_showTitle": "false",
-        "layout": "big_image_first",
-        "padding_top": 24,
-        "padding_bottom": 24
+        "layout": "big_image_last",
+        "padding_top": 84,
+        "padding_bottom": 0
       }
     },
     "3d5e40ee-235a-4ef0-860b-16a231f89f24": {
@@ -339,7 +339,7 @@
         "max_width": "1150",
         "is_showTitle": "false",
         "layout": "big_image_first",
-        "padding_top": 32,
+        "padding_top": 0,
         "padding_bottom": 84
       }
     },
