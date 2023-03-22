@@ -8,9 +8,9 @@
   }
   .video-button{
     border: 1px solid #fff;
-    padding: 6px 14px;
+    padding: 16px 24px;
     font-size: 14px;
-    background: none !important;
+    background: #FF0000 !important;
     width: unset;
     border-radius: 14px;
     height: unset;
@@ -18,8 +18,8 @@
     
   }
   .video-button img{
-    width:12px;
-    height:12px;
+    width:18px;
+    height:18px;
     margin-left:10px;
     vertical-align:middle;
   }
@@ -221,9 +221,9 @@
           {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
         {%- endif -%}
         <div class="deferred-media__poster-button motion-reduce video-button">
-<!--           {%- render 'icon-play' -%} -->
-          {{ section.settings.button_label }}
-          <img src="{{ 'button_logo_1.png' |asset_url}}" />
+          {%- render 'icon-play' -%}
+<!--           {{ section.settings.button_label }} -->
+<!--           <img src="{{ 'button_logo_1.png' |asset_url}}" /> -->
         </div>
       </button>
       <template>
@@ -254,6 +254,7 @@
     </div>
   </div>
 </div>
+
 {% schema %}
 {
   "name": "video-learn-more",
