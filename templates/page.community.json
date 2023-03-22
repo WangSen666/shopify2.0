@@ -241,6 +241,57 @@
         "padding_bottom": 52
       }
     },
+    "7e29cb9e-96fa-4ebd-b240-abe0de88455f": {
+      "type": "picture-card-with-bg",
+      "blocks": {
+        "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-3": {
+          "type": "picture_card_big",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/tiny_house_smart_home.png",
+            "heading_1": "What's Edge ONE?",
+            "heading_2": "More Than a Collection of Smart Gadgets",
+            "button_label_1": "",
+            "button_link_1": ""
+          }
+        },
+        "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-4": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/off-roading-on-volcanic-sand-field.jpg",
+            "heading_1": "What type of vehicle do I need",
+            "heading_2": "to move with my PODX GO home?",
+            "item_height": "180",
+            "button_label_1": "",
+            "button_link_1": ""
+          }
+        },
+        "a09c0897-4858-4678-82ab-aff29a6d8c86": {
+          "type": "picture_card",
+          "settings": {
+            "picture_item": "shopify:\/\/shop_images\/tiny_house_sewage_water.png",
+            "heading_1": "How are water, sewage and power handled?",
+            "heading_2": "",
+            "item_height": "200",
+            "button_label_1": "",
+            "button_link_1": "shopify:\/\/blogs\/how-to\/how-are-water-sewage-and-power-handled-in-podx-go-tiny-house"
+          }
+        }
+      },
+      "block_order": [
+        "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-3",
+        "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-4",
+        "a09c0897-4858-4678-82ab-aff29a6d8c86"
+      ],
+      "settings": {
+        "is_titleBlock": "false",
+        "href_url_id": "﻿partnership-id1",
+        "max_width": "",
+        "is_showTitle": "false",
+        "layout": "big_image_first",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
     "3d5e40ee-235a-4ef0-860b-16a231f89f24": {
       "type": "picture-card-with-bg",
       "blocks": {
@@ -292,61 +343,6 @@
         "padding_bottom": 84
       }
     },
-    "7e29cb9e-96fa-4ebd-b240-abe0de88455f": {
-      "type": "picture-card-with-bg",
-      "disabled": true,
-      "blocks": {
-        "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-3": {
-          "type": "picture_card_big",
-          "disabled": true,
-          "settings": {
-            "picture_item": "shopify:\/\/shop_images\/tiny_house_smart_home.png",
-            "heading_1": "What's Edge ONE?",
-            "heading_2": "More Than a Collection of Smart Gadgets",
-            "button_label_1": "Learn More",
-            "button_link_1": ""
-          }
-        },
-        "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-4": {
-          "type": "picture_card",
-          "disabled": true,
-          "settings": {
-            "picture_item": "shopify:\/\/shop_images\/off-roading-on-volcanic-sand-field.jpg",
-            "heading_1": "What type of vehicle do I need",
-            "heading_2": "to move with my PODX GO home?",
-            "item_height": "",
-            "button_label_1": "Learn More",
-            "button_link_1": ""
-          }
-        },
-        "a09c0897-4858-4678-82ab-aff29a6d8c86": {
-          "type": "picture_card",
-          "disabled": true,
-          "settings": {
-            "picture_item": "shopify:\/\/shop_images\/tiny_house_sewage_water.png",
-            "heading_1": "How are water, sewage and power handled?",
-            "heading_2": "",
-            "item_height": "",
-            "button_label_1": "Learn More",
-            "button_link_1": "shopify:\/\/blogs\/how-to\/how-are-water-sewage-and-power-handled-in-podx-go-tiny-house"
-          }
-        }
-      },
-      "block_order": [
-        "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-3",
-        "template--15616021135460__7e29cb9e-96fa-4ebd-b240-abe0de88455f-1676981877fab81048-4",
-        "a09c0897-4858-4678-82ab-aff29a6d8c86"
-      ],
-      "settings": {
-        "is_titleBlock": "false",
-        "href_url_id": "﻿partnership-id1",
-        "max_width": "",
-        "is_showTitle": "false",
-        "layout": "big_image_first",
-        "padding_top": 24,
-        "padding_bottom": 24
-      }
-    },
     "cacc527b-9b28-426c-b16e-1ee06493a8be": {
       "type": "newsletter",
       "blocks": {
@@ -390,8 +386,8 @@
     "843e8ce4-4048-4c87-b3f5-d667f0cd048c",
     "main",
     "aafbda14-0bf2-48ba-9e04-c817b0847dad",
-    "3d5e40ee-235a-4ef0-860b-16a231f89f24",
     "7e29cb9e-96fa-4ebd-b240-abe0de88455f",
+    "3d5e40ee-235a-4ef0-860b-16a231f89f24",
     "cacc527b-9b28-426c-b16e-1ee06493a8be"
   ]
 }
