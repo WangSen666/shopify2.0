@@ -783,6 +783,7 @@
             "picture_item": "shopify:\/\/shop_images\/deserted-farm-housing-in-baren-lands.jpg",
             "heading_1": "Zoning, Insurances, Loan...",
             "heading_2": "",
+            "item_height": "400",
             "button_label_1": "Learn More",
             "button_link_1": "shopify:\/\/blogs\/zoning\/how-to-properly-zone-insure-your-tiny-house-in-the-us-a-step-by-step-guide"
           }
@@ -793,6 +794,7 @@
             "picture_item": "shopify:\/\/shop_images\/rooftops-and-pools-of-a-florida-residential-neighbourhood.jpg",
             "heading_1": "Become our partner",
             "heading_2": "in your neighborhood",
+            "item_height": "274",
             "button_label_1": "Learn More",
             "button_link_1": "https:\/\/form.jotform.com\/PODX\/dealer-application"
           }
