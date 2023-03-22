@@ -260,6 +260,7 @@
             "picture_item": "shopify:\/\/shop_images\/tiny_house_PODX_GO_6f3daaca-6028-49e3-8f16-9bdbf4870223.png",
             "heading_1": "How will you",
             "heading_2": "get your PODX GO home?",
+            "item_height": "400",
             "button_label_1": "Learn More",
             "button_link_1": "shopify:\/\/blogs\/how-to\/process-of-buying-podxgo"
           }
@@ -270,6 +271,7 @@
             "picture_item": "shopify:\/\/shop_images\/rooftops-and-pools-of-a-florida-residential-neighbourhood.jpg",
             "heading_1": "Become our",
             "heading_2": "partner in your neighborhood",
+            "item_height": "266",
             "button_label_1": "Learn More",
             "button_link_1": "https:\/\/form.jotform.com\/PODX\/dealer-application"
           }
@@ -312,6 +314,7 @@
             "picture_item": "shopify:\/\/shop_images\/off-roading-on-volcanic-sand-field.jpg",
             "heading_1": "What type of vehicle do I need",
             "heading_2": "to move with my PODX GO home?",
+            "item_height": "",
             "button_label_1": "Learn More",
             "button_link_1": ""
           }
@@ -323,6 +326,7 @@
             "picture_item": "shopify:\/\/shop_images\/tiny_house_sewage_water.png",
             "heading_1": "How are water, sewage and power handled?",
             "heading_2": "",
+            "item_height": "",
             "button_label_1": "Learn More",
             "button_link_1": "shopify:\/\/blogs\/how-to\/how-are-water-sewage-and-power-handled-in-podx-go-tiny-house"
           }
