@@ -848,22 +848,6 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "c8f91840-2955-49cb-a76e-3e1dc99cae23": {
-      "type": "video",
-      "settings": {
-        "heading": "Video",
-        "heading_size": "h1",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=asFLUEPcBYM",
-        "description": "",
-        "full_width": false,
-        "button_label": "",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "font_size": 20,
-        "font_weight": 400
-      }
     }
   },
   "order": [
@@ -880,7 +864,6 @@
     "040c1abe-c06e-4ca3-9224-21358c1f6de1",
     "5af20d81-606b-473f-9b3c-47412699d454",
     "817a5069-6e91-49ec-aff0-da615eb133ea",
-    "2fc4a141-20b7-4e60-a81a-cb54d29e005b",
-    "c8f91840-2955-49cb-a76e-3e1dc99cae23"
+    "2fc4a141-20b7-4e60-a81a-cb54d29e005b"
   ]
 }
