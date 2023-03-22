@@ -59,7 +59,7 @@
           "type": "card_item",
           "settings": {
             "image_1": "shopify:\/\/shop_images\/1__1_3_370f1cc2-841d-4b48-a660-861f1dbacbe8.png",
-            "card_href_id": "",
+            "card_href_id": "podx-go-home",
             "heading": "PODX GO Production Process",
             "heading_size": 20
           }
@@ -68,7 +68,7 @@
           "type": "card_item",
           "settings": {
             "image_1": "shopify:\/\/shop_images\/1__1_4.png",
-            "card_href_id": "",
+            "card_href_id": "going-tiny",
             "heading": "Going TinyPreparation & Costs",
             "heading_size": 20
           }
@@ -77,7 +77,7 @@
           "type": "card_item",
           "settings": {
             "image_1": "shopify:\/\/shop_images\/1__1_5.png",
-            "card_href_id": "",
+            "card_href_id": "order-yours-process",
             "heading": "Order YoursProcess & Options",
             "heading_size": 20
           }
@@ -86,7 +86,7 @@
           "type": "card_item",
           "settings": {
             "image_1": "shopify:\/\/shop_images\/1__1_6.png",
-            "card_href_id": "",
+            "card_href_id": "faqs",
             "heading": "FAQs",
             "heading_size": 20
           }
@@ -133,7 +133,8 @@
         "heading": "PODX GO  Home Production Process",
         "heading_size": 40,
         "text_1": "Find out how we create safer, smarter, more beautiful, and affordable tiny homes.",
-        "text_size": 24
+        "text_size": 24,
+        "href_id": "podx-go-home"
       }
     },
     "main": {
@@ -232,6 +233,7 @@
         "0a2bc75f-e84d-4727-8388-702c97737450"
       ],
       "settings": {
+        "href_id": "going-tiny",
         "color_scheme": "background-1",
         "is_border": "true",
         "is_background_radius": "true",
@@ -280,7 +282,7 @@
       ],
       "settings": {
         "is_titleBlock": "false",
-        "href_url_id": "",
+        "href_url_id": "order-yours-process",
         "max_width": "1150",
         "is_showTitle": "false",
         "layout": "big_image_first",
@@ -369,6 +371,7 @@
         "template--15616021135460__cacc527b-9b28-426c-b16e-1ee06493a8be-16769826642b9a5172-2"
       ],
       "settings": {
+        "href_id": "faqs",
         "is_background_radius": "true",
         "color_scheme": "background-1",
         "full_width": true,

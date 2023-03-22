@@ -81,7 +81,7 @@
             "font_weight": 400,
             "margin-top": 0,
             "margin-bottom": 0,
-            "font_color": "#000"
+            "font_color": "#808080"
           }
         },
         "cf068427-a515-4f38-b841-001d0d997c46": {
@@ -94,7 +94,7 @@
             "font_weight": 400,
             "margin-top": 50,
             "margin-bottom": 0,
-            "font_color": "#000"
+            "font_color": "#808080"
           }
         },
         "be0b6624-3ded-45b5-af9b-cf8df1bfb624": {
@@ -107,13 +107,13 @@
             "font_weight": 400,
             "margin-top": 50,
             "margin-bottom": 0,
-            "font_color": "#000"
+            "font_color": "#808080"
           }
         },
         "template--15628744753252__07cfc17f-a69d-4960-af87-8d8a6ce0a8c2-1678862774f77502ef-3": {
           "type": "image_wrapper",
           "settings": {
-            "image_1": "shopify:\/\/shop_images\/18.jpg"
+            "image_1": "shopify:\/\/shop_images\/1_226a507c-1df6-43b5-bd82-3161ae0e7eef.png"
           }
         },
         "88cc9bd6-4a03-4047-af15-e73a10d6f62c": {
@@ -147,8 +147,11 @@
       "settings": {
         "background_color": "#fff",
         "is_rotation_list": "true",
+        "is_all_screen": "false",
         "heading": "Here are a few of the ideas we’ve created together",
         "heading_size": 50,
+        "padding_top": 36,
+        "padding_bottom": 36,
         "image_overlay_opacity": 0,
         "is_lr": "true",
         "show_text_box": true,
@@ -175,7 +178,7 @@
             "text": "<p>At PODX GO, we believe that the best things are those we create together. We are connecting with inviduals and brands throughout the product design and development process to make sure that we solve the real needs of tiny homes. <\/p>",
             "font-weight": 400,
             "font_size": 24,
-            "text_color": "#000"
+            "text_color": "#808080"
           }
         }
       },
@@ -290,6 +293,7 @@
         "template--15619111551076__3df90fd6-1aa3-4e39-9dbe-e84c1922aaea-1677136149486c665c-2"
       ],
       "settings": {
+        "href_id": "",
         "is_background_radius": "true",
         "color_scheme": "background-1",
         "full_width": true,

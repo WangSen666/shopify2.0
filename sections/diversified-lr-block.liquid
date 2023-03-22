@@ -37,7 +37,7 @@
   }
   @media screen and (min-width: 750px) {
    .diversified-lr-blocks-banner__content {
-      padding: 50px  24px  40px !important;
+/*       padding: 50px  24px  40px !important; */
       justify-content: space-between !important;
     }
     .banner__content.banner__content--bottom-center {
@@ -77,8 +77,8 @@
   .diversified-lr-blocks-banner__box  .lr-block-component__button .button {
 
      background:none;
-    border:1px solid #333333;
-    color:#333333 !important;
+    border:1px solid #808080;
+    color:#808080 !important;
     padding:10px 16px 10px 20px;
     border-radius:34px;
     border-radius: 30px;
@@ -233,14 +233,14 @@
     </div>
 
   {%- endif -%}
-  <div class=" diversified-lr-blocks-banner__content{% if section.settings.is_all_screen=="false" %}  page-width"{% endif %} style="{% if section.settings.is_imgBg == 'false' %} {% endif %}">
+  <div class="diversified-lr-blocks-banner__content{% if section.settings.is_all_screen=="false" %}  page-width{% endif %}" style="padding-top:{{ section.settings.padding_top }}px;padding-bottom:{{ section.settings.padding_bottom }}px;">
     {% if section.settings.heading!=blank %}
       <div class="diversified-lr-blocks-heading" style="font-size:{{ section.settings.heading_size }}px;">
         {{ section.settings.heading }}
       </div>
     {% endif %}
     
-    <div class="diversified-lr-blocks-banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient " style="{% if section.settings.layout=='image_first' %} flex-direction:row-reverse !important;{% endif %}">
+    <div class="diversified-lr-blocks-banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} " style="{% if section.settings.layout=='image_first' %} flex-direction:row-reverse !important;{% endif %}">
       <div class="banner__box-item">
 
         {%- for block in section.blocks -%}
@@ -289,15 +289,13 @@
               {{ block.shopify_attributes }}
               style="margin-top:{{  block.settings.margin_top }}px;margin-bottom:{{  block.settings.margin_bottom }}px;">
               {%- if block.settings.button_label_1 != blank -%}
-                <a style="border:1px solid {{block.settings.button_color}};color:{{block.settings.button_color}};" {% if block.settings.button_link_1 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_1 }}"{% endif %}class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
-
+                <a target="_blank" style="z-index:2;border:1px solid {{block.settings.button_color}};color:{{block.settings.button_color}};" {% if block.settings.button_link_1 == blank %}role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}
                     {% if section.settings.image == blank %}
                     <img
                     src="{{   'button_logo_2.png' | asset_url }}"
                     width="12"
                     height="12" />
                   {% endif %}
-
                   {% if section.settings.image != blank %}
                     <img
                       src="{{   'button_logo_1.png' | asset_url }}"
@@ -307,7 +305,7 @@
                 </a>
               {%- endif -%}
               {%- if block.settings.button_label_2 != blank -%}
-                <a target="_blank" {% if block.settings.button_link_2 == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}
+                <a target="_blank" {% if block.settings.button_link_2 == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}
                   <img
                     src="{{'button_logo_1.png'  | asset_url }}"
                     width="12"
@@ -463,6 +461,26 @@
       },
       {
         "type": "range",
+        "id": "padding_top",
+        "min": 12,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "上边距",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 12,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "下边距",
+        "default": 36
+      },
+      {
+        "type": "range",
         "id": "image_overlay_opacity",
         "min": 0,
         "max": 100,
@@ -600,11 +618,11 @@
                 "value": "#fff",
                 "label": "白色"
               }, {
-                "value": "#000",
+                "value": "#808080",
                 "label": "黑色"
               }
             ],
-            "default": "#000",
+            "default": "#808080",
             "label": "字体颜色"
           }
         ]
@@ -701,11 +719,11 @@
                 "value": "#fff",
                 "label": "白色"
               }, {
-                "value": "#000",
+                "value": "#808080",
                 "label": "黑色"
               }
             ],
-            "default": "#000",
+            "default": "#808080",
             "label": "字体颜色"
           }
         ]
