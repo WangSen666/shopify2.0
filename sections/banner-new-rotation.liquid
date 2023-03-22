@@ -388,10 +388,11 @@
     function textTransform() {
       $(".heading-rotation span").text("")
         var timer = setInterval(function() {
-        timeIndex++;
+          
           if(timeIndex==curWord.split(" ").length+3){
-            debugger;
             timeIndex=0;
+          }else{
+            timeIndex++;
           }
         if (index == curWord.split(" ").length) {
           if (arrayIndex == textWord.length - 1) {
@@ -404,7 +405,7 @@
           }
           $(".heading-rotation span").text("")
           index = 0;
-        } else if(timeIndex<=curWord.split(" ").length){
+        } else if(timeIndex<=curWord.split(" ").length-1){
           $(".heading-rotation span").text((curWord.split(" ").slice(0,index).toString()).replaceAll(',',' '));
           index++;
         }
