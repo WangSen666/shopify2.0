@@ -20,7 +20,7 @@
           "settings": {
             "heading": "Your Backyard",
             "heading_size": "h1",
-            "font_size": 72,
+            "font_size": 68,
             "margin_top": 24,
             "margin_bottom": 24,
             "heading_color": "#B5EF35",
@@ -329,12 +329,9 @@
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
-        "button_label": "Visit Our Factory",
         "color_scheme": "background-1",
         "padding_top": 36,
-        "padding_bottom": 36,
-        "font_size": 20,
-        "font_weight": 400
+        "padding_bottom": 36
       }
     },
     "ae5562b8-bef6-4424-a0a5-78ca060d5999": {
