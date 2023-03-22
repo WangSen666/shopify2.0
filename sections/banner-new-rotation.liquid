@@ -389,7 +389,8 @@
       $(".heading-rotation span").text("")
         var timer = setInterval(function() {
         timeIndex++;
-          if(timeIndex==curWord.split(" ").length+4){
+          if(timeIndex==curWord.split(" ").length+3){
+            debugger;
             timeIndex=0;
           }
         if (index == curWord.split(" ").length) {
