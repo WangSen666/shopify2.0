@@ -403,9 +403,9 @@
           }
           $(".heading-rotation span").text("")
           index = 0;
-        } else if(timeIndex<=curWord.split(" ").length){
+        } else if(timeIndex==0){
           index++;
-          $(".heading-rotation span").text(curWord.split(" ")[index]);
+          $(".heading-rotation span").text((curWord.split(" ").slice(0,index).toString()).replaceAll(',',' '));
         }
       }, 500)
     }
