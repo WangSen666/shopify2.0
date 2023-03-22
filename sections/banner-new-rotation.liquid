@@ -394,7 +394,7 @@
           }else{
             timeIndex++;
           }
-        if (index == curWord.split(" ").length) {
+        if (index == curWord.split(" ").length-1) {
           if (arrayIndex == textWord.length - 1) {
             arrayIndex = 0;
             
@@ -405,7 +405,7 @@
           }
           $(".heading-rotation span").text("")
           index = 0;
-        } else{
+        } else if(timeIndex<=curWord.split(" ").length){
           $(".heading-rotation span").text((curWord.split(" ").slice(0,index).toString()).replaceAll(',',' '));
           index++;
         }
