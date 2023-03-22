@@ -405,8 +405,8 @@
           $(".heading-rotation span").text("")
           index = 0;
         } else if(timeIndex<=curWord.split(" ").length-1){
-          index++;
           $(".heading-rotation span").text((curWord.split(" ").slice(0,index).toString()).replaceAll(',',' '));
+          index++;
         }
       }, 500)
     }
