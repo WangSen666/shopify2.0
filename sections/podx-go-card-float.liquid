@@ -108,14 +108,16 @@
 <div class="podx-go-card-float">
   <div class="podx-go-card-float-list">
     {% for block in section.blocks %}
+    <a href="#{{block.settings.card_href_id  }}">
       <div class="podx-go-card-float-item">
-        <a href="#{{block.settings.card_href_id  }}">
+        
           <img src="{{ block.settings.image_1 | image_url }}" />
           <div class="text-wrapper" style="font-size:{{ block.settings.heading_size }}px;">
             {{ block.settings.heading }}
           </div>
-        </a>
+       
       </div>
+    </a>
     {% endfor %}
   </div>
 
