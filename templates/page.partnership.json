@@ -81,7 +81,7 @@
             "font_weight": 400,
             "margin-top": 0,
             "margin-bottom": 0,
-            "font_color": "#000"
+            "font_color": "#808080"
           }
         },
         "cf068427-a515-4f38-b841-001d0d997c46": {
@@ -147,8 +147,11 @@
       "settings": {
         "background_color": "#fff",
         "is_rotation_list": "true",
+        "is_all_screen": "false",
         "heading": "Here are a few of the ideas we’ve created together",
         "heading_size": 50,
+        "padding_top": 36,
+        "padding_bottom": 36,
         "image_overlay_opacity": 0,
         "is_lr": "true",
         "show_text_box": true,
@@ -290,6 +293,7 @@
         "template--15619111551076__3df90fd6-1aa3-4e39-9dbe-e84c1922aaea-1677136149486c665c-2"
       ],
       "settings": {
+        "href_id": "",
         "is_background_radius": "true",
         "color_scheme": "background-1",
         "full_width": true,
