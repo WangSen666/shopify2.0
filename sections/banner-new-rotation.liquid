@@ -404,7 +404,7 @@
           }
           $(".heading-rotation span").text("")
           index = 0;
-        } else if(timeIndex<=curWord.split(" ").length-1){
+        } else if(timeIndex<=curWord.split(" ").length){
           $(".heading-rotation span").text((curWord.split(" ").slice(0,index).toString()).replaceAll(',',' '));
           index++;
         }
