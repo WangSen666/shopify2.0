@@ -392,7 +392,7 @@
           if(timeIndex==curWord.split(" ").length+4){
             timeIndex=0;
           }
-        if (index == curWord.split(" ").length-1) {
+        if (index == curWord.split(" ").length) {
           if (arrayIndex == textWord.length - 1) {
             arrayIndex = 0;
             
@@ -403,9 +403,9 @@
           }
           $(".heading-rotation span").text("")
           index = 0;
-        } else if(timeIndex==0){
-          $(".heading-rotation span").text((curWord.split(" ").slice(0,index).toString()).replaceAll(',',' '));
+        } else if(timeIndex<=curWord.split(" ").length){
           index++;
+          $(".heading-rotation span").text(curWord.split(" ")[index]);
         }
       }, 500)
     }
