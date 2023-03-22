@@ -389,12 +389,7 @@
       $(".heading-rotation span").text("")
         var timer = setInterval(function() {
           
-          if(timeIndex==curWord.split(" ").length+3){
-            timeIndex=0;
-          }else{
-            timeIndex++;
-          }
-        if (index == curWord.split(" ").length-1) {
+        if (index == curWord.split(" ").length+3) {
           if (arrayIndex == textWord.length - 1) {
             arrayIndex = 0;
             
@@ -405,7 +400,7 @@
           }
           $(".heading-rotation span").text("")
           index = 0;
-        } else if(timeIndex<=curWord.split(" ").length){
+        } else {
           $(".heading-rotation span").text((curWord.split(" ").slice(0,index).toString()).replaceAll(',',' '));
           index++;
         }
