@@ -634,6 +634,7 @@
             "picture_item": "shopify:\/\/shop_images\/deserted-farm-housing-in-baren-lands.jpg",
             "heading_1": "How to properly",
             "heading_2": "zone your tiny house?",
+            "item_height": "400",
             "button_label_1": "Learn More",
             "button_link_1": "shopify:\/\/blogs\/zoning\/how-to-properly-zone-insure-your-tiny-house-in-the-us-a-step-by-step-guide"
           }
@@ -644,6 +645,7 @@
             "picture_item": "shopify:\/\/shop_images\/rooftops-and-pools-of-a-florida-residential-neighbourhood.jpg",
             "heading_1": "Become our partner",
             "heading_2": "in your neighborhood",
+            "item_height": "266",
             "button_label_1": "Learn More",
             "button_link_1": "https:\/\/form.jotform.com\/PODX\/dealer-application"
           }
@@ -692,6 +694,7 @@
         "template--15559734788196__fa906ac5-c0c8-4c60-bb42-a7cc9ffb22d6-16740930612d09df19-2"
       ],
       "settings": {
+        "href_id": "",
         "is_background_radius": "true",
         "color_scheme": "background-1",
         "full_width": true,
