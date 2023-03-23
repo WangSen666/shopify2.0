@@ -245,7 +245,9 @@
                 {{ block.shopify_attributes }}
                 style="color:{{block.settings.font_color}};font-weight:{{ block.settings.font-weight }};font-size:{{block.settings.font_size}}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-bottom}}px;">
                 <span style="font-family: 'KumbhSans-Bold'">{{ block.settings.heading | escape }}</span>
-                <img style="height:60px;vertical-align:middle;" src="{{ 'EDGE-ONE.png'|asset_url }}" >
+                {% if block.settings.is_show=='true' %}
+                  <img style="height:60px;vertical-align:middle;" src="{{ 'EDGE-ONE.png'|asset_url }}" >
+                {% endif %}
               </h2>
               {%- when 'text' -%}
               <div
@@ -508,6 +510,21 @@
             ],
             "default": "h1",
             "label": "t:sections.all.heading_size.label"
+          },
+          {
+            "type": "select",
+            "id": "is_show",
+            "options": [
+              {
+                "value": "true",
+                "label": "显示"
+              }, {
+                "value": "false",
+                "label": "不显示"
+              }
+            ],
+            "default": "false",
+            "label": "是否显示EDGE ONE LOGO"
           },
           {
             "type": "range",
