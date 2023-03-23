@@ -296,7 +296,9 @@
     width: 390px !important;
     height: 224px !important;
   }
-
+  .bottom-rotation-text{
+    font-size:20px !important;
+  }
   /* .lr-block-component__button .button {
     padding: 12px 16px 12px 24px !important;
     font-size: 20px !important;
@@ -585,7 +587,9 @@
     width: 342px !important;
     height: 196px !important;
   }
-
+  .bottom-rotation-wrapper{
+    width: 342px !important;
+  }
   .bottom-rotation-list {
     margin: 20px auto !important;
 /*     height: 196px !important; */
@@ -856,5 +860,24 @@
 
   .banner__right_bottom_info_btn {
     padding: 10px 20px !important;
+  }
+}
+
+
+
+@media screen and (max-width:1280px){
+    .bottom-rotation-item {
+    width: 296px !important;
+    height: 142px !important;
+  }
+  .bottom-rotation-wrapper{
+    width: 296px !important;
+  }
+  .bottom-rotation-list {
+    margin: 20px auto !important;
+/*     height: 196px !important; */
+  }
+  .bottom-rotation-text{
+    font-size:18px !important;
   }
 }
