@@ -190,7 +190,7 @@
           "type": "buttons",
           "settings": {
             "banner_button_label": "Price Starts at $49,000",
-            "banner_button_link": "",
+            "banner_button_link": "shopify:\/\/pages\/grande-s1",
             "font_size": 24
           }
         },
