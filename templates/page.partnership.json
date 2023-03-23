@@ -504,6 +504,14 @@
             "margin_top": 16,
             "margin_bottom": 0
           }
+        },
+        "8cce6eb3-6adb-4fe6-b86d-caa8d797ebc0": {
+          "type": "href_text",
+          "disabled": true,
+          "settings": {
+            "href_label": "",
+            "href_link": ""
+          }
         }
       },
       "block_order": [
@@ -519,7 +527,8 @@
         "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-3",
         "513cb826-bed0-423f-bbff-5a8eab873fb2",
         "740f4b11-9a20-42c8-953b-238cddd60e73",
-        "0906dfb9-f171-4826-8515-7fddb2cace1e"
+        "0906dfb9-f171-4826-8515-7fddb2cace1e",
+        "8cce6eb3-6adb-4fe6-b86d-caa8d797ebc0"
       ],
       "settings": {
         "background_color": "#F1F1F1",
