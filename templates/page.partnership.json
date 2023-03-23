@@ -367,6 +367,15 @@
     "ca840b04-3e8e-4ebd-a4ac-127fd33c309d": {
       "type": "diversified-lr-block-new",
       "blocks": {
+        "f27eb5c9-2cd6-41c5-a40b-9403dbbc37f5": {
+          "type": "picture_heading",
+          "settings": {
+            "heading_1": "As a PODX GO Dealer Partner, You'll benefit from:",
+            "font_size": 48,
+            "margin_top": 12,
+            "margin_bottom": 12
+          }
+        },
         "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-0": {
           "type": "heading",
           "settings": {
@@ -395,10 +404,10 @@
         "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Button label",
+            "button_label_1": "Start Application",
             "button_link_1": "",
             "button_style_secondary_1": false,
-            "button_label_2": "Button label",
+            "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false,
             "button_color": "#000",
@@ -409,15 +418,7 @@
         "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-3": {
           "type": "image_wrapper",
           "settings": {
-          }
-        },
-        "f27eb5c9-2cd6-41c5-a40b-9403dbbc37f5": {
-          "type": "picture_heading",
-          "settings": {
-            "heading_1": "As a PODX GO Dealer Partner, You'll benefit from:",
-            "font_size": 48,
-            "margin_top": 48,
-            "margin_bottom": 48
+            "image_1": "shopify:\/\/shop_images\/33333.jpg"
           }
         },
         "513cb826-bed0-423f-bbff-5a8eab873fb2": {
@@ -449,11 +450,11 @@
         }
       },
       "block_order": [
+        "f27eb5c9-2cd6-41c5-a40b-9403dbbc37f5",
         "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-0",
         "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-1",
         "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-2",
         "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-3",
-        "f27eb5c9-2cd6-41c5-a40b-9403dbbc37f5",
         "513cb826-bed0-423f-bbff-5a8eab873fb2",
         "740f4b11-9a20-42c8-953b-238cddd60e73",
         "0906dfb9-f171-4826-8515-7fddb2cace1e"
