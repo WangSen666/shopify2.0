@@ -411,10 +411,40 @@
           "settings": {
           }
         },
-        "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-4": {
-          "type": "pictureCard",
+        "f27eb5c9-2cd6-41c5-a40b-9403dbbc37f5": {
+          "type": "picture_heading",
           "settings": {
-            "image_width": 10
+            "heading_1": "As a PODX GO Dealer Partner, You'll benefit from:",
+            "font_size": 48,
+            "margin_top": 48,
+            "margin_bottom": 48
+          }
+        },
+        "513cb826-bed0-423f-bbff-5a8eab873fb2": {
+          "type": "picture_text",
+          "settings": {
+            "text_1": "For Reseller Program,",
+            "font_size": 48,
+            "margin_top": 48,
+            "margin_bottom": 48
+          }
+        },
+        "740f4b11-9a20-42c8-953b-238cddd60e73": {
+          "type": "picture_text",
+          "settings": {
+            "text_1": "Get in Touch with Business Team",
+            "font_size": 48,
+            "margin_top": 48,
+            "margin_bottom": 48
+          }
+        },
+        "0906dfb9-f171-4826-8515-7fddb2cace1e": {
+          "type": "picture_text",
+          "settings": {
+            "text_1": "dealer@podxgo.com",
+            "font_size": 48,
+            "margin_top": 48,
+            "margin_bottom": 48
           }
         }
       },
@@ -423,7 +453,10 @@
         "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-1",
         "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-2",
         "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-3",
-        "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-4"
+        "f27eb5c9-2cd6-41c5-a40b-9403dbbc37f5",
+        "513cb826-bed0-423f-bbff-5a8eab873fb2",
+        "740f4b11-9a20-42c8-953b-238cddd60e73",
+        "0906dfb9-f171-4826-8515-7fddb2cace1e"
       ],
       "settings": {
         "background_color": "#F1F1F1",
@@ -434,7 +467,7 @@
         "padding_top": 36,
         "padding_bottom": 36,
         "image_overlay_opacity": 0,
-        "is_lr": "false",
+        "is_lr": "true",
         "show_text_box": true,
         "layout": "image_first",
         "is_imgBg": "false"
