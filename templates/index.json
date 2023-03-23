@@ -53,7 +53,7 @@
           "type": "buttons",
           "settings": {
             "banner_button_label": "Back us on Indiegogo",
-            "banner_button_link": "",
+            "banner_button_link": "https:\/\/www.indiegogo.com\/projects\/tiny-house-world-s-first-self-folding-mobile-home#\/",
             "font_size": 16,
             "button_color": "#fff"
           }
