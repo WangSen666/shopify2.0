@@ -363,7 +363,7 @@
         "template--15634989940836__17d56351-8109-4ce0-ac36-3a6b6929092e-167956019731dd0a11-1": {
           "type": "text",
           "settings": {
-            "text": "rich text",
+            "text": "Become a PODX GO Host and share your experience with others. We hope our hosts embody PODX GO values and become part of tiny home innovations. All PODX GO homeowners are eligible to join the Host Program. As a host, you will virtually connect with potential customers to help answer any questions they have about PODX GO homes.",
             "font_size": 24,
             "margin_top": 24,
             "margin_bottom": 24,
@@ -374,7 +374,7 @@
         "b157bb44-7add-4f19-99c4-707ed0bfc07d": {
           "type": "text",
           "settings": {
-            "text": "rich text",
+            "text": "You will receive a  1% commission from the others' purchases and earn PODX GO credits for each interaction.",
             "font_size": 24,
             "margin_top": 24,
             "margin_bottom": 24,
@@ -385,7 +385,7 @@
         "template--15634989940836__17d56351-8109-4ce0-ac36-3a6b6929092e-167956019731dd0a11-2": {
           "type": "button",
           "settings": {
-            "banner_button_label": "Button label",
+            "banner_button_label": "Coming Soon",
             "banner_button_link": "",
             "font_size": 24,
             "button_color": "#000",
