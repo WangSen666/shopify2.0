@@ -379,10 +379,10 @@
         "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1",
-            "font-weight": 400,
-            "font_size": 24,
+            "heading": "A growing market with opportunities",
+            "heading_size": "h2",
+            "font-weight": 100,
+            "font_size": 16,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#808080"
