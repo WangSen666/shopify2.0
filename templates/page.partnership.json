@@ -426,6 +426,44 @@
             "font_color": "#808080"
           }
         },
+        "7fde289f-0c78-4d5f-883b-a6bf4efe709e": {
+          "type": "heading",
+          "settings": {
+            "heading": "We make it easier for everyone",
+            "heading_size": "h1",
+            "font-weight": 400,
+            "font_size": 24,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#808080"
+          }
+        },
+        "0cc98e74-3da2-47c7-af3f-d5f7ee428f86": {
+          "type": "text",
+          "settings": {
+            "text": "What sets PODX GO apart from other tiny home builders is that PODX GO made the foldable and moveable tiny home become a reality. This means having a tiny home for business and live-in is extremely easy now.",
+            "font_style": "normal",
+            "text_style": "body",
+            "font_size": 24,
+            "font_weight": 400,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#808080"
+          }
+        },
+        "475dd6ea-8680-4a51-a6e9-c91a2a25973c": {
+          "type": "text",
+          "settings": {
+            "text": "Thanks for our brilliant designers and engineers, they developed a solid folding structure and automated manufacturing process that enables us to provide affordable ready-to-live tiny homes and quality assured with appealing aesthetics design and pre-equipped smart home system.",
+            "font_style": "normal",
+            "text_style": "body",
+            "font_size": 24,
+            "font_weight": 400,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#808080"
+          }
+        },
         "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-2": {
           "type": "buttons",
           "settings": {
@@ -480,6 +518,9 @@
         "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-1",
         "e03df866-967a-4c39-a0ac-963f3a184da5",
         "bd88ae7d-a993-4b9e-beb5-70d55c60a0f5",
+        "7fde289f-0c78-4d5f-883b-a6bf4efe709e",
+        "0cc98e74-3da2-47c7-af3f-d5f7ee428f86",
+        "475dd6ea-8680-4a51-a6e9-c91a2a25973c",
         "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-2",
         "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-3",
         "513cb826-bed0-423f-bbff-5a8eab873fb2",
