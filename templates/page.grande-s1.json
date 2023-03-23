@@ -267,6 +267,7 @@
           "settings": {
             "heading": "Proven Durability & Healthy",
             "heading_size": "h1",
+            "is_show": "false",
             "font-weight": 600,
             "font_size": 50,
             "margin-top": 0,
@@ -368,8 +369,9 @@
         "template--15628744687716__29ac9adf-b455-4c37-8929-631cd309bf80-167876074482a92fd6-0": {
           "type": "heading",
           "settings": {
-            "heading": "EDGE ONE(LOGO)",
+            "heading": "EDGE ONE",
             "heading_size": "h1",
+            "is_show": "true",
             "font-weight": 400,
             "font_size": 50,
             "margin-top": 0,
@@ -382,6 +384,7 @@
           "settings": {
             "heading": "Your Smart Housekeeper",
             "heading_size": "h1",
+            "is_show": "false",
             "font-weight": 400,
             "font_size": 50,
             "margin-top": 0,
@@ -475,6 +478,7 @@
           "settings": {
             "heading": "Sustainability& Energy Freedom",
             "heading_size": "h1",
+            "is_show": "false",
             "font-weight": 400,
             "font_size": 50,
             "margin-top": 0,
