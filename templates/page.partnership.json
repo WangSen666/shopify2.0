@@ -488,9 +488,9 @@
           "type": "picture_text",
           "settings": {
             "text_1": "For Reseller Program,",
-            "font_size": 24,
-            "margin_top": 12,
-            "margin_bottom": 12
+            "font_size": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
           }
         },
         "740f4b11-9a20-42c8-953b-238cddd60e73": {
@@ -498,8 +498,8 @@
           "settings": {
             "text_1": "Get in Touch with Business Team",
             "font_size": 24,
-            "margin_top": 12,
-            "margin_bottom": 12
+            "margin_top": 0,
+            "margin_bottom": 0
           }
         },
         "0906dfb9-f171-4826-8515-7fddb2cace1e": {
@@ -507,8 +507,8 @@
           "settings": {
             "text_1": "dealer@podxgo.com",
             "font_size": 24,
-            "margin_top": 12,
-            "margin_bottom": 12
+            "margin_top": 0,
+            "margin_bottom": 0
           }
         }
       },
