@@ -221,7 +221,7 @@
             <h2
               class="banner__heading "
               {{ block.shopify_attributes }}
-              style="color:{{block.settings.font_color}};font-weight:{{ block.settings.font-weight }};font-size:{{ block.settings.heading_size }}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-bottom}}px;">
+              style="color:{{block.settings.font_color}};font-weight:{{ block.settings.font-weight }};font-size:{{ block.settings.font_size }}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-bottom}}px;">
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
             {%- when 'text' -%}
@@ -467,24 +467,6 @@
             "id": "heading",
             "default": "Image banner",
             "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
-          },
-          {
-            "type": "select",
-            "id": "heading_size",
-            "options": [
-              {
-                "value": "h2",
-                "label": "t:sections.all.heading_size.options__1.label"
-              }, {
-                "value": "h1",
-                "label": "t:sections.all.heading_size.options__2.label"
-              }, {
-                "value": "h0",
-                "label": "t:sections.all.heading_size.options__3.label"
-              }
-            ],
-            "default": "h1",
-            "label": "t:sections.all.heading_size.label"
           },
           {
             "type": "range",
