@@ -371,7 +371,7 @@
           "type": "picture_heading",
           "settings": {
             "heading_1": "As a PODX GO Dealer Partner, You'll benefit from:",
-            "font_size": 48,
+            "font_size": 36,
             "margin_top": 12,
             "margin_bottom": 12
           }
@@ -380,9 +380,8 @@
           "type": "heading",
           "settings": {
             "heading": "A growing market with opportunities",
-            "heading_size": "h2",
-            "font-weight": 100,
-            "font_size": 16,
+            "font-weight": 0,
+            "font_size": 24,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#808080"
@@ -405,7 +404,6 @@
           "type": "heading",
           "settings": {
             "heading": "We bring the customers to you",
-            "heading_size": "h1",
             "font-weight": 400,
             "font_size": 24,
             "margin-top": 0,
@@ -430,7 +428,6 @@
           "type": "heading",
           "settings": {
             "heading": "We make it easier for everyone",
-            "heading_size": "h1",
             "font-weight": 400,
             "font_size": 24,
             "margin-top": 0,
