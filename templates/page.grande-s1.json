@@ -508,6 +508,7 @@
         },
         "d5f2e08a-cfb3-453d-a8d5-b93d6cb05e52": {
           "type": "img_rotation",
+          "disabled": true,
           "settings": {
             "img_rotation": "shopify:\/\/shop_images\/lQDPJxbcK-1QfAnNCxLNE4iwyAD-Uopcgm4DacuYQUCFAA_5000_2834_b6f78537-71d2-4687-be05-da08d33906e5.jpg"
           }
