@@ -119,19 +119,22 @@
         "88cc9bd6-4a03-4047-af15-e73a10d6f62c": {
           "type": "bottom-rotation-item",
           "settings": {
-            "rotation_img": "shopify:\/\/shop_images\/1111_7e0bc39f-8cc8-4e40-afff-d53f0d9a029c.png"
+            "rotation_img": "shopify:\/\/shop_images\/1111_7e0bc39f-8cc8-4e40-afff-d53f0d9a029c.png",
+            "image_text": "University Dormitory"
           }
         },
         "b4516b01-65cd-4981-8ddb-c2ea069927c8": {
           "type": "bottom-rotation-item",
           "settings": {
-            "rotation_img": "shopify:\/\/shop_images\/111.png"
+            "rotation_img": "shopify:\/\/shop_images\/111.png",
+            "image_text": "GoGreen Sustainable Community Off-grid Homes"
           }
         },
         "9fad7f4e-00b8-4d5a-abe6-994f9d9e986a": {
           "type": "bottom-rotation-item",
           "settings": {
-            "rotation_img": "shopify:\/\/shop_images\/33333.jpg"
+            "rotation_img": "shopify:\/\/shop_images\/33333.jpg",
+            "image_text": "Backyard Office The idea inspired bi YI"
           }
         }
       },
