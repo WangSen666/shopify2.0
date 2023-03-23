@@ -368,7 +368,7 @@
         "template--15628744425572__173f7bc5-99e2-4305-8c3e-d260ec72970b-167841978023a3d895-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Edge ONE is the all-in-one solution for home automation, security system, and energy management, now everything will be under your control with only ONE command touchpad!s<\/p>",
+            "text": "<p>Edge ONE is the all-in-one solution for home automation, security system, and energy management, now everything will be under your control with only ONE command touchpad!<\/p>",
             "font-weight": 400,
             "font_size": 20,
             "text_color": "#000"
@@ -698,6 +698,7 @@
         "template--15634989285476__040c1abe-c06e-4ca3-9224-21358c1f6de1-16790378098bc05c60-6": {
           "type": "bottom-rotation-item",
           "settings": {
+            "image_text": ""
           }
         }
       },
