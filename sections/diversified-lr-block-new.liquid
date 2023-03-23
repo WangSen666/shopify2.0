@@ -117,6 +117,9 @@
 .picture-heading{
   font-family:"KumbhSans-Bold" !important;
 }
+ @media screen and (max-width:1280px){
+
+}
 @media screen and (max-width:1280px){
 
 }
@@ -304,7 +307,7 @@
               </div>
               
               {%- when 'picture_heading' -%}
-                <div class="picture-heading" style="font-size:{{block.settings.font_size}}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
+                <div class="picture-heading banner__heading" style="font-size:{{block.settings.font_size}}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
                   {{ block.settings.heading_1 }}
                 </div>
               {%- when 'picture_text' -%}
