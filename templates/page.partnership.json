@@ -134,7 +134,7 @@
           "type": "bottom-rotation-item",
           "settings": {
             "rotation_img": "shopify:\/\/shop_images\/33333.jpg",
-            "image_text": "Backyard Office that Inspired by Yi"
+            "image_text": "Backyard Office The idea inspired by YI"
           }
         }
       },
@@ -268,66 +268,6 @@
         "padding_bottom": 52
       }
     },
-    "17d56351-8109-4ce0-ac36-3a6b6929092e": {
-      "type": "rich-text-button",
-      "blocks": {
-        "template--15634989940836__17d56351-8109-4ce0-ac36-3a6b6929092e-167956019731dd0a11-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "PODX GO Host Program",
-            "heading_size": "h1",
-            "font_size": 64,
-            "margin_top": 52,
-            "margin_bottom": 24,
-            "heading_color": "#000",
-            "font_weight": 400
-          }
-        },
-        "template--15634989940836__17d56351-8109-4ce0-ac36-3a6b6929092e-167956019731dd0a11-1": {
-          "type": "text",
-          "settings": {
-            "text": "Become a PODX GO Host and share your experience with others. We hope our hosts embody PODX GO values and become part of tiny home innovations. All PODX GO homeowners are eligible to join the Host Program. As a host, you will virtually connect with potential customers to help answer any questions they have about PODX GO homes.",
-            "font_size": 24,
-            "margin_top": 24,
-            "margin_bottom": 24,
-            "text_color": "#000",
-            "font_weight": 400
-          }
-        },
-        "b157bb44-7add-4f19-99c4-707ed0bfc07d": {
-          "type": "text",
-          "settings": {
-            "text": "You will receive a  1% commission from the others' purchases and earn PODX GO credits for each interaction.",
-            "font_size": 24,
-            "margin_top": 24,
-            "margin_bottom": 24,
-            "text_color": "#000",
-            "font_weight": 400
-          }
-        },
-        "template--15634989940836__17d56351-8109-4ce0-ac36-3a6b6929092e-167956019731dd0a11-2": {
-          "type": "button",
-          "settings": {
-            "banner_button_label": "Coming Soon",
-            "banner_button_link": "",
-            "font_size": 24,
-            "button_color": "#000",
-            "margin_top": 0,
-            "margin_bottom": 66
-          }
-        }
-      },
-      "block_order": [
-        "template--15634989940836__17d56351-8109-4ce0-ac36-3a6b6929092e-167956019731dd0a11-0",
-        "template--15634989940836__17d56351-8109-4ce0-ac36-3a6b6929092e-167956019731dd0a11-1",
-        "b157bb44-7add-4f19-99c4-707ed0bfc07d",
-        "template--15634989940836__17d56351-8109-4ce0-ac36-3a6b6929092e-167956019731dd0a11-2"
-      ],
-      "settings": {
-        "margin_top": 54,
-        "margin_bottom": 54
-      }
-    },
     "ca840b04-3e8e-4ebd-a4ac-127fd33c309d": {
       "type": "diversified-lr-block-new",
       "blocks": {
@@ -426,7 +366,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Start Application",
-            "button_link_1": "https:\/\/form.jotform.com\/PODX\/dealer-application",
+            "button_link_1": "",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -509,6 +449,66 @@
         "is_imgBg": "false"
       }
     },
+    "17d56351-8109-4ce0-ac36-3a6b6929092e": {
+      "type": "rich-text-button",
+      "blocks": {
+        "template--15634989940836__17d56351-8109-4ce0-ac36-3a6b6929092e-167956019731dd0a11-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "PODX GO Host Program",
+            "heading_size": "h1",
+            "font_size": 64,
+            "margin_top": 52,
+            "margin_bottom": 24,
+            "heading_color": "#000",
+            "font_weight": 400
+          }
+        },
+        "template--15634989940836__17d56351-8109-4ce0-ac36-3a6b6929092e-167956019731dd0a11-1": {
+          "type": "text",
+          "settings": {
+            "text": "Become a PODX GO Host and share your experience with others. We hope our hosts embody PODX GO values and become part of tiny home innovations. All PODX GO homeowners are eligible to join the Host Program. As a host, you will virtually connect with potential customers to help answer any questions they have about PODX GO homes.",
+            "font_size": 24,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "text_color": "#000",
+            "font_weight": 400
+          }
+        },
+        "b157bb44-7add-4f19-99c4-707ed0bfc07d": {
+          "type": "text",
+          "settings": {
+            "text": "You will receive a  1% commission from the others' purchases and earn PODX GO credits for each interaction.",
+            "font_size": 24,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "text_color": "#000",
+            "font_weight": 400
+          }
+        },
+        "template--15634989940836__17d56351-8109-4ce0-ac36-3a6b6929092e-167956019731dd0a11-2": {
+          "type": "button",
+          "settings": {
+            "banner_button_label": "Coming Soon",
+            "banner_button_link": "",
+            "font_size": 24,
+            "button_color": "#000",
+            "margin_top": 0,
+            "margin_bottom": 66
+          }
+        }
+      },
+      "block_order": [
+        "template--15634989940836__17d56351-8109-4ce0-ac36-3a6b6929092e-167956019731dd0a11-0",
+        "template--15634989940836__17d56351-8109-4ce0-ac36-3a6b6929092e-167956019731dd0a11-1",
+        "b157bb44-7add-4f19-99c4-707ed0bfc07d",
+        "template--15634989940836__17d56351-8109-4ce0-ac36-3a6b6929092e-167956019731dd0a11-2"
+      ],
+      "settings": {
+        "margin_top": 54,
+        "margin_bottom": 54
+      }
+    },
     "3df90fd6-1aa3-4e39-9dbe-e84c1922aaea": {
       "type": "newsletter",
       "blocks": {
@@ -552,8 +552,8 @@
     "ef9749dc-71c1-491e-820c-b2d735567f66",
     "main",
     "648a41d6-8d93-48f0-8349-b5be95e1d0b9",
-    "17d56351-8109-4ce0-ac36-3a6b6929092e",
     "ca840b04-3e8e-4ebd-a4ac-127fd33c309d",
+    "17d56351-8109-4ce0-ac36-3a6b6929092e",
     "3df90fd6-1aa3-4e39-9dbe-e84c1922aaea"
   ]
 }
