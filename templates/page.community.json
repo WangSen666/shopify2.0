@@ -169,6 +169,7 @@
         },
         "template--15628744589412__aafbda14-0bf2-48ba-9e04-c817b0847dad-16788511803dcd9878-2": {
           "type": "href_text",
+          "disabled": true,
           "settings": {
             "href_text_label": "What type of vehicle do I need to move with my PODX GO home?",
             "href_text_url": "",
