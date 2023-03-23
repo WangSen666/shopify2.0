@@ -301,8 +301,8 @@
 
               </div>
               
-              {%- when 'right_text_wrapper' -%}
-              <div class="right-text-wrapper" style="font-size:{{block.settings.font_size}}px;{%- if block.settings.is_border == 'true' -%}border-bottom:2px solid #B1EB35;{%- endif -%}">
+              {%- when 'picture_heading' -%}
+              <div class="picture-heading" style="font-size:{{block.settings.font_size}}px;margin-top:{{ block.settings.margin_top }}px;margin-bottom:{{ block.settings.margin_bottom }}px;">
                 {{ block.settings.right_text }}
               </div>
 
