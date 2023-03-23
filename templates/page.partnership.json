@@ -363,6 +363,82 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "ca840b04-3e8e-4ebd-a4ac-127fd33c309d": {
+      "type": "diversified-lr-block-new",
+      "blocks": {
+        "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "font-weight": 400,
+            "font_size": 24,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#808080"
+          }
+        },
+        "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "font_style": "normal",
+            "text_style": "body",
+            "font_size": 24,
+            "font_weight": 400,
+            "margin-top": 0,
+            "margin-bottom": 0,
+            "font_color": "#808080"
+          }
+        },
+        "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_color": "#000",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-3": {
+          "type": "image_wrapper",
+          "settings": {
+          }
+        },
+        "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-4": {
+          "type": "pictureCard",
+          "settings": {
+            "image_width": 10
+          }
+        }
+      },
+      "block_order": [
+        "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-0",
+        "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-1",
+        "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-2",
+        "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-3",
+        "template--15634989940836__ca840b04-3e8e-4ebd-a4ac-127fd33c309d-16795659099a607132-4"
+      ],
+      "settings": {
+        "background_color": "#F1F1F1",
+        "is_rotation_list": "true",
+        "is_all_screen": "false",
+        "heading": "",
+        "heading_size": 36,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_overlay_opacity": 0,
+        "is_lr": "false",
+        "show_text_box": true,
+        "layout": "image_first",
+        "is_imgBg": "false"
+      }
     }
   },
   "order": [
@@ -372,6 +448,7 @@
     "main",
     "648a41d6-8d93-48f0-8349-b5be95e1d0b9",
     "17d56351-8109-4ce0-ac36-3a6b6929092e",
-    "3df90fd6-1aa3-4e39-9dbe-e84c1922aaea"
+    "3df90fd6-1aa3-4e39-9dbe-e84c1922aaea",
+    "ca840b04-3e8e-4ebd-a4ac-127fd33c309d"
   ]
 }
