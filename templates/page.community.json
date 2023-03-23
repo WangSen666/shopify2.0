@@ -180,7 +180,7 @@
           "type": "href_text",
           "settings": {
             "href_text_label": "How are water, seewage and power handled?",
-            "href_text_url": "",
+            "href_text_url": "shopify:\/\/blogs\/how-to\/how-are-water-sewage-and-power-handled-in-podx-go-tiny-house",
             "font_size": 16,
             "font_weight": 400
           }
@@ -189,7 +189,7 @@
           "type": "href_text",
           "settings": {
             "href_text_label": "How to permit your tiny home on your own land?",
-            "href_text_url": "",
+            "href_text_url": "shopify:\/\/blogs\/zoning\/how-to-properly-zone-insure-your-tiny-house-in-the-us-a-step-by-step-guide",
             "font_size": 16,
             "font_weight": 400
           }
@@ -215,7 +215,7 @@
         "0a2bc75f-e84d-4727-8388-702c97737450": {
           "type": "href_text",
           "settings": {
-            "href_text_label": "What type of certification do PODX GO homes possess",
+            "href_text_label": "What type of certification does PODX GO homes possess?",
             "href_text_url": "",
             "font_size": 16,
             "font_weight": 400
