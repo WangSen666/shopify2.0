@@ -46,6 +46,9 @@
 /*     height: 260px !important; */
   }
 
+   .bottom-rotation-wrapper{
+    width: 454px !important;
+  }
   .bottom-rotation-item {
     width: 454px !important;
     height: 260px !important;
@@ -286,6 +289,9 @@
 /*     height: 224px !important; */
   }
 
+  .bottom-rotation-wrapper{
+    width: 390px !important;
+  }
   .bottom-rotation-item {
     width: 390px !important;
     height: 224px !important;
