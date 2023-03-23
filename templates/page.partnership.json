@@ -354,7 +354,7 @@
             "heading": "PODX GO Host Program",
             "heading_size": "h1",
             "font_size": 64,
-            "margin_top": 24,
+            "margin_top": 52,
             "margin_bottom": 24,
             "heading_color": "#000",
             "font_weight": 400
@@ -390,7 +390,7 @@
             "font_size": 24,
             "button_color": "#000",
             "margin_top": 0,
-            "margin_bottom": 0
+            "margin_bottom": 44
           }
         }
       },
