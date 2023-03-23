@@ -380,8 +380,7 @@
           "type": "heading",
           "settings": {
             "heading": "A growing market with opportunities",
-            "font-weight": 0,
-            "font_size": 24,
+            "font_size": 60,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#808080"
@@ -396,7 +395,7 @@
             "font_size": 24,
             "font_weight": 400,
             "margin-top": 0,
-            "margin-bottom": 0,
+            "margin-bottom": 32,
             "font_color": "#808080"
           }
         },
@@ -404,8 +403,7 @@
           "type": "heading",
           "settings": {
             "heading": "We bring the customers to you",
-            "font-weight": 400,
-            "font_size": 24,
+            "font_size": 60,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#808080"
@@ -420,7 +418,7 @@
             "font_size": 24,
             "font_weight": 400,
             "margin-top": 0,
-            "margin-bottom": 0,
+            "margin-bottom": 32,
             "font_color": "#808080"
           }
         },
@@ -428,8 +426,7 @@
           "type": "heading",
           "settings": {
             "heading": "We make it easier for everyone",
-            "font-weight": 400,
-            "font_size": 24,
+            "font_size": 60,
             "margin-top": 0,
             "margin-bottom": 0,
             "font_color": "#808080"
@@ -444,7 +441,7 @@
             "font_size": 24,
             "font_weight": 400,
             "margin-top": 0,
-            "margin-bottom": 0,
+            "margin-bottom": 32,
             "font_color": "#808080"
           }
         },
