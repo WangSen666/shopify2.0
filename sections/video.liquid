@@ -65,9 +65,11 @@
         {%- else -%}
           {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
         {%- endif -%}
-        <span class="deferred-media__poster-button motion-reduce">
-          {%- render 'icon-play' -%}
-        </span>
+        <div class="deferred-media__poster-button motion-reduce video-button">
+<!--           {%- render 'icon-play' -%} -->
+          {{ section.settings.button_label }}
+          <img src="{{ 'button_logo_1.png' |asset_url}}" />
+        </div>
       </button>
       <template>
         {%- if section.settings.video_url.type == 'youtube' -%}
