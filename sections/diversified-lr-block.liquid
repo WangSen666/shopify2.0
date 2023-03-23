@@ -141,6 +141,11 @@
   .banner__box-item .banner__heading span{
     font-family: "KumbhSans-Bold" !important;
   }
+
+  .bottom-rotation-text{
+    font-size:24px;
+    font-family:""KumbhSans-Bold" !important";
+  }
 @media screen and (max-width: 749px) {
     .diversified-lr-blocks-banner__box {
       padding:14px !important;
@@ -348,7 +353,12 @@
                 {% case block.type %}
         
                   {% when "bottom-rotation-item" %}
+                  <div class="bottom-rotation-wrapper">
                     <div class="bottom-rotation-item" style="background:url('{{ block.settings.rotation_img| image_url }}') no-repeat center center;background-size:cover;"></div>
+                    <div class="bottom-rotation-text">{{ block.settings.image_text }}</div>
+                  </div>
+          
+                    
         
                   {% endcase %}
               {% endfor %}
@@ -359,49 +369,49 @@
 </div>
 <script>
   var thisIndex = 0;
-   $(function () {
+   // $(function () {
 
-      var imgList = document.querySelector('.bottom-rotation-list-box');
-      var windowWidth=document.documentElement.clientWidth;
-      var flag = true;
+   //    var imgList = document.querySelector('.bottom-rotation-list-box');
+   //    var windowWidth=document.documentElement.clientWidth;
+   //    var flag = true;
      
 
-      function antoChange() {
-         setInterval(function () {
-          if (flag) {
-            flag = false;
-            if (thisIndex >= imgList.children.length) {
-              thisIndex = 0;
-            }
-            slow(imgList, -thisIndex * 342-20, function () {
-                  flag = true;
-                });
-            // circleChange();
-            thisIndex++;
-          }
-        }, 3000);
-      }
-      function slow(obj, target, callback) {
-        obj.myInter = setInterval(function () {
-          var offsetLeft = obj.offsetLeft;
-          var num = (target - offsetLeft) / 10;
-          num > 0 ? num = Math.ceil(num) : num = Math.floor(num);
-          if (offsetLeft == target) {
-            clearInterval(obj.myInter);
-            callback && callback();
-          } else {
-            obj.style.left = offsetLeft + num + 'px';
-          }
+   //    function antoChange() {
+   //       setInterval(function () {
+   //        if (flag) {
+   //          flag = false;
+   //          if (thisIndex >= imgList.children.length) {
+   //            thisIndex = 0;
+   //          }
+   //          slow(imgList, -thisIndex * 342-20, function () {
+   //                flag = true;
+   //              });
+   //          // circleChange();
+   //          thisIndex++;
+   //        }
+   //      }, 3000);
+   //    }
+   //    function slow(obj, target, callback) {
+   //      obj.myInter = setInterval(function () {
+   //        var offsetLeft = obj.offsetLeft;
+   //        var num = (target - offsetLeft) / 10;
+   //        num > 0 ? num = Math.ceil(num) : num = Math.floor(num);
+   //        if (offsetLeft == target) {
+   //          clearInterval(obj.myInter);
+   //          callback && callback();
+   //        } else {
+   //          obj.style.left = offsetLeft + num + 'px';
+   //        }
           
-        }, 10)
-      }
+   //      }, 10)
+   //    }
       
-      if(windowWidth<=750){
-        imgList.style.width = imgList.children.length * 342 + 'px';
-        antoChange();
-      }
-      // antoChange();
-    })
+   //    if(windowWidth<=750){
+   //      imgList.style.width = imgList.children.length * 342 + 'px';
+   //      antoChange();
+   //    }
+   //    // antoChange();
+   //  })
   </script>
 {% schema %}
   {
@@ -813,6 +823,11 @@
             "type": "image_picker",
             "id": "image_1",
             "label": "第一张图片"
+          },
+          {
+            "type":"text",
+            "id":"image_text",
+            "label":"图片下面个的文案"
           }
         ]
       }, {
