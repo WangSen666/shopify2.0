@@ -118,6 +118,9 @@
   font-family:"KumbhSans-Bold" !important;
 }
   @media screen and (max-width:1680px){
+    .diversified-lr-new-blocks-heading{
+      font-size:42px !important;
+    }
   .diversified-lr-new-block_text_body{
     font-size:20px !important;
   }
@@ -126,9 +129,14 @@
   .diversified-lr-new-block_text_body{
     font-size:20px !important;
   }
+   .diversified-lr-new-blocks-heading{
+      font-size:34px !important;
+    }
 }
 @media screen and (max-width:1280px){
-
+.diversified-lr-new-blocks-heading{
+      font-size:32px !important;
+    }
 }
 @media screen and (max-width:990px){
 
@@ -235,7 +243,7 @@
           {%- case block.type -%}
             {%- when 'heading' -%}
             <h2
-              class="banner__heading"
+              class="diversified-lr-new-blocks-heading"
               {{ block.shopify_attributes }}
               style="color:{{block.settings.font_color}};font-weight:{{ block.settings.font-weight }};font-size:{{ block.settings.font_size }}px;margin-top:{{block.settings.margin-top}}px;margin-bottom:{{block.settings.margin-bottom}}px;">
               <span>{{ block.settings.heading | escape }}</span>
