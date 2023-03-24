@@ -569,7 +569,40 @@
           antoChange();
           
         })
-               
+       $(function () {
+       var mySwiper1 = new Swiper('.swiper-1', {
+            loop: true, // 循环模式选项
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            
+        })
+      var mySwiper2 = new Swiper('.swiper-2', {
+            loop: true, // 循环模式选项
+
+           
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+         var mySwiper3 = new Swiper('.swiper-3', {
+            loop: true, // 循环模式选项
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+       
+    
+    })   
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
       if (Shopify.designMode) {
         document.documentElement.classList.add('shopify-design-mode');
