@@ -59,7 +59,7 @@
           "type": "card_item",
           "settings": {
             "image_1": "shopify:\/\/shop_images\/1__1_3_370f1cc2-841d-4b48-a660-861f1dbacbe8.png",
-            "card_href_id": "podx-go-home",
+            "card_href_id": "",
             "heading": "PODX GO Production Process",
             "heading_size": 20
           }
@@ -68,7 +68,7 @@
           "type": "card_item",
           "settings": {
             "image_1": "shopify:\/\/shop_images\/1__1_4.png",
-            "card_href_id": "going-tiny",
+            "card_href_id": "",
             "heading": "Going Tiny Preparation & Costs",
             "heading_size": 20
           }
@@ -77,7 +77,7 @@
           "type": "card_item",
           "settings": {
             "image_1": "shopify:\/\/shop_images\/1__1_5.png",
-            "card_href_id": "order-yours-process",
+            "card_href_id": "",
             "heading": "Order YoursProcess & Options",
             "heading_size": 20
           }
@@ -86,7 +86,7 @@
           "type": "card_item",
           "settings": {
             "image_1": "shopify:\/\/shop_images\/1__1_6.png",
-            "card_href_id": "faqs",
+            "card_href_id": "",
             "heading": "FAQs",
             "heading_size": 20
           }
