@@ -358,7 +358,7 @@
         "margin_top": 24,
         "margin_bottom": 24,
         "show_text_box": true,
-        "rotation_class": "swiper-1",
+        "rotation_class": "swiper1",
         "layout": "text_first",
         "is_imgBg": "true"
       }
@@ -465,7 +465,7 @@
         "margin_top": 24,
         "margin_bottom": 24,
         "show_text_box": true,
-        "rotation_class": "swiper-2",
+        "rotation_class": "swiper2",
         "layout": "image_first",
         "is_imgBg": "false"
       }
@@ -530,7 +530,7 @@
         "margin_top": 24,
         "margin_bottom": 24,
         "show_text_box": true,
-        "rotation_class": "swiper-3",
+        "rotation_class": "swiper3",
         "layout": "text_first",
         "is_imgBg": "false"
       }
