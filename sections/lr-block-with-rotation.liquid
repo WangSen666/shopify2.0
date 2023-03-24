@@ -342,14 +342,13 @@
 </div>
 <script>
    $(function () {
-      var imgListBoth=document.getElementsByClassName("lr_block_rotation_imgList");
        var mySwiper1 = new Swiper('.swiper-1', {
             loop: true, // 循环模式选项
 
             // 如果需要前进后退按钮
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-1 .swiper-button-next',
+                prevEl: '.swiper-1 .swiper-button-prev',
             },
 
             
@@ -360,8 +359,8 @@
            
             // 如果需要前进后退按钮
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-2 .swiper-button-next',
+                prevEl: '.swiper-2 .swiper-button-prev',
             },
         })
          var mySwiper3 = new Swiper('.swiper-3', {
@@ -369,35 +368,11 @@
 
             // 如果需要前进后退按钮
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-3 .swiper-button-next',
+                prevEl: '.swiper-3 .swiper-button-prev',
             },
         })
        
-     // var mySwiper = new Swiper('.swiper', {
-     //        direction: 'horizontal', // 垂直切换选项
-     //        loop: true, // 循环模式选项
-
-     //        // 如果需要分页器
-     //        pagination: {
-     //            el: '.swiper-pagination',
-     //        },
-
-     //        // 如果需要前进后退按钮
-     //        navigation: {
-     //            nextEl: '.swiper-button-next',
-     //            prevEl: '.swiper-button-prev',
-     //        },
-
-     //        // 如果需要滚动条
-     //        scrollbar: {
-     //            el: '.swiper-scrollbar',
-     //        },
-     //     })       
-       var windowWidth=document.documentElement.clientWidth;
-      var thisIndex = 0;
-      var flag = true;
-      // imgList.style.width = (imgList.children.length * 960+60) + 'px';
     
     })
   </script>
