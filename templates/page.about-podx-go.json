@@ -155,6 +155,7 @@
         },
         "template--15628744491108__d0246beb-e0ff-47bc-a147-a968c210eff1-1678949783cf129751-2": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "We're Hiring",
             "button_link_1": "",
