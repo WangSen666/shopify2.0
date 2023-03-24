@@ -881,6 +881,10 @@
   .bottom-rotation-wrapper{
     width: 296px !important;
   }
+  .bottom-rotation-text{
+    width: 296px !important;
+  }
+
   .bottom-rotation-list {
     margin: 20px auto !important;
 /*     height: 196px !important; */
