@@ -53,6 +53,9 @@
     width: 454px !important;
     height: 260px !important;
   }
+  .bottom-rotation-text{
+    width: 454px !important;
+  }
 
   /* with_bg_card-item */
   .with_bg_card-item {
@@ -298,6 +301,7 @@
   }
   .bottom-rotation-text{
     font-size:20px !important;
+    width:390px !important;
   }
   /* .lr-block-component__button .button {
     padding: 12px 16px 12px 24px !important;
