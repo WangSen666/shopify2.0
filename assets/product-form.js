@@ -29,6 +29,45 @@ if (!customElements.get('product-form')) {
       if (this.cart) {
         formData.append('sections', this.cart.getSectionsToRender().map((section) => section.id));
         formData.append('sections_url', window.location.pathname);
+/************************************************************/
+            $('#cus-edi-for-op input').each(function(){
+                if ($(this).attr('name')) {
+                    var name = $(this).attr('name');
+                    var value = $(this).val();
+
+                    formData.append(name, value);
+                }
+            });
+
+            $('#cus-edi-for-op select').each(function(){
+                if ($(this).attr('name')) {
+                    var name = $(this).attr('name');
+                    var value = $(this).val();
+
+                    formData.append(name, value);
+                }
+            });
+
+            $('#cus-edi-for-op textarea').each(function(){
+                if ($(this).attr('name')) {
+                    var name = $(this).attr('name');
+                    var value = $(this).val();
+
+                    formData.append(name, value);
+                }
+            });
+
+            //swatch override
+            $('.image-radio-checked input').each(function () {
+                if ($(this).attr('name')) {
+                    var name = $(this).attr('name');
+                    var value = $(this).val();
+
+                    formData.append(name, value);
+                }
+            });
+/************************************************************/
+
         this.cart.setActiveElement(document.activeElement);
       }
       config.body = formData;
