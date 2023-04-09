@@ -20,6 +20,11 @@
           "settings": {
           }
         },
+        "ebf60db3-567d-41fc-a522-f86a761d92be": {
+          "type": "shopify:\/\/apps\/infinite-options\/blocks\/app-block\/7e73b6f9-82b0-45f5-9b9b-04f446ba1a9b",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -89,6 +94,7 @@
         "vendor",
         "title",
         "price",
+        "ebf60db3-567d-41fc-a522-f86a761d92be",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
