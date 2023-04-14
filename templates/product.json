@@ -64,6 +64,27 @@
             "text_style": "body"
           }
         },
+        "9c7b14cf-65e6-4f63-a3c7-e4434bf70c75": {
+          "type": "text",
+          "settings": {
+            "text": "Full-size shower, 6' long full-size vanity setwith dry-wet separation design",
+            "text_style": "body"
+          }
+        },
+        "65898753-54da-48d8-95cc-3e976a5e0ade": {
+          "type": "text",
+          "settings": {
+            "text": "xx -cubic feet of storage in the kitchen,bathroom, and living room.",
+            "text_style": "body"
+          }
+        },
+        "e1fec621-773d-4e32-b175-79951abbee90": {
+          "type": "text",
+          "settings": {
+            "text": "Smoke \/ CO alarm system, and Extinguisher",
+            "text_style": "body"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -149,6 +170,9 @@
         "5fde362d-be17-4785-a5d5-b71001d3b3f7",
         "ecd9ccf8-df6a-4f1b-b297-a6b1f10de1dc",
         "c80f7022-1fb9-4b4e-a877-bda2322c6ef0",
+        "9c7b14cf-65e6-4f63-a3c7-e4434bf70c75",
+        "65898753-54da-48d8-95cc-3e976a5e0ade",
+        "e1fec621-773d-4e32-b175-79951abbee90",
         "price",
         "ebf60db3-567d-41fc-a522-f86a761d92be",
         "variant_picker",
