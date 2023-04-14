@@ -90,19 +90,14 @@
           "settings": {
           }
         },
-        "ebf60db3-567d-41fc-a522-f86a761d92be": {
-          "type": "shopify:\/\/apps\/infinite-options\/blocks\/app-block\/7e73b6f9-82b0-45f5-9b9b-04f446ba1a9b",
-          "settings": {
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
+        "ebf60db3-567d-41fc-a522-f86a761d92be": {
+          "type": "shopify:\/\/apps\/infinite-options\/blocks\/app-block\/7e73b6f9-82b0-45f5-9b9b-04f446ba1a9b",
           "settings": {
           }
         },
@@ -110,6 +105,11 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
           }
         },
         "description": {
@@ -174,10 +174,10 @@
         "65898753-54da-48d8-95cc-3e976a5e0ade",
         "e1fec621-773d-4e32-b175-79951abbee90",
         "price",
-        "ebf60db3-567d-41fc-a522-f86a761d92be",
         "variant_picker",
-        "quantity_selector",
+        "ebf60db3-567d-41fc-a522-f86a761d92be",
         "buy_buttons",
+        "quantity_selector",
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
