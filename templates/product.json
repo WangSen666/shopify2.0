@@ -162,6 +162,12 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "76b36f01-4246-4ff8-ae15-cc35dc24f83b": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<button class=\"continue-to-customize\">Continue to customize<\/button>"
+          }
         }
       },
       "block_order": [
@@ -187,7 +193,8 @@
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
-        "share"
+        "share",
+        "76b36f01-4246-4ff8-ae15-cc35dc24f83b"
       ],
       "settings": {
         "enable_sticky_info": true,
