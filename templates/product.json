@@ -15,6 +15,27 @@
           "settings": {
           }
         },
+        "89a4e882-c395-445b-9987-e0a575934490": {
+          "type": "text",
+          "settings": {
+            "text": "Certified by NOAH with ANSI 119.5 standards",
+            "text_style": "body"
+          }
+        },
+        "50cf53c8-717e-4a34-aebb-e648a678a6ff": {
+          "type": "text",
+          "settings": {
+            "text": "Trailer size 19'0.7\" x 7'4.2\" x 10'7.5\"",
+            "text_style": "body"
+          }
+        },
+        "5a891928-61b7-48fd-bf68-e45f2c105ccd": {
+          "type": "text",
+          "settings": {
+            "text": "Home size 19'0.7\" x 23'0.4\" x 10'7.5\"",
+            "text_style": "body"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -93,6 +114,9 @@
       "block_order": [
         "vendor",
         "title",
+        "89a4e882-c395-445b-9987-e0a575934490",
+        "50cf53c8-717e-4a34-aebb-e648a678a6ff",
+        "5a891928-61b7-48fd-bf68-e45f2c105ccd",
         "price",
         "ebf60db3-567d-41fc-a522-f86a761d92be",
         "variant_picker",
