@@ -36,6 +36,34 @@
             "text_style": "body"
           }
         },
+        "48f5638e-ac5f-4edf-ab7c-e380d63e3a38": {
+          "type": "text",
+          "settings": {
+            "text": "17,000 lb dry weight and a maximum of 22,000 lbs when towing",
+            "text_style": "body"
+          }
+        },
+        "5fde362d-be17-4785-a5d5-b71001d3b3f7": {
+          "type": "text",
+          "settings": {
+            "text": "High-performance steel, flame-retardedrigid polyurethane siding and roofing",
+            "text_style": "body"
+          }
+        },
+        "ecd9ccf8-df6a-4f1b-b297-a6b1f10de1dc": {
+          "type": "text",
+          "settings": {
+            "text": "2 picture windows, and 4 double-pane windows",
+            "text_style": "body"
+          }
+        },
+        "c80f7022-1fb9-4b4e-a877-bda2322c6ef0": {
+          "type": "text",
+          "settings": {
+            "text": "Full fitted kitchen, with a 55-inch wide counter",
+            "text_style": "body"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -117,6 +145,10 @@
         "89a4e882-c395-445b-9987-e0a575934490",
         "50cf53c8-717e-4a34-aebb-e648a678a6ff",
         "5a891928-61b7-48fd-bf68-e45f2c105ccd",
+        "48f5638e-ac5f-4edf-ab7c-e380d63e3a38",
+        "5fde362d-be17-4785-a5d5-b71001d3b3f7",
+        "ecd9ccf8-df6a-4f1b-b297-a6b1f10de1dc",
+        "c80f7022-1fb9-4b4e-a877-bda2322c6ef0",
         "price",
         "ebf60db3-567d-41fc-a522-f86a761d92be",
         "variant_picker",
