@@ -1,7 +1,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <section
   id="MainProduct-{{ section.id }}"
-  class="page-width section-{{ section.id }}-padding"
+  class="section-{{ section.id }}-padding"
   data-section="{{ section.id }}">
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
@@ -28,6 +28,30 @@
         px;
       }
     }
+    .product__media-gallery{
+      height:100%;
+    }
+    .product__media-gallery slider-component{
+      height:100%;
+    }
+    .product__media-list{
+      height:100%;
+    }
+    .product__media-list li{
+      height:100%;
+    }
+    .product__modal-opener{
+      height:100%;
+    }
+    .product__media{
+      height:100%;
+    }
+    .product__info-wrapper{
+      padding:0 !important;
+    }
+    .product__info-container{
+      padding:0 4rem;
+    }
     .product__text {
       font-size: 18px;
       color: black;
@@ -45,7 +69,8 @@
       padding: 14px 0;
     }
     .radios-list fieldset:nth-child(2) {
-      visibility: hidden;
+      /* visibility: hidden; */
+      display:none;
       height: 0;
     }
     .form__label {
@@ -62,7 +87,7 @@
     }
     .product__info-container li {
       list-style: disc;
-      /* font-family: "KumbhSans-Bold"; */
+      font-family: "KumbhSans";
     }
     .pay-way-list {
       display: flex;
@@ -105,6 +130,8 @@
     }
     .pay-way li {
       list-style: disc;
+      font-family: "KumbhSans-Bold";
+      color:#666666;
     }
     .pay-way-title {
       font-size: 24px;
@@ -112,7 +139,7 @@
     }
     .pay-subtitle {
       font-size: 16px;
-      font-weight: bold;
+      font-family: "KumbhSans-Bold";
       margin-top: 40px;
     }
     .pay-way.curentPay {
@@ -120,12 +147,13 @@
     }
     .pay-way-box .shopify-payment-button__button {
       /* margin-left:100px; */
-      background: #9ED835 !important;
+      background: #9ED835 !important;     
       border-radius: 14px !important;
     }
     .agreement-box {
       /* padding-left:100px; */
       margin: 14px auto;
+      font-family: "KumbhSans-Bold";
     }
     .bottom-button-box {
       width: 100%;
@@ -156,6 +184,9 @@
       font-size: 24px;
       color: black;
     }
+    .product__title h1{
+      font-family: "KumbhSans-Bold";
+    }
     .other-variant-title {
       font-size: 26px;
       color: black;
@@ -184,10 +215,67 @@
     .pay-way-box .product-form__buttons{
       margin-top:50px;
     }
+    @media screen and (max-width: 1680px){
+      .pay-way{
+        padding:20px 30px;
+      }
+      .product__title h1{
+        font-size:26px;
+      }
+      .other-variant-title{
+        font-size:26px;
+      }
+      .product__text{
+        font-size:16px;
+      }
+      .form__label{
+        font-size:18px;
+      }
+      #infiniteoptions-container fieldset{
+        margin-top:10px;
+      }
+      #agreement-box-1{
+        margin-top:52px;
+      }
+      .pay-way-box .product-form__buttons{
+        margin-top:20px;
+      }
+    }
+    @media screen and (max-width: 1500px){
+      .pay-way{
+        padding:16px 26px;
+      }
+      .product__title h1{
+        font-size:20px;
+      }
+      .other-variant-title{
+        font-size:20px;
+      }
+      .product__text{
+        font-size:14px;
+      }
+      .form__label{
+        font-size:16px;
+      }
+      #infiniteoptions-container fieldset{
+        margin-top:6px;
+      }
+      #agreement-box-1{
+        margin-top:32px;
+      }
+      .pay-way-list,.agreement-box,product-form{
+        /* padding:0 !important; */
+        max-width:100% !important;
+      }
+    }
+
     @media screen and (max-width: 750px) {
       .product__info-wrapper{
         padding:0 24px;
         margin:0 auto;
+      }
+      .product__info-container{
+        padding:0 2rem;
       }
       .pay-way-box {
         overflow-y: auto;
@@ -515,10 +603,7 @@
 
               {% render block %}
 
-              <div class="bottom-button-box" id="step-2">
-                <div class="base-price">Base Price $59,000</div>
-                <button>Order Summary</button>
-              </div>
+              
 
             </div>
             {%- when 'text' -%}
@@ -695,7 +780,7 @@
                   {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
                     {% case option.name %}
-                      {% when 'Floor Plan Style' %}
+                      {% when 'Floor Plan Layout' %}
                       <fieldset class="js product-form__input" id="fieldset-1">
                         <legend class="form__label">{{ option.name }}</legend>
                         {%- for value in option.values -%}
@@ -735,10 +820,10 @@
                 </variant-radios>
 
 
-                <div class="bottom-button-box step-1" id="step-1">
+                {% comment %} <div class="bottom-button-box step-1" id="step-1">
                   <div class="base-price">Base Price $59,000</div>
                   <button>Continue to customize</button>
-                </div>
+                </div> {% endcomment %}
 
                 <variant-radios
                   class="no-js-hidden pay-way-box bg-wrapper step-3"
@@ -1121,6 +1206,14 @@
           {% render 'icon-arrow' %}
         </a>
       </div>
+      <div class="bottom-button-box step-1" id="step-1">
+        <div class="base-price">Base Price $59,000</div>
+        <button>Continue to customize</button>
+      </div>
+      <div class="bottom-button-box" id="step-2">
+        <div class="base-price">Base Price $59,000</div>
+        <button>Order Summary</button>
+      </div>
     </div>
     {%- if section.settings.media_position == 'right' -%}
       <div class="grid__item product__media-wrapper small-hide">
@@ -1410,6 +1503,8 @@
       $('#step-1').css({"display": "flex"});
 
       $('.step-2').css({"display": "none"})
+      $('#step-2').css({"display": "none"})
+
       $('.step-3').css({"display": "none"})
     })
     $('#step-1')
