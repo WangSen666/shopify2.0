@@ -124,12 +124,11 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "Crowdfunding Now on Indiegogo! Lower as $48,999.",
+              "text": "Crowdfunding Now on Indiegogo! Get Your Best Deal Before May 22nd.",
               "text_alignment": "center",
-              "color_scheme": "background-2",
-              "link": ""
+              "color_scheme": "inverse",
+              "link": "https:\/\/www.indiegogo.com\/projects\/tiny-house-world-s-first-self-folding-mobile-home#\/"
             }
           }
         },
