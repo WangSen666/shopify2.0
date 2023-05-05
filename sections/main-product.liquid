@@ -145,9 +145,17 @@
     .pay-way.curentPay {
       box-shadow: 0 0 12px #333;
     }
-    .pay-way-box .shopify-payment-button__button {
+    .pay-way-box .shopify-payment-button{
+      visibility:hidden !important;
+      height:0 !important;
+    }
+    .pay-way-box #shopify-payment-button__button {
       background: #9ED835 !important;     
       border-radius: 14px !important;
+      height:46px;
+      line-height:46px;
+      font-size:18px;
+      font-family: "KumbhSans-Bold";
     }
     .agreement-box {
       margin: 14px auto;
@@ -215,7 +223,7 @@
       /* margin-top:72px; */
     }
     .pay-way-box .product-form__buttons{
-      margin-top:50px;
+/*       margin-top:50px; */
     }
      #infiniteoptions-container  label{
       font-family: "KumbhSans-Bold";
