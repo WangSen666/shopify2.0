@@ -1542,7 +1542,9 @@
       $('#step-2')
       .find("button")
       .click(function() {
-        $('.step-3').css({"display": "block"})
+        $('.step-3').css({"display": "block"});
+        $(".shopify-payment-button__button")[0].innerHTML="Pay Deposit";
+
       })
     $(".pay-way")
     .click(function() {
