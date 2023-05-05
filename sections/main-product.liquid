@@ -1538,6 +1538,10 @@
               checkBoxs_Value=checkBoxs[i].value.substr(checkBoxs[i].value.indexOf("$") + 1);
               console.log("Number(checkBoxs_Value)",Number(checkBoxs_Value.replace(',','')))
               $('#base-price')[0].innerHTML=`Base Price$${Number(base_price.replace(",",""))+Number(checkBoxs_Value.replace(',',''))}`;
+            }else{
+              checkBoxs_Value=checkBoxs[i].value.substr(checkBoxs[i].value.indexOf("$") + 1);
+              console.log("Number(checkBoxs_Value)",Number(checkBoxs_Value.replace(',','')))
+              $('#base-price')[0].innerHTML=`Base Price$${Number(base_price.replace(",",""))-Number(checkBoxs_Value.replace(',',''))}`;
             }
             
           })
