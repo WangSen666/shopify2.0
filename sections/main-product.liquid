@@ -1531,14 +1531,17 @@
         for(let i=0;i<checkBoxs.length;i++){
           checkBoxs[i].addEventListener("change",function(){
             let base_price=$('#base-price')[0].innerHTML.substr($('#base-price')[0].innerHTML.indexOf('$')+1)
-            console.log("base_price",base_price)
+            let base_price_new="";
 
             if(checkBoxs[i].checked){
               checkBoxs_Value=checkBoxs[i].value.substr(checkBoxs[i].value.indexOf("$") + 1);
-              $('#base-price')[0].innerHTML=`Base Price$ ${Number(base_price.replace(",",""))+Number(checkBoxs_Value.replace(',',''))}`;
+              base_price_new=Number(base_price.replace(",",""))+Number(checkBoxs_Value.replace(',',''));
+              $('#base-price')[0].innerHTML=`Base Price$ ${base_price_new.toLocaleString()}`;
             }else{
               checkBoxs_Value=checkBoxs[i].value.substr(checkBoxs[i].value.indexOf("$") + 1);
-              $('#base-price')[0].innerHTML=`Base Price$ ${Number(base_price.replace(",",""))-Number(checkBoxs_Value.replace(',',''))}`;
+              base_price_new=Number(base_price.replace(",",""))-Number(checkBoxs_Value.replace(',',''));
+              
+              $('#base-price')[0].innerHTML=`Base Price$ ${base_price_new.toLocaleString()}`;
             }
             
           })
