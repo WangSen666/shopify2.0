@@ -1530,18 +1530,15 @@
         let checkBoxs_Value="";
         for(let i=0;i<checkBoxs.length;i++){
           checkBoxs[i].addEventListener("change",function(){
-            console.log("121341324",$('#base-price')[0].innerHTML)
             let base_price=$('#base-price')[0].innerHTML.substr($('#base-price')[0].innerHTML.indexOf('$')+1)
             console.log("base_price",base_price)
 
             if(checkBoxs[i].checked){
               checkBoxs_Value=checkBoxs[i].value.substr(checkBoxs[i].value.indexOf("$") + 1);
-              console.log("Number(checkBoxs_Value)",Number(checkBoxs_Value.replace(',','')))
-              $('#base-price')[0].innerHTML=`Base Price$${Number(base_price.replace(",",""))+Number(checkBoxs_Value.replace(',',''))}`;
+              $('#base-price')[0].innerHTML=`Base Price$ ${Number(base_price.replace(",",""))+Number(checkBoxs_Value.replace(',',''))}`;
             }else{
               checkBoxs_Value=checkBoxs[i].value.substr(checkBoxs[i].value.indexOf("$") + 1);
-              console.log("Number(checkBoxs_Value)",Number(checkBoxs_Value.replace(',','')))
-              $('#base-price')[0].innerHTML=`Base Price$${Number(base_price.replace(",",""))-Number(checkBoxs_Value.replace(',',''))}`;
+              $('#base-price')[0].innerHTML=`Base Price$ ${Number(base_price.replace(",",""))-Number(checkBoxs_Value.replace(',',''))}`;
             }
             
           })
