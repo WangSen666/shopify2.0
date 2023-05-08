@@ -1571,7 +1571,9 @@
           console.log(html)
           console.log("text",text)
         }
-
+        $(".Edge-ONE-Smart-Home fieldset").click(function(){
+          $(".Edge-ONE-Smart-Home fieldset input").val("");
+        })
       })
       $('#step-2')
       .find("button")
@@ -1586,11 +1588,7 @@
       $(this).find("label").css({"border": "none"});
       $(this).siblings().css({"boxShadow": "0 0 6px #333"})
     })
-    $('.Edge-ONE-Smart-Home').click(function(){
-      console.log("erwewwq")
-      debugger;
-      return ;
-    })
+   
   $('#fieldset-1')
   .children('label')
   .click(function() {
