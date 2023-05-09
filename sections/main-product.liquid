@@ -1550,12 +1550,12 @@
             if(checkBoxs[i].checked){
               checkBoxs_Value=checkBoxs[i].value.substr(checkBoxs[i].value.indexOf("$") + 1);
               base_price_new=Number(base_price.replace(",",""))+Number(checkBoxs_Value.replace(',',''));
-              $('#base-price')[0].innerHTML=`Base Price$ ${base_price_new.toLocaleString()}`;
+              $('#base-price')[0].innerHTML=`Base Price $ ${base_price_new.toLocaleString()}`;
             }else{
               checkBoxs_Value=checkBoxs[i].value.substr(checkBoxs[i].value.indexOf("$") + 1);
               base_price_new=Number(base_price.replace(",",""))-Number(checkBoxs_Value.replace(',',''));
               
-              $('#base-price')[0].innerHTML=`Base Price$ ${base_price_new.toLocaleString()}`;
+              $('#base-price')[0].innerHTML=`Base Price $ ${base_price_new.toLocaleString()}`;
             }
             
           })
