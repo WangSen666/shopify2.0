@@ -803,7 +803,7 @@
                   {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
                     {% case option.name %}
-                      {% when 'Floor Plan Layout' %}
+                      {% when 'Choose Your Floorplan' %}
                       <fieldset class="js product-form__input" id="fieldset-1">
                         <legend class="form__label">{{ option.name }}</legend>
                         {%- for value in option.values -%}
