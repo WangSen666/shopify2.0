@@ -861,12 +861,13 @@
                   data-section="{{ section.id }}"
                   data-url="{{ product.url }}"
                   {{ block.shopify_attributes }}>
+                  <div class="">Choose Your Payment Plan</div>
+                
                   {%- for option in product.options_with_values -%}
                     {% case option.name %}
                       {% when 'pay way' %}
 
                       <div class="pay-way-list page-width">
-                        <div class="">Choose Your Payment Plan</div>
                         {%- for value in option.values -%}
 
                           <div class="pay-way">
