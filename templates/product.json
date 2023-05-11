@@ -37,6 +37,13 @@
             "text_style": "body"
           }
         },
+        "f331fb3f-c86f-484f-8432-1f5ce65f6ed3": {
+          "type": "text",
+          "settings": {
+            "text": "Indoor dimensions 16'8.4'' L x 20'4.3'' W x 7'8.1'' H",
+            "text_style": "body"
+          }
+        },
         "48f5638e-ac5f-4edf-ab7c-e380d63e3a38": {
           "type": "text",
           "settings": {
@@ -47,7 +54,7 @@
         "5fde362d-be17-4785-a5d5-b71001d3b3f7": {
           "type": "text",
           "settings": {
-            "text": "High-performance steel, flame-retardedrigid polyurethane siding and roofing",
+            "text": "50mm-High-performance steel and flame-retardedrigid polyurethane siding and roofing",
             "text_style": "body"
           }
         },
@@ -61,14 +68,14 @@
         "c80f7022-1fb9-4b4e-a877-bda2322c6ef0": {
           "type": "text",
           "settings": {
-            "text": "Full fitted kitchen, with a 55-inch wide counter",
+            "text": "Full fitted kitchen",
             "text_style": "body"
           }
         },
         "9c7b14cf-65e6-4f63-a3c7-e4434bf70c75": {
           "type": "text",
           "settings": {
-            "text": "Full-size shower, 6' long full-size vanity setwith dry-wet separation design",
+            "text": "Full-size shower,  long full-size vanity set with dry-wet separation design",
             "text_style": "body"
           }
         },
@@ -183,6 +190,7 @@
         "89a4e882-c395-445b-9987-e0a575934490",
         "50cf53c8-717e-4a34-aebb-e648a678a6ff",
         "5a891928-61b7-48fd-bf68-e45f2c105ccd",
+        "f331fb3f-c86f-484f-8432-1f5ce65f6ed3",
         "48f5638e-ac5f-4edf-ab7c-e380d63e3a38",
         "5fde362d-be17-4785-a5d5-b71001d3b3f7",
         "ecd9ccf8-df6a-4f1b-b297-a6b1f10de1dc",
