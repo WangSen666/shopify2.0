@@ -1,0 +1,289 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+{%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
+  {%- style -%}
+    @media screen and (max-width: 749px) {
+      #Banner-{{ section.id }}: : before, #Banner-{{ section.id }}.banner__media::before, #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner-component__content::before  {
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+        content: '';
+        display: block;
+      }
+    }
+    @media screen and (min-width: 750px) {
+      #Banner-{{ section.id }}: : before, #Banner-{{ section.id }}.banner__media::before {
+        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+        content: '';
+        display: block;
+      }
+
+    }
+  {%- endstyle -%}
+{%- endif -%}
+
+{%- style -%}
+  #Banner-{{ section.id }}::after {
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+  }
+
+ 
+ 
+
+  /* banner 组件 */
+  .banner-component-new {
+    position: relative
+  }
+  .banner-component-new .banner-component__content {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+/*     left: 50%;
+    top: 0;
+    transform: translateX(-50%); */
+    text-align: left;
+  }
+.banner-component-heading span{
+   font-family: "KumbhSans-Bold" !important;
+}
+  .banner-component-new .banner-component__content .banner-component-new__box {
+    padding: 0;
+    width: 100%;
+    position: absolute;
+/*     height:70%; */
+    top: 180px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    text-align: left;
+    padding:24px;
+  }
+  .banner-component-new .banner-component__content .banner-component-new__box--left {
+    padding: 0;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: none;
+    text-align: left;
+  }
+  .banner-component-new .banner-component__content .banner-component-new__box--right {
+    padding: 0;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: right;
+    transform: translateY(-50%);
+    background: none;
+    text-align: right;
+  }
+  .banner-component-new .banner-component__media {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .banner-component-new-bottom-info {
+    display: flex;
+    width:calc(100% - 48px);
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 0 14px;
+    position:absolute;
+    bottom:10%;
+  }
+  .banner__left_bottom_info {
+    max-width:50%;
+  }
+  .banner-component-new-bottom-info .banner__right_bottom_info {
+    display: flex;
+    justify-content: space-around;
+   
+  }
+ .banner__right_bottom_info_btn {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #9ED835;
+    margin: 14px;
+   display:inline-block;
+  }
+  .banner-href-icon-item{
+    text-decoration:none;
+    margin:14px 24px;
+  }
+  
+  .banner-component-new-button {
+    font-size: 18px;
+    background: none;
+    padding: 0 14px;
+  }
+ .banner-href-icon{
+    display:flex;
+    justify-content:space-between;
+    max-width:100%;
+  }
+
+
+
+/*   底部卡片位置 */
+  .banner-bottom-card{
+    position:absolute;
+    width:100%;
+    bottom:90px;
+    left:0;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+  }
+  .banner-component-bottom-card-item{
+    width:360px;
+    color:#fff !important;
+    margin:14px 18px;
+/*     display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+  }
+  .banner-component-bottom-card-item .yellow-border{
+    width:20px;
+    height:1px;
+    background:#9ED835;
+    border-radius:1px;
+    display:block !important;
+    margin: 18px 0;
+  }
+  .card-item-heading{
+    font-family: "KumbhSans-Bold" !important;
+  }
+  .banner-component-bottom-card-item .card-item-subtitle{
+    max-height:120px;
+    line-height:36px;
+  }
+  
+  
+ 
+   @media screen and (max-width: 750px) {
+
+
+    .banner-component-new-bottom-info {
+      border: none !important;
+      flex-wrap: wrap;
+      position:relative;
+      left:50%;
+      transform:translateX(-50%);
+    }
+    .banner-component-new .banner-component__media {
+      min-height: 90rem;
+      width: 100%;
+    }
+    .banner-component-new .banner-component__content{
+      padding:24px 0 !important;
+    }
+    .banner__right_bottom_info {
+      flex-wrap: wrap;
+    }
+    .banner__right_bottom_info_btn {
+      padding: 10px !important;
+      font-size: 16px;
+    }
+    .banner-component-new-button {
+      font-size: 16px !important;
+      padding: 0 10px;
+    }
+    
+    .banner-component__content h2 {
+      width: 100% !important;
+      font-size:36px !important;
+    }
+    .banner__left_bottom_info{
+      width:98% !important;
+      max-width:unset !important;
+    }
+    .banner-component-new__box{
+/*       height:80% !important; */
+      
+    }
+     .banner-component-bottom-card-item{
+       width:100% !important;
+     }
+    .banner-component-new-bottom-info{
+      text-align:left;
+      padding:0 !important;
+    }
+    .banner-component-text{
+      width:100% !important;
+    }
+    .banner-href-icon-item img{
+      width:40px;
+      height:40px;
+    }
+     .card-item-heading{
+       font-size:14px !important;
+     }
+     .card-item-subtitle{
+      font-size:12px !important;
+     }
+    .banner-href-icon-item-text{
+      font-size:12px !important;
+    }
+    .picture-card-item-button{
+      margin:14px 0;
+    }
+  }
+  
+ @media screen and (max-width: 880px) {
+    .banner-component-new .banner-component__content .banner-component-new__box{
+      position:relative !important;
+      top:unset !important;
+      left:unset !important;
+      transform:unset !important;
+    }
+   .banner-bottom-card{
+     position:relative !important;
+     bottom:unset !important;
+     top:unset !important;
+     left:unset !important;
+   }
+   .card-item-heading{
+     font-size:20px !important;
+   }
+   .card-item-subtitle{
+     font-size:16px !important;
+   }
+ }
+  
+{%- endstyle -%}
+
+<div id="Banner-{{ section.id }}" class="bg_wrapper banner-component-new   banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
+    <div class="banner-component__media media  {% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
+      <video src="{{ section.settings.video_url }}" autoplay  loop muted ></video>
+     
+    </div>
+
+</div>
+
+{% schema %}
+  {
+    "name": "Banner Compoent Video",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+     {
+        "type":"text",
+       "id":"video_url",
+       "label":"视频源地址"
+     }
+    ],
+    "blocks": [
+
+      
+    ],
+    "presets": [
+      {
+        "name": "Banner Compoent Video",
+        "blocks": [
+        ]
+      }
+    ]
+  }
+{% endschema %}
