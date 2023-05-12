@@ -2,13 +2,98 @@
   "sections": {
     "c7986fdd-3645-4a7e-b5c1-12f8f34fff1f": {
       "type": "banner-component-video",
-      "disabled": true,
+      "blocks": {
+        "d909f2f6-c119-4a8b-8910-efba9a0bf726": {
+          "type": "text",
+          "settings": {
+            "text": "Expand your tiny home from a trailer to a",
+            "font_size": 24,
+            "margin_top": 24,
+            "margin_bottom": 0,
+            "heading_color": "#fff",
+            "font_weight": 400
+          }
+        },
+        "1439192f-51f7-4d36-82cf-71db167b1834": {
+          "type": "heading",
+          "settings": {
+            "heading": "3X larger",
+            "heading_size": "h1",
+            "font_size": 72,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "heading_color": "#fff",
+            "font_weight": 400
+          }
+        },
+        "99856857-4e7b-4673-9986-4907c06e5a5b": {
+          "type": "text",
+          "settings": {
+            "text": "Apartment with the push of a button in",
+            "font_size": 24,
+            "margin_top": 36,
+            "margin_bottom": 0,
+            "heading_color": "#fff",
+            "font_weight": 400
+          }
+        },
+        "e86b40ff-4c15-4c1b-ab13-8d0127721a89": {
+          "type": "heading",
+          "settings": {
+            "heading": "15 mins DIY",
+            "heading_size": "h1",
+            "font_size": 72,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "heading_color": "#fff",
+            "font_weight": 400
+          }
+        },
+        "660f2ea6-3232-4830-8732-9fa0b4e0951b": {
+          "type": "buttons",
+          "settings": {
+            "banner_button_label": "Back us on Indiegogo",
+            "banner_button_link": "https:\/\/www.indiegogo.com\/projects\/tiny-house-world-s-first-self-folding-mobile-home#\/",
+            "font_size": 16,
+            "button_color": "#eb1478"
+          }
+        },
+        "a3d89172-31fb-4291-955d-65016c1b7ad5": {
+          "type": "buttons",
+          "settings": {
+            "banner_button_label": "Download Floorplan",
+            "banner_button_link": "https:\/\/form.jotform.com\/230568117037454",
+            "font_size": 16,
+            "button_color": "#9ED835"
+          }
+        }
+      },
+      "block_order": [
+        "d909f2f6-c119-4a8b-8910-efba9a0bf726",
+        "1439192f-51f7-4d36-82cf-71db167b1834",
+        "99856857-4e7b-4673-9986-4907c06e5a5b",
+        "e86b40ff-4c15-4c1b-ab13-8d0127721a89",
+        "660f2ea6-3232-4830-8732-9fa0b4e0951b",
+        "a3d89172-31fb-4291-955d-65016c1b7ad5"
+      ],
       "settings": {
-        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d54f3ba5f2dc4217a964131905b7fa13.mov"
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d54f3ba5f2dc4217a964131905b7fa13.mov",
+        "text_place": "left",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "ca120a8e-6056-4d50-b607-91789f1091d2": {
       "type": "banner-new-rotation",
+      "disabled": true,
       "blocks": {
         "d47ef435-8aba-4d49-a494-f95e8516eac8": {
           "type": "text",
