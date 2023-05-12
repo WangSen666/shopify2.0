@@ -1,7 +1,14 @@
 {
   "sections": {
+    "c7986fdd-3645-4a7e-b5c1-12f8f34fff1f": {
+      "type": "banner-component-video",
+      "settings": {
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d54f3ba5f2dc4217a964131905b7fa13.mov"
+      }
+    },
     "ca120a8e-6056-4d50-b607-91789f1091d2": {
       "type": "banner-new-rotation",
+      "disabled": true,
       "blocks": {
         "d47ef435-8aba-4d49-a494-f95e8516eac8": {
           "type": "text",
@@ -862,6 +869,7 @@
     }
   },
   "order": [
+    "c7986fdd-3645-4a7e-b5c1-12f8f34fff1f",
     "ca120a8e-6056-4d50-b607-91789f1091d2",
     "033b3367-c7f0-4783-b027-9f0f99922544",
     "d89435af-466a-4a31-8028-4dd2a2d5fb51",
