@@ -118,7 +118,29 @@
     padding:1.2rem 2rem;
   }
   
-  
+   .to-checkouts{
+    position:absolute;
+    right:260px;
+    top:10px;
+    cursor:pointer;
+    text-decoration: none;
+  }
+   .to-checkouts button{
+    color:#fff;
+    background:#9ED835;
+    height:30px;
+    width:170px;
+    line-height:30px;
+    border:none;
+    border-radius:24px;
+    cursor: pointer;
+   }
+  .reserve-1{
+    display:block;
+  }
+  .reserve-2{
+    display:none;
+  }
   .search-icon{
     margin-right:14px;
     width:20px;
@@ -165,6 +187,51 @@
       color:black;
     }
   }
+   @media screen and (max-width: 1680px) {
+    .to-checkouts{
+      right:160px;
+    }
+    .to-checkouts button{
+      width:160px;
+    }
+   }
+   @media screen and (max-width: 1500px) {
+    .to-checkouts{
+      right:140px;
+    }
+    .to-checkouts button{
+      width:150px;
+      
+    }
+   }
+    @media screen and (max-width: 1400px) {
+    .to-checkouts{
+      right:120px;
+    }
+    .to-checkouts button{
+      width:120px;
+      
+    }
+   }
+   @media screen and (max-width: 750px) {
+    .to-checkouts{
+      right:10px;
+      top:6px;
+    }
+    .to-checkouts button{
+      width:70px;
+      
+    }
+    .reserve-1{
+      display:none;
+    }
+    .reserve-2{
+      display:block;
+    }
+    .header__icons{
+      display:none !important;
+    }
+   }
 .black-search-icon{
   width:16px;
   heihgt:16px;
@@ -466,6 +533,11 @@
               <span class="h2">{{ shop.name }}</span>
             {%- endif -%}
           </a>
+           <a class="to-checkouts" target="_blank" href="https://podxgo.com/products/grande-s1-early-bird-special-deposit">
+              <button class="reserve-1">RESERVE NOW</button>
+              <button class="reserve-2">RESERVE</button>
+
+            </a>
       {%- if request.page_type == 'index' -%}
         </h1>
       {%- endif -%}
