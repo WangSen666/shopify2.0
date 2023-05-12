@@ -187,6 +187,11 @@
   display:block !important;
   height:72px !important;
 }
+  @media screen and (max-width:1680px){
+    .banner-video{
+      width:unset !important;
+    }
+  }
   @media screen and (max-width: 750px) {
 
     .banner-new-rotation .banner-component__content .banner-new-rotation__box{
@@ -258,7 +263,7 @@
 {%- endstyle -%}
 
 <div id="Banner-{{ section.id }}"= class="bg_wrapper banner-new-rotation   banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
-    <div class="banner-component__media media ">
+    <div class="banner-component__media media banner-video">
       <video src="{{ section.settings.video_url }}" autoplay  loop muted ></video>
     </div>
   <div class="banner-component__content  page-width">
