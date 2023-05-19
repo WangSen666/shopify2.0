@@ -831,6 +831,54 @@
         "is_imgBg": "false"
       }
     },
+    "bddee2f4-7f99-4dd7-80d5-0698ddee7387": {
+      "type": "rich-text-bottom-img",
+      "blocks": {
+        "template--15634989285476__bddee2f4-7f99-4dd7-80d5-0698ddee7387-1684481610b45dbddd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Need Financing?<\/p>",
+            "heading_size": "h1",
+            "font-weight": 400,
+            "font_size": 48,
+            "heading_color": "#333333"
+          }
+        },
+        "template--15634989285476__bddee2f4-7f99-4dd7-80d5-0698ddee7387-1684481610b45dbddd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We've teamed up with Acorn to provide financing solutions for those in need of assistance purchasing a PODX GO home. Now, owning your dream home is more accessible than ever before. Don't miss out on this opportunity – let us help you make your tiny home dreams a reality!<\/p>",
+            "font-weight": 400,
+            "font_size": 20,
+            "text_color": "#333333"
+          }
+        },
+        "template--15634989285476__bddee2f4-7f99-4dd7-80d5-0698ddee7387-1684481610b45dbddd-2": {
+          "type": "yellow_border",
+          "settings": {
+          }
+        },
+        "template--15634989285476__bddee2f4-7f99-4dd7-80d5-0698ddee7387-1684481610b45dbddd-3": {
+          "type": "text-with-img",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/acorn-finance-banner-easy-payment-options-horizontal-medium_c1814190-2521-4b4a-99ff-b2add158dac3.png",
+            "img_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15634989285476__bddee2f4-7f99-4dd7-80d5-0698ddee7387-1684481610b45dbddd-0",
+        "template--15634989285476__bddee2f4-7f99-4dd7-80d5-0698ddee7387-1684481610b45dbddd-1",
+        "template--15634989285476__bddee2f4-7f99-4dd7-80d5-0698ddee7387-1684481610b45dbddd-2",
+        "template--15634989285476__bddee2f4-7f99-4dd7-80d5-0698ddee7387-1684481610b45dbddd-3"
+      ],
+      "settings": {
+        "is_border": "true",
+        "is_background_radius": "true",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "5af20d81-606b-473f-9b3c-47412699d454": {
       "type": "rich-text-new",
       "blocks": {
@@ -966,6 +1014,7 @@
     "15eff337-14f9-4074-9835-664493722bd5",
     "60f671a1-7f8e-412f-b0f6-056de9bc85bc",
     "040c1abe-c06e-4ca3-9224-21358c1f6de1",
+    "bddee2f4-7f99-4dd7-80d5-0698ddee7387",
     "5af20d81-606b-473f-9b3c-47412699d454",
     "817a5069-6e91-49ec-aff0-da615eb133ea",
     "2fc4a141-20b7-4e60-a81a-cb54d29e005b"
