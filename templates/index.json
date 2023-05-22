@@ -51,6 +51,7 @@
         },
         "660f2ea6-3232-4830-8732-9fa0b4e0951b": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "banner_button_label": "Order Now from $49,000",
             "banner_button_link": "https:\/\/www.indiegogo.com\/projects\/tiny-house-world-s-first-self-folding-mobile-home#\/",
