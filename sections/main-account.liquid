@@ -2,27 +2,164 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
+    px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
+    px;
   }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top }}
+      px;
+      padding-bottom: {{ section.settings.padding_bottom }}
+      px;
+    }
+  }
+  .flex_between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .account {
+    padding: 64px 0;
+  }
+  .login-out {
+    font-size: 28px !important;
+    font-family: "KumbhSans-Bold" !important;
+  }
+  .account-detial-box {
+    margin: 50px auto !important;
+    width: 100%;
+    position: relative;
+  }
+  .account-detial {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 40px !important;
+  }
+  .account-detial-wrappper-box {
+    width: 100%;
+    height: 226px;
+    display: flex;
+    align-items: center;
+    border-radius: 14px;
+    box-shadow: 0 0 20px #bbbbbb;
+  }
+  .account-detial-wrappper-box div {
+    padding-left: 20px;
+    font-size: 24px;
+    font-family: "KumbhSans-Bold" !important;
+  }
+  .account-detial-other-wrappper-box {
+    position: absolute;
+    right: 0;
+    top: -10px;
+    width: 50%;
+    height: 246px;
+    background: #2E5955;
+    clip-path: polygon(2% 0%, 100% 0%, 100% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: "KumbhSans-Bold" !important;
+  }
+  .user-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 55px;
+    background: #2E5955;
+    padding-left: 0 !important;
+  }
+  .user-logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .other-wrapper-item {}
+  .other-wrapper-img-box {
+    width: 110px;
+    height: 110px;
+    border-radius: 55px;
+    background: #9ED835;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width:750px) {
+    .account-detial-other-wrappper-box {
+      display: none !important;
+    }
+    .login-out {
+      font-size: 18px !important;
+      font-family: "KumbhSans-Bold" !important;
+    }
+    .user-logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 60px;
+    }
+    .user-logo img {
+      width: 30px;
+      height: 30px;
+    }
+    .account-detial-wrappper-box div {
+      font-size: 18px !important;
+      padding-left: 14px;
     }
   }
 {%- endstyle -%}
 
 <div class="customer account section-{{ section.id }}-padding">
-  <div>
-    <h1 class="customer__title">{{ 'customer.account.title' | t }}</h1>
-    <a href="{{ routes.account_logout_url }}">
-      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="none" viewBox="0 0 18 19">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4.5a3 3 0 116 0 3 3 0 01-6 0zm3-4a4 4 0 100 8 4 4 0 000-8zm5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15zM9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35z" fill="currentColor">
-      </svg>
+  <div class="flex_between">
+    <h1 class="customer__title">Your Account</h1>
+    <a class="login-out" href="{{ routes.account_logout_url }}">
+      {% comment %} <svg
+      style="width:3rem;"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      fill="none"
+      viewBox="0 0 18 19">
+      <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M6 4.5a3 3 0 116 0 3 3 0 01-6 0zm3-4a4 4 0 100 8 4 4 0 000-8zm5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15zM9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35z"
+      fill="currentColor">
+      </svg> {% endcomment %}
       {{ 'customer.log_out' | t }}
     </a>
+  </div>
+
+
+
+  <div class="account-detial-box">
+    <div class="account-detial-wrappper-box">
+      <div class="account-detial">
+        <div class="user-logo">
+          <img src="{{'user_logo.png' | asset_url }}" />
+        </div>
+        <div>
+          <div>{{ customer.name }}</div>
+          <div>{{ customer.email }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="account-detial-other-wrappper-box">
+      <div class="other-wrapper-item">
+        <div class="other-wrapper-img-box">
+          <img src="{{'orders-history.png' | asset_url}}" />
+        </div>
+        <div>Ordes History</div>
+      </div>
+    </div>
   </div>
 
   <div>
@@ -35,11 +172,26 @@
             <caption class="visually-hidden">{{ 'customer.orders.title' | t }}</caption>
             <thead role="rowgroup">
               <tr role="row">
-                <th id="ColumnOrder" scope="col" role="columnheader">{{ 'customer.orders.order_number' | t }}</th>
-                <th id="ColumnDate" scope="col" role="columnheader">{{ 'customer.orders.date' | t }}</th>
-                <th id="ColumnPayment" scope="col" role="columnheader">{{ 'customer.orders.payment_status' | t }}</th>
-                <th id="ColumnFulfillment" scope="col" role="columnheader">{{ 'customer.orders.fulfillment_status' | t }}</th>
-                <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.orders.total' | t }}</th>
+                <th
+                  id="ColumnOrder"
+                  scope="col"
+                  role="columnheader">{{ 'customer.orders.order_number' | t }}</th>
+                <th
+                  id="ColumnDate"
+                  scope="col"
+                  role="columnheader">{{ 'customer.orders.date' | t }}</th>
+                <th
+                  id="ColumnPayment"
+                  scope="col"
+                  role="columnheader">{{ 'customer.orders.payment_status' | t }}</th>
+                <th
+                  id="ColumnFulfillment"
+                  scope="col"
+                  role="columnheader">{{ 'customer.orders.fulfillment_status' | t }}</th>
+                <th
+                  id="ColumnTotal"
+                  scope="col"
+                  role="columnheader">{{ 'customer.orders.total' | t }}</th>
               </tr>
             </thead>
             <tbody role="rowgroup">
@@ -49,22 +201,33 @@
                     id="RowOrder"
                     role="cell"
                     headers="ColumnOrder"
-                    data-label="{{ 'customer.orders.order_number' | t }}"
-                  >
+                    data-label="{{ 'customer.orders.order_number' | t }}">
                     <a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
                       {{ order.name }}
                     </a>
                   </td>
-                  <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
+                  <td
+                    headers="RowOrder ColumnDate"
+                    role="cell"
+                    data-label="{{ 'customer.orders.date' | t }}">
                     {{ order.created_at | time_tag: format: 'date' }}
                   </td>
-                  <td headers="RowOrder ColumnPayment" role="cell" data-label="{{ 'customer.orders.payment_status' | t }}">
+                  <td
+                    headers="RowOrder ColumnPayment"
+                    role="cell"
+                    data-label="{{ 'customer.orders.payment_status' | t }}">
                     {{ order.financial_status_label }}
                   </td>
-                  <td headers="RowOrder ColumnFulfillment" role="cell" data-label="{{ 'customer.orders.fulfillment_status' | t }}">
+                  <td
+                    headers="RowOrder ColumnFulfillment"
+                    role="cell"
+                    data-label="{{ 'customer.orders.fulfillment_status' | t }}">
                     {{ order.fulfillment_status_label }}
                   </td>
-                  <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
+                  <td
+                    headers="RowOrder ColumnTotal"
+                    role="cell"
+                    data-label="{{ 'customer.orders.total' | t }}">
                     {{ order.total_price | money_with_currency }}</td>
                 </tr>
               {%- endfor -%}
@@ -76,13 +239,23 @@
 
         {%- if paginate.pages > 1 -%}
           {%- if paginate.parts.size > 0 -%}
-              <nav class="pagination" role="navigation" aria-label="{{ 'general.pagination.label' | t }}">
-                <ul role="list">
+            <nav
+              class="pagination"
+              role="navigation"
+              aria-label="{{ 'general.pagination.label' | t }}">
+              <ul role="list">
                 {%- if paginate.previous -%}
                   <li>
                     <a href="{{ paginate.previous.url }}" aria-label="{{ 'general.pagination.previous' | t }}">
-                      <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        viewBox="0 0 10 6">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+                          fill="currentColor">
                       </svg>
                     </a>
                   </li>
@@ -104,61 +277,68 @@
 
                 {%- if paginate.next -%}
                   <li>
-                    <a href="{{ paginate.next.url }}" aria-label="{{ 'general.pagination.next' | t }}" >
-                      <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                    <a href="{{ paginate.next.url }}" aria-label="{{ 'general.pagination.next' | t }}">
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        viewBox="0 0 10 6">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+                          fill="currentColor">
                       </svg>
                     </a>
                   </li>
                 {%- endif -%}
-                </ul>
-              </nav>
+              </ul>
+            </nav>
           {%- endif -%}
         {%- endif -%}
       {% endpaginate %}
     </div>
 
     <div>
+      {% comment %} daadd {% endcomment %}
       <h2>{{ 'customer.account.details' | t }}</h2>
 
+      {% comment %} {{ customer.default_address | format_address }} {% endcomment %}
       {{ customer.default_address | format_address }}
+
 
       <a href="{{ routes.account_addresses_url }}">
         {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
       </a>
     </div>
-
   </div>
 </div>
 
 {% schema %}
-{
-  "name": "t:sections.main-account.name",
-  "settings": [
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
-    },
-    {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 36
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
-    }
-  ]
-}
+  {
+    "name": "t:sections.main-account.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ]
+  }
 {% endschema %}
