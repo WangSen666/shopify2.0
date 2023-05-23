@@ -21,7 +21,7 @@
     #create_customer,
     #create_customer input,
     #create_customer label {
-      font-size: 28px !important;
+      font-size: 24px !important;
     }
     .register-input {
       margin-top: 40px !important;
@@ -32,13 +32,13 @@
     }
     .register-input,
     .register-input input {
-      height: 80px !important;
+      height: 70px !important;
     }
     .register-btn {
-      font-size: 28px !important;
-      margin-top: 60px !important;
+      font-size: 24px !important;
+      margin-top: 30px !important;
       min-width: 300px;
-      height: 80px;
+      height: 60px;
     }
   }
   .customer {
@@ -73,6 +73,11 @@
     background: #2E5955 !important;
     padding: 14px 44px !important;
     border-radius: 10px !important;
+  }
+  .agree-register {
+    margin: 54px auto 34px;
+    width: 100%;
+    text-align: left;
   }
 {%- endstyle -%}
 
@@ -223,14 +228,22 @@
         {{ 'customer.register.last_name' | t }}*
       </label>
     </div>
-
-    <button class="register-btn">
+    <div class="agree-register">
+      <input id="agree-input" type="checkbox" />
+      Agree to Alpha Space Policy and receive newsletters from us via email.
+    </div>
+    <button id="register-btn" class="register-btn">
       {% comment %} {{ 'customer.register.submit' | t }} {% endcomment %}
       Create Account
     </button>
   {%- endform -%}
 </div>
 
+<script>
+  $('#register-btn').click(function() {
+    $("#agree-input").attr('checked', 'checked')
+  })
+</script>
 
 {% schema %}
   {

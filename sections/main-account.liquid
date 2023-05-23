@@ -21,6 +21,15 @@
     justify-content: space-between;
     align-items: center;
   }
+  .flex_around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .flex_end {
+    display: flex;
+    justify-content: flex-end;
+  }
   .account {
     padding: 64px 0;
   }
@@ -28,18 +37,18 @@
     font-size: 28px !important;
     font-family: "KumbhSans-Bold" !important;
   }
-  .account-detial-box {
+  .account-details-box {
     margin: 50px auto !important;
     width: 100%;
     position: relative;
   }
-  .account-detial {
+  .account-details {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-left: 40px !important;
   }
-  .account-detial-wrappper-box {
+  .account-details-wrappper-box {
     width: 100%;
     height: 226px;
     display: flex;
@@ -47,12 +56,12 @@
     border-radius: 14px;
     box-shadow: 0 0 20px #bbbbbb;
   }
-  .account-detial-wrappper-box div {
+  .account-details-wrappper-box div {
     padding-left: 20px;
     font-size: 24px;
     font-family: "KumbhSans-Bold" !important;
   }
-  .account-detial-other-wrappper-box {
+  .account-details-other-wrappper-box {
     position: absolute;
     right: 0;
     top: -10px;
@@ -78,8 +87,8 @@
     padding-left: 0 !important;
   }
   .user-logo img {
-    width: 50px;
-    height: 50px;
+    width: 110px;
+    height: 110px;
   }
   .other-wrapper-item {}
   .other-wrapper-img-box {
@@ -92,10 +101,57 @@
     justify-content: center;
     align-items: center;
   }
-
+  .orders-history-title {
+    font-size: 28px !important;
+    font-family: "KumbhSans-Bold" !important;
+  }
+  .account-details-title {
+    font-size: 28px !important;
+    font-family: "KumbhSans-Bold" !important;
+  }
+  .order-and-account {
+    align-items: flex-start;
+  }
+  .order-box {
+    width: 50%;
+  }
+  .order-item {
+    padding: 24px;
+    box-shadow: 0 0 20px #bbbbbb;
+    border-radius: 14px;
+    margin: 14px auto;
+  }
+  .buy-again {
+    padding: 4px 14px;
+    border-radius: 14px;
+    box-shadow: 0 0 10px #bbbbbb;
+  }
+  .buy-again-a {
+    text-decoration: none !important;
+  }
+  .buy-again-a img {
+    vertical-align: middle;
+  }
   @media screen and (max-width:750px) {
-    .account-detial-other-wrappper-box {
+    .account-details-box {
+      margin: 24px auto !important;
+    }
+    .account-details-wrappper-box {
+      height: 146px;
+    }
+    .account-details-other-wrappper-box {
       display: none !important;
+    }
+    .account-details-wrappper-box div {
+      font-size: 18px !important;
+      padding-left: 14px;
+    }
+    .account-details {
+      padding-left: 14px !important;
+    }
+    .orders-history-title,
+    .account-details-title {
+      margin-top: 2rem !important;
     }
     .login-out {
       font-size: 18px !important;
@@ -105,14 +161,21 @@
       width: 60px;
       height: 60px;
       border-radius: 60px;
+      padding-left: 0 !important;
     }
     .user-logo img {
-      width: 30px;
-      height: 30px;
+      width: 60px;
+      height: 60px;
     }
-    .account-detial-wrappper-box div {
-      font-size: 18px !important;
-      padding-left: 14px;
+
+    .order-and-account {
+      flex-wrap: wrap;
+    }
+    .order-box {
+      width: 100%;
+    }
+    .order-item {
+      padding: 18px;
     }
   }
 {%- endstyle -%}
@@ -140,9 +203,9 @@
 
 
 
-  <div class="account-detial-box">
-    <div class="account-detial-wrappper-box">
-      <div class="account-detial">
+  <div class="account-details-box">
+    <div class="account-details-wrappper-box">
+      <div class="account-details">
         <div class="user-logo">
           <img src="{{'user_logo.png' | asset_url }}" />
         </div>
@@ -152,7 +215,7 @@
         </div>
       </div>
     </div>
-    <div class="account-detial-other-wrappper-box">
+    <div class="account-details-other-wrappper-box">
       <div class="other-wrapper-item">
         <div class="other-wrapper-img-box">
           <img src="{{'orders-history.png' | asset_url}}" />
@@ -162,77 +225,118 @@
     </div>
   </div>
 
-  <div>
-    <div>
-      <h2>{{ 'customer.orders.title' | t }}</h2>
+  <div class="flex_between order-and-account" style="">
+    <div class="order-box">
+      <h2 class="orders-history-title">Order History</h2>
 
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
-          <table role="table" class="order-history">
-            <caption class="visually-hidden">{{ 'customer.orders.title' | t }}</caption>
-            <thead role="rowgroup">
-              <tr role="row">
-                <th
-                  id="ColumnOrder"
-                  scope="col"
-                  role="columnheader">{{ 'customer.orders.order_number' | t }}</th>
-                <th
-                  id="ColumnDate"
-                  scope="col"
-                  role="columnheader">{{ 'customer.orders.date' | t }}</th>
-                <th
-                  id="ColumnPayment"
-                  scope="col"
-                  role="columnheader">{{ 'customer.orders.payment_status' | t }}</th>
-                <th
-                  id="ColumnFulfillment"
-                  scope="col"
-                  role="columnheader">{{ 'customer.orders.fulfillment_status' | t }}</th>
-                <th
-                  id="ColumnTotal"
-                  scope="col"
-                  role="columnheader">{{ 'customer.orders.total' | t }}</th>
-              </tr>
-            </thead>
-            <tbody role="rowgroup">
-              {%- for order in customer.orders -%}
-                <tr role="row">
-                  <td
-                    id="RowOrder"
-                    role="cell"
-                    headers="ColumnOrder"
-                    data-label="{{ 'customer.orders.order_number' | t }}">
-                    <a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
-                      {{ order.name }}
-                    </a>
-                  </td>
-                  <td
-                    headers="RowOrder ColumnDate"
-                    role="cell"
-                    data-label="{{ 'customer.orders.date' | t }}">
-                    {{ order.created_at | time_tag: format: 'date' }}
-                  </td>
-                  <td
-                    headers="RowOrder ColumnPayment"
-                    role="cell"
-                    data-label="{{ 'customer.orders.payment_status' | t }}">
-                    {{ order.financial_status_label }}
-                  </td>
-                  <td
-                    headers="RowOrder ColumnFulfillment"
-                    role="cell"
-                    data-label="{{ 'customer.orders.fulfillment_status' | t }}">
-                    {{ order.fulfillment_status_label }}
-                  </td>
-                  <td
-                    headers="RowOrder ColumnTotal"
-                    role="cell"
-                    data-label="{{ 'customer.orders.total' | t }}">
-                    {{ order.total_price | money_with_currency }}</td>
-                </tr>
-              {%- endfor -%}
-            </tbody>
-          </table>
+          {% comment %} <table role="table" class="order-history">
+          <caption class="visually-hidden">{{ 'customer.orders.title' | t }}</caption>
+          <thead role="rowgroup">
+          <tr role="row">
+          <th
+          id="ColumnOrder"
+          scope="col"
+          role="columnheader">{{ 'customer.orders.order_number' | t }}</th>
+          <th
+          id="ColumnDate"
+          scope="col"
+          role="columnheader">{{ 'customer.orders.date' | t }}</th>
+          <th
+          id="ColumnPayment"
+          scope="col"
+          role="columnheader">{{ 'customer.orders.payment_status' | t }}</th>
+          <th
+          id="ColumnFulfillment"
+          scope="col"
+          role="columnheader">{{ 'customer.orders.fulfillment_status' | t }}</th>
+          <th
+          id="ColumnTotal"
+          scope="col"
+          role="columnheader">{{ 'customer.orders.total' | t }}</th>
+          </tr>
+          </thead>
+          <tbody role="rowgroup">
+          {%- for order in customer.orders -%}
+          <tr role="row">
+          <td
+          id="RowOrder"
+          role="cell"
+          headers="ColumnOrder"
+          data-label="{{ 'customer.orders.order_number' | t }}">
+          <a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
+          {{ order.name }}
+          </a>
+          </td>
+          <td
+          headers="RowOrder ColumnDate"
+          role="cell"
+          data-label="{{ 'customer.orders.date' | t }}">
+          {{ order.created_at | time_tag: format: 'date' }}
+          </td>
+          <td
+          headers="RowOrder ColumnPayment"
+          role="cell"
+          data-label="{{ 'customer.orders.payment_status' | t }}">
+          {{ order.financial_status_label }}
+          </td>
+          <td
+          headers="RowOrder ColumnFulfillment"
+          role="cell"
+          data-label="{{ 'customer.orders.fulfillment_status' | t }}">
+          {{ order.fulfillment_status_label }}
+          </td>
+          <td
+          headers="RowOrder ColumnTotal"
+          role="cell"
+          data-label="{{ 'customer.orders.total' | t }}">
+          {{ order.total_price | money_with_currency }}</td>
+          </tr>
+          {%- endfor -%}
+          </tbody>
+          </table> {% endcomment %}
+          {%- for order in customer.orders -%}
+
+            <div class="order-item">
+              <div class="flex_between">
+                <div>{{ order.billing_address | map: "country" }}
+                  {{ order.billing_address | map: "company" }}
+                  {{ order.billing_address | map: "city" }}
+                </div>
+                <div>Order {{ order.name }}</div>
+              </div>
+              <div class="flex_between">
+                <div>Price {{ order.total_price | money_with_currency }}</div>
+                <div>{{ order.created_at | time_tag: format: 'date' }}</div>
+              </div>
+              <div class="flex_between">
+                <div>Payment Status {{ order.financial_status_label }}</div>
+                <div>
+                  <a
+                    style="color:#4DC4FF;text-decoration:none;"
+                    target="_blank"
+                    href="{{ order.customer_url }}"
+                    aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
+                    details
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex_end" style="margin:14px auto;">
+                <div class="buy-again">
+                  <a
+                    class="buy-again-a"
+                    target="_blank"
+                    href="https://podxgo.com/products/reserve-now">
+                    <img src="{{'buy-again.png'|asset_url}}" />
+                    Buy Again
+                  </a>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+
         {%- else -%}
           <p>{{ 'customer.orders.none' | t }}</p>
         {%- endif -%}
@@ -297,10 +401,9 @@
         {%- endif -%}
       {% endpaginate %}
     </div>
-
     <div>
       {% comment %} daadd {% endcomment %}
-      <h2>{{ 'customer.account.details' | t }}</h2>
+      <h2 class="account-details-title">Account Details</h2>
 
       {% comment %} {{ customer.default_address | format_address }} {% endcomment %}
       {{ customer.default_address | format_address }}
