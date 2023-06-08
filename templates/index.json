@@ -92,6 +92,65 @@
         "show_text_below": true
       }
     },
+    "eb260711-d9c5-4eaf-bbf7-3a2b6ca4d95f": {
+      "type": "partner-component",
+      "blocks": {
+        "template--15634989285476__eb260711-d9c5-4eaf-bbf7-3a2b6ca4d95f-1686214998b1e98c14-0": {
+          "type": "rotation_item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/PODXGO_1_-08.png",
+            "logo_url": "https:\/\/www.tinyhouse.com\/featured-suppliers-builders\/podx-go"
+          }
+        },
+        "f761406e-4b49-471a-963d-fac6317fee8e": {
+          "type": "rotation_item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/2_568fd866-4f89-441a-987c-23a1712c6877.jpg",
+            "logo_url": "https:\/\/tinyhouselistings.com\/listings\/364-sq-ft-foldable-tiny-house-on-wheels-15min-to-set-up"
+          }
+        },
+        "d26a0c34-f12a-4c72-befe-44941b12b69d": {
+          "type": "rotation_item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/1_32e2cfa1-73c4-4130-939c-0b402f600ed3.jpg",
+            "logo_url": "https:\/\/finance.yahoo.com\/news\/podx-unveils-grande-s1-indiegogo-024600465.html?fr=sycsrp_catchall"
+          }
+        },
+        "5b331436-6d0b-457b-a928-aee2fd639474": {
+          "type": "rotation_item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/4_1ad0c2ce-f94b-457c-b9ec-c586be5661ea.jpg",
+            "logo_url": "https:\/\/www.prnewswire.com\/news-releases\/podx-go-unveils-the-grande-s1-on-indiegogo-the-worlds-first-self-folding-mobile-home-301826747.html"
+          }
+        },
+        "f5dacfe4-caf7-41cd-83c4-af735b03f128": {
+          "type": "rotation_item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/2_ee068db9-0fe7-4487-952a-7b394b168b4a.jpg",
+            "logo_url": "https:\/\/newatlas.com\/tiny-houses\/podx-go-grande-s1-towable-folding-tiny-home\/"
+          }
+        },
+        "2fdcd86b-188c-446d-ab46-3a72dacd8368": {
+          "type": "rotation_item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/3_5081540e-06ab-4d11-a456-1d9bebe7a167.jpg",
+            "logo_url": "https:\/\/www.startupselfie.net\/2023\/03\/28\/podx-go-grande-s1-tiny-home\/"
+          }
+        }
+      },
+      "block_order": [
+        "template--15634989285476__eb260711-d9c5-4eaf-bbf7-3a2b6ca4d95f-1686214998b1e98c14-0",
+        "f761406e-4b49-471a-963d-fac6317fee8e",
+        "d26a0c34-f12a-4c72-befe-44941b12b69d",
+        "5b331436-6d0b-457b-a928-aee2fd639474",
+        "f5dacfe4-caf7-41cd-83c4-af735b03f128",
+        "2fdcd86b-188c-446d-ab46-3a72dacd8368"
+      ],
+      "settings": {
+        "heading": "FEATURED IN",
+        "heading_size": 42
+      }
+    },
     "ca120a8e-6056-4d50-b607-91789f1091d2": {
       "type": "banner-new-rotation",
       "disabled": true,
@@ -1004,6 +1063,7 @@
   },
   "order": [
     "c7986fdd-3645-4a7e-b5c1-12f8f34fff1f",
+    "eb260711-d9c5-4eaf-bbf7-3a2b6ca4d95f",
     "ca120a8e-6056-4d50-b607-91789f1091d2",
     "033b3367-c7f0-4783-b027-9f0f99922544",
     "d89435af-466a-4a31-8028-4dd2a2d5fb51",
