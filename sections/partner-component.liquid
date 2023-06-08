@@ -1,0 +1,284 @@
+<style>
+  .podx-go-card-head {
+    max-width: 1150px;
+    margin: 44px auto 20px;
+    text-align: center;
+  }
+  .partner-component-rotation {
+    position: relative;
+    max-width: 1680px;
+    margin: 0 auto;
+    height: 266px;
+  }
+  .partner-component-rotation-title {
+    font-family: "KumbhSans-Bold" !important;
+  }
+  .left-icon {
+    top: 50%;
+    left: 0;
+    position: absolute;
+    transform: translateY(-50%);
+  }
+
+  .right-icon {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+  .left-icon::after,
+  .right-icon::after {
+    display: none !important
+  }
+  .partner-component-rotation-list {
+    width: 80%;
+    height: 206px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  .partner-component-rotation-list-box {
+    height: 166px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*     position:absolute; */
+  }
+  .partner-component-rotation-item {
+/*     height: 86px; */
+    float: left;
+    margin-right: 100px;
+/*     max-width:400px; */
+  }
+  .partner-component-rotation-item img {
+    ;
+    /*   height:90px; */
+  }
+
+  @media screen and (max-width:1180px) {
+    .partner-component-rotation-title {
+      font-size: 36px !important;
+    }
+    .podx-go-card-subtitle {
+      font-size: 20px !important;
+    }
+    /*     .partner-component-rotation-list{
+      width:100%;
+    } */
+    .partner-component-rotation-item {
+
+      ;
+      /*       width:200px; */
+      /*       height:150px; */
+
+    }
+    .partner-component-rotation-item img {
+      ;
+      /*       max-width:40px; */
+    }
+    .text-wrapper {
+      font-size: 16px !important;
+    }
+  }
+  .swiper_partner {
+    width: 100%;
+    /*     height: 100%; */
+  }
+
+  .swiper_partner .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+
+  @media screen and (max-width:750px) {
+    .partner-component-rotation {
+      padding: 14px 0;
+      height: 166px;
+    }
+    .partner-component-rotation-list {
+      width: 90%;
+      position: relative;
+      height: 126px;
+      margin: 0;
+    }
+    .partner-component-rotation-list-box {
+      height: 126px;
+    }
+
+    .partner-component-rotation-title {
+      font-size: 30px !important;
+      /*      padding:0 14px; */
+    }
+    .podx-go-card-subtitle {
+      font-size: 16px !important;
+    }
+    .podx-go-card-head {
+      margin: 44px auto 24px;
+    }
+    .text-wrapper {
+      font-size: 14px !important;
+    }
+    .left-icon {
+      display: none !important;
+    }
+    .partner-component-rotation-item {
+      /*        width:360px !important; */
+      height: 86px;
+      float: left;
+      margin-right: 40px;
+    }
+    .partner-component-rotation-item img {
+      max-width: 100px;
+      max-height: 50px
+    }
+    .right-icon {
+      display: none !important;
+    }
+    .swiper-button-next {
+      right: 20px;
+      transform: rotate(90deg);
+    }
+
+    .swiper-button-prev {
+      left: 20px;
+      transform: rotate(90deg);
+    }
+  }
+</style>
+
+
+<div class="podx-go-card-head" id="{{ section.settings.href_id }}">
+  <div class="partner-component-rotation-title" style="font-size:{{section.settings.heading_size  }}px;">
+    {{ section.settings.heading }}
+  </div>
+</div>
+<div class="partner-component-rotation">
+  <!--   <img id="partner-left-icon swiper-button-prev" class="left-icon"  src="https://cdn.shopify.com/s/files/1/0596/2249/0212/files/leftIcon.png?v=1678695161" />
+  <img id="partner-right-icon swiper-button-next" class="right-icon"  src="https://cdn.shopify.com/s/files/1/0596/2249/0212/files/rightIcon.png?v=1678695165" /> --><div class="partner-component-rotation-list swiper_partner swiper  ">
+    <div class="right-icon swiper-button-next">
+      <img
+        id="partner-right-icon"
+        class="swiper-button-next"
+        src="https://cdn.shopifycdn.net/s/files/1/0596/2249/0212/files/right-icon.png?v=1686212292" />
+    </div>
+    <div class="left-icon swiper-button-prev">
+      <img
+        id="partner-left-icon"
+        class="swiper-button-prev"
+        src="https://cdn.shopifycdn.net/s/files/1/0596/2249/0212/files/left-icon.png?v=1686212283" />
+    </div>
+    <div class="partner-component-rotation-list-box swiper-wrapper">
+
+      {% for block in section.blocks %}
+        <a class="partner-component-rotation-item swiper-slide"
+          style=""
+          href="{{ block.settings.logo_url }}"
+          target="_blank">
+          <!--            style="background:url({{  block.settings.image_1 | image_url  }}) no-repeat center center;background-size:cover;" -->
+          <img style="" src="{{  block.settings.image_1 | image_url  }}" />
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+
+
+
+</div>
+
+<script>
+
+
+  var swiper = new Swiper('.swiper_partner', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
+
+  function getDirection() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 760
+      ? 'vertical'
+      : 'horizontal';
+
+    return direction;
+  }
+</script>
+
+{% schema %}
+  {
+    "name": "partner-component",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "标题"
+      }, {
+        "type": "range",
+        "id": "heading_size",
+        "min": 12,
+        "max": 60,
+        "default": 24,
+        "step": 2,
+        "label": "标题尺寸"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "rotation_item",
+        "name": "partner-logo",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_1",
+            "label": "合作伙伴logo"
+          }, {
+            "type": "url",
+            "id": "logo_url",
+            "label": "logo链接地址"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "partner-component",
+        "blocks": [
+          {
+            "type": "rotation_item"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
