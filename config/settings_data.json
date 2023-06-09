@@ -121,6 +121,20 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
+        "blocks": {
+          "6f317483-d139-41e1-8c47-8ea9186138ca": {
+            "type": "announcement",
+            "settings": {
+              "text": "Registration for the Open House Event from June 22nd to 24th is Now Open!",
+              "text_alignment": "center",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "6f317483-d139-41e1-8c47-8ea9186138ca"
+        ],
         "settings": {
         }
       },
