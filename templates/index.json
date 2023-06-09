@@ -62,8 +62,8 @@
         "a3d89172-31fb-4291-955d-65016c1b7ad5": {
           "type": "buttons",
           "settings": {
-            "banner_button_label": "Download Floorplan",
-            "banner_button_link": "https:\/\/form.jotform.com\/230568117037454",
+            "banner_button_label": "Schedule a Room Tour",
+            "banner_button_link": "https:\/\/form.jotform.com\/PODX\/schedule-your-room-tour",
             "font_size": 16,
             "button_color": "#9ED835"
           }
