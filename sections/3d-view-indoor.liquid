@@ -1,0 +1,160 @@
+{%- style -%}
+  .view-indoor{
+    padding:34px 0;
+  }
+  .view-title{
+    text-align:center;
+/*     margin:24px auto; */
+  }
+  .view-content{
+    margin:34px auto;
+    text-align:center;
+  }
+  .view-image-wrapper{
+    display:flex;
+    justify-content:space-between;
+    
+  }
+  
+   .view-image-wrapper img{
+     max-width:400px;
+     max-height:310px;
+     border-radius:14px;
+   }
+  .view-button{
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    color:#333333;
+    padding:0 24px;
+    border:1px solid #9ED835;
+    border-radius:34px;
+    margin:54px auto;
+    width:200px;
+    cursor:pointer;
+    line-height:50px;
+  }
+  @media screen and (max-width:1400px){
+    .view-image-wrapper img{
+      max-width:340px;
+      max-height:280px;
+    }
+  }
+    @media screen and (max-width:1200px){
+    .view-image-wrapper img{
+      max-width:300px;
+      max-height:260px;
+    }
+  }
+  @media screen and (max-width:750px){
+    .view-indoor{
+      padding:24px 0;
+    }
+    .view-title{
+      font-size:36px !important;
+    }
+    .view-content{
+      font-size:18px !important;
+      padding:10px;
+    }
+    .view-image-wrapper{
+      flex-wrap:wrap;
+    }
+     .view-image-wrapper img{
+       margin: 14px auto;
+    
+     }
+  }
+{%- endstyle -%}
+
+<div class="view-indoor page-width">
+  <h2 class="view-title" style="font-size:{{ section.settings.heading_size }}px;">
+    {{ section.settings.heading }}
+  </h2>
+  <div class="view-content" style="font-size:{{ section.settings.content_size }}px;">
+    {{ section.settings.content }}
+  </div>
+  <div class="view-image-wrapper">
+    {%- for block in section.blocks -%}
+       {%- case block.type -%}
+          {%- when '3d_image' -%}
+            <img src="{{ block.settings.image | image_url }}" />
+      {%- endcase  -%}
+    {%- endfor -%}
+  </div>
+  <a target="_blank" class="view-button" {% if section.settings.button_link == blank %}role="link"aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %}class="rich-text-button_button ">{{ section.settings.button_label | escape }}</a>
+  
+  
+</div>
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "3D View Indoor",
+    "settings": [
+      {
+        "type":"text",
+        "id":"heading",
+        "label":"标题"
+      },
+       {
+        "type": "range",
+        "id": "heading_size",
+        "min": 12,
+        "max": 60,
+        "default": 24,
+        "step": 2,
+        "label": "标题尺寸"
+      },
+      {
+        "type":"text",
+        "id":"content",
+        "label":"文案内容"
+      },
+      {
+        "type": "range",
+        "id": "content_size",
+        "min": 12,
+        "max": 60,
+        "default": 24,
+        "step": 2,
+        "label": "文案尺寸"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "default": "Button label",
+        "label": "t:sections.rich-text.blocks.buttons.settings.button_label_1.label",
+        "info": "t:sections.rich-text.blocks.buttons.settings.button_label_1.info"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "t:sections.rich-text.blocks.buttons.settings.button_link_1.label"
+      }
+    ],
+    "blocks":[
+      {"type":"3d_image","name":"图片内容","limit":3,
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"image",
+            "label":"图片内容"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"3D View Indoor",
+        "blocks":[
+          {"type":"3d_image"}
+        ]
+      }
+    ]
+  }
+{% endschema %}
