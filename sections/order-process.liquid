@@ -1,6 +1,6 @@
 {%- style -%}
   .order-process{
-    border-top: 2px solid #888988;
+    
   }
   .order-process-title{
     text-align:center;
@@ -173,8 +173,8 @@
      }
   }
 {%- endstyle -%}
-
-<div class="order-process page-width">
+<div style="border-top: 2px solid #888988;">
+  <div class="order-process page-width">
    <h2 class="order-process-title" style="font-size:{{ section.settings.heading_size }}px;">{{ section.settings.heading }}</h2>
   <div class="order-process-title-border"></div>
   <div class="orde-process-box">
@@ -211,6 +211,8 @@
     
   </div>
 </div>
+</div>
+
 
 
 
