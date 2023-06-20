@@ -927,6 +927,82 @@
         "is_imgBg": "false"
       }
     },
+    "a66eb082-4018-4974-a441-28ea490c6a9b": {
+      "type": "order-process",
+      "blocks": {
+        "template--15634989285476__a66eb082-4018-4974-a441-28ea490c6a9b-1687229143be9076fe-0": {
+          "type": "process_item",
+          "settings": {
+            "process_img": "shopify:\/\/shop_images\/1_b6c609b5-70b6-471b-9750-269db7b86143.jpg",
+            "process_text": "Secure your reservation for the highly sought-after PODX GO model by simply indicating your preferred floorplan layout, selecting optional kits, choosing a flexible payment plan, and making a refundable $200 deposit.",
+            "process_text_1": "Reserve Your Preferred Model",
+            "button_label": "Reserve Now",
+            "button_link": "https:\/\/podxgo.com\/products\/grande-s1-early-bird-special-deposit",
+            "process_number": "01",
+            "content_position": "left"
+          }
+        },
+        "d87e3075-e734-43e6-8d68-98d8942ec990": {
+          "type": "process_item",
+          "settings": {
+            "process_img": "shopify:\/\/shop_images\/2_9b7f7daf-8e10-48eb-a826-71274e193c64.jpg",
+            "process_text": "Within just 3 business days, our dedicated customer service team will reach out to you, leveraging the reservation information you provided earlier. They will go the extra mile to confirm all the details and offer you the most cost-efficient plan tailored to your needs.",
+            "process_text_1": "Confirm Building Plan",
+            "button_label": "",
+            "button_link": "",
+            "process_number": "02",
+            "content_position": "right"
+          }
+        },
+        "2bf2b959-ba8c-4744-884f-b4ce03108799": {
+          "type": "process_item",
+          "settings": {
+            "process_img": "shopify:\/\/shop_images\/3_7a2c8933-0c9c-409f-900f-d23dc4c653e7.jpg",
+            "process_text": "When you're ready to finalize your choices and move forward, we'll send you a build agreement. Once the down payment is made, we will reach the milestone to start crafting your tiny house from the ground up, and you'll see this gorgeous home within 90 days.",
+            "process_text_1": "Sign Order Agreement",
+            "button_label": "Button label",
+            "button_link": "",
+            "process_number": "03",
+            "content_position": "left"
+          }
+        },
+        "5f53cd0f-8d6e-4da2-ae2a-71d8736caabf": {
+          "type": "process_item",
+          "settings": {
+            "process_img": "shopify:\/\/shop_images\/4_6536efe9-a37d-40af-b945-91cdfd4abb70.jpg",
+            "process_text": "We have partnered with NOAH to guarantee the seamless implementation of building codes focused on safety, durability, and compliance. From framing to a range of tests, we will provide you with frequent updates on the progress of production on a weekly basis",
+            "process_text_1": "Track the Production Status",
+            "button_label": "Button label",
+            "button_link": "",
+            "process_number": "04",
+            "content_position": "right"
+          }
+        },
+        "f3ca9cc2-9cfb-4601-af11-c7badcfa8f2b": {
+          "type": "process_item",
+          "settings": {
+            "process_img": "shopify:\/\/shop_images\/5_c2281727-d3dd-4d9f-acde-e22c4b6564a8.jpg",
+            "process_text": "Within just 90 days from the down payment, your remarkable tiny house will arrive at the designated pick-up spot in Ontario, California. At this point, you have the choice of personally collecting your dream home or opting for convenient doorstep delivery.",
+            "process_text_1": "Opt for Delivery Service",
+            "button_label": "Button label",
+            "button_link": "",
+            "process_number": "05",
+            "content_position": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--15634989285476__a66eb082-4018-4974-a441-28ea490c6a9b-1687229143be9076fe-0",
+        "d87e3075-e734-43e6-8d68-98d8942ec990",
+        "2bf2b959-ba8c-4744-884f-b4ce03108799",
+        "5f53cd0f-8d6e-4da2-ae2a-71d8736caabf",
+        "f3ca9cc2-9cfb-4601-af11-c7badcfa8f2b"
+      ],
+      "settings": {
+        "heading": "Order Process",
+        "heading_size": 50
+      }
+    },
     "bddee2f4-7f99-4dd7-80d5-0698ddee7387": {
       "type": "rich-text-bottom-img",
       "blocks": {
@@ -1112,6 +1188,7 @@
     "15eff337-14f9-4074-9835-664493722bd5",
     "60f671a1-7f8e-412f-b0f6-056de9bc85bc",
     "040c1abe-c06e-4ca3-9224-21358c1f6de1",
+    "a66eb082-4018-4974-a441-28ea490c6a9b",
     "bddee2f4-7f99-4dd7-80d5-0698ddee7387",
     "5af20d81-606b-473f-9b3c-47412699d454",
     "817a5069-6e91-49ec-aff0-da615eb133ea",
