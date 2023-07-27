@@ -341,7 +341,7 @@
         "template--15628744425572__d89435af-466a-4a31-8028-4dd2a2d5fb51-1678333538825c8c06-3": {
           "type": "buttons",
           "settings": {
-            "banner_button_label": "Price Lower as $79,000",
+            "banner_button_label": "Price Lower as $85,000",
             "banner_button_link": "shopify:\/\/pages\/grande-s1",
             "font_size": 24
           }
@@ -360,7 +360,7 @@
           "settings": {
             "heading": "Free to Move",
             "heading_size": 24,
-            "subtitle": "Towable with F250 or equivalent Assemble on-site in 15 minutes with DIY",
+            "subtitle": "Towable with F250 or equivalent Assemble on-site in 15 minutes with DIY.",
             "subtitle_size": 20
           }
         },
@@ -378,7 +378,7 @@
           "settings": {
             "heading": "3 Floorplans",
             "heading_size": 24,
-            "subtitle": "Completed interior design with healthy materials",
+            "subtitle": "Completed interior design with healthy materials.",
             "subtitle_size": 20
           }
         },
@@ -387,7 +387,7 @@
           "settings": {
             "heading": "Live, Work and Relax",
             "heading_size": 24,
-            "subtitle": "Spaces to Live, Work and Relax, fully furnished and air conditioned home",
+            "subtitle": "Spaces to Live, Work and Relax, fully furnished and air conditioned home.",
             "subtitle_size": 20
           }
         }
