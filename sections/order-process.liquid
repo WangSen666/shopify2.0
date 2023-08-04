@@ -1,7 +1,4 @@
 {%- style -%}
-  .order-process{
-    
-  }
   .order-process-title{
     text-align:center;
   }
@@ -12,8 +9,41 @@
     margin:14px auto;
     display:block !important;
   }
-  .orde-process-box{
-    padding:44px 0;
+  .order-process-box{
+    margin:44px 0;
+    position:relative;
+  }
+  .order-process-line-box{
+    position:absolute;
+    width:3px;
+    height:100%;
+    display:block !important;
+    left:50%;
+    top:0;
+  }
+  .order-process-line{
+    width:3px;
+    position:absolute;
+    /* left:50%; */
+    display:block !important;
+    top:calc(11.6%);
+    @media screen and (max-width:1440px){
+      top:calc(11.6%);
+    }
+    
+    @media screen and (max-width:990px){
+      display:none !important;
+    }
+  }
+  .line-yellow{
+    height:21%;
+    background:#9ED835;
+    z-index:2;
+  }
+  .line-default{
+    height:calc(79.2%);
+    background:#888988;
+    
   }
 .process-item{
   display:flex;
@@ -77,32 +107,15 @@
     margin:24px auto;
     box-shadow:0 0 8px #807373;
   }
-  .order-process-line-box{
+  .order-process-byte-box{
     display:block !important;
     position:absolute;
     left:50%;
     transform:translateX(-50%);
     height:100%;
+    z-index:2;
   }
   
-   .order-process-line-top{
-      position:absolute;
-      left:50%;
-      display:block !important;
-      top:0;
-      width:3px;
-      height:50%;
-      background:#888988; 
-   }
-  .order-process-line-bottom{
-    position:absolute;
-    left:50%;
-    top:calc(50% + 14px);
-    display:block !important;
-    width:3px;
-    height:calc(50% - 7px);
-    background:#888988; 
-  }
   .line-byte{
     width:14px;
     height:14px;
@@ -113,23 +126,12 @@
     left: 50%;
     transform: translateX(-40%);
     top:50%;
+    z-index:3;
   }
-  .process-item:first-child .order-process-line-top{
-    display:none !important ;
-  }
-  .process-item:first-child .order-process-line-bottom{
-    background:#9ED835;
-  }
-  .process-item:nth-child(2) .order-process-line-top{
-    background:#9ED835;
-  }
- .process-item:first-child .line-byte{
+
+ .process-item:nth-child(2) .line-byte{
     background:#9ED835;
  }
-   .process-item:nth-child(2) .line-byte{
-     background:none;
-     border:1px solid #2E5955
-   }
   .process-item:last-child .order-process-line-bottom{
    display:none !important
   }
@@ -138,8 +140,8 @@
      .order-process-title{
        font-size:36px !important;
      }
-    .orde-process-box{
-      padding:24px 0;
+    .order-process-box{
+      margin:24px 0;
     }
     .process-wrapper{
       width:346px;
@@ -153,7 +155,7 @@
     }
   }
   @media screen and (max-width:990px){
-    .order-process-line-box{
+    .order-process-byte-box{
       display:none !important;
     }
      .process-item{
@@ -173,11 +175,17 @@
      }
   }
 {%- endstyle -%}
-<div style="border-top: 2px solid #888988;">
-  <div class="order-process page-width">
+
+<div class="order-process page-width">
    <h2 class="order-process-title" style="font-size:{{ section.settings.heading_size }}px;">{{ section.settings.heading }}</h2>
   <div class="order-process-title-border"></div>
-  <div class="orde-process-box">
+  <div class="order-process-box">
+    <div class="order-process-line-box">
+      <div class="order-process-line line-yellow"></div>
+      <div class="order-process-line line-default"></div>
+    </div>
+    
+    
     {% for block in section.blocks %}
       {%- case block.type -%}
         {% when "process_item" %}
@@ -192,10 +200,10 @@
               {%- endif -%}
             
           </div>
-          <div class="order-process-line-box">
+          <div class="order-process-byte-box">
               <div class="line-byte"></div>
-              <div class="order-process-line-top"></div>
-              <div class="order-process-line-bottom"></div>
+              <!-- <div class="order-process-line-top"></div>
+              <div class="order-process-line-bottom"></div> -->
             
           </div>
           <div class="process-number-wrapper">
@@ -211,10 +219,61 @@
     
   </div>
 </div>
-</div>
+
+<script>
+  window.onload=function(){
+    const scrollTop= document.documentElement.scrollTop;
+    const order_process_box=document.getElementsByClassName('order-process-box')[0]
+    console.log("scrollTop",scrollTop)
+      // scrollX = window.scrollX
 
 
-
+    window.addEventListener('scroll',function(){
+      
+      const scrollTop= document.documentElement.scrollTop;
+      const order_process_box=document.getElementsByClassName('order-process-box')[0]
+      var bytes=document.getElementsByClassName('line-byte')
+      const scrollHeight=scrollTop-order_process_box.offsetTop;
+      $('.line-yellow').css({height:scrollHeight+"px"})
+       const line_yellow_height=$('.line-yellow').height();
+      const line_default_height=$('.line-default').height();
+      // 黄条元素高度不能大于灰条元素的高度
+      if(line_yellow_height>=line_default_height){
+        $('.line-yellow').css({height:line_default_height+"px"})
+      }
+      if(line_yellow_height>=line_default_height/4&&line_yellow_height<line_default_height*2/4){
+        bytes[1].style.backgroundColor  ="#9ED835";
+        bytes[2].style.backgroundColor  ="#888988";
+        bytes[3].style.backgroundColor  ="#888988";
+        bytes[4].style.backgroundColor ="#888988";
+      }else if(line_yellow_height>=line_default_height*2/4&&line_yellow_height<line_default_height*3/4){
+        
+        bytes[1].style.backgroundColor ="#9ED835";
+        bytes[2].style.backgroundColor ="#9ED835";
+        bytes[3].style.backgroundColor ="#888988";
+        bytes[4].style.backgroundColor ="#888988";
+      }else if(line_yellow_height>=line_default_height*3/4&&line_yellow_height<line_default_height){
+        
+         bytes[1].style.backgroundColor ="#9ED835";
+        bytes[2].style.backgroundColor ="#9ED835";
+        bytes[3].style.backgroundColor ="#9ED835";
+        bytes[4].style.backgroundColor ="#888988";
+      }else if(line_yellow_height>=line_default_height){
+         bytes[1].style.backgroundColor ="#9ED835";
+        bytes[2].style.backgroundColor ="#9ED835";
+        bytes[3].style.backgroundColor ="#9ED835";
+        bytes[4].style.backgroundColor ="#9ED835";
+      }else{
+         bytes[1].style.backgroundColor  ="#888988";
+        bytes[2].style.backgroundColor  ="#888988";
+        bytes[3].style.backgroundColor  ="#888988";
+        bytes[4].style.backgroundColor ="#888988";
+      }
+      
+    })
+  }
+  
+</script>
 
 
 
