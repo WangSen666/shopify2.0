@@ -26,14 +26,14 @@
         "50cf53c8-717e-4a34-aebb-e648a678a6ff": {
           "type": "text",
           "settings": {
-            "text": "Trailer dimensions 19'4.4'' L x 7'4.6'' W x 11'5'' H",
+            "text": "Trailer dimensions 19'2.9'' L x 7'4.6'' W x 11'5.8'' H",
             "text_style": "body"
           }
         },
         "5a891928-61b7-48fd-bf68-e45f2c105ccd": {
           "type": "text",
           "settings": {
-            "text": "Home dimensions 19'4.4'' L x 23'2'' W x 11'5'' H",
+            "text": "Home dimensions 19'2.9'' L x 23'0.7'' W x 11'5.8'' H",
             "text_style": "body"
           }
         },
@@ -47,7 +47,7 @@
         "48f5638e-ac5f-4edf-ab7c-e380d63e3a38": {
           "type": "text",
           "settings": {
-            "text": "17,000 lb dry weight and a maximum of 22,000 lbs when towing",
+            "text": "18,000-19,000 lb total weight and a maximum of 22,000 lbs when towing",
             "text_style": "body"
           }
         },
