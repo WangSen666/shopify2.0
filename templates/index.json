@@ -314,6 +314,7 @@
     },
     "d89435af-466a-4a31-8028-4dd2a2d5fb51": {
       "type": "banner-component-new",
+      "disabled": true,
       "blocks": {
         "template--15628744425572__d89435af-466a-4a31-8028-4dd2a2d5fb51-1678333538825c8c06-0": {
           "type": "heading",
