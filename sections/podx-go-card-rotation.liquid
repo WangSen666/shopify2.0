@@ -18,24 +18,25 @@
   .left-icon{
     top:50%;
     left:24px;
-    transform:translateY(-50%);
+     transform:translateY(-50%);
+    
     position:absolute;
   }
    .right-icon{
     top:50%;
     right:24px;
-    transform:translateY(-50%);
+     transform:translateY(-50%);
     position:absolute;
   }
   .podx-go-card-rotation-list{
-    width:65%;
+    width:80%;
     height:406px;
     position:absolute;
-    overflow:hidden;
+    /* overflow:auto; */
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    z-index:10;
+    z-index:2;
   }
   .podx-go-card-rotation-list-box{
     height:406px;
@@ -45,15 +46,18 @@
     position:absolute;
   }
  .podx-go-card-rotation-item{
-    width:332px;
-    height:332px;
+    /* width:332px; */
+    height:100%;
     float:left;
   }
   .podx-go-card-rotation-item:hover{
     box-shadow: 0 0 8px #333333;
     
   }
- 
+ .swiper-slide-active,.swiper-slide-duplicate-active{
+      transform: scale(1.6) !important;
+      z-index: 3;
+	}
   @media screen and (max-width:1180px){
     .podx-go-card-rotation-title{
       font-size:36px !important;
@@ -66,7 +70,7 @@
     }
     .podx-go-card-rotation-item{
       width:200px;
-      height:150px;
+      /* height:150px; */
    
     }
     .podx-go-card-rotation-item img{
@@ -76,11 +80,17 @@
       font-size:16px !important;
     }
   }
+   @media screen and (max-width:990px){
+    .swiper-slide-active, .swiper-slide-duplicate-active{
+      transform: scale(1) !important;
+      
+    }
+   }
 
   @media screen and (max-width:750px){
     .podx-go-card-rotation{
       padding:24px 0;
-      height:424px;
+      /* height:424px; */
     }
     .podx-go-card-rotation-list{
       width:100%;
@@ -117,18 +127,22 @@
     {{ section.settings.text_1 }}
   </div>
 </div>
-<div class="podx-go-card-rotation">
-  <img class="left-icon" onclick="tabChangePrev()" src="https://cdn.shopify.com/s/files/1/0596/2249/0212/files/leftIcon.png?v=1678695161" />
-  <img class="right-icon" onclick="tabChangeNext()" src="https://cdn.shopify.com/s/files/1/0596/2249/0212/files/rightIcon.png?v=1678695165" />
-  <div class="podx-go-card-rotation-list">
-    <div class="podx-go-card-rotation-list-box">
-        {% for block in section.blocks %}
+<div class="podx-go-card-rotation ">
+  <img class="pgcr-left-icon left-icon" src="https://cdn.shopify.com/s/files/1/0596/2249/0212/files/leftIcon.png?v=1678695161" />
+    <img class="pgcr-right-icon right-icon"  src="https://cdn.shopify.com/s/files/1/0596/2249/0212/files/rightIcon.png?v=1678695165" />
+  <div class="podx-go-card-rotation-list swiper podx-go-card-rotation-swiper ">
+      <div class="pgcr-swiper-button-prev"></div>
+      <div class="pgcr-swiper-button-next" ></div>
+    <div class="podx-go-card-rotation-list-box swiper-wrapper">
+       {% for block in section.blocks %}
           
-          <div class="podx-go-card-rotation-item" style="background:url('{{  block.settings.image_1 | image_url  }}') no-repeat center center;background-size:cover;">
+          <div class="podx-go-card-rotation-item swiper-slide" style="background:url('{{  block.settings.image_1 | image_url  }}') no-repeat center center;background-size:cover;">
             
           </div>
         {% endfor %}
+      
     </div>
+   
     
   </div>
 
@@ -140,315 +154,26 @@
 <script>
   var thisIndex = 0;
    $(function () {
-
-      var imgList = document.querySelector('.podx-go-card-rotation-list-box');
-      var windowWidth=document.documentElement.clientWidth;
-      
-     if(windowWidth>=750){
-         if(windowWidth<=1600&&windowWidth>1440){
-           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-             "width":"522px",
-             "height":"354px"
-           }).siblings().css({
-             "width":"294px",
-             "height":"294px"
-           }) 
-         }
-         else if(windowWidth<=1440&&windowWidth>1366){
-           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-               "width":"448px",
-               "height":"304px"
-             }).siblings().css({
-               "width":"252px",
-               "height":"252px"
-             }) 
-         }
-         else if(windowWidth<=1366){ 
-           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-               "width":"394px",
-               "height":"268px"
-             }).siblings().css({
-               "width":"222px",
-               "height":"222px"
-             }) 
-         }
-        else{
-        $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-           "width":"596px",
-           "height":"406px"
-         }).siblings().css({
-           "width":"336px",
-           "height":"336px"
-         })
-      } 
-      }else{
-       $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-           "width":"596px",
-           "height":"406px"
-         }).siblings().css({
-           "width":"336px",
-           "height":"336px"
-         })
-      }
-      var flag = true;
-     if(windowWidth>750){
-        if(windowWidth<=1600&&windowWidth>1440){
-        imgList.style.width = ((imgList.children.length-1) * 294+522) + 'px';
-       }
-       else if(windowWidth<=1440&&windowWidth>1366){
-        imgList.style.width = ((imgList.children.length-1) * 252+448) + 'px';
-         
-       }else if(windowWidth<=1366){ 
-         imgList.style.width = ((imgList.children.length-1) * 222+394) + 'px';
-         
-       }else{
-        imgList.style.width = ((imgList.children.length-1) * 336+556) + 'px';
-       }
-     }else{
-        imgList.style.width = ((imgList.children.length-1) * 336+360) + 'px';
-     }
-    
-     // 手动切换轮播图
-     tabChangePrev=function(){
-       console.log(imgList.children.length,thisIndex)
-       
-       if(thisIndex == -1){
-          thisIndex = imgList.children.length-1;
-        }
-        thisIndex--;
-       if(windowWidth<=1600&&windowWidth>1440){
-           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-             "width":"522px",
-             "height":"354px"
-           }).siblings().css({
-             "width":"294px",
-             "height":"294px"
-           })
-           slow(imgList, -thisIndex *294, function () {
-            flag = true;
-          });
-         }
-         else if(windowWidth<=1440&&windowWidth>1366){
-           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-               "width":"448px",
-               "height":"304px"
-             }).siblings().css({
-               "width":"252px",
-               "height":"252px"
-             }) 
-           slow(imgList, -thisIndex *252, function () {
-            flag = true;
-          });
-         }else if(windowWidth<=1366){ 
-           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-               "width":"394px",
-               "height":"268px"
-             }).siblings().css({
-               "width":"222px",
-               "height":"222px"
-             }) 
-           slow(imgList, -thisIndex *222, function () {
-              flag = true;
-            });
-         }else{
-            $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-               "width":"596px",
-               "height":"406px"
-             }).siblings().css({
-               "width":"336px",
-               "height":"336px"
-             }) 
-           slow(imgList, -thisIndex * 336, function () {
-              flag = true;
-            });
-         }
-     }
-     tabChangeNext=function(){
-       ++thisIndex;
-        if (thisIndex >= imgList.children.length-1) {
-            thisIndex = -1;
-        }
-        if(windowWidth<=1600&&windowWidth>1440){
-           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-             "width":"522px",
-             "height":"354px"
-           }).siblings().css({
-             "width":"294px",
-             "height":"294px"
-           })
-          slow(imgList, -thisIndex * 294, function () {
-            flag = true;
-          });
-         }
-         else if(windowWidth<=1440&&windowWidth>1366){
-           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-               "width":"448px",
-               "height":"304px"
-             }).siblings().css({
-               "width":"252px",
-               "height":"252px"
-             })
-             slow(imgList, -thisIndex * 252, function () {
-              flag = true;
-            });
-         }
-         else if(windowWidth<=1366){ 
-           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-               "width":"394px",
-               "height":"268px"
-             }).siblings().css({
-               "width":"222px",
-               "height":"222px"
-             }) 
-           slow(imgList, -thisIndex * 222, function () {
-              flag = true;
-            });
-         }
-         else{
-           $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-               "width":"596px",
-               "height":"406px"
-             }).siblings().css({
-               "width":"336px",
-               "height":"336px"
-             }) 
-           slow(imgList, -thisIndex * 336, function () {
-              flag = true;
-            });
-         }
-       
-        
-      }
-      function antoChange() {
-        setInterval(function () {
-          if (flag) {
-            flag = false;
-            if (thisIndex >= imgList.children.length) {
-              thisIndex = 0;
-              if(windowWidth>750){
-                if(windowWidth<=1600&&windowWidth>1440){
-                 $(".podx-go-card-rotation-item").eq(thisIndex).css({
-                   "width":"522px",
-                   "height":"354px"
-                 }).siblings().css({
-                   "width":"294px",
-                   "height":"294px"
-                 }) 
-                slow(imgList, -thisIndex * 294, function () {
-                  flag = true;
-                });
-               }
-                 else if(windowWidth<=1440&&windowWidth>1366){
-                   $(".podx-go-card-rotation-item").eq(thisIndex).css({
-                       "width":"448px",
-                       "height":"304px"
-                     }).siblings().css({
-                       "width":"252px",
-                       "height":"252px"
-                     }) 
-                     slow(imgList, -thisIndex * 252, function () {
-                      flag = true;
-                    });
-                 }
-                 else if(windowWidth<=1366){ 
-                   $(".podx-go-card-rotation-item").eq(thisIndex).css({
-                       "width":"394px",
-                       "height":"268px"
-                     }).siblings().css({
-                       "width":"222px",
-                       "height":"222px"
-                     }) 
-                     slow(imgList, -thisIndex * 222, function () {
-                      flag = true;
-                    });
-                 }
-              }
-              else{
-                $(".podx-go-card-rotation-item").eq(thisIndex).css({
-                   "width":"596px",
-                   "height":"406px"
-                 }).siblings().css({
-                   "width":"336px",
-                   "height":"336px"
-                 })
-              }
-            }
-            if(windowWidth>=750){
-              if(windowWidth<=1600&&windowWidth>1440){
-                   $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-                     "width":"522px",
-                     "height":"354px"
-                   }).siblings().css({
-                     "width":"294px",
-                     "height":"294px"
-                   }) 
-                   slow(imgList, -thisIndex * 294, function () {
-                    flag = true;
-                  });
-                 }
-              else if(windowWidth<=1440&&windowWidth>1366){
-                   $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-                       "width":"448px",
-                       "height":"304px"
-                     }).siblings().css({
-                       "width":"252px",
-                       "height":"252px"
-                     })
-                   slow(imgList, -thisIndex * 252, function () {
-                      flag = true;
-                    });
-                 }
-              else if(windowWidth<=1366){ 
-                 $(".podx-go-card-rotation-item").eq(thisIndex+1).css({
-                     "width":"394px",
-                     "height":"268px"
-                   }).siblings().css({
-                     "width":"222px",
-                     "height":"222px"
-                   }) 
-                slow(imgList, -thisIndex * 222, function () {
-                  flag = true;
-                });
-               }
-            }
-            else{
-              $(".podx-go-card-rotation-item").eq(thisIndex).css({
-                 "width":"596px",
-                 "height":"406px"
-               }).siblings().css({
-                 "width":"336px",
-                 "height":"336px"
-               })
-              slow(imgList, -thisIndex * 336, function () {
-                flag = true;
-              });
-            }
-            
-            thisIndex++;
-          }
-        }, 3000);
-      }
-      function slow(obj, target, callback) {
-        obj.myInter = setInterval(function () {
-          var offsetLeft = obj.offsetLeft;
-          var num = (target - offsetLeft) / 10;
-          num > 0 ? num = Math.ceil(num) : num = Math.floor(num);
-          if (offsetLeft == target) {
-            clearInterval(obj.myInter);
-            callback && callback();
-          } else {
-            obj.style.left = offsetLeft + num + 'px';
-          }
-          
-        }, 10)
-      }
-      
-      if(windowWidth<=750){
-        
-        antoChange();
-      }
-      // antoChange();
+    var windowWidth = document.documentElement.clientWidth;
+  var swiper = new Swiper(".podx-go-card-rotation-swiper", {
+        slidesPerView: windowWidth>990?3:1,
+      spaceBetween: 30,
+	  centeredSlides: true,
+	  loop: true,
+      autoplay:true,
+        navigation: {
+          nextEl: ".pgcr-swiper-button-next",
+          prevEl: ".pgcr-swiper-button-prev",
+        },
+      });
+    $('.pgcr-left-icon').click(function(){
+      $('.pgcr-swiper-button-prev').trigger("click")
     })
+    $('.pgcr-right-icon').click(function(){
+      $('.pgcr-swiper-button-next').trigger("click")
+    
+    })
+   })
   </script>
 
 {% schema %}
