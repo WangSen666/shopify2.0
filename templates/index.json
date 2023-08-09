@@ -258,6 +258,7 @@
     },
     "033b3367-c7f0-4783-b027-9f0f99922544": {
       "type": "bottom-with-bg-image",
+      "disabled": true,
       "blocks": {
         "template--15597986676836__033b3367-c7f0-4783-b027-9f0f99922544-16759373765ad80125-0": {
           "type": "heading",
@@ -401,6 +402,133 @@
         "a0827d6f-37a4-46e4-9881-712993f6d30d",
         "fb3115fb-7058-4e90-b910-34ee7d5052b4",
         "288c02b5-5538-49e7-938d-8a1b64502a2e"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/5f078ca96231035f342c821c009567a3.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "center",
+        "is_show_bottom_card": "true",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "ab7ddc94-d3a3-4eda-9693-d52a04d1a615": {
+      "type": "mobility-and-spaciousness",
+      "blocks": {
+        "template--15634989285476__ab7ddc94-d3a3-4eda-9693-d52a04d1a615-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Ultimate in",
+            "heading_size": "h1",
+            "font_size": 48,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "heading_color": "#333333",
+            "font_weight": 400
+          }
+        },
+        "e2117414-c5c2-42ea-aecb-fbfbd2ef7b39": {
+          "type": "heading",
+          "settings": {
+            "heading": "Mobility and Spaciousness",
+            "heading_size": "h1",
+            "font_size": 48,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "heading_color": "#333333",
+            "font_weight": 400
+          }
+        },
+        "template--15634989285476__ab7ddc94-d3a3-4eda-9693-d52a04d1a615-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "banner_button_label": "Price Lower as $85,000",
+            "banner_button_link": "shopify:\/\/pages\/grande-s1",
+            "font_size": 24
+          }
+        },
+        "template--15634989285476__ab7ddc94-d3a3-4eda-9693-d52a04d1a615-bannerComponentBottomCard-1": {
+          "type": "bannerComponentBottomCard",
+          "settings": {
+            "heading": "Free to Moe",
+            "number": "1",
+            "heading_size": 38,
+            "subtitle": "Towable with F250 or equivalent Assemble on-site in 15 minutes  with DIY",
+            "subtitle_size": 24
+          }
+        },
+        "e07768cd-2cde-4604-b6f4-1ba07b20e1fe": {
+          "type": "bannerComponentBottomCard",
+          "settings": {
+            "heading": "NOAH Certified",
+            "number": "2",
+            "heading_size": 38,
+            "subtitle": "Allow you to move virtually any- where that's permissible by  zoning regulations.",
+            "subtitle_size": 24
+          }
+        },
+        "472aca0c-b01b-4f7c-b246-36c4722bfb3a": {
+          "type": "bannerComponentBottomCard",
+          "settings": {
+            "heading": "3 Floorplans",
+            "number": "3",
+            "heading_size": 38,
+            "subtitle": "Completed interior design with  healthy materials",
+            "subtitle_size": 24
+          }
+        },
+        "a8af0b2e-34ad-483a-b1ad-2616b06c1a5a": {
+          "type": "bannerComponentBottomCard",
+          "settings": {
+            "heading": "Spaces to Live, Work and Relax",
+            "number": "4",
+            "heading_size": 38,
+            "subtitle": "Spaces to Live, Work and Relax Fully furnished and air condi- tioned home",
+            "subtitle_size": 24
+          }
+        },
+        "template--15634989285476__ab7ddc94-d3a3-4eda-9693-d52a04d1a615-bottomFlexItem-1": {
+          "type": "bottomFlexItem",
+          "settings": {
+            "text_1": "Set up in 15 mins all by yourself",
+            "image_1": "shopify:\/\/shop_images\/icon1_1.png",
+            "img_place": "left"
+          }
+        },
+        "9bbe3bc9-fdb0-488e-85d7-c68525b42063": {
+          "type": "bottomFlexItem",
+          "settings": {
+            "text_1": "Delivery within 90 days",
+            "image_1": "shopify:\/\/shop_images\/icon2_1.png",
+            "img_place": "right"
+          }
+        },
+        "dc08009f-6e82-4b2d-ae7f-c37087ecc628": {
+          "type": "bottomFlexItem",
+          "settings": {
+            "text_1": "Showroom in California",
+            "image_1": "shopify:\/\/shop_images\/icon3.png",
+            "img_place": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--15634989285476__ab7ddc94-d3a3-4eda-9693-d52a04d1a615-heading-1",
+        "e2117414-c5c2-42ea-aecb-fbfbd2ef7b39",
+        "template--15634989285476__ab7ddc94-d3a3-4eda-9693-d52a04d1a615-buttons-1",
+        "template--15634989285476__ab7ddc94-d3a3-4eda-9693-d52a04d1a615-bannerComponentBottomCard-1",
+        "e07768cd-2cde-4604-b6f4-1ba07b20e1fe",
+        "472aca0c-b01b-4f7c-b246-36c4722bfb3a",
+        "a8af0b2e-34ad-483a-b1ad-2616b06c1a5a",
+        "template--15634989285476__ab7ddc94-d3a3-4eda-9693-d52a04d1a615-bottomFlexItem-1",
+        "9bbe3bc9-fdb0-488e-85d7-c68525b42063",
+        "dc08009f-6e82-4b2d-ae7f-c37087ecc628"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/5f078ca96231035f342c821c009567a3.jpg",
@@ -1179,6 +1307,7 @@
     "ca120a8e-6056-4d50-b607-91789f1091d2",
     "033b3367-c7f0-4783-b027-9f0f99922544",
     "d89435af-466a-4a31-8028-4dd2a2d5fb51",
+    "ab7ddc94-d3a3-4eda-9693-d52a04d1a615",
     "a905fa08-6ddb-4eba-accc-fe594715c917",
     "ac6d006e-525a-4248-88c0-918455f7a860",
     "33cdc651-1d5f-4981-a42e-5df8541897e8",
