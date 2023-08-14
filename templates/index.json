@@ -153,7 +153,6 @@
     },
     "ca120a8e-6056-4d50-b607-91789f1091d2": {
       "type": "banner-new-rotation",
-      "disabled": true,
       "blocks": {
         "d47ef435-8aba-4d49-a494-f95e8516eac8": {
           "type": "text",
@@ -242,6 +241,7 @@
         "b01f1a44-ad2a-49de-bb83-74ceb7c36d4b",
         "da44c37a-4ba9-4dd7-87ed-88a4051dd382"
       ],
+      "disabled": true,
       "settings": {
         "text_place": "left",
         "image_overlay_opacity": 0,
@@ -258,7 +258,6 @@
     },
     "033b3367-c7f0-4783-b027-9f0f99922544": {
       "type": "bottom-with-bg-image",
-      "disabled": true,
       "blocks": {
         "template--15597986676836__033b3367-c7f0-4783-b027-9f0f99922544-16759373765ad80125-0": {
           "type": "heading",
@@ -308,13 +307,13 @@
         "a6d48897-bf40-4031-95f1-1adb451d9565",
         "44c85d5d-2941-4841-9d0a-47d291b0a05d"
       ],
+      "disabled": true,
       "settings": {
         "is_show_select": "true"
       }
     },
     "d89435af-466a-4a31-8028-4dd2a2d5fb51": {
       "type": "banner-component-new",
-      "disabled": true,
       "blocks": {
         "template--15628744425572__d89435af-466a-4a31-8028-4dd2a2d5fb51-1678333538825c8c06-0": {
           "type": "heading",
@@ -404,6 +403,7 @@
         "fb3115fb-7058-4e90-b910-34ee7d5052b4",
         "288c02b5-5538-49e7-938d-8a1b64502a2e"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/5f078ca96231035f342c821c009567a3.jpg",
         "image_overlay_opacity": 0,
@@ -450,6 +450,7 @@
           "type": "buttons",
           "settings": {
             "banner_button_label": "Price Lower as $85,000",
+            "banner_button_label_1": "$85,000 364sqft, $233 \/ sqft",
             "banner_button_link": "shopify:\/\/pages\/grande-s1",
             "font_size": 24
           }
