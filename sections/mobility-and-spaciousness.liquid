@@ -87,16 +87,43 @@
     justify-content: space-around;
    
   }
- .mas_right_bottom_info_btn {
-    padding: 10px 20px;
-    border-radius: 40px;
-    border: 1px solid #9ED835;
-    margin: 14px;
-   display:inline-block;
+  /* 按钮box */
+  .mas-right-bottom-btn-box{
+    min-height:140px;
+    position:relative;
+    display:inline-block;
   }
-  .mobility-and-spaciousness .mas_right_bottom_info_btn a{
+  /* 按钮 */
+ .mas-right-bottom-info-btn {
+    padding: 24px 32px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    color:#fff;
+    margin: 14px 0;
+   display:inline-block;
+   z-index:2;
+  }
+  /* 按钮底部文案 */
+  
+   .mas-right-bottom-info-btn-1{
+     position:absolute;
+     padding: 24px 32px;
+     right:0;
+     bottom:-26px;
+     background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.5));
+     color:#fff;
+     border-radius:50px;
+   }
+   .mas-right-bottom-btn-box:hover .mas-right-bottom-info-btn{
+     background:#9DD735;
+     border:none;
+   }
+   .mas-right-bottom-btn-box:hover .mas-right-bottom-info-btn-1{
+     background: linear-gradient(to bottom, rgba(157, 215, 53,0), rgba(157, 215, 53,0.5));
+   }
+  .mobility-and-spaciousness .mas-right-bottom-info-btn a{
     text-decoration:none;
-    color:#333333;
+    color:#fff;
   }
   .banner-href-icon-item{
     text-decoration:none;
@@ -118,7 +145,7 @@
     display:flex !important;
     position:absolute;
     width:100%;
-    max-height:196px;
+    max-height:220px;
     bottom:0 !important;
     top:unset !important;
     left:0;
@@ -205,11 +232,7 @@
     top:50%;
     transform:translateY(-50%);
   }
- @media screen and (max-width:1280px){
-   .mas-bottom-card-wrapper{
-     gap:40px;
-   }
- }
+ 
   
   @media screen and (max-width: 990px) {
     .mobility-and-spaciousness{
@@ -218,7 +241,7 @@
     .mobility-and-spaciousness-heading{
       font-size:24px !important;
     }
-    .mas_right_bottom_info_btn a{
+    .mas-right-bottom-info-btn a{
       font-size:14px !important;
       
     }
@@ -299,28 +322,29 @@
     .mobility-and-spaciousness .mobility-and-spaciousness__content{
       padding:24px 0 !important;
     }
-     .mobility-and-spaciousness .mobility-and-spaciousness__content .mobility-and-spaciousness__box{
-       padding:24px 0;
-     }
-  .mas_right_bottom_info_btn{
-    padding:0;
-    margin:0;
-  }
     .mas_right_bottom_info {
       flex-wrap: wrap;
     }
-    .mas_right_bottom_info_btn {
+    .mas-right-bottom-info-btn {
       padding: 10px !important;
       font-size: 16px;
     }
+     .mas-right-bottom-info-btn-1{
+       padding:10px;
+       bottom:36px;
+       font-size:12px;
+     }
     .mobility-and-spaciousness-button {
-      font-size: 16px !important;
+      font-size: 28px !important;
       padding: 0 10px;
     }
-    
+    .mas-right-bottom-info-btn a{
+      font-size: 18px !important;
+      
+    }
     .mobility-and-spaciousness__content h2 {
       width: 100% !important;
-      font-size:24px !important;
+      font-size:36px !important;
     }
     .banner__left_bottom_info{
       width:98% !important;
@@ -425,9 +449,13 @@
             </div>
             {%  when 'buttons' %}
             {% if block.settings.banner_button_label != blank %}
-              <div class="mas_right_bottom_info_btn" {{ block.shopify_attributes }}>
-                <a style="font-size:{{ block.settings.font_size }}px;" {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %}class="mobility-and-spaciousness-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
+              <div class="mas-right-bottom-btn-box">
+                <div class="mas-right-bottom-info-btn" {{ block.shopify_attributes }}>
+                  <a style="font-size:{{ block.settings.font_size }}px;" {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %}class="mobility-and-spaciousness-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
+                </div>
+                <div class="mas-right-bottom-info-btn-1">{{ block.settings.banner_button_label_1 }}</div>
               </div>
+              
               {% endif %}
             
           {%- endcase -%}
@@ -864,6 +892,13 @@
             "id": "banner_button_label",
             "default": "Button label",
             "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+            "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+          },
+           {
+            "type": "text",
+            "id": "banner_button_label_1",
+            "default": "Button label 1",
+            "label": "按钮底部文案",
             "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
           },
           {
