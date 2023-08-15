@@ -656,6 +656,7 @@
         "34959929-03b5-4a51-9da8-6a0fb1f9780d",
         "7cc34589-b045-4c2a-ad88-3907dfeaebfc"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Explore Our Virtual Showroom",
         "heading_size": 46,
