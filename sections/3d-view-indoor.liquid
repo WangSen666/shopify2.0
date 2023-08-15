@@ -145,10 +145,10 @@
        
       </div>
     <div class="view-indoor-bg">
-      <div target="_blank" class="view-button" {% if section.settings.button_link == blank %}role="link"aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %}class="rich-text-button_button ">
+      <a target="_blank" class="view-button" {% if section.settings.button_link == blank %}role="link"aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %}class="rich-text-button_button ">
         <div class="view-button-text">{{ section.settings.button_label | escape }}</div>
         <img src="https://cdn.shopify.com/s/files/1/0596/2249/0212/files/Polygon-2.png?v=1692007420" />
-      </div>
+      </a>
     </div>
     
     
