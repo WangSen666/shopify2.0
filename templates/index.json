@@ -629,6 +629,28 @@
         "button_link_1": "shopify:\/\/pages\/grande-s1"
       }
     },
+    "f8479784-f9dc-4900-bc35-3b756e276b76": {
+      "type": "3d-view-indoor",
+      "blocks": {
+        "template--15634989285476__f8479784-f9dc-4900-bc35-3b756e276b76-3d_image-1": {
+          "type": "3d_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/showroom-1.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--15634989285476__f8479784-f9dc-4900-bc35-3b756e276b76-3d_image-1"
+      ],
+      "settings": {
+        "heading": "Explore Our Virtual Showroom",
+        "heading_size": 46,
+        "content": "Immerse yourself in the Grande S1 with our captivating virtual experience. Discover a comprehensive visualization of its layout design and interior furnishings.",
+        "content_size": 24,
+        "button_label": "TAKE THE TOUR",
+        "button_link": "http:\/\/vtour.podxgo.com\/tour.html"
+      }
+    },
     "33cdc651-1d5f-4981-a42e-5df8541897e8": {
       "type": "3d-view-indoor",
       "blocks": {
@@ -1315,6 +1337,7 @@
     "ab7ddc94-d3a3-4eda-9693-d52a04d1a615",
     "a905fa08-6ddb-4eba-accc-fe594715c917",
     "ac6d006e-525a-4248-88c0-918455f7a860",
+    "f8479784-f9dc-4900-bc35-3b756e276b76",
     "33cdc651-1d5f-4981-a42e-5df8541897e8",
     "173f7bc5-99e2-4305-8c3e-d260ec72970b",
     "2ffd37a5-4f5b-4096-a422-e43721007a4b",
