@@ -592,6 +592,7 @@
         "2892042e-7c97-4491-964c-0fa4d3dbe22f",
         "template--15628744425572__a905fa08-6ddb-4eba-accc-fe594715c917-1678349954f9865326-1"
       ],
+      "disabled": true,
       "settings": {
         "is_border": "true",
         "is_background_radius": "true",
