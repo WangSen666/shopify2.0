@@ -1,0 +1,214 @@
+<link
+  rel="stylesheet"
+  href="{{ 'component-rte.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'">
+<link
+  rel="stylesheet"
+  href="{{ 'section-text-only-mullited.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'">
+
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'section-text-only-mullited.css' | asset_url | stylesheet_tag }}</noscript>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+    
+  }
+  .limited-space-counts{
+    padding:116px 0 92px;
+  }
+.limited-space-counts-box{
+  display:flex;
+  justify-content:space-between;
+  gap:60px;
+}
+  .limited-space-counts-content{
+    max-width:428px;
+  }
+  .limited-space-counts-title{
+    font-size:48px;
+    font-weight:700;
+    line-height:62px;
+  }
+  .limited-space-counts-subtitle{
+    font-size:32px;
+    line-height:48px;
+    
+  }
+.limited-space-counts-img{
+  max-width:520px;
+}
+.limited-space-counts-img img{
+  width:100%;
+}
+  @media screen and (max-width:1680px){
+     .limited-space-counts-box{
+       gap:50px;
+     }
+     .limited-space-counts{
+        padding: 106px 0 82px;
+      }
+    .limited-space-counts-title{
+      font-size:42px;
+      font-weight:700;
+      line-height:60px;
+    }
+    .limited-space-counts-subtitle{
+      font-size:28px;
+      line-height:46px;
+      
+    }
+  }
+  @media screen and (max-width:1440px){
+     .limited-space-counts{
+        padding: 96px 0 72px;
+      }
+     .limited-space-counts-box{
+       gap:40px;
+     }
+    .limited-space-counts-title{
+      font-size:38px;
+      font-weight:700;
+      line-height:52px;
+    }
+    .limited-space-counts-subtitle{
+      font-size:24px;
+      line-height:38px;
+      
+    }
+  }
+   @media screen and (max-width:1280px){
+      .limited-space-counts{
+        padding: 86px 0 62px;
+      }
+      .limited-space-counts-box{
+       gap:30px;
+     }
+      .limited-space-counts-title{
+      font-size:32px;
+      font-weight:700;
+      line-height:42px;
+    }
+    .limited-space-counts-subtitle{
+      font-size:20px;
+      line-height:30px;
+      
+    }
+   }
+   @media screen and (max-width:990px){
+     .limited-space-counts-box{
+       flex-wrap:wrap;
+       gap:20px;
+     }
+     .limited-space-counts-content{
+       max-width:unset;
+     }
+     .limited-space-counts-img{
+       max-width:48%;
+     }
+   }
+   @media screen and (max-width:750px){
+     /*  */
+      .limited-space-counts{
+        padding: 66px 14px 32px;
+      }
+     .limited-space-counts-box{
+       gap:10px;
+       /* padding: */
+     }
+     .limited-space-counts-content{
+     }
+      .limited-space-counts-title{
+        font-size:32px;
+        line-height:32px;
+        
+      }
+      .limited-space-counts-subtitle{
+        font-size:20px;
+        line-height:20px;
+        margin:20px auto;
+        
+      }
+     .limited-space-counts-img{
+       max-width:48%;
+     }
+   }
+{%- endstyle -%}
+
+<div class="isolate{% unless section.settings.full_width %}  {% endunless %} page-width limited-space-counts">
+  <div class="limited-space-counts-box">
+      <div class="limited-space-counts-content">
+        <div class="limited-space-counts-title">
+          {{ section.settings.heading }}
+        </div>
+        <div class="limited-space-counts-subtitle">
+          {{ section.settings.subtitle }}
+          
+        </div>
+      </div>
+      <div class="limited-space-counts-img">
+        <img src="{{ section.settings.pic_item_1 | image_url }}" />
+      </div>
+      <div class="limited-space-counts-img">
+        <img src="{{ section.settings.pic_item_2 | image_url }}" />
+      </div>
+    
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "limited-space-counts",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+     
+     {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 40
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 52
+      },
+      {"type":"text","id":"heading","label":"标题","default":"In a Limited Space Every Inch Counts"},
+      {"type":"text","id":"subtitle","label":"副标题","default":"副标题"},
+      {"type":"image_picker","id":"pic_item_1","label":"图片元素1"},
+      {"type":"image_picker","id":"pic_item_2","label":"图片元素2"}
+    ],
+    "blocks": [
+      
+      
+    ],
+    "presets": [
+      {
+        "name": "limited-space-counts",
+        "blocks": [
+        ]
+      }
+    ]
+  }
+{% endschema %}
