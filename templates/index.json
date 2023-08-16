@@ -548,6 +548,17 @@
         "show_text_below": true
       }
     },
+    "b5cdbd3a-7882-40b8-a8a1-adba4d4ed8da": {
+      "type": "limited-sapce-counts",
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "heading": "In a Limited Space Every Inch Counts",
+        "subtitle": "Thanks to our ingenious designers, every inch of available space has been maximized through the use of multi-functional furniture and ingenious storage solutions.",
+        "pic_item_1": "shopify:\/\/shop_images\/limited-1.png",
+        "pic_item_2": "shopify:\/\/shop_images\/limited-2.png"
+      }
+    },
     "a905fa08-6ddb-4eba-accc-fe594715c917": {
       "type": "rich-text-new",
       "blocks": {
@@ -1336,6 +1347,7 @@
     "033b3367-c7f0-4783-b027-9f0f99922544",
     "d89435af-466a-4a31-8028-4dd2a2d5fb51",
     "ab7ddc94-d3a3-4eda-9693-d52a04d1a615",
+    "b5cdbd3a-7882-40b8-a8a1-adba4d4ed8da",
     "a905fa08-6ddb-4eba-accc-fe594715c917",
     "ac6d006e-525a-4248-88c0-918455f7a860",
     "f8479784-f9dc-4900-bc35-3b756e276b76",
