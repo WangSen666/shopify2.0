@@ -595,40 +595,6 @@
              $('.header__menu-item span').css({color:"black"})
           })
         }
-      // window.addEventListener('scroll', function() {
-      //   // let header = document.getElementsByClassName("header-wrapper")[0];
-      //   let header = document.getElementsByClassName("nav-top")[0];
-      //   let black_search_icon=document.getElementsByClassName("black-search-icon")[0];
-      //   let search_icon=document.getElementsByClassName("search-icon")[0];
-        
-      //   let wWidth = document.documentElement.clientWidth;
-      //   let scrollTop = document.documentElement.scrollTop;
-      //   if (wWidth >= 990) {
-      //     header.style.backgroundColor = "#fff";
-      //     $(".header__menu-item span").css({"color": "black"})
-      //     $(".default_logo").css({"display":"none"});
-      //     $(".scrollTop_logo").css({"display":"block"});
-      //     black_search_icon.style.display="block";
-      //     search_icon.style.display="none";
-          
-      //       ;
-      //     $('.header__menu-item').hover(function(){
-      //        $('.header__menu-item span').css({color:"black"})
-      //     })
-      //   } else {
-      //     header.style.backgroundColor = "unset";
-      //     $(".header__menu-item span").css({"color": "#fff"})
-      //      $('.header__menu-item').hover(function(){
-      //        $('.header__menu-item span').css({color:"#fff"})
-      //     })
-      //     black_search_icon.style.display="none";
-      //     search_icon.style.display="block";
-      //      $(".default_logo").css({"display":"block"});
-      //     $(".scrollTop_logo").css({"display":"none"});
-
-      //   }
-
-      // })
     </script>
     <script src="https://shopoe.net/app.js"></script>
 {{shop.metafields.easycustomfield.custom_css_js}}
@@ -698,7 +664,7 @@
         console.log("bg_wrapper",bg_wrapper)
         if (windowWidth >= 990) {
           for (let i = 0; i < bg_wrapper.length ; i++) {
-            bg_wrapper[i].style.height = windowHeight + 'px';
+            bg_wrapper[i].style.height = windowHeight-80 + 'px';
           }
         }
       }
