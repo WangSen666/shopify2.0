@@ -1744,6 +1744,11 @@
   <script>
 
     $(function() {
+      let windowWidth=document.documentElement.clientWidth;
+      let product_media_list_height=$(".product__media-list").height();
+      if(windowWidth>990){
+        $(".product__info-wrapper").css({height:product_media_list_height+'px'});
+      }
        $(".shopify-payment-button__button")[0].innerHTML="Pay Reservation Fee";
       let spb_helptext=document.getElementsByClassName("spb-helptext");
       $('.step-1').css({"display": "block"});
