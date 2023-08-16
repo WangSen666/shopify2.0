@@ -424,6 +424,7 @@
       "blocks": {
         "template--15634989285476__ab7ddc94-d3a3-4eda-9693-d52a04d1a615-heading-1": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "The Ultimate in",
             "heading_size": "h1",
@@ -437,7 +438,7 @@
         "e2117414-c5c2-42ea-aecb-fbfbd2ef7b39": {
           "type": "heading",
           "settings": {
-            "heading": "Mobility and Spaciousness",
+            "heading": "Order Now, and Get Your Home within 90 Days",
             "heading_size": "h1",
             "font_size": 48,
             "margin_top": 0,
