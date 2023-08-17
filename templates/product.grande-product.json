@@ -131,7 +131,7 @@
         "9e2aa85f-d64f-4b44-9c66-4ecbadee5e42": {
           "type": "product_icon_list_2",
           "settings": {
-            "pil_width": 40,
+            "pil_width": 100,
             "pil_img_1": "shopify:\/\/shop_images\/noah.png",
             "pil_text_1": "Certified byNOAH",
             "pil_img_2": "shopify:\/\/shop_images\/windows.png",
