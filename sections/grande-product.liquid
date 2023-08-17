@@ -1763,10 +1763,7 @@
   {%- endif -%}
 
   <script>
-
-    $(function() {
-      let windowWidth=document.documentElement.clientWidth;
-      let product_media_list_height=$(".product__media-list").height();
+    window.onload=function(){
       let checkBoxs=$("fieldset label input");
       let checkBoxs_Value="";
       for(let i=0;i<checkBoxs.length;i++){
@@ -1802,6 +1799,11 @@
         })
         $('.spb-helptext')[i].innerHTML=`<ul class="optional-product-icon-list" style="">${html}</ul>`
       }
+    }
+    $(function() {
+      let windowWidth=document.documentElement.clientWidth;
+      let product_media_list_height=$(".product__media-list").height();
+      
       if(windowWidth>750){
         $(".product__info-wrapper").css({height:product_media_list_height+'px'});
       }
