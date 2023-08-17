@@ -1764,8 +1764,36 @@
 
   <script>
     window.onload=function(){
-      debugger;
-      let checkBoxs=$("fieldset label input");
+      
+    }
+    $(function() {
+      let windowWidth=document.documentElement.clientWidth;
+      let product_media_list_height=$(".product__media-list").height();
+      
+      if(windowWidth>750){
+        $(".product__info-wrapper").css({height:product_media_list_height+'px'});
+      }
+       $(".shopify-payment-button__button")[0].innerHTML="Pay Reservation Fee";
+      let spb_helptext=document.getElementsByClassName("spb-helptext");
+      $('.step-1').css({"display": "block"});
+      $('li.step-1').css({"display": "list-item"});
+
+      $('#step-1').css({"display": "flex"});
+
+      $('.step-2').css({"display": "none"})
+      $('#step-2').css({"display": "none"})
+
+      $('.step-3').css({"display": "none"});
+
+      
+    })
+    $('#step-1')
+      .find("button")
+      .click(function() {
+        $('.step-1').css({"display": "none"});
+        $('.step-2').css({"display": "block"})
+        $('#step-2').css({"display": "flex"});
+        let checkBoxs=$("fieldset label input");
       let checkBoxs_Value="";
       for(let i=0;i<checkBoxs.length;i++){
         checkBoxs[i].addEventListener("change",function(){
@@ -1800,35 +1828,6 @@
         })
         $('.spb-helptext')[i].innerHTML=`<ul class="optional-product-icon-list" style="">${html}</ul>`
       }
-    }
-    $(function() {
-      let windowWidth=document.documentElement.clientWidth;
-      let product_media_list_height=$(".product__media-list").height();
-      
-      if(windowWidth>750){
-        $(".product__info-wrapper").css({height:product_media_list_height+'px'});
-      }
-       $(".shopify-payment-button__button")[0].innerHTML="Pay Reservation Fee";
-      let spb_helptext=document.getElementsByClassName("spb-helptext");
-      $('.step-1').css({"display": "block"});
-      $('li.step-1').css({"display": "list-item"});
-
-      $('#step-1').css({"display": "flex"});
-
-      $('.step-2').css({"display": "none"})
-      $('#step-2').css({"display": "none"})
-
-      $('.step-3').css({"display": "none"});
-
-      
-    })
-    $('#step-1')
-      .find("button")
-      .click(function() {
-        $('.step-1').css({"display": "none"});
-        $('.step-2').css({"display": "block"})
-        $('#step-2').css({"display": "flex"});
-        
         $(".Edge-ONE-Smart-Home fieldset").click(function(){
           $(".Edge-ONE-Smart-Home fieldset input").val("");
         })
