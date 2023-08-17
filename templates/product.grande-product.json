@@ -111,7 +111,7 @@
         "0fcd68e5-44c6-4ff4-bd5c-3c2b0d256973": {
           "type": "product_icon_list_1",
           "settings": {
-            "pil_width": 40,
+            "pil_width": 100,
             "pil_img_1": "shopify:\/\/shop_images\/fireproof.png",
             "pil_text_1": "Fireproof",
             "pil_img_2": "shopify:\/\/shop_images\/waterproof.png",
