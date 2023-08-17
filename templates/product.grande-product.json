@@ -133,15 +133,15 @@
           "settings": {
             "pil_width": 100,
             "pil_img_1": "shopify:\/\/shop_images\/noah.png",
-            "pil_text_1": "Certified byNOAH",
+            "pil_text_1": "Certified by NOAH",
             "pil_img_2": "shopify:\/\/shop_images\/windows.png",
             "pil_text_2": "2 picture & 4 double-pane windows",
             "pil_img_3": "shopify:\/\/shop_images\/full-fitted-kitchen.png",
-            "pil_text_3": "Full fittedkitchen",
+            "pil_text_3": "Full fitted kitchen",
             "pil_img_4": "shopify:\/\/shop_images\/full-size-shower.png",
-            "pil_text_4": "Full-sizeshower",
+            "pil_text_4": "Full-size shower",
             "pil_img_5": "shopify:\/\/shop_images\/feet-of-storage.png",
-            "pil_text_5": "67-118 cubic feetof storage"
+            "pil_text_5": "67-118 cubic feet of storage"
           }
         },
         "price": {
