@@ -1767,6 +1767,41 @@
     $(function() {
       let windowWidth=document.documentElement.clientWidth;
       let product_media_list_height=$(".product__media-list").height();
+      let checkBoxs=$("fieldset label input");
+      let checkBoxs_Value="";
+      for(let i=0;i<checkBoxs.length;i++){
+        checkBoxs[i].addEventListener("change",function(){
+          let base_price=$('#base-price')[0].innerHTML.substr($('#base-price')[0].innerHTML.indexOf('$')+1)
+          let base_price_new="";
+
+          if(checkBoxs[i].checked){
+            checkBoxs_Value=checkBoxs[i].value.substr(checkBoxs[i].value.indexOf("$") + 1);
+            base_price_new=Number(base_price.replace(",",""))+Number(checkBoxs_Value.replace(',',''));
+            $('#base-price')[0].innerHTML=`Base Price $ ${base_price_new.toLocaleString()}`;
+          }else{
+            checkBoxs_Value=checkBoxs[i].value.substr(checkBoxs[i].value.indexOf("$") + 1);
+            base_price_new=Number(base_price.replace(",",""))-Number(checkBoxs_Value.replace(',',''));
+            
+            $('#base-price')[0].innerHTML=`Base Price $ ${base_price_new.toLocaleString()}`;
+          }
+          
+        })
+      }
+      let spb_helptexts=$('.spb-helptext');
+      for(let i=0;i<=spb_helptexts.length-1;i++){
+        // let img_url=$('.spb-helptext')[i].outerText.split("#")
+        let text=$('.spb-helptext')[i].outerText.split("~");
+        let html="";
+        text.forEach((v,index)=>{
+          let img=v.split("#")[0];
+      
+          html+=`<li>
+              <img src="${img}" />
+              <div>${v.split("#")[1]}</div>
+            </li>`
+        })
+        $('.spb-helptext')[i].innerHTML=`<ul class="optional-product-icon-list" style="">${html}</ul>`
+      }
       if(windowWidth>750){
         $(".product__info-wrapper").css({height:product_media_list_height+'px'});
       }
@@ -1790,41 +1825,7 @@
         $('.step-1').css({"display": "none"});
         $('.step-2').css({"display": "block"})
         $('#step-2').css({"display": "flex"});
-        let checkBoxs=$("fieldset label input");
-        let checkBoxs_Value="";
-        for(let i=0;i<checkBoxs.length;i++){
-          checkBoxs[i].addEventListener("change",function(){
-            let base_price=$('#base-price')[0].innerHTML.substr($('#base-price')[0].innerHTML.indexOf('$')+1)
-            let base_price_new="";
-
-            if(checkBoxs[i].checked){
-              checkBoxs_Value=checkBoxs[i].value.substr(checkBoxs[i].value.indexOf("$") + 1);
-              base_price_new=Number(base_price.replace(",",""))+Number(checkBoxs_Value.replace(',',''));
-              $('#base-price')[0].innerHTML=`Base Price $ ${base_price_new.toLocaleString()}`;
-            }else{
-              checkBoxs_Value=checkBoxs[i].value.substr(checkBoxs[i].value.indexOf("$") + 1);
-              base_price_new=Number(base_price.replace(",",""))-Number(checkBoxs_Value.replace(',',''));
-              
-              $('#base-price')[0].innerHTML=`Base Price $ ${base_price_new.toLocaleString()}`;
-            }
-            
-          })
-        }
-        let spb_helptexts=$('.spb-helptext');
-        for(let i=0;i<=spb_helptexts.length-1;i++){
-          // let img_url=$('.spb-helptext')[i].outerText.split("#")
-          let text=$('.spb-helptext')[i].outerText.split("~");
-          let html="";
-          text.forEach((v,index)=>{
-            let img=v.split("#")[0];
         
-            html+=`<li>
-                <img src="${img}" />
-                <div>${v.split("#")[1]}</div>
-              </li>`
-          })
-          $('.spb-helptext')[i].innerHTML=`<ul class="optional-product-icon-list" style="">${html}</ul>`
-        }
         $(".Edge-ONE-Smart-Home fieldset").click(function(){
           $(".Edge-ONE-Smart-Home fieldset input").val("");
         })
