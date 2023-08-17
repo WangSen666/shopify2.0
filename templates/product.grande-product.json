@@ -16,36 +16,45 @@
           "settings": {
           }
         },
+        "d431bfea-ecaa-4d93-893b-37ebae0cf880": {
+          "type": "color_title",
+          "settings": {
+            "text": "TOTAL AREA",
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
         "89a4e882-c395-445b-9987-e0a575934490": {
           "type": "text",
           "settings": {
-            "text": "Certified by NOAH with ANSI 119.5 standards",
+            "text": "Trailer dimensions   19'2.9'' L x 7'4.6'' W x 11'5.8'' H",
             "text_style": "body"
           }
         },
         "50cf53c8-717e-4a34-aebb-e648a678a6ff": {
           "type": "text",
           "settings": {
-            "text": "Trailer dimensions 19'2.9'' L x 7'4.6'' W x 11'5.8'' H",
+            "text": "Home dimensions   19'2.9'' L x 23'0.7'' W x 11'5.8'' H",
             "text_style": "body"
           }
         },
         "5a891928-61b7-48fd-bf68-e45f2c105ccd": {
           "type": "text",
           "settings": {
-            "text": "Home dimensions 19'2.9'' L x 23'0.7'' W x 11'5.8'' H",
+            "text": "Indoor dimensions   16'8.4'' L x 20'4.3'' W x 7'8.1'' H",
             "text_style": "body"
           }
         },
         "f331fb3f-c86f-484f-8432-1f5ce65f6ed3": {
           "type": "text",
           "settings": {
-            "text": "Indoor dimensions 16'8.4'' L x 20'4.3'' W x 7'8.1'' H",
+            "text": "Weight   18,000-19,000 lb total weight and a maximum of 22,000 lbs when towing",
             "text_style": "body"
           }
         },
         "48f5638e-ac5f-4edf-ab7c-e380d63e3a38": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "18,000-19,000 lb total weight and a maximum of 22,000 lbs when towing",
             "text_style": "body"
@@ -53,6 +62,7 @@
         },
         "5fde362d-be17-4785-a5d5-b71001d3b3f7": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "50mm-High-performance steel and flame-retardedrigid polyurethane siding and roofing",
             "text_style": "body"
@@ -60,6 +70,7 @@
         },
         "ecd9ccf8-df6a-4f1b-b297-a6b1f10de1dc": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "2 picture windows, and 4 double-pane windows",
             "text_style": "body"
@@ -67,6 +78,7 @@
         },
         "c80f7022-1fb9-4b4e-a877-bda2322c6ef0": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Full fitted kitchen",
             "text_style": "body"
@@ -74,6 +86,7 @@
         },
         "9c7b14cf-65e6-4f63-a3c7-e4434bf70c75": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Full-size shower,  long full-size vanity set with dry-wet separation design",
             "text_style": "body"
@@ -81,6 +94,7 @@
         },
         "65898753-54da-48d8-95cc-3e976a5e0ade": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "67-118 cubic feet of storage in the kitchen,bathroom, and living room based on the floorplan you choose.",
             "text_style": "body"
@@ -88,9 +102,46 @@
         },
         "e1fec621-773d-4e32-b175-79951abbee90": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Smoke \/ CO alarm system, and Extinguisher",
             "text_style": "body"
+          }
+        },
+        "0fcd68e5-44c6-4ff4-bd5c-3c2b0d256973": {
+          "type": "product_icon_list_1",
+          "settings": {
+            "pil_width": 40,
+            "pil_img_1": "shopify:\/\/shop_images\/fireproof.png",
+            "pil_text_1": "Fireproof",
+            "pil_img_2": "shopify:\/\/shop_images\/waterproof.png",
+            "pil_text_2": "Waterproof",
+            "pil_img_3": "shopify:\/\/shop_images\/windproof.png",
+            "pil_text_3": "Windproof"
+          }
+        },
+        "36b0224e-ee77-41ed-9e32-b94a6ad750b6": {
+          "type": "color_title",
+          "settings": {
+            "text": "LIVING AREA",
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "9e2aa85f-d64f-4b44-9c66-4ecbadee5e42": {
+          "type": "product_icon_list_2",
+          "settings": {
+            "pil_width": 40,
+            "pil_img_1": "shopify:\/\/shop_images\/noah.png",
+            "pil_text_1": "Certified byNOAH",
+            "pil_img_2": "shopify:\/\/shop_images\/windows.png",
+            "pil_text_2": "2 picture & 4 double-pane windows",
+            "pil_img_3": "shopify:\/\/shop_images\/full-fitted-kitchen.png",
+            "pil_text_3": "Full fittedkitchen",
+            "pil_img_4": "shopify:\/\/shop_images\/full-size-shower.png",
+            "pil_text_4": "Full-sizeshower",
+            "pil_img_5": "shopify:\/\/shop_images\/feet-of-storage.png",
+            "pil_text_5": "67-118 cubic feetof storage"
           }
         },
         "price": {
@@ -187,6 +238,7 @@
       "block_order": [
         "vendor",
         "title",
+        "d431bfea-ecaa-4d93-893b-37ebae0cf880",
         "89a4e882-c395-445b-9987-e0a575934490",
         "50cf53c8-717e-4a34-aebb-e648a678a6ff",
         "5a891928-61b7-48fd-bf68-e45f2c105ccd",
@@ -198,6 +250,9 @@
         "9c7b14cf-65e6-4f63-a3c7-e4434bf70c75",
         "65898753-54da-48d8-95cc-3e976a5e0ade",
         "e1fec621-773d-4e32-b175-79951abbee90",
+        "0fcd68e5-44c6-4ff4-bd5c-3c2b0d256973",
+        "36b0224e-ee77-41ed-9e32-b94a6ad750b6",
+        "9e2aa85f-d64f-4b44-9c66-4ecbadee5e42",
         "price",
         "variant_picker",
         "ebf60db3-567d-41fc-a522-f86a761d92be",
