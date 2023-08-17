@@ -403,49 +403,7 @@
 </div>
 <script>
   var thisIndex = 0;
-   // $(function () {
-
-   //    var imgList = document.querySelector('.bottom-rotation-list-box');
-   //    var windowWidth=document.documentElement.clientWidth;
-   //    var flag = true;
-     
-
-   //    function antoChange() {
-   //       setInterval(function () {
-   //        if (flag) {
-   //          flag = false;
-   //          if (thisIndex >= imgList.children.length) {
-   //            thisIndex = 0;
-   //          }
-   //          slow(imgList, -thisIndex * 342-20, function () {
-   //                flag = true;
-   //              });
-   //          // circleChange();
-   //          thisIndex++;
-   //        }
-   //      }, 3000);
-   //    }
-   //    function slow(obj, target, callback) {
-   //      obj.myInter = setInterval(function () {
-   //        var offsetLeft = obj.offsetLeft;
-   //        var num = (target - offsetLeft) / 10;
-   //        num > 0 ? num = Math.ceil(num) : num = Math.floor(num);
-   //        if (offsetLeft == target) {
-   //          clearInterval(obj.myInter);
-   //          callback && callback();
-   //        } else {
-   //          obj.style.left = offsetLeft + num + 'px';
-   //        }
-          
-   //      }, 10)
-   //    }
-      
-   //    if(windowWidth<=750){
-   //      imgList.style.width = imgList.children.length * 342 + 'px';
-   //      antoChange();
-   //    }
-   //    // antoChange();
-   //  })
+  
   </script>
 {% schema %}
   {
@@ -507,7 +465,7 @@
         "type": "range",
         "id": "padding_top",
         "min": 12,
-        "max": 100,
+        "max": 200,
         "step": 2,
         "unit": "px",
         "label": "上边距",
