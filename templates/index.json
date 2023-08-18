@@ -779,6 +779,44 @@
         "button_link": "shopify:\/\/pages\/grande-s1"
       }
     },
+    "87c197f3-d007-4b27-9960-0ddcc497ba2b": {
+      "type": "lr-text-with-img-1",
+      "blocks": {
+        "template--15634989285476__87c197f3-d007-4b27-9960-0ddcc497ba2b-text_item-1": {
+          "type": "text_item",
+          "settings": {
+            "text": "The A36 steel structure offers strength, durability, and pest resistance.",
+            "text_size": 20
+          }
+        },
+        "493425b8-0e06-4b81-828d-333445cb4bf4": {
+          "type": "text_item",
+          "settings": {
+            "text": "The polyurethane panel walls and roof provide high R-value insulation for  year-round comfort.",
+            "text_size": 20
+          }
+        },
+        "45a24984-5255-451a-891a-32c1ae9d6f6c": {
+          "type": "text_item",
+          "settings": {
+            "text": "The auto-hydraulic system simplifies deployment and leveling at the touch  of a button.",
+            "text_size": 20
+          }
+        }
+      },
+      "block_order": [
+        "template--15634989285476__87c197f3-d007-4b27-9960-0ddcc497ba2b-text_item-1",
+        "493425b8-0e06-4b81-828d-333445cb4bf4",
+        "45a24984-5255-451a-891a-32c1ae9d6f6c"
+      ],
+      "settings": {
+        "button_label": "Learn More",
+        "button_link": "shopify:\/\/pages\/grande-s1",
+        "image": "shopify:\/\/shop_images\/image_4.png",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
     "4be96fc5-4fd6-4afa-9417-e5f1d32c60b9": {
       "type": "lr-block-new",
       "blocks": {
@@ -827,6 +865,7 @@
         "77a80bd1-374a-40a0-8b82-ba64f5953723",
         "9a091859-f2de-462f-8427-f21ab8b99931"
       ],
+      "disabled": true,
       "settings": {
         "heading": "The Ultimate in",
         "heading_1": "Durability and Flexibility",
@@ -1355,6 +1394,7 @@
     "33cdc651-1d5f-4981-a42e-5df8541897e8",
     "173f7bc5-99e2-4305-8c3e-d260ec72970b",
     "2ffd37a5-4f5b-4096-a422-e43721007a4b",
+    "87c197f3-d007-4b27-9960-0ddcc497ba2b",
     "4be96fc5-4fd6-4afa-9417-e5f1d32c60b9",
     "15eff337-14f9-4074-9835-664493722bd5",
     "60f671a1-7f8e-412f-b0f6-056de9bc85bc",
