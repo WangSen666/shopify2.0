@@ -281,7 +281,7 @@
       </div>
     {% endif %}
     
-    <div class="diversified-lr-blocks-banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} " style="{% if section.settings.layout=='image_first' %} flex-direction:row-reverse !important;{% endif %}">
+    <div class="diversified-lr-blocks-banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} " style="{% if section.settings.layout=='image_first' %} flex-direction:row-reverse;{% endif %}">
       <div class="banner__box-item">
 
         {%- for block in section.blocks -%}
