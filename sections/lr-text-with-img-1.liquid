@@ -1,0 +1,161 @@
+
+{% style %}
+  .lr-text-with-img-1{
+    /* background:red; */
+  }
+  .lr-text-with-img-1-wrapper{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+  }
+  .lr-text-with-img-1-content{
+    width:49%;
+  }
+  .lr-text-with-img-1-content div{
+    margin:30px auto;
+    font-size:32px;
+  }
+  .lr-text-with-img-1-img{
+    width:49%;
+    border-radius:10px;
+  }
+  .lr-text-with-img-1-btn{
+    display:flex;
+    text-decoration:none;
+    width:338px;
+    padding:12px 54px;
+    border-radius:50px;
+    border:2px solid #383838;
+    justify-content:space-between;
+    align-items:center;
+    color:#383838;
+    font-size:28px;
+    font-weight:700;
+    margin-top:102px;
+  }
+  @media screen and (max-width:1680px){
+   .lr-text-with-img-1-content div{
+       margin:24px auto;
+       font-size:28px;
+     } 
+  }
+  @media screen and (max-width:1440px){
+     .lr-text-with-img-1-content div{
+       margin:20px auto;
+       font-size:24px;
+     }
+    .lr-text-with-img-1-btn{
+      /* padding:12px 34px; */
+      font-size:24px;
+      
+    }
+     .lr-text-with-img-1-btn img{
+       width:24px;
+       height:24px;
+     }
+  }
+   @media screen and (max-width:1280px){
+     .lr-text-with-img-1-content div{
+       margin:18px auto;
+       font-size:20px;
+     }
+    .lr-text-with-img-1-btn{
+     margin-top:52px;
+      
+    }
+     .lr-text-with-img-1-btn img{
+       width:24px;
+       height:24px;
+     }
+  }
+  @media screen and (max-width:990px){
+     .lr-text-with-img-1-wrapper{
+        flex-wrap:wrap;
+        flex-direction: column-reverse;
+    }
+    .lr-text-with-img-1-content{
+      width:100%;
+    }
+    .lr-text-with-img-1-btn{
+      padding:10px 32px;
+      width:250px;
+      margin-top:32px;
+      font-size:18px;
+    }
+     .lr-text-with-img-1-img{
+       width:100%;
+       min-height:400px;
+     }
+  }
+   @media screen and (max-width:750px){
+   .lr-text-with-img-1-wrapper{
+     padding:24px 14px !important;
+   }
+      .lr-text-with-img-1-content div{
+        font-size:18px;
+      }
+     .lr-text-with-img-1-img{
+       min-height:326px;
+     }
+  }
+{% endstyle %}
+
+
+
+
+<div class="lr-text-with-img-1 page-width">
+    <div class="lr-text-with-img-1-wrapper" style="padding-top:{{ section.settings.padding_top }}px;padding-bottom:{{ section.settings.padding_bottom }}px;">
+      <div class="lr-text-with-img-1-content">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+                {%- when "text_item" -%}
+                  <div >{{ block.settings.text }}</div>
+                
+            {%- endcase  -%}
+        {%- endfor -%}
+        <a class="lr-text-with-img-1-btn" {% if section.settings.button_link == blank %} role="link"aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %}>
+        {{ section.settings.button_label | escape }}
+        <img src="https://cdn.shopify.com/s/files/1/0596/2249/0212/files/player-1.png?v=1692337933" width="36" height="36">
+        </a>
+      </div>
+      <div class="lr-text-with-img-1-img" style="background:url('{{ section.settings.image |image_url }}') center center no-repeat;background-size:cover;">
+      </div>
+      
+    </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "lr-text-with-img-1",
+    "settings": [
+      {"type":"text","id":"button_label","label":"按钮文案内容","default":"Learn More"},
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "t:sections.multicolumn.settings.button_link.label"
+      },
+      {"type":"image_picker","id":"image","label":"选择图片"},
+      {"type":"range","id":"padding_top","label":"上边距","min":10,"max":100,"step":2,"default":24,"unit":"px"},
+      {"type":"range","id":"padding_bottom","label":"下边距","min":10,"max":100,"step":2,"default":24,"unit":"px"}
+    ],
+    "blocks":[
+      {"type":"text_item","name":"文案内容","settings":[
+        {"type":"text","id":"text","label":"显示内容","default":"The A36..."},
+        {"type":"range","id":"text_size","label":"文案大小","default":20,"min":12,"max":80,"step":2}
+      ]
+      }
+    ],
+    "presets": [{
+      "name":"lr-text-with-img-1",
+      "blocks":[
+         {"type":"text_item"}
+      ]
+    }
+      
+    ]
+    
+  }
+{% endschema %}
+
