@@ -605,18 +605,21 @@
       "blocks": {
         "template--15628744425572__ac6d006e-525a-4248-88c0-918455f7a860-167835962426bd5986-0": {
           "type": "video-pic-item",
+          "disabled": true,
           "settings": {
             "video-pic": "shopify:\/\/shop_images\/tiny_house_interior_design_1.png"
           }
         },
         "049a910a-3798-4e9c-ba6d-ead3b6abd6f9": {
           "type": "video-pic-item",
+          "disabled": true,
           "settings": {
             "video-pic": "shopify:\/\/shop_images\/tiny_house_interior_design_3.png"
           }
         },
         "89b19278-f9e6-44e5-a9df-12cef62e4d19": {
           "type": "video-pic-item",
+          "disabled": true,
           "settings": {
             "video-pic": "shopify:\/\/shop_images\/tiny_house_interior_design_2.png"
           }
