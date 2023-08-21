@@ -67,9 +67,8 @@
     }
     .product__text {
       font-size: 18px;
-      color: #333;
+      color: black;
       margin-top: 0;
-      font-weight:500;
     }
     .product__title:first-child{
       border-bottom:2px solid #333;
@@ -158,6 +157,13 @@
       color: black;
       font-family: "KumbhSans-Bold";
     }
+    .product-form__input input{
+       background: none;
+      border: 1px solid #333;
+      color: #333;
+      font-size: 18px;
+      border-radius: 10px;
+    }
     .product-form__input input[type="radio"] + label{
        background: none;
       border: 1px solid #333;
@@ -166,11 +172,11 @@
       border-radius: 10px;
     }
     .product-form__input input[type="radio"]:checked + label {
-       background:#9DD735;
+     background:#9DD735;
       color:#fff;
       border:1px solid #9DD735;
     }
-     .pay-way .product-form__input input[type="radio"]:checked + label{
+    .pay-way product-form__input input[type="radio"]:checked + label{
       background:none !important;
       color:#333 !important;
       border:none !important;
@@ -349,6 +355,50 @@
     .Edge-ONE-Smart-Home .spb-productoptiontextcolor{
       display:none !important;
     }
+
+
+
+  /* 选装内容提示 */
+  .floor-plan-tip{
+    position:fixed;
+    top:94px;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    z-index:10;
+  }
+  .floor-plan-tip-box{
+    width:50%;
+    height:230px;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:#fff;
+    padding:40px;
+    border-radius:10px;
+  }
+  .floor-plan-tip-mobile{
+      display:none;
+    } 
+    .floor-plan-tip-pc{
+      display:block;
+    }
+    .close-btn{
+      background:#9DD735;
+      color:#fff;
+      border-radius:20px;
+      border:none;
+      padding:10px 24px;
+      font-size:16px;
+      margin:14px 0;
+      font-weight:700; 
+      /* display:flex;
+      justify-content:space-around; */
+    }
+    .close-btn img{
+      margin-left:8px;
+    }
     @media screen and (max-width: 1680px){
       .pay-way{
         padding:20px 30px;
@@ -399,21 +449,9 @@
         margin-top:32px;
       }
       .pay-way-list,.agreement-box,product-form{
-        /* padding:0 !important; */
         max-width:100% !important;
       }
-      .product-icon-list-2{
-        flex-wrap:wrap;
-      }
-      .product-icon-list-2 .product-icon-item{
-        width:32%;
-      }
     }
-     @media screen and (max-width: 1360px){
-        .product-icon-list-2 .product-icon-item{
-          width:45%;
-        }
-     }
     @media screen and (max-width: 990px) {
       .product-color-title{
         margin:14px 0;
@@ -430,9 +468,6 @@
       .product-icon-list{
         flex-wrap:wrap;
       }
-      .product-icon-list-1 .product-icon-item{
-        width:30%;
-      }
       .product-icon-list-1{
         gap:14px;
       }
@@ -446,9 +481,14 @@
         width:30%;
         text-align:center;
       }
-      
+      .optional-product-icon-list{
+        gap:10px;
+      }
+       #infiniteoptions-container li{
+         width:48%;
+       }
     }
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 990px) {
       .product__info-wrapper{
         padding:0 24px;
         margin:0 auto;
@@ -496,16 +536,30 @@
         margin-top:30px;
         position:relative !important;
       }
-      .optional-product-icon-list{
-        gap:10px;
-      }
-       #infiniteoptions-container li{
-         width:48%;
-       }
-      .product__media-item{
+       .product__media-item{
         width:100% !important;
       }
+      /* 选装内容提示 */
+      .floor-plan-tip{
+        top:74px;
+      }
+      .floor-plan-tip-box{
+        width:100%;
+        height:260px;
+        border-radius:0;
+        top:10%;
+        padding:24px;
+      }
+      .floor-plan-tip-mobile{
+        display:block;
+      }
+      .floor-plan-tip-pc{
+        display:none;
+      }
     }
+    /* .agreement-box:nth-child(1){
+      margin-top:44px;
+    } */
   {%- endstyle -%}
 
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -526,11 +580,7 @@
       media="print"
       onload="this.media='all'">
   {%- endif -%}
-  {% comment %} <style>
-  #infiniteoptions-container fieldset{
-  border:none !important;
-  }
-  </style> {% endcomment %}
+ 
   <div style="padding-top:50px;" class="product  product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       <media-gallery
@@ -1679,7 +1729,30 @@
       </div>
     {%- endif -%}
   </div>
+  <div class="floor-plan-tip">
+    <div class="floor-plan-tip-box">
 
+      <div class="floor-plan-tip-wrapper">
+        <div class="floor-plan-tip-pc">
+             <div>Floorplan 2 and Floorplan 3 is not available,</div>
+            <div>if you want this please visit <a href="https://form.jotform.com/PODX/Schedule-Call" target="_blank">https://form.jotform.com/PODX/Schedule-Call</a> </div>
+            <div>We are here to help you with your tiny home dreams!</div>
+        </div>
+
+        <div class="floor-plan-tip-mobile">
+             <div>Floorplan 2 and Floorplan 3 is not available,if you want this please visit <a href="https://form.jotform.com/PODX/Schedule-Call" target="_blank">https://form.jotform.com/PODX/Schedule-Call</a> </div>
+            <div>We are here to help you with your tiny home dreams!</div>
+        </div>
+        
+      </div>
+      <div class="floor-plan-tip-btn">
+        <button class="close-btn">
+          close
+          <img width="10" height="10" src="https://cdn.shopify.com/s/files/1/0596/2249/0212/files/close.png?v=1692607951"/>
+        </button>
+      </div>
+    </div>
+  </div>
   <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
     <div
       class="product-media-modal__dialog"
@@ -1764,15 +1837,12 @@
 
   <script>
     window.onload=function(){
-      
     }
     $(function() {
       let windowWidth=document.documentElement.clientWidth;
       let product_media_list_height=$(".product__media-list").height();
-      // 控制floorplan2,floorplan3不可点击
-      let floor_plan_other='<input type="radio"/><label>Floorplan 2 (coming soon)</label><input type="radio"/><label>Floorplan 3 (coming soon)</label>'
-      $('#fieldset-1').append(floor_plan_other);
-      if(windowWidth>750){
+      $('#fieldset-1').children('input')[0].click();
+      if(windowWidth>990){
         $(".product__info-wrapper").css({height:product_media_list_height+'px'});
       }
        $(".shopify-payment-button__button")[0].innerHTML="Pay Reservation Fee";
@@ -1787,52 +1857,58 @@
 
       $('.step-3').css({"display": "none"});
 
-      
     })
+    let now_floor_style="";
     $('#step-1')
       .find("button")
       .click(function() {
-        $('.step-1').css({"display": "none"});
-        $('.step-2').css({"display": "block"})
-        $('#step-2').css({"display": "flex"});
-        let checkBoxs=$("fieldset label input");
-      let checkBoxs_Value="";
-      for(let i=0;i<checkBoxs.length;i++){
-        checkBoxs[i].addEventListener("change",function(){
-          let base_price=$('#base-price')[0].innerHTML.substr($('#base-price')[0].innerHTML.indexOf('$')+1)
-          let base_price_new="";
-
-          if(checkBoxs[i].checked){
-            checkBoxs_Value=checkBoxs[i].value.substr(checkBoxs[i].value.indexOf("$") + 1);
-            base_price_new=Number(base_price.replace(",",""))+Number(checkBoxs_Value.replace(',',''));
-            $('#base-price')[0].innerHTML=`Base Price $ ${base_price_new.toLocaleString()}`;
-          }else{
-            checkBoxs_Value=checkBoxs[i].value.substr(checkBoxs[i].value.indexOf("$") + 1);
-            base_price_new=Number(base_price.replace(",",""))-Number(checkBoxs_Value.replace(',',''));
-            
-            $('#base-price')[0].innerHTML=`Base Price $ ${base_price_new.toLocaleString()}`;
+        if(now_floor_style.search('coming')!=-1){
+          $('.floor-plan-tip').css({display:"block"})
+        }else{
+          $('.step-1').css({"display": "none"});
+          $('.step-2').css({"display": "block"})
+          $('#step-2').css({"display": "flex"});
+          let checkBoxs=$("fieldset label input");
+          let checkBoxs_Value="";
+          for(let i=0;i<checkBoxs.length;i++){
+            checkBoxs[i].addEventListener("change",function(){
+              let base_price=$('#base-price')[0].innerHTML.substr($('#base-price')[0].innerHTML.indexOf('$')+1)
+              let base_price_new="";
+  
+              if(checkBoxs[i].checked){
+                checkBoxs_Value=checkBoxs[i].value.substr(checkBoxs[i].value.indexOf("$") + 1);
+                base_price_new=Number(base_price.replace(",",""))+Number(checkBoxs_Value.replace(',',''));
+                $('#base-price')[0].innerHTML=`Base Price $ ${base_price_new.toLocaleString()}`;
+              }else{
+                checkBoxs_Value=checkBoxs[i].value.substr(checkBoxs[i].value.indexOf("$") + 1);
+                base_price_new=Number(base_price.replace(",",""))-Number(checkBoxs_Value.replace(',',''));
+                
+                $('#base-price')[0].innerHTML=`Base Price $ ${base_price_new.toLocaleString()}`;
+              }
+              
+            })
           }
+          let spb_helptexts=$('.spb-helptext');
           
-        })
-      }
-      let spb_helptexts=$('.spb-helptext');
-      for(let i=0;i<=spb_helptexts.length-1;i++){
-        // let img_url=$('.spb-helptext')[i].outerText.split("#")
-        let text=$('.spb-helptext')[i].outerText.split("~");
-        let html="";
-        text.forEach((v,index)=>{
-          let img=v.split("#")[0];
-      
-          html+=`<li>
-              <img src="${img}" />
-              <div>${v.split("#")[1]}</div>
-            </li>`
-        })
-        $('.spb-helptext')[i].innerHTML=`<ul class="optional-product-icon-list" style="">${html}</ul>`
-      }
-        $(".Edge-ONE-Smart-Home fieldset").click(function(){
-          $(".Edge-ONE-Smart-Home fieldset input").val("");
-        })
+          for(let i=0;i<=spb_helptexts.length-1;i++){
+            // let img_url=$('.spb-helptext')[i].outerText.split("#")
+            let text=$('.spb-helptext')[i].outerText.split("~");
+            let html="";
+            text.forEach((v,index)=>{
+              let img=v.split("#")[0];
+          
+              html+=`<li>
+                  <img src="${img}" />
+                  <div>${v.split("#")[1]}</div>
+                </li>`
+            })
+            $('.spb-helptext')[i].innerHTML=`<ul class="optional-product-icon-list" style="">${html}</ul>`
+          }
+        }
+        
+        // $(".Edge-ONE-Smart-Home fieldset").click(function(){
+        //   $(".Edge-ONE-Smart-Home fieldset input").val("");
+        // })
       })
       $('#step-2')
       .find("button")
@@ -1847,15 +1923,17 @@
       $(this).find("label").css({"border": "none"});
       $(this).siblings().css({"boxShadow": "0 0 6px #333"})
     })
+  $('.close-btn').click(function(event){
+    $('.floor-plan-tip').css({display:"none"})
+  })
    
   $('#fieldset-1')
   .children('input') 
   .click(function(event) {
-        $('#fieldset-2').children('label').trigger("click")
-    
-    // return;    
-    
-    
+    // console.log("event",$(this).val());
+    now_floor_style=$(this).val();
+    $('#fieldset-2').children('label').trigger("click")
+    // return;
   })
 document
 .addEventListener('DOMContentLoaded', function() {
