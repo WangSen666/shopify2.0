@@ -1769,7 +1769,9 @@
     $(function() {
       let windowWidth=document.documentElement.clientWidth;
       let product_media_list_height=$(".product__media-list").height();
-      
+      // 控制floorplan2,floorplan3不可点击
+      let floor_plan_other='<input type="radio"/><label>Floorplan 2 (coming soon)</label><input type="radio"/><label>Floorplan 3 (coming soon)</label>'
+      $('#fieldset-1').append(floor_plan_other);
       if(windowWidth>750){
         $(".product__info-wrapper").css({height:product_media_list_height+'px'});
       }
