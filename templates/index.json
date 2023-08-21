@@ -63,7 +63,7 @@
           "type": "buttons",
           "settings": {
             "banner_button_label": "download floorplan",
-            "banner_button_link": "https:\/\/form.jotform.com\/PODX\/schedule-your-room-tour",
+            "banner_button_link": "https:\/\/form.jotform.com\/PODX\/download-floor-plan",
             "font_size": 16,
             "button_color": "#9ED835"
           }
