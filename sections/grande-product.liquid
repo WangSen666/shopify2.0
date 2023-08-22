@@ -365,7 +365,12 @@
   }
   .product__media-list_hidden li:first-child{
     display:block !important;
-
+  }
+  img.global-media-settings-hidden{
+    display:none;
+  }
+  img.global-media-settings-block{
+    display:block;
   }
   .product__media-list_display li{
     display:block !important;
@@ -1957,10 +1962,14 @@
     if(now_floor_style.search('coming')!=-1){
       $('.product__media-list').addClass('product__media-list_hidden')
       $('.product__media-list').removeClass('product__media-list_display');
-
+      $(".global-media-settings").addClass(".global-media-settings-hidden")
+      $(".global-media-settings").removeClass(".global-media-settings-display")
+      
     }else{
       $('.product__media-list').addClass('product__media-list_display')
       $('.product__media-list').removeClass('product__media-list_block')
+       $(".global-media-settings").addClass(".global-media-settings-display")
+      $(".global-media-settings").removeClass(".global-media-settings-hidden")
     }
     $('#fieldset-2').children('label').trigger("click")
     // return;
