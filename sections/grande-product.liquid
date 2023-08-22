@@ -356,7 +356,20 @@
       display:none !important;
     }
 
+  /* 选到coming soong 的floorplan后添加的class 为了控制最下面那块图的展示与否 */
+  .product__media-list_hidden{
 
+  }
+  .product__media-list_hidden li{
+    display:none !important;
+  }
+  .product__media-list_hidden li:first-child{
+    display:block !important;
+
+  }
+  .product__media-list_display li{
+    display:block !important;
+  }
 
   /* 选装内容提示 */
   .floor-plan-tip{
