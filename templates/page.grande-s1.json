@@ -127,6 +127,7 @@
         },
         "fd29c194-40b3-449d-a77e-1d66e82d8cdf": {
           "type": "only-card-mullited-item",
+          "disabled": true,
           "settings": {
             "heading_label": "Smart Home Automation",
             "heading_size": 24,
