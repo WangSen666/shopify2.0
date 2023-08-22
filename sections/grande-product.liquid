@@ -387,6 +387,12 @@
   li.is-active{
     display:block !important;
   }
+  #step-2,.step-2,.step-3{
+    display:none;
+  }
+  .bottom-button-box button{
+    display:none;
+  }
   /* 选装内容提示 */
   .floor-plan-tip{
     position:fixed;
@@ -1867,8 +1873,6 @@
 
   <script>
     window.onload=function(){
-    }
-    $(function() {
       let windowWidth=document.documentElement.clientWidth;
       let product_media_list_height=$(".product__media-list").height();
       $('#fieldset-1').children('input')[0].click();
@@ -1879,16 +1883,13 @@
       let spb_helptext=document.getElementsByClassName("spb-helptext");
       $('.step-1').css({"display": "block"});
       $('li.step-1').css({"display": "list-item"});
-
       $('#step-1').css({"display": "flex"});
-
       $('.step-2').css({"display": "none"})
       $('#step-2').css({"display": "none"})
-
+      $('.bottom-button-box button').css({"display": "block"})
       $('.step-3').css({"display": "none"});
 
-    })
-    let now_floor_style="";
+     let now_floor_style="";
     $('#step-1')
       .find("button")
       .click(function() {
@@ -1935,47 +1936,155 @@
             $('.spb-helptext')[i].innerHTML=`<ul class="optional-product-icon-list" style="">${html}</ul>`
           }
         }
-        
-        // $(".Edge-ONE-Smart-Home fieldset").click(function(){
-        //   $(".Edge-ONE-Smart-Home fieldset input").val("");
-        // })
-      })
-      $('#step-2')
-      .find("button")
-      .click(function() {
-        $('.step-3').css({"display": "block"});
-        $(".shopify-payment-button__button")[0].innerHTML="Pay Reservation Fee";
 
       })
-    $(".pay-way")
-    .click(function() {
-      $(this).css({"boxShadow": "0 0 20px #333"})
-      $(this).find("label").css({"border": "none"});
-      $(this).siblings().css({"boxShadow": "0 0 6px #333"})
-    })
-  $('.close-btn').click(function(event){
-    $('.floor-plan-tip').css({display:"none"})
-  })
-   
-  $('#fieldset-1')
-  .children('input') 
-  .click(function(event) {
-    // console.log("event",$(this).val());
-    now_floor_style=$(this).val();
-    if(now_floor_style.search('coming')!=-1){
-      $('.product__media-list').addClass('product__media-list_hidden')
-      $('.product__media-list').removeClass('product__media-list_display');
-      $(".global-media-settings").addClass("global-media-settings-hidden")
-      $(".global-media-settings").removeClass("global-media-settings-display")
       
-    }else{
-      $('.product__media-list').addClass('product__media-list_display')
-      $('.product__media-list').removeClass('product__media-list_block')
-       $(".global-media-settings").addClass("global-media-settings-display")
-      $(".global-media-settings").removeClass("global-media-settings-hidden")
-    }
-    $('#fieldset-2').children('label').trigger("click")
-  })
+    $(".pay-way")
+      .click(function() {
+        $(this).css({"boxShadow": "0 0 20px #333"})
+        $(this).find("label").css({"border": "none"});
+        $(this).siblings().css({"boxShadow": "0 0 6px #333"})
+      })
+    $('.close-btn').click(function(event){
+      $('.floor-plan-tip').css({display:"none"})
+    })
+     
+    $('#fieldset-1')
+    .children('input') 
+    .click(function(event) {
+      // console.log("event",$(this).val());
+      now_floor_style=$(this).val();
+      if(now_floor_style.search('coming')!=-1){
+        $('.product__media-list').addClass('product__media-list_hidden')
+        $('.product__media-list').removeClass('product__media-list_display');
+  
+      }else{
+        $('.product__media-list').addClass('product__media-list_display')
+        $('.product__media-list').removeClass('product__media-list_block')
+      }
+      $('#fieldset-2').children('label').trigger("click")
+      // return;
+    })
+
+    $('#step-2')
+        .find("button")
+        .click(function() {
+          $('.step-3').css({"display": "block"});
+          $(".shopify-payment-button__button")[0].innerHTML="Pay Reservation Fee";
+      })
+    $('.pay-way-box .product-form__buttons').click(function() {
+      $("#agreement_2").attr('checked', 'checked')
+      $("#agreement_1").attr('checked', 'checked')
+    })
+  }
+  //   $(function() {
+  //     let windowWidth=document.documentElement.clientWidth;
+  //     let product_media_list_height=$(".product__media-list").height();
+  //     $('#fieldset-1').children('input')[0].click();
+  //     if(windowWidth>990){
+  //       $(".product__info-wrapper").css({height:product_media_list_height+'px'});
+  //     }
+  //      $(".shopify-payment-button__button")[0].innerHTML="Pay Reservation Fee";
+  //     let spb_helptext=document.getElementsByClassName("spb-helptext");
+  //     $('.step-1').css({"display": "block"});
+  //     $('li.step-1').css({"display": "list-item"});
+
+  //     $('#step-1').css({"display": "flex"});
+
+  //     $('.step-2').css({"display": "none"})
+  //     $('#step-2').css({"display": "none"})
+
+  //     $('.step-3').css({"display": "none"});
+
+  //   })
+  //   let now_floor_style="";
+  //   $('#step-1')
+  //     .find("button")
+  //     .click(function() {
+  //       if(now_floor_style.search('coming')!=-1){
+  //         $('.floor-plan-tip').css({display:"block"})
+  //       }else{
+  //         $('.step-1').css({"display": "none"});
+  //         $('.step-2').css({"display": "block"})
+  //         $('#step-2').css({"display": "flex"});
+  //         let checkBoxs=$("fieldset label input");
+  //         let checkBoxs_Value="";
+  //         for(let i=0;i<checkBoxs.length;i++){
+  //           checkBoxs[i].addEventListener("change",function(){
+  //             let base_price=$('#base-price')[0].innerHTML.substr($('#base-price')[0].innerHTML.indexOf('$')+1)
+  //             let base_price_new="";
+  
+  //             if(checkBoxs[i].checked){
+  //               checkBoxs_Value=checkBoxs[i].value.substr(checkBoxs[i].value.indexOf("$") + 1);
+  //               base_price_new=Number(base_price.replace(",",""))+Number(checkBoxs_Value.replace(',',''));
+  //               $('#base-price')[0].innerHTML=`Base Price $ ${base_price_new.toLocaleString()}`;
+  //             }else{
+  //               checkBoxs_Value=checkBoxs[i].value.substr(checkBoxs[i].value.indexOf("$") + 1);
+  //               base_price_new=Number(base_price.replace(",",""))-Number(checkBoxs_Value.replace(',',''));
+                
+  //               $('#base-price')[0].innerHTML=`Base Price $ ${base_price_new.toLocaleString()}`;
+  //             }
+              
+  //           })
+  //         }
+  //         let spb_helptexts=$('.spb-helptext');
+          
+  //         for(let i=0;i<=spb_helptexts.length-1;i++){
+  //           // let img_url=$('.spb-helptext')[i].outerText.split("#")
+  //           let text=$('.spb-helptext')[i].outerText.split("~");
+  //           let html="";
+  //           text.forEach((v,index)=>{
+  //             let img=v.split("#")[0];
+          
+  //             html+=`<li>
+  //                 <img src="${img}" />
+  //                 <div>${v.split("#")[1]}</div>
+  //               </li>`
+  //           })
+  //           $('.spb-helptext')[i].innerHTML=`<ul class="optional-product-icon-list" style="">${html}</ul>`
+  //         }
+  //       }
+        
+  //       // $(".Edge-ONE-Smart-Home fieldset").click(function(){
+  //       //   $(".Edge-ONE-Smart-Home fieldset input").val("");
+  //       // })
+  //     })
+  //     $('#step-2')
+  //     .find("button")
+  //     .click(function() {
+  //       $('.step-3').css({"display": "block"});
+  //       $(".shopify-payment-button__button")[0].innerHTML="Pay Reservation Fee";
+
+  //     })
+  //   $(".pay-way")
+  //   .click(function() {
+  //     $(this).css({"boxShadow": "0 0 20px #333"})
+  //     $(this).find("label").css({"border": "none"});
+  //     $(this).siblings().css({"boxShadow": "0 0 6px #333"})
+  //   })
+  // $('.close-btn').click(function(event){
+  //   $('.floor-plan-tip').css({display:"none"})
+  // })
+   
+  // $('#fieldset-1')
+  // .children('input') 
+  // .click(function(event) {
+  //   // console.log("event",$(this).val());
+  //   now_floor_style=$(this).val();
+  //   if(now_floor_style.search('coming')!=-1){
+  //     $('.product__media-list').addClass('product__media-list_hidden')
+  //     $('.product__media-list').removeClass('product__media-list_display');
+  //     $(".global-media-settings").addClass("global-media-settings-hidden")
+  //     $(".global-media-settings").removeClass("global-media-settings-display")
+      
+  //   }else{
+  //     $('.product__media-list').addClass('product__media-list_display')
+  //     $('.product__media-list').removeClass('product__media-list_block')
+  //      $(".global-media-settings").addClass("global-media-settings-display")
+  //     $(".global-media-settings").removeClass("global-media-settings-hidden")
+  //   }
+  //   $('#fieldset-2').children('label').trigger("click")
+  // })
 document
 .addEventListener('DOMContentLoaded', function() {
   function isIE() {
@@ -2002,10 +2111,10 @@ document
     hiddenInput.value = event.currentTarget.value;
   });
 });
-$('.pay-way-box .product-form__buttons').click(function() {
-  $("#agreement_2").attr('checked', 'checked')
-  $("#agreement_1").attr('checked', 'checked')
-})
+// $('.pay-way-box .product-form__buttons').click(function() {
+//   $("#agreement_2").attr('checked', 'checked')
+//   $("#agreement_1").attr('checked', 'checked')
+// })
   </script>
 
   {%- liquid
