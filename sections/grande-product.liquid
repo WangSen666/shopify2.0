@@ -176,6 +176,11 @@
       color:#fff;
       border:1px solid #9DD735;
     }
+    .product-form__input-choose input[type="radio"] + label{
+       background: none !important;
+      border:none !important;
+      color:#333 !important;
+    }
     .pay-way product-form__input input[type="radio"]:checked + label{
       background:none !important;
       color:#333 !important;
@@ -1197,7 +1202,7 @@
                         {%- for value in option.values -%}
 
                           <div class="pay-way">
-                            <fieldset class="js product-form__input">
+                            <fieldset class="js product-form__input product-form__input-choose">
                               <input
                                 type="radio"
                                 id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
