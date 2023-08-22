@@ -1946,6 +1946,14 @@
   .click(function(event) {
     // console.log("event",$(this).val());
     now_floor_style=$(this).val();
+    if(now_floor_style.search('coming')!=-1){
+      $('.product__media-list').addClass('product__media-list_hidden')
+      $('.product__media-list').removeClass('product__media-list_display');
+
+    }else{
+      $('.product__media-list').addClass('product__media-list_display')
+      $('.product__media-list').removeClass('product__media-list_block')
+    }
     $('#fieldset-2').children('label').trigger("click")
     // return;
   })
