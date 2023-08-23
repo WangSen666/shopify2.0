@@ -57,7 +57,6 @@
   .diversified-lr-blocks-heading{
       text-align:center;
       margin:72px auto;
-    font-family: "KumbhSans-Bold" !important;
     }
   .diversified-lr-blocks-banner__box .banner__box-item {
     width: 46% !important;
@@ -66,7 +65,9 @@
   }
 
   }
- 
+  .diversified-lr-blocks-heading{
+    font-family: "KumbhSans-Bold" !important;
+  }
 
    .diversified-lr-blocks-banner__box  .lr-block-component__button{
       width:100%;
@@ -160,7 +161,7 @@
 }
 @media screen and (max-width:990px){
   .bottom-rotation-list{
-    height:260px !important;
+    height:unset !important;
   }
   .bottom-rotation-wrapper{
     width:240px !important;
@@ -173,12 +174,10 @@
 }
 @media screen and (max-width: 749px) {
     .diversified-lr-blocks-banner__box {
-      /* padding:24px !important; */
-      flex-direction:column-reverse !important;
-      display:flex;
+      padding:14px !important;
     }
     .diversified-lr-blocks-banner__content{
-      paddding:24px 10px !important;
+      padding:24px 10px !important;
       justify-content: space-between !important;
       
     }
@@ -194,9 +193,6 @@
   .diversified-lr-blocks-banner__content{
     padding:0 !important;
   }
-  .banner__box-item:first-child{
-    padding:0 14px;
-  }
     .diversified-lr-blocks-banner__box .banner__heading{
       text-align:center !important;
       font-size:20px !important;
@@ -211,11 +207,7 @@
     .diversified-lr-block_text_body{
       text-align:left;
       font-size:14px !important;
-      margin:10px auto !important;
-      line-height:14px;
-    }
-    .card-flex-box{
-      margin:14px auto;
+      margin:14px auto !important;
     }
     .card-flex-box  .img-box img{
       margin:0;
@@ -226,22 +218,27 @@
       margin:0 auto !important;
     }
   .bottom-rotation-list-box{
-    flex-wrap:wrap;
+    /* flex-wrap:wrap; */
     position:relative !important;
   }
   .bottom-rotation-wrapper{
-    width:98% !important;
-    margin:14px auto;
+    width:33% !important;
+    margin:0 auto;
   }
   .bottom-rotation-item{
     width: 100% !important;
-    height:280px !important;
+    /* height:280px !important; */
+  }
+  .bottom-rotation-text{
+    padding:14px 0;
+    width:100% !important;
+    font-size:12px !important;
   }
   .diversified-lr-blocks-heading{
-    font-size:32px !important;
+    font-size:20px !important;
     padding: 34px 14px 0;
+    line-height:24px !important;
     margin:0 auto !important;
-    line-height:34px !important;
   }
 }
 
@@ -288,7 +285,7 @@
       </div>
     {% endif %}
     
-    <div class="diversified-lr-blocks-banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} " style="{% if section.settings.layout=='image_first' %} flex-direction:row-reverse;{% endif %}">
+    <div class="diversified-lr-blocks-banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} " style="{% if section.settings.layout=='image_first' %} flex-direction:row-reverse !important;{% endif %}">
       <div class="banner__box-item">
 
         {%- for block in section.blocks -%}
@@ -412,7 +409,49 @@
 </div>
 <script>
   var thisIndex = 0;
-  
+   // $(function () {
+
+   //    var imgList = document.querySelector('.bottom-rotation-list-box');
+   //    var windowWidth=document.documentElement.clientWidth;
+   //    var flag = true;
+     
+
+   //    function antoChange() {
+   //       setInterval(function () {
+   //        if (flag) {
+   //          flag = false;
+   //          if (thisIndex >= imgList.children.length) {
+   //            thisIndex = 0;
+   //          }
+   //          slow(imgList, -thisIndex * 342-20, function () {
+   //                flag = true;
+   //              });
+   //          // circleChange();
+   //          thisIndex++;
+   //        }
+   //      }, 3000);
+   //    }
+   //    function slow(obj, target, callback) {
+   //      obj.myInter = setInterval(function () {
+   //        var offsetLeft = obj.offsetLeft;
+   //        var num = (target - offsetLeft) / 10;
+   //        num > 0 ? num = Math.ceil(num) : num = Math.floor(num);
+   //        if (offsetLeft == target) {
+   //          clearInterval(obj.myInter);
+   //          callback && callback();
+   //        } else {
+   //          obj.style.left = offsetLeft + num + 'px';
+   //        }
+          
+   //      }, 10)
+   //    }
+      
+   //    if(windowWidth<=750){
+   //      imgList.style.width = imgList.children.length * 342 + 'px';
+   //      antoChange();
+   //    }
+   //    // antoChange();
+   //  })
   </script>
 {% schema %}
   {
@@ -474,7 +513,7 @@
         "type": "range",
         "id": "padding_top",
         "min": 12,
-        "max": 200,
+        "max": 100,
         "step": 2,
         "unit": "px",
         "label": "上边距",
