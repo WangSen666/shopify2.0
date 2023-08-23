@@ -62,7 +62,7 @@
         "a3d89172-31fb-4291-955d-65016c1b7ad5": {
           "type": "buttons",
           "settings": {
-            "banner_button_label": "download floorplan",
+            "banner_button_label": "Download Floorplan",
             "banner_button_link": "https:\/\/form.jotform.com\/PODX\/download-floor-plan",
             "font_size": 16,
             "button_color": "#9ED835"
@@ -1210,7 +1210,8 @@
       ],
       "settings": {
         "heading": "Order Process",
-        "heading_size": 50
+        "heading_size": 50,
+        "press_num": "1"
       }
     },
     "bddee2f4-7f99-4dd7-80d5-0698ddee7387": {
