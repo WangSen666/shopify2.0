@@ -35,10 +35,10 @@
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }}
     ;
   }
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 990px) {
    .lr-blocks-rotation-banner__content {
-/*       padding: 120px  24px  108px !important; */
       justify-content: space-between !important;
+     width:100%;
     }
     .banner__content.banner__content--bottom-center {
       align-items: center !important;
@@ -47,7 +47,6 @@
       width:100%;
       display: flex;
       justify-content: space-between !important;
-/*       min-width: var(--page-width); */
       height:100%;
       padding:0 !important;
     };
@@ -169,12 +168,13 @@
   z-index:10;
     
 }
-  @media screen and (max-width: 749px) {
+  @media screen and (max-width: 990px) {
     .lr-blocks-rotation-banner__box {
       padding:14px !important;
+      display:flex;
     }
     .lr-blocks-rotation-banner__content{
-      paddding:24px 10px !important;
+      padding:0 !important;
       justify-content: space-between !important;
       
     }
@@ -182,22 +182,27 @@
      text-align:left;
     }
     .lr-blocks-rotation-banner__box .banner__box-item {
-      width: 98% !important;
-      margin: 24px auto !important;;
+      width: 48% !important;
+      /* margin: 24px auto !important;; */
       text-align: center !important;
       background:none !important;
       position:relative;
+      height: unset !important;
     }
     .lr-blocks-rotation-banner__box .banner__heading{
-      text-align:center !important;
+      text-align:left !important;
     }
     
-      
+      .banner__box-item .banner__heading{
+        font-size:20px !important;
+      }
      .lr-blocks-rotation-banner__box h2{
         font-size:32px !important;
       }
      .lr-blocks-rotation-banner__box .banner__text_body{
-        font-size:16px !important;
+        font-size:12px !important;
+       line-height:12px;
+       text-align:left;
       }
     .banner__text{
       text-align:left;
@@ -207,23 +212,29 @@
     }
     .card-flex-box  .img-box img{
       margin:0;
+      width:44px;
     }
     .lr_block_rotation_bannerBox{
-      height:400px !important;
+      height:100% !important;
     }
     .lr_block_rotation_imgList{
       width:100%;
-      height:400px;
+      height:100%;
     }
     .lr-blocks-rotation-image-wrapper {
       width: 100% !important;
-      height: 400px !important;
+      height: 100% !important;
     }
-    .left-icon{
-      display:none;
+    .banner__box-item  .left-icon{
+      width:20px;
+      transform:translateY(0);
+      left:6px;
     }
-    .right-icon{
-      display:none;
+   .banner__box-item  .right-icon{
+      width:20px;
+      transform:translateY(0);
+      right:6px;
+     
     }
   }
 {%- endstyle -%}
@@ -233,7 +244,7 @@
   style=" background:#EDEDED;margin-top:{{ section.settings.margin_top }}px;margin-bottom:{{ section.settings.margin_bottom }}px;"
   class="banner {% if section.settings.image != blank %}  bg_wrapper {% endif %} banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
 
-  <div class="banner__content lr-blocks-rotation-banner__content banner__content--{{ section.settings.desktop_content_position }} " style="{% if section.settings.is_imgBg == 'false' %} {% endif %}">
+  <div class="lr-blocks-rotation-banner__content banner__content--{{ section.settings.desktop_content_position }} " style="{% if section.settings.is_imgBg == 'false' %} {% endif %}">
     <div class=" lr-blocks-rotation-banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient " style="{% if section.settings.layout=='image_first' %} flex-direction:row-reverse !important;{% endif %}">
       <div class="banner__box-item">
         <div class="banner__box-item-wrapper">
