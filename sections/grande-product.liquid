@@ -1533,7 +1533,7 @@
                                   /
                                 </span>
                                 <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-                                <span class="slider-counter--total">{{ number_of_slides-1 }}</span>
+                                <span class="slider-counter--total">{{ number_of_slides }}</span>
                               {%- else -%}
                                 <div class="slideshow__control-wrapper">
                                   {%- for i in (1..number_of_slides) -%}
@@ -1981,10 +1981,14 @@
       if(now_floor_style.search('coming')!=-1){
         $('.product__media-list').addClass('product__media-list_hidden')
         $('.product__media-list').removeClass('product__media-list_display');
+        $('.slider-counter--total').text(1)
   
       }else{
         $('.product__media-list').addClass('product__media-list_display')
-        $('.product__media-list').removeClass('product__media-list_block')
+        $('.product__media-list').removeClass('product__media-list_block');
+        // 系统获取图片数量不对，使用js强制更改，在已知图片数量的情况下
+        $('.slider-counter--total').text(7)
+        
       }
       $('#fieldset-2').children('label').trigger("click")
       // return;
