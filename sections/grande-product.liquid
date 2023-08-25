@@ -1984,7 +1984,10 @@
         $('.product__media-list').addClass('product__media-list_hidden')
         $('.product__media-list').removeClass('product__media-list_display');
         $('.slider-counter--total').text(1)
-  
+        $('.slider-button--prev').css({display:"none"})
+        $('.slider-button--next').css({display:"none"})
+        
+        // slider-button--next
       }else{
         $('.product__media-list').addClass('product__media-list_display')
         $('.product__media-list').removeClass('product__media-list_block');
