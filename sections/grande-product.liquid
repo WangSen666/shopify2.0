@@ -902,9 +902,9 @@
 
             </div>
             {%- when 'text' -%}
-            <li class="product__text step-1 {% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
+            <div class="product__text step-1 {% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
               {{- block.settings.text -}}
-            </li>
+            </div>
             {%- when 'title' -%}
             <div class="product__title step-1" {{ block.shopify_attributes }}>
               <h1>{{ product.title | escape }}</h1>
