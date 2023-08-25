@@ -1,5 +1,19 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
+<style>
+  @media screen and (max-width:750px;){
+     .article-template{
+      padding: 20px 14px;
+    } 
+  }
+  
+</style>
+
+
+
+
+
+
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
