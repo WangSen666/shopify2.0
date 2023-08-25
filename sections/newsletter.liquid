@@ -33,45 +33,48 @@
     font-family: "KumbhSans-Bold" !important;
 
   }
-  .newsletter{
-/*     background:rgb(247,247,245) !important; */
-/*     border-top:2px solid #606060; */
-    padding:50px 0!important
+  .newsletter {
+    /*     background:rgb(247,247,245) !important; */
+    /*     border-top:2px solid #606060; */
+    padding: 50px 0 !important
   }
-  
+
   .newsletter-form__field-wrapper {
     width: unset !important;
   }
-   .newsletter__wrapper h2{
-      font-family: "KumbhSans-Bold" !important;
-   }
+  .newsletter__wrapper h2 {
+    font-family: "KumbhSans-Bold" !important;
+  }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top }}
+      px;
+      padding-bottom: {{ section.settings.padding_bottom }}
+      px;
     }
   }
-   @media screen and (max-width:1800px){
-    .newsletter__wrapper h2{
-      font-size:38px !important;
+  @media screen and (max-width:1800px) {
+    .newsletter__wrapper h2 {
+      font-size: 38px !important;
     }
   }
-  @media screen and (max-width:1500px){
-    .newsletter__wrapper h2{
-      font-size:36px !important;
+  @media screen and (max-width:1500px) {
+    .newsletter__wrapper h2 {
+      font-size: 36px !important;
     }
   }
-  @media screen and (max-width:1400px){
-    .newsletter__wrapper h2{
-      font-size:30px !important;
+  @media screen and (max-width:1400px) {
+    .newsletter__wrapper h2 {
+      font-size: 30px !important;
     }
   }
   @media screen and (max-width: 750px) {
-    .newsletter{
-      padding:0 !important;
+    ;
+    .newsletter {
+      padding: 0 !important;
     }
-    .newsletter-form{
-      align-items:unset !important;
+    .newsletter-form {
+      align-items: unset !important;
     }
     .newsletter-form__field-wrapper {
       flex-wrap: wrap;
@@ -86,8 +89,8 @@
       width: 80px !important;
       font-size: 16px !important;
     }
-    .newsletter__wrapper{
-      padding:34px 14px !important;
+    .newsletter__wrapper {
+      padding: 34px 14px !important;
     }
     .newsletter__wrapper h2 {
       font-size: 20px !important;
@@ -95,9 +98,8 @@
   }
 {%- endstyle -%}
 
-<div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}" id="{{ section.settings.href_id }}">
-  <div style="--color-foreground:none;" class="newsletter__wrapper  color-{{ section.settings.color_scheme }} {% if section.settings.is_background_radius=="true" %}text-border-radius{% endif %} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
-<!--     background:rgb(247,247,245) !important; -->
+<div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
+  <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
@@ -115,11 +117,22 @@
               value="newsletter">
             <div class="newsletter-form__field-wrapper">
               <div class="field bottom-filed">
-                <input style="border-radius:14px;" id="NewsletterForm--{{ section.id }}"type="email"name="contact[email]"class="field__input"value="{{ form.email }}"aria-required="true"autocorrect="off"autocapitalize="off"autocomplete="email"{% if form.errors %}autofocusaria-invalid="true"aria-describedby="Newsletter-error--{{ section.id }}"{% elsif form.posted_successfully? %}aria-describedby="Newsletter-success--{{ section.id }}"{% endif %}placeholder="{{ 'newsletter.label' | t }}"required>
-               <label class="field__label" for="NewsletterForm--{{ section.id }}">
-<!--               {{ 'newsletter.label' | t }} -->
-                 Enter Your E-mail 
-              </label> 
+                <input
+                  style="border-radius:14px;"
+                  id="NewsletterForm--{{ section.id }}"
+                  type="email"
+                  name="contact[email]"
+                  class="field__input"
+                  value="{{ form.email }}"
+                  aria-required="true"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  autocomplete="email"
+                  {% if form.errors %}autofocusaria-invalid="true"aria-describedby="Newsletter-error--{{ section.id }}"{% elsif form.posted_successfully? %}aria-describedby="Newsletter-success--{{ section.id }}"{% endif %}placeholder="{{ 'newsletter.label' | t }}"required>
+                <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                  <!--               {{ 'newsletter.label' | t }} -->
+                  Enter Your E-mail
+                </label>
 
               </div>
               <button type="submit"
@@ -152,14 +165,23 @@
     "tag": "section",
     "class": "section",
     "settings": [
-      {"type":"text","id":"href_id","label":"链接id"},
       {
-        "type":"select",
-        "id":"is_background_radius",
-        "options":[
-          {"value":"true","label":"是"},
-          {"value":"false","label":"否"}
-          
+        "type": "text",
+        "id": "href_id",
+        "label": "链接id"
+      },
+      {
+        "type": "select",
+        "id": "is_background_radius",
+        "options": [
+          {
+            "value": "true",
+            "label": "是"
+          }, {
+            "value": "false",
+            "label": "否"
+          }
+
         ],
         "default": "true",
         "label": "是否显示圆角背景"
@@ -196,12 +218,10 @@
         "id": "full_width",
         "default": true,
         "label": "t:sections.newsletter.settings.full_width.label"
-      },
-      {
+      }, {
         "type": "paragraph",
         "content": "t:sections.newsletter.settings.paragraph.content"
-      },
-      {
+      }, {
         "type": "header",
         "content": "t:sections.all.padding.section_padding_heading"
       }, {
