@@ -728,7 +728,7 @@
                 /
               </span>
               <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-              <span class="slider-counter--total">{{ media_count }}</span>
+              <span class="slider-counter--total">{{ media_count-1 }}</span>
             </div>
             <button
               type="button"
@@ -1533,7 +1533,7 @@
                                   /
                                 </span>
                                 <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-                                <span class="slider-counter--total">{{ number_of_slides }}</span>
+                                <span class="slider-counter--total">{{ number_of_slides-1 }}</span>
                               {%- else -%}
                                 <div class="slideshow__control-wrapper">
                                   {%- for i in (1..number_of_slides) -%}
