@@ -728,7 +728,7 @@
                 /
               </span>
               <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-              <span class="slider-counter--total">{{ media_count-1 }}</span>
+              <span class="slider-counter--total">{{ media_count }}</span>
             </div>
             <button
               type="button"
@@ -1981,7 +1981,7 @@
       if(now_floor_style.search('coming')!=-1){
         $('.product__media-list').addClass('product__media-list_hidden')
         $('.product__media-list').removeClass('product__media-list_display');
-        $('.slider-counter--total').text(1)
+        // $('.slider-counter--total').text(1)
         $('.slider-buttons').css({display:"none"})
         
         // slider-button--next
