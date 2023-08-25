@@ -1992,7 +1992,9 @@
         $('.product__media-list').addClass('product__media-list_display')
         $('.product__media-list').removeClass('product__media-list_block');
         // 系统获取图片数量不对，使用js强制更改，在已知图片数量的情况下
-        $('.slider-counter--total').text(7)
+        $('.slider-counter--total').text(7);
+        $('.slider-button--prev').css({display:"none"})
+        $('.slider-button--next').css({display:"none"})
         
       }
       $('#fieldset-2').children('label').trigger("click")
