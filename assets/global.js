@@ -563,8 +563,12 @@ class SliderComponent extends HTMLElement {
 
     if (this.currentPageElement && this.pageTotalElement) {
       this.currentPageElement.textContent = this.currentPage;
+
+      // 未修改时的代码
       // this.pageTotalElement.textContent = this.totalPages;
-      // 修改产品页面图片数量比实际图片多一的问题
+
+      
+      // 修改产品页面图片数量比实际图片多一张的问题 
       this.pageTotalElement.textContent = this.totalPages-1;
       
     }
