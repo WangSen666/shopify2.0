@@ -450,8 +450,8 @@
         "template--15634989285476__ab7ddc94-d3a3-4eda-9693-d52a04d1a615-buttons-1": {
           "type": "buttons",
           "settings": {
-            "banner_button_label": "Price Lower as $85,000",
-            "banner_button_label_1": "$85,000 364sqft, $233 \/ sqft",
+            "banner_button_label": "Price Lower as $233\/SQFT",
+            "banner_button_label_1": "",
             "banner_button_link": "shopify:\/\/pages\/grande-s1",
             "font_size": 36
           }
