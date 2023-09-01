@@ -184,7 +184,7 @@
       "settings": {
         "heading": "Video",
         "heading_size": "h1",
-        "cover_image": "shopify:\/\/shop_images\/00382cece34bcda3681e8064d24359bd_b0216101-35ce-4b97-926e-911f14f348f0.jpg",
+        "cover_image": "shopify:\/\/shop_images\/7.jpg",
         "video_url": "",
         "button_label": "player",
         "padding_top": 36,
@@ -235,7 +235,7 @@
         "66e4201c-8775-4442-ba3e-ab1d7ab4e474": {
           "type": "with_bg_card_placediy",
           "settings": {
-            "picture-card-item": "shopify:\/\/shop_images\/2_97c703c7-58c5-4278-90fd-965fb3153749.png",
+            "picture-card-item": "shopify:\/\/shop_images\/22_a9d15822-cfb2-4041-ae05-e72a32811019.png",
             "heading": "364 ft² Home",
             "font_size": 42,
             "font_color": "#fff",
