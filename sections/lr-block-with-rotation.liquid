@@ -338,7 +338,7 @@
                   {%- for block in section.blocks -%}
                     {%- case block.type -%}
                       {%- when 'img_rotation' and block.settings.img_rotation != blank -%}
-                      <div class="lr-blocks-rotation-image-wrapper swiper-slide"   style=" background:url({{ block.settings.img_rotation | image_url }}) no-repeat center center;background-size:cover; margin: 0 auto;display: block;height:100%;background-position: 20%;">
+                      <div class="lr-blocks-rotation-image-wrapper swiper-slide"   style=" background:url({{ block.settings.img_rotation | image_url }}) no-repeat center center;background-size:cover; margin: 0 auto;display: block;height:100%;background-position: 40%;">
                       </div>
         
                     {%- endcase -%}
