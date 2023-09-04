@@ -111,8 +111,8 @@
      padding: 24px 32px;
      right:0;
      bottom:-54px;
-     background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.5));
-     color:#fff;
+     /* background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.5)); */
+     color:#333;
      border-radius:50px;
      font-size:24px;
    }
@@ -121,7 +121,7 @@
      border: 1px solid #9DD735;
    }
    .mas-right-bottom-btn-box:hover .mas-right-bottom-info-btn-1{
-     background: linear-gradient(to bottom, rgba(157, 215, 53,0), rgba(157, 215, 53,0.5));
+     /* background: linear-gradient(to bottom, rgba(157, 215, 53,0), rgba(157, 215, 53,0.5)); */
    }
   .mobility-and-spaciousness .mas-right-bottom-info-btn a{
     text-decoration:none;
@@ -460,7 +460,7 @@
                 <div class="mas-right-bottom-info-btn" {{ block.shopify_attributes }}>
                   <a style="font-size:{{ block.settings.font_size }}px;" {% if block.settings.banner_button_link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %}class="mobility-and-spaciousness-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
                 </div>
-                <!--<div class="mas-right-bottom-info-btn-1">{{ block.settings.banner_button_label_1 }}</div> -->
+                <div class="mas-right-bottom-info-btn-1">{{ block.settings.banner_button_label_1 }}</div>
               </div>
               
               {% endif %}
