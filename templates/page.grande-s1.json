@@ -40,7 +40,7 @@
           "settings": {
             "banner_button_label": "Download Floorplan",
             "banner_button_link": "https:\/\/form.jotform.com\/PODX\/download-floor-plan",
-            "font_size": 24,
+            "font_size": 28,
             "button_color": "#fff"
           }
         },
@@ -60,7 +60,7 @@
           "settings": {
             "banner_button_label": "Discover Your Needs",
             "banner_button_link": "https:\/\/form.jotform.com\/PODX\/design-yours",
-            "font_size": 32,
+            "font_size": 28,
             "button_color": "#9ED835"
           }
         }
