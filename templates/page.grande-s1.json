@@ -35,13 +35,13 @@
             "rotation-banner-img-item": "shopify:\/\/shop_images\/s2.png"
           }
         },
-        "b22513aa-a4db-49f8-95e3-5422d6a4ab92": {
+        "ef486e93-0a79-4687-81fc-f73847f1dffd": {
           "type": "buttons",
           "settings": {
-            "banner_button_label": "Discover Your Needs",
-            "banner_button_link": "https:\/\/form.jotform.com\/PODX\/design-yours",
-            "font_size": 32,
-            "button_color": "#9ED835"
+            "banner_button_label": "Download Floorplan",
+            "banner_button_link": "https:\/\/form.jotform.com\/PODX\/download-floor-plan",
+            "font_size": 24,
+            "button_color": "#fff"
           }
         },
         "d88616b2-88fb-40b7-8afa-8450b3a66252": {
@@ -54,6 +54,15 @@
             "heading_color": "#fff",
             "font_weight": 400
           }
+        },
+        "b22513aa-a4db-49f8-95e3-5422d6a4ab92": {
+          "type": "buttons",
+          "settings": {
+            "banner_button_label": "Discover Your Needs",
+            "banner_button_link": "https:\/\/form.jotform.com\/PODX\/design-yours",
+            "font_size": 32,
+            "button_color": "#9ED835"
+          }
         }
       },
       "block_order": [
@@ -61,8 +70,9 @@
         "template--15628744687716__ea8479d2-0c1d-4e21-8752-556731abf541-1678514253ebb87161-5",
         "5d7e473b-943c-4e7b-bb50-994399697b94",
         "79b21d14-4c0c-4375-8a53-3265202a5e3f",
-        "b22513aa-a4db-49f8-95e3-5422d6a4ab92",
-        "d88616b2-88fb-40b7-8afa-8450b3a66252"
+        "ef486e93-0a79-4687-81fc-f73847f1dffd",
+        "d88616b2-88fb-40b7-8afa-8450b3a66252",
+        "b22513aa-a4db-49f8-95e3-5422d6a4ab92"
       ],
       "settings": {
         "text_place": "right",
