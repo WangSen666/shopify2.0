@@ -630,6 +630,7 @@
         "049a910a-3798-4e9c-ba6d-ead3b6abd6f9",
         "89b19278-f9e6-44e5-a9df-12cef62e4d19"
       ],
+      "disabled": true,
       "settings": {
         "cover_image": "shopify:\/\/shop_images\/video-view-1.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=C5w7cIi2m_U",
