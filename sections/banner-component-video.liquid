@@ -233,14 +233,16 @@
       top:40%;
     }
     .banner-video video{
-      top:66% !important;
-      height: unset !important;
+      /* top:66% !important; */
+      top:0;
+      height: 100% !important;
+      object-fit:cover;
       width: 100%;
       position: absolute;
       /* max-width: unset !important; */
     }
      .pc-banner-video{
-      display:none !important;
+      /* display:none !important; */
     }
      .mobile-banner-video{
       display:block !important;
@@ -344,13 +346,13 @@
 <div id="Banner-{{ section.id }}" class="bg_wrapper banner-new-rotation   banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} ">
     <div class="banner-component__media media banner-video">
       <video class="pc-banner-video" src="{{ section.settings.video_url }}" autoplay  loop muted ></video>
-      <video class="mobile-banner-video" src="https://cdn.shopify.com/videos/c/o/v/d54f3ba5f2dc4217a964131905b7fa13.mov"  muted autoplay loop preload
+      <!-- <video class="mobile-banner-video" src="https://cdn.shopify.com/videos/c/o/v/d54f3ba5f2dc4217a964131905b7fa13.mov"  muted autoplay loop preload
        x5-video-player-fullscreen="true"
        x5-playsinline
        playsinline 
        webkit-playsinline></video>
       
-      <img class="mobile-banner-view" src="https://cdn.shopify.com/s/files/1/0596/2249/0212/files/home-page-banner.jpg?v=1691743180"/>
+      <img class="mobile-banner-view" src="https://cdn.shopify.com/s/files/1/0596/2249/0212/files/home-page-banner.jpg?v=1691743180"/> -->
     </div>
   <div class="banner-component__content  page-width">
     <div class="banner-new-rotation__box banner-new-rotation__box--{{ section.settings.desktop_content_position }} content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient" style="right:{% if section.settings.text_place=="right" %} 0; {% endif %}">
