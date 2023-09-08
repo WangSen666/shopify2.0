@@ -1997,7 +1997,10 @@
         $(".global-media-settings").removeClass("global-media-settings-hidden")
         // 系统获取图片数量不对，使用js强制更改，在已知图片数量的情况下
         $('.slider-buttons').css({display:"flex"})
-        
+        if(windowWidth>990){
+          $('.slider-buttons').css({display:"none"})
+
+        }
       }
       $('#fieldset-2').children('label').trigger("click")
       // return;
