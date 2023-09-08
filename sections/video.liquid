@@ -48,6 +48,13 @@
         </div>
       {%- endunless -%}
     </div>
+    {%- for block in section.blocks -%}
+          {%- case block.type -%}
+             {%  when 'subtitle' %}
+              
+            <div class="video-subtitle">{{  block.settings.subtitle_text }}</div>
+         {%- endcase -%}
+        {%- endfor -%}
     <noscript>
       <div class="video-section__media"
         {% if section.settings.cover_image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%;"{% endif %}
@@ -220,9 +227,17 @@
       "default": 36
     }
   ],
+  "blocks":[
+    {"type":"subtitle","name":"副标题","settings":[
+      {"type":"text","id":"subtitle_text","label":"副标题内容"}
+    ]}
+  ],
   "presets": [
     {
-      "name": "t:sections.video.presets.name"
+      "name": "t:sections.video.presets.name",
+      "blocks":[
+        {"type":"subtitle"}
+      ]
     }
   ]
 }
