@@ -1,7 +1,55 @@
+<style>
+  .pbr-big-pic-with-text {
+    max-width: 1650px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+
+  .pbr-big-pic-with-text img {
+    width: 100%;
+  }
+
+  .pbr-big-text {
+    flex: 1 1 100%;
+    padding: 18px;
+    color: #F2F2F2;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    word-break: break-word;
+    flex-flow: column;
+    line-height: 150%;
+    background: #404040;
+    margin-top: -10px;
+    font-size: 14px;
+  }
+
+  .pbr-big-text .color-text {
+    color: #FFFF00;
+  }
+</style>
+<div class="pbr-big-pic-with-text">
+  <a href="pbr-big-pic" >
+    <img src="./bg-1.jpg" />
+  </a>
+  <div class="pbr-big-text">
+    <div class="color-text">Backup power for unplanned power outages, living off-grid, or saving electrical bills.
+    </div>
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "pbr 页面 大图模块",
+    "settings": [
+      {"type":"image_picker","id":"image","label":"大图"},
+      {"type":"text","id":"title","label":"标题"}
+    ],
+    "blocks":[
+    ]
   }
 {% endschema %}
 
