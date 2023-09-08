@@ -357,7 +357,10 @@
       max-width:100%;
     }
    
-   
+    .Edge-ONE-Smart-Home .spb-productoptiontextcolor{
+      display:none !important;
+    }
+
   /* 选到coming soong 的floorplan后添加的class 为了控制最下面那块图的展示与否 */
   .product__media-list_hidden{
 
@@ -392,10 +395,6 @@
   #step-2,.step-2,.step-3{
     display:none;
   }
-  /* 当标签为 fold时 id为fieldset-3  里面所有元素不显示 */
-    #fieldset-3{
-      display:none;
-    }
   .bottom-button-box button{
     display:none;
   }
@@ -1163,22 +1162,6 @@
                   {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
                     {% case option.name %}
-                      {% when 'Fold' %}
-                      <fieldset class="js product-form__input" id="fieldset-3">
-                        <legend class="form__label">{{ option.name }}</legend>
-                        {%- for value in option.values -%}
-                          <input
-                            type="radio"
-                            id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                            name="{{ option.name }}"
-                            value="{{ value | escape }}"
-                            form="{{ product_form_id }}"
-                            {% if option.selected_value == value %}checked{% endif %}>
-                          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                            {{ value }}
-                          </label>
-                        {%- endfor -%}
-                      </fieldset>
                       {% when 'Choose Your Floorplan' %}
                       <fieldset class="js product-form__input" id="fieldset-1">
                         <legend class="form__label">{{ option.name }}</legend>
@@ -1211,7 +1194,6 @@
                           </label>
                         {%- endfor -%}
                       </fieldset>
-                       
                     {% endcase %}
                   {%- endfor -%}
                   <script type="application/json">
@@ -1947,7 +1929,6 @@
           let checkBoxs=$("fieldset label input");
           let checkBoxs_Value="";
           for(let i=0;i<checkBoxs.length;i++){
-            // 给选装组件的每个元素绑定点击函数
             checkBoxs[i].addEventListener("change",function(){
               let base_price=$('#base-price')[0].innerHTML.substr($('#base-price')[0].innerHTML.indexOf('$')+1)
               let base_price_new="";
@@ -1962,13 +1943,7 @@
                 
                 $('#base-price')[0].innerHTML=`Base Price $ ${base_price_new.toLocaleString()}`;
               }
-              // 当选择的框是fold Furniture Kit 时需要处理的逻辑
-              if(i==1&&checkBoxs[i].checked){
-                // 当选择选装时，通过切换多元素fold的 标签进行大图切换
-                $("#fieldset-3").children('label')[1].click();
-              }else if(i==1&&!checkBoxs[i].checked){
-                $("#fieldset-3").children('label')[0].click();
-              }
+              
             })
           }
           let spb_helptexts=$('.spb-helptext');
@@ -2006,7 +1981,6 @@
     .click(function(event) {
       // console.log("event",$(this).val());
       now_floor_style=$(this).val();
-      
       if(now_floor_style.search('coming')!=-1){
         $('.product__media-list').addClass('product__media-list_hidden')
         $('.product__media-list').removeClass('product__media-list_display');
@@ -2028,9 +2002,7 @@
 
         }
       }
-      // 每次选择flooaplan时默认去选中pay way的第一项
       $('#fieldset-2').children('label').trigger("click")
-      
       // return;
     })
 
@@ -2045,12 +2017,6 @@
       $("#agreement_1").attr('checked', 'checked')
     })
   }
-   
-    $('#fieldset-3')
-    .children('input') 
-    .click(function(event) {
-      $('#fieldset-2').children('label').trigger("click")
-    })
   
 document
 .addEventListener('DOMContentLoaded', function() {
