@@ -2026,6 +2026,8 @@
         
         // slider-button--next
       }else{
+          $('.product__media-item:gt(6)').css("display","none");
+        $('.global-media-settings--no-shadow:gt(6)').css("display","none");
         $('.product__media-list').addClass('product__media-list_display')
         $('.product__media-list').removeClass('product__media-list_block');
         $(".global-media-settings").addClass("global-media-settings-display")
