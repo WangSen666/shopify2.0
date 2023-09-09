@@ -17,6 +17,11 @@
     color:#fff;
     
   }
+  .video-subtitle{
+    line-height:1.5;
+    font-size:18px;
+    margin:24px 0;
+  }
   .video-button img{
     width:18px;
     height:18px;
@@ -45,10 +50,11 @@
       {%- unless section.settings.heading == blank -%}
         <div class="title-wrapper title-wrapper--no-top-margin">
           <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
+          
         </div>
       {%- endunless -%}
     </div>
-    {%- for block in section.blocks -%}
+        {%- for block in section.blocks -%}
           {%- case block.type -%}
              {%  when 'subtitle' %}
               
@@ -144,6 +150,11 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type":"text",
+      "id":"subtitle",
+      "label":"副标题"
     },
     {
       "type": "image_picker",
