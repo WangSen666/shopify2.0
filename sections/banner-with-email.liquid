@@ -1,12 +1,166 @@
+
+<style>
+    .banner-with-email {
+    width: 100%;
+    position: relative;
+    height:582px;
+  }
+
+  .banner-with-email-bg {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    /* max-width: 1650px; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .podxgo-logo {
+    max-width: 186px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .banner-with-email-content {
+    max-width: 1650px;
+    /* padding: 24px 0; */
+    margin: 0 auto;
+    min-height: 462px;
+    padding: 24px;
+  }
+
+  .banner-with-email .title {
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight:700;
+    color:#fff;
+    margin:80px 0 24px;
+  }
+
+  .banner-with-email .subtitle {
+    font-size: 16px;
+    color:#fff;
+  }
+  .banner-email{
+    bottom:24px;
+    position:absolute;
+    width:44rem;
+  }
+  .banner-email form{
+    display:block;
+  }
+  .banner-email form .bottom-filed-button{
+    display:block;
+    position:relative;
+  }
+  @media screen and (max-width:750px){
+    .banner-with-email-content{
+      padding:24px 14px;
+    }
+    .banner-with-email{
+      height:62rem;
+    }
+    .banner-email{
+      width:80%;
+      
+    }
+    .banner-with-email .title{
+      margin:40px 0 24px;
+    }
+    .banner-email .bottom-filed-button{
+      width:unset !important;
+      padding:12px;
+    }
+    .banner-email .newsletter-form__message{
+      color:#fff;
+    }
+  }
+</style>
+
+<div class="banner-with-email ">
+  <img class="banner-with-email-bg" src="{{ section.settings.banner_bg|image_url }}" />
+  <div class="banner-with-email-content page-width">
+      <img class="podxgo-logo" src="{{ section.settings.logo|image_url }}" />
+      <div class="title">{{ section.settings.title }}</div>
+      <div class="subtitle">{{ section.settings.subtitle}}</div>
+      <div class="banner-email">
+        {% form 'customer', class: 'newsletter-form' %}
+            <input
+              type="hidden"
+              name="contact[tags]"
+              value="newsletter">
+            <div class="newsletter-form__field-wrapper">
+              <div class="field bottom-filed">
+                <input
+                  style="border-radius:14px;"
+                  id="NewsletterForm--{{ section.id }}"
+                  type="email"
+                  name="contact[email]"
+                  class="field__input"
+                  value="{{ form.email }}"
+                  aria-required="true"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  autocomplete="email"
+                  {% if form.errors %}autofocusaria-invalid="true"aria-describedby="Newsletter-error--{{ section.id }}"{% elsif form.posted_successfully? %}aria-describedby="Newsletter-success--{{ section.id }}"{% endif %}placeholder="{{ 'newsletter.label' | t }}"required>
+                <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                  <!--               {{ 'newsletter.label' | t }} -->
+                  Enter Your E-mail
+                </label>
+
+              </div>
+              
+              {%- if form.errors -%}
+                <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+              {%- endif -%}
+            </div>
+            {%- if form.posted_successfully? -%}
+              <h3
+                class="newsletter-form__message newsletter-form__message--success form__message"
+                id="Newsletter-success--{{ section.id }}"
+                tabindex="-1"
+                autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+            {%- endif -%}
+          <br />
+              <button type="submit"
+                    class="newsletter-form__button field__button bottom-filed-button"
+                    name="commit"
+                    id="Subscribe"
+                    aria-label="{{ 'newsletter.button_label' | t }}">{% comment %} {% render 'icon-arrow' %} {% endcomment %}Stay Tuned
+              </button>
+          {% endform %}
+      </div>
+  </div>
+</div>
+
+
+
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "banner with email",
+    "tag":"section",
+    "class":"section",
+    "settings": [
+      {"type":"text","id":"title","label":"标题"},
+      {"type":"text","id":"subtitle","label":"副标题"},
+      {"type":"image_picker","id":"banner_bg","label":"背景图片"},
+      {"type":"image_picker","id":"logo","label":"banner中的logo"}
+    ],
+    "presets":[
+      {
+        "name":"banner with email"
+      }
+      
+    ]
   }
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
+
 
 {% javascript %}
 {% endjavascript %}
