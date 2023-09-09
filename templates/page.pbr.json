@@ -8,22 +8,39 @@
         "padding_bottom": 28
       }
     },
+    "b1d7378d-ae78-484b-b057-40002863095b": {
+      "type": "banner-with-email",
+      "settings": {
+        "title": "Transform a Trailer into           a 364 sqft Tiny Home within Just 15 Mins!",
+        "subtitle": "Exclusive Open House Event for Renogy Power Plus Community Members",
+        "banner_bg": "shopify:\/\/shop_images\/0907.png",
+        "logo": "shopify:\/\/shop_images\/podxgo_93767451-73ab-413f-a44b-5b99e7f958cb.png"
+      }
+    },
     "c71e178d-74f7-4179-9607-e65438fdc79f": {
       "type": "video",
       "blocks": {
         "template--15750663176292__c71e178d-74f7-4179-9607-e65438fdc79f-subtitle-1": {
           "type": "subtitle",
           "settings": {
-            "subtitle_text": ""
+            "subtitle_text": "PODX GO, a new brand in the innovative housing sector, recognizes the financial pressure and crisis associated         with         housing, particularly in large cities. Our goal is to help families and individuals achieve their dream of         owning a         private space for work, living, and relaxation without the stress of waiting, building, and financing."
+          }
+        },
+        "a966313e-bf8a-449a-884c-d2f0d9eaeacf": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle_text": "PODX GO has developed the world's first auto-deploying tiny house on wheels, the Grande S1."
           }
         }
       },
       "block_order": [
-        "template--15750663176292__c71e178d-74f7-4179-9607-e65438fdc79f-subtitle-1"
+        "template--15750663176292__c71e178d-74f7-4179-9607-e65438fdc79f-subtitle-1",
+        "a966313e-bf8a-449a-884c-d2f0d9eaeacf"
       ],
       "settings": {
-        "heading": "Video",
-        "heading_size": "h1",
+        "heading": "To Access Your Living Freedom",
+        "heading_size": "h2",
+        "subtitle": "",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
@@ -35,6 +52,7 @@
   },
   "order": [
     "main",
+    "b1d7378d-ae78-484b-b057-40002863095b",
     "c71e178d-74f7-4179-9607-e65438fdc79f"
   ]
 }
