@@ -48,11 +48,21 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "145e7d85-0d19-4e15-84b2-2e127310f273": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.pbr-rich-text-img {\n    max-width: 1650px;\n    margin: 0 auto;\n    padding: 24px;\n    display: flex;\n  }\n\n  .pbr-rich-img {\n    max-width: 288px;\n    margin-right: 34px;\n  }\n\n  .pbr-rich-img img {\n    width: 100%;\n  }\n\n  .pbr-rich-text {\n    font-size: 16px;\n    line-height: 2.2;\n  }\n\n  .pbr-rich-text .color-text {\n    color: #0000CD;\n    font-weight: bolder;\n  }\n@media screen and (max-width:750px) {\n    .pbr-rich-text-img {\n      flex-wrap: wrap;\n     padding: 24px 14px;\n    }\n  }\n<\/style>\n<div class=\"pbr-rich-text-img\">\n      <div class=\"pbr-rich-img\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0596\/2249\/0212\/files\/pbr-logo.png?v=1694159577\" \/>\n      <\/div>\n      <ul class=\"pbr-rich-text\">\n        <li>All-in-one power solution with <span class=\"color-text\">5kWh energy storage and 1400W<\/span> solar, easy\n          expandable to\n          40kWh<\/li>\n        <li>With California's summer sun condition, the 1400 watts solar system will generate at least <span\n            class=\"color-text\">7kWh daily.<\/span><\/li>\n        <li>Easy monitoring and control with DC Home APP, web portal, or Renogy ONE display.<\/li>\n        <li>Add-on option that can be pre-installed in California.<\/li>\n      <\/ul>\n    <\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "b1d7378d-ae78-484b-b057-40002863095b",
-    "c71e178d-74f7-4179-9607-e65438fdc79f"
+    "c71e178d-74f7-4179-9607-e65438fdc79f",
+    "145e7d85-0d19-4e15-84b2-2e127310f273"
   ]
 }
