@@ -1923,9 +1923,7 @@
       $('#fieldset-1').children('input')[0].click();
       $('.product__media-item:gt(6)').css("display","none");
       $('.global-media-settings--no-shadow:gt(6)').css("display","none");
-      if(windowWidth>990){
-        $(".product__info-wrapper").css({height:product_media_list_height+'px'});
-      }
+     
        $(".shopify-payment-button__button")[0].innerHTML="Pay Reservation Fee";
       let spb_helptext=document.getElementsByClassName("spb-helptext");
       $('.step-1').css({"display": "block"});
@@ -1935,7 +1933,9 @@
       $('#step-2').css({"display": "none"})
       $('.bottom-button-box button').css({"display": "block"})
       $('.step-3').css({"display": "none"});
-
+      if(windowWidth>990){
+        $(".product__info-wrapper").css({height:product_media_list_height+'px'});
+      }
      let now_floor_style="";
     $('#step-1')
       .find("button")
