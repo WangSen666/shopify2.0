@@ -73,6 +73,7 @@
     .banner-email .bottom-filed-button{
       width:unset !important;
       padding:12px;
+      color:#fff;
     }
     .banner-email .newsletter-form__message{
       color:#fff;
@@ -125,12 +126,12 @@
                 autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
             {%- endif -%}
           <br />
-              <button type="submit"
-                    class="newsletter-form__button field__button bottom-filed-button"
-                    name="commit"
-                    id="Subscribe"
-                    aria-label="{{ 'newsletter.button_label' | t }}">{% comment %} {% render 'icon-arrow' %} {% endcomment %}Stay Tuned
-              </button>
+            <button type="submit"
+                  class="newsletter-form__button field__button bottom-filed-button"
+                  name="commit"
+                  id="Subscribe"
+                  aria-label="{{ 'newsletter.button_label' | t }}">{% comment %} {% render 'icon-arrow' %} {% endcomment %}Stay Tuned
+            </button>
           {% endform %}
       </div>
   </div>
