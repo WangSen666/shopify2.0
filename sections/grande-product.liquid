@@ -1922,7 +1922,7 @@
       let product_media_list_height=$(".product__media-list").height()+70;
       $('#fieldset-1').children('input')[0].click();
       $('.product__media-item:gt(5)').css("display","none");
-      $('.global-media-settings--no-shadow:gt(6)').css("display","none");
+      $('.global-media-settings--no-shadow:gt(5)').css("display","none");
      
        $(".shopify-payment-button__button")[0].innerHTML="Pay Reservation Fee";
       let spb_helptext=document.getElementsByClassName("spb-helptext");
@@ -1969,20 +1969,20 @@
                 // 当选择选装时，通过切换多元素fold的 标签进行大图切换
                 $("#fieldset-3").children('label')[1].click();
                 // 控制大图下面的图片列表展示
-                $('.product__media-item:gt(3):lt(6)').css("display","none");
-                $('.product__media-item:gt(6)').css("display","block");
+                $('.product__media-item:gt(3):lt(5)').css("display","none");
+                $('.product__media-item:gt(5)').css("display","block");
                 // 控制点击图片后出现的图片列表展示
                 
-                $('.global-media-settings--no-shadow:gt(3):lt(6)').css("display","none");
-                $('.global-media-settings--no-shadow:gt(6)').css("display","block");
+                $('.global-media-settings--no-shadow:gt(3):lt(5)').css("display","none");
+                $('.global-media-settings--no-shadow:gt(5)').css("display","block");
               }else if(i==1&&!checkBoxs[i].checked){
                 $("#fieldset-3").children('label')[0].click();
                 // 控制大图下面的图片列表展示
-                 $('.product__media-item:gt(3):lt(6)').css("display","block");
-                $('.product__media-item:gt(6)').css("display","none");
+                 $('.product__media-item:gt(3):lt(5)').css("display","block");
+                $('.product__media-item:gt(5)').css("display","none");
                 // 控制点击图片后出现的图片列表展示
-                 $('.global-media-settings--no-shadow:gt(3):lt(6)').css("display","block");
-                $('.global-media-settings--no-shadow:gt(6)').css("display","none");
+                 $('.global-media-settings--no-shadow:gt(3):lt(5)').css("display","block");
+                $('.global-media-settings--no-shadow:gt(5)').css("display","none");
               }
             })
           }
