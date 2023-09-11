@@ -67,6 +67,10 @@
   .bottom-filed::after{
     display:none;
   }
+  .success-message{
+    font-size:18px;
+    color:#fff;
+  }
   @media screen and (max-width:750px){
     .banner-with-email-content{
       padding:24px 14px;
@@ -129,11 +133,14 @@
               {%- endif -%}
             </div>
             {%- if form.posted_successfully? -%}
-              <h3
+              <!-- <h3
                 class="newsletter-form__message newsletter-form__message--success form__message"
                 id="Newsletter-success--{{ section.id }}"
                 tabindex="-1"
-                autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+                autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3> -->
+              <div class="success-message">
+                Success! You will receive the most updated PODX GO floorplan, interior design, living tips, and promotion news. 
+              </div>
             {%- endif -%}
           <br />
             <button type="submit"
