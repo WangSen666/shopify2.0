@@ -105,7 +105,9 @@
       <div class="banner-email">
         {% form 'customer', class: 'newsletter-form' %}
             {% assign posted_successfully = form.posted_successfully %}
-          {{ posted_successfully }}
+            {%- if posted_successfully  -%}
+              dads
+            {%- endif -%}
             <input
               type="hidden"
               name="contact[tags]"
