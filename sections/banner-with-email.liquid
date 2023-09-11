@@ -109,7 +109,7 @@
               type="hidden"
               name="contact[tags]"
               value="newsletter">
-        {%- if form.posted_successfull!=true -%}
+        {%- if form.posted_successfully? !=true -%}
             <div class="newsletter-form__field-wrapper">
               <div class="field bottom-filed">
           
@@ -139,7 +139,7 @@
         {%- endif -%}
           <br />
           {{ form.posted_successfully? }}
-            {%- if form.posted_successfully? -%}
+            {%- if form.posted_successfully? !=true -%}
             <button type="submit"
                   class="newsletter-form__button field__button bottom-filed-button"
                   name="commit"
