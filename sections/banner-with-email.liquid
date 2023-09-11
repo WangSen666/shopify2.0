@@ -104,12 +104,16 @@
       <div class="subtitle">{{ section.settings.subtitle}}</div>
       <div class="banner-email">
         {% form 'customer', class: 'newsletter-form' %}
+          
             <input
               type="hidden"
               name="contact[tags]"
               value="newsletter">
+            {%- if form.posted_successfully==false -%}
+        
             <div class="newsletter-form__field-wrapper">
               <div class="field bottom-filed">
+          
                 <input
                   style="border-radius:14px;"
                   id="NewsletterForm--{{ section.id }}"
@@ -133,6 +137,7 @@
                 <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
               {%- endif -%}
             </div>
+            {%- endif - %}
             {%- if form.posted_successfully? -%}
               <!-- <h3
                 class="newsletter-form__message newsletter-form__message--success form__message"
