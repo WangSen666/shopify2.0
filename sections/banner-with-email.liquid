@@ -137,9 +137,9 @@
               {%- endif -%}
             </div>
         {%- endif -%}
-            {{form.posted_successfully}}
+            {{form}}
           <br />
-            {%- if form.posted_successfully!=true -%}
+            {%- if form.posted_successfully -%}
             <button type="submit"
                   class="newsletter-form__button field__button bottom-filed-button"
                   name="commit"
