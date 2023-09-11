@@ -57,12 +57,22 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "0cbdedea-a0b0-4245-be3f-ce4eeabe8bfb": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n  .pbr-big-pic-with-text {\n    max-width: 1650px;\n    margin: 0 auto;\n    padding: 24px;\n  }\n\n  .pbr-big-pic-with-text img {\n    width: 100%;\n  }\n\n  .pbr-big-text {\n    flex: 1 1 100%;\n    padding: 18px;\n    color: #F2F2F2;\n    font-family: Helvetica;\n    font-size: 14px;\n    font-weight: normal;\n    text-align: center;\n    -webkit-box-sizing: border-box;\n    -moz-box-sizing: border-box;\n    word-break: break-word;\n    flex-flow: column;\n    line-height: 150%;\n    background: #404040;\n    margin-top: -10px;\n    font-size: 14px;\n  }\n\n  .pbr-big-text .color-text {\n    color: #FFFF00;\n  }\n<\/style>\n<div class=\"pbr-big-pic-with-text\">\n    <img src=\".\/bg-1.jpg\" \/>\n\n  <div class=\"pbr-big-text\">\n    <div class=\"color-text\">Backup power for unplanned power outages, living off-grid, or saving electrical bills.\n    <\/div>\n  <\/div>\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "b1d7378d-ae78-484b-b057-40002863095b",
     "c71e178d-74f7-4179-9607-e65438fdc79f",
-    "145e7d85-0d19-4e15-84b2-2e127310f273"
+    "145e7d85-0d19-4e15-84b2-2e127310f273",
+    "0cbdedea-a0b0-4245-be3f-ce4eeabe8bfb"
   ]
 }
