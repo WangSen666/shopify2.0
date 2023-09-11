@@ -104,13 +104,11 @@
       <div class="subtitle">{{ section.settings.subtitle}}</div>
       <div class="banner-email">
         {% form 'customer', class: 'newsletter-form' %}
-            {{ form.posted_successfully }}
             
             <input
               type="hidden"
               name="contact[tags]"
               value="newsletter">
-            {%- if form.posted_successfully!=true -%}
             <div class="newsletter-form__field-wrapper">
               <div class="field bottom-filed">
           
@@ -137,8 +135,16 @@
                 <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
               {%- endif -%}
             </div>
-            {%- endif - %}
-            {%- if form.posted_successfully? -%}
+            
+          <br />
+          
+            <button type="submit"
+                  class="newsletter-form__button field__button bottom-filed-button"
+                  name="commit"
+                  id="Subscribe"
+                  aria-label="{{ 'newsletter.button_label' | t }}">{% comment %} {% render 'icon-arrow' %} {% endcomment %}Stay Tuned
+            </button>
+          {%- if form.posted_successfully? -%}
               <!-- <h3
                 class="newsletter-form__message newsletter-form__message--success form__message"
                 id="Newsletter-success--{{ section.id }}"
@@ -148,16 +154,6 @@
                 Success! You will receive the most updated PODX GO floorplan, interior design, living tips, and promotion news. 
               </div>
             {%- endif -%}
-          <br />
-            {%- if form.posted_successfully!=true -%}
-          
-            <button type="submit"
-                  class="newsletter-form__button field__button bottom-filed-button"
-                  name="commit"
-                  id="Subscribe"
-                  aria-label="{{ 'newsletter.button_label' | t }}">{% comment %} {% render 'icon-arrow' %} {% endcomment %}Stay Tuned
-            </button>
-        {%- endif -%}
           {% endform %}
       </div>
   </div>
