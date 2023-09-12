@@ -171,7 +171,7 @@
 
 /*   底部卡片位置 */
   .mas-bottom-card{
-    position:relative;
+    position:absolute;
     width:100%;
     height:100%;
     transition:all 0.5s linear;
@@ -524,6 +524,16 @@
     var scrollTop=document.documentElement.scrollTop;
     
   }
+   $(".mas-right-bottom-btn-box").click(function(event){
+    event.stopPropagation();
+  })
+   $('.mobility-and-spaciousness__content').click(function(){
+     $('.mas-bottom-card').css({top:0})
+    })
+  $('.mas-bottom-card').click(function(){
+     $('.mas-bottom-card').css({top:"100%"})
+    
+  })
 </script>
 
 
