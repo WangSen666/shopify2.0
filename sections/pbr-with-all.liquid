@@ -1,0 +1,197 @@
+<style>
+  .pbr-big-pic-with-text {
+    max-width: 1650px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+
+  .pbr-big-pic-with-text img {
+    width: 100%;
+  }
+
+  .pbr-big-pic-with-text .title {
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    margin: 24px auto;
+  }
+
+  .pbr-big-pic-with-text .subtitle {
+    font-size: 24px;
+    text-align: center;
+    margin: 24px auto;
+  }
+
+  .big-pic {
+    width: 80%;
+  }
+
+  .big-pic img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  a.pbr-big-pic {
+    text-decoration: none;
+  }
+
+  .pbr-big-pic-box {
+    padding: 34px;
+    background: #EEEAE7;
+
+  }
+
+  .pbr-big-pic-box-flex {
+    padding: 24px 24px 0;
+    border: 1px solid #404040;
+    display: flex;
+    gap: 24px;
+  }
+
+  .three-pic-box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 30%;
+  }
+
+  .three-pic-box img {
+    object-fit: cover;
+  }
+
+  .pic-title {
+    background: rgb(46, 89, 85);
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 80px;
+  }
+
+  .pbr-big-text {
+    flex: 1 1 100%;
+    padding: 18px;
+    color: #F2F2F2;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    word-break: break-word;
+    flex-flow: column;
+    line-height: 150%;
+    background: #404040;
+    margin-top: -10px;
+    font-size: 14px;
+  }
+
+  .pbr-big-text .color-text {
+    color: #FFFF00;
+  }
+
+  @media screen and (max-width:990px) {
+    .pbr-big-pic-with-text {
+      padding: 24px 14px;
+    }
+
+    .pbr-big-pic-box {
+      padding: 24px 0;
+    }
+
+    .pbr-big-pic-with-text .title {
+      font-size: 32px;
+      margin: 14px auto;
+    }
+
+    .pbr-big-pic-with-text .subtitle {
+      font-size: 16px;
+      margin: 14px auto;
+    }
+
+    .pic-title {
+      font-size: 16px;
+      line-height: 20px;
+      padding: 14px;
+    }
+
+    .pbr-big-pic-box-flex {
+      padding: 14px 14px;
+      gap: 14px;
+    }
+
+    .three-pic-box {
+      gap: 14px;
+    }
+  }
+</style>
+
+
+
+<div class="pbr-big-pic-with-text">
+  <div class="title">{{ section.settings.title }}</div>
+  <div class="subtitle">{{ section.settings.subtitle }}</div>
+
+  <a href="" class="pbr-big-pic" target="_blank">
+    <div class="pic-title">{{ section.settings.img_title }}</div>
+    <div class="pbr-big-pic-box">
+      <div class="pbr-big-pic-box-flex">
+        <div class="big-pic">
+          <img src="{{ section.settings.bg_img|image_url }}" />
+        </div>
+        <div class="three-pic-box">
+          <img src="{{ section.settings.three_img_1|image_url }}" />
+          <img src="{{ section.settings.three_img_2|image_url }}" />
+          <img src="{{ section.settings.three_img_3|image_url }}" />
+
+        </div>
+      </div>
+    </div>
+  </a>
+  <div class="pbr-big-text">
+    <div style="font-size:20px;">
+      Renogy Power Plus Community Member Exclusive Open House Day.
+    </div>
+    <a href="{{ section.settings.text_url }}" target="_blank">
+      <div class="color-text">Schedule Your Tour Now!
+      </div>
+    </a>
+
+    <div>5050 S Archibald Ave. Ontario. California
+      10 AM - 4 PM / Every Friday in July</div>
+    <div>Having questions?</div>
+    <div>Feel free to send an email to <span class="color-text">support@podxgo.com</span> or give us a call at <span
+        class="color-text">470-708-7430.</span></div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "pbr页面大图模块",
+    "settings": [
+      {"type":"text","id":"title","label":"标题"},
+      {"type":"text","id":"subtitle","label":"副标题"},
+      {"type":"text","id":"img_title","label":"图片头部标题"},
+      
+      {"type":"image_picker","id":"bg_img","label":"大图图片"},
+      {"type":"image_picker","id":"three_img_1","label":"小图图片1"},
+      {"type":"image_picker","id":"three_img_2","label":"小图图片2"},
+      {"type":"image_picker","id":"three_img_3","label":"小图图片3"},
+      {"type":"url","id":"img_url","label":"图片上的链接地址"},
+      {"type":"url","id":"text_url","label":"文案上的链接地址"}
+    ],
+    "blocks":[],
+    "presets":[
+      {
+        "name":"pbr页面大图模块"
+      }
+    ]
+  }
+{% endschema %}
+
+
+
+{% javascript %}
+{% endjavascript %}
