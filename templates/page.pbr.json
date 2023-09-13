@@ -86,6 +86,20 @@
         "padding_bottom": 0
       }
     },
+    "10bf112a-e05a-4bb2-9cc3-67c6b930e221": {
+      "type": "pbr-with-all",
+      "settings": {
+        "title": "OPEN HOUSE",
+        "subtitle": "5050 S ARCHIBALD AVE. ONTARIO.CA",
+        "img_title": "10:00 AM - 4:00 PM \/ FRIDAY \/ SEPTEMBER 21 , 28",
+        "bg_img": "shopify:\/\/shop_images\/pbr-img-1.jpg",
+        "three_img_1": "shopify:\/\/shop_images\/pbr-img-2.jpg",
+        "three_img_2": "shopify:\/\/shop_images\/3_56ec7c95-17e0-4ec8-b58e-4983109bbfb2.jpg",
+        "three_img_3": "shopify:\/\/shop_images\/4_a118d170-05a2-4d63-a3ac-1594b3ebc28c.jpg",
+        "img_url": "",
+        "text_url": ""
+      }
+    },
     "93b72f93-5d83-4640-a12b-1fb80710da39": {
       "type": "custom-liquid",
       "settings": {
@@ -102,6 +116,7 @@
     "c71e178d-74f7-4179-9607-e65438fdc79f",
     "145e7d85-0d19-4e15-84b2-2e127310f273",
     "0cbdedea-a0b0-4245-be3f-ce4eeabe8bfb",
+    "10bf112a-e05a-4bb2-9cc3-67c6b930e221",
     "93b72f93-5d83-4640-a12b-1fb80710da39"
   ]
 }
