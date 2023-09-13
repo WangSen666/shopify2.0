@@ -16,10 +16,17 @@
           "settings": {
             "text": "Exclusive Open House Event for Renogy Power Plus Community Members"
           }
+        },
+        "5ce73d26-f8d8-405e-9c4d-f4eb5ca2930e": {
+          "type": "subtitle",
+          "settings": {
+            "text": "Starting immediately and until September 30th, secure one of the limited 20 slots and reap the benefits of a $16,000 discount."
+          }
         }
       },
       "block_order": [
-        "a3dc7c09-13b2-4850-b9cd-0f8fabbf27b4"
+        "a3dc7c09-13b2-4850-b9cd-0f8fabbf27b4",
+        "5ce73d26-f8d8-405e-9c4d-f4eb5ca2930e"
       ],
       "settings": {
         "title": "Transform a Trailer into           a 364 sqft Tiny Home within Just 15 Mins!",
