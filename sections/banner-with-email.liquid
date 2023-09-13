@@ -101,12 +101,12 @@
   <div class="banner-with-email-content page-width">
       <img class="podxgo-logo" src="{{ section.settings.logo|image_url }}" />
       <div class="title">{{ section.settings.title }}</div>
-    {% for block in section.blocks %}
-        {% case block.type %}
+    {%- for block in section.blocks -%}
+        {%- case block.type -%}
           {%  when 'subtitle' %}
             <div class="subtitle">{{ block.setting.text}}</div>
-          {% endcase %}
-      {% endfor %}
+          {%- endcase -%}
+      {%- endfor -%}
       <div class="banner-email">
         {% form 'customer', class: 'newsletter-form' %}
             
