@@ -10,6 +10,17 @@
     },
     "b1d7378d-ae78-484b-b057-40002863095b": {
       "type": "banner-with-email",
+      "blocks": {
+        "a3dc7c09-13b2-4850-b9cd-0f8fabbf27b4": {
+          "type": "subtitle",
+          "settings": {
+            "text": "Exclusive Open House Event for Renogy Power Plus Community Members"
+          }
+        }
+      },
+      "block_order": [
+        "a3dc7c09-13b2-4850-b9cd-0f8fabbf27b4"
+      ],
       "settings": {
         "title": "Transform a Trailer into           a 364 sqft Tiny Home within Just 15 Mins!",
         "subtitle": "Exclusive Open House Event for Renogy Power Plus Community Members",
