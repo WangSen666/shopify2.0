@@ -99,7 +99,9 @@
 <div class="banner-with-email ">
   <img class="banner-with-email-bg" src="{{ section.settings.banner_bg|image_url }}" />
   <div class="banner-with-email-content page-width">
+    {% if section.settings.logo %}
       <img class="podxgo-logo" src="{{ section.settings.logo|image_url }}" />
+    {% endif %}
       <div class="title">{{ section.settings.title }}</div>
     {%- for block in section.blocks -%}
         {%- case block.type -%}
