@@ -3,7 +3,7 @@
     .banner-with-email {
     width: 100%;
     position: relative;
-    height:582px;
+    min-height:582px;
       padding-top:60px;
   }
 
@@ -36,18 +36,55 @@
   .banner-with-email .title {
     font-size: 32px;
     line-height: 1.5;
-    font-weight:700;
-    color:#fff;
+    font-weight:bolder;
+    /* color:#fff; */
     margin:80px 0 24px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction:row-reverse;
   }
-
+ .banner-with-email .title  .title-text{
+    max-width:60%;
+  }
+ .banner-with-email .title .title-img{
+   /* max-width:20%; */
+ }
   .banner-with-email .subtitle {
-    font-size: 16px;
-    color:#fff;
+    font-size: 20px;
+    font-weight:700;
+    /* color:#fff; */
+  }
+  .pbr-banner-email-content{
+    display:flex;
+    align-items:center;
+    max-width:60%;
+    gap:20px;
+    font-size:20px;
+    margin:24px 0;
+  }
+  .content-num{
+    font-size:28px;
+    font-weight:bolder;
+  }
+  .content-text{
+    max-width:70%;
+    word-wrap:break-word;
+    line-height:1.5;
+    font-weight:700;
+    font-size:18px;
+  }
+   .content-text .color-text{
+    color:#0E3679;
+  }
+   .content-text .color-text .color-num{
+     font-size:24px;
+   }
+  .content-img{
+    max-width:100px;
   }
   .banner-email{
-    bottom:44px;
-    position:absolute;
+    /* bottom:44px; */
+    /* position:absolute; */
     width:44rem;
   }
   .banner-email form{
@@ -73,18 +110,41 @@
     color:#fff;
   }
   @media screen and (max-width:750px){
+    .banner-with-email{
+      padding-top:0;
+    }
     .banner-with-email-content{
       padding:24px 14px;
     }
-    .banner-with-email{
-      height:82rem;
-    }
+    
     .banner-email{
       width:80%;
-      
     }
     .banner-with-email .title{
       margin:40px 0 24px;
+      display:block;
+      font-size:24px;
+    }
+    .banner-with-email .subtitle{
+      font-size:16px;
+    }
+    .content-num{
+      font-size:22px;
+    }
+    .banner-with-email .title .title-text{
+      max-width:unset;
+    }
+    .pbr-banner-email-content{
+      max-width:unset;
+      margin:14px 0;
+    }
+    
+    .content-text{
+      /* max-width:unset; */
+      font-size:14px;
+    }
+    .content-img{
+      max-width:80px;
     }
     .banner-email .bottom-filed-button{
       width:unset !important;
@@ -99,16 +159,47 @@
 <div class="banner-with-email ">
   <img class="banner-with-email-bg" src="{{ section.settings.banner_bg|image_url }}" />
   <div class="banner-with-email-content page-width">
-    {% if section.settings.logo %}
-      <img class="podxgo-logo" src="{{ section.settings.logo|image_url }}" />
-    {% endif %}
-      <div class="title">{{ section.settings.title }}</div>
+   
+      <div class="title">
+        <div class="title-img">
+           {% if section.settings.logo %}
+            <img class="podxgo-logo" src="{{ section.settings.logo|image_url }}" />
+          {% endif %}
+        </div>
+        <div class="title-text">{{ section.settings.title }}</div>
+        
+        
+      </div>
+
     {%- for block in section.blocks -%}
         {%- case block.type -%}
+
           {%  when 'subtitle' %}
             <div class="subtitle">{{ block.settings.text}}</div>
+
+          {% when 'content' %}
+          <!-- <div class="pbr-banner-email-content">
+            <div class="content-num">{{ block.settings.content_num }}</div>
+            <div class="content-text">{{ block.settings.text }}</div>
+            <img class="content-img" src="{{ block.settings.content_img|image_url }}" />
+          </div> -->
           {%- endcase -%}
       {%- endfor -%}
+      <div class="pbr-banner-email-content">
+        <div class="content-num">1</div>
+        <div class="content-text">The first 20 customers will enjoy a <span class="color-text">$<span class="color-num">16,000</span> discount</span> on the Grande S1!</div>
+        <img class="content-img" src="{{ section.settings.content_img_1|image_url }}" />
+      </div>
+     <div class="pbr-banner-email-content">
+        <div class="content-num">2</div>
+        <div class="content-text">Receive a complimentary home appliance bundle valued at <span class="color-text">$ <span class="color-num">1,699</span> !</span></div>
+        <img class="content-img" src="{{ section.settings.content_img_2|image_url }}" />
+      </div>
+     <div class="pbr-banner-email-content">
+        <div class="content-num">3</div>
+        <div class="content-text">Enjoy a <span class="color-text">$<span class="color-num">1,400</span> discount</span> on the Renogy energy package (including installation) !</div>
+        <img class="content-img" src="{{ section.settings.content_img_3|image_url }}" />
+      </div>
       <div class="banner-email">
         {% form 'customer', class: 'newsletter-form' %}
             
@@ -179,20 +270,31 @@
     "class":"section",
     "settings": [
       {"type":"text","id":"title","label":"标题"},
-      {"type":"text","id":"subtitle","label":"副标题"},
       {"type":"image_picker","id":"banner_bg","label":"背景图片"},
-      {"type":"image_picker","id":"logo","label":"banner中的logo"}
+      {"type":"image_picker","id":"logo","label":"banner中的logo"},
+      {"type":"image_picker","id":"content_img_1","label":"内容部分图片1"},
+      {"type":"image_picker","id":"content_img_2","label":"内容部分图片2"},
+      {"type":"image_picker","id":"content_img_3","label":"内容部分图片3"}
     ],
     "blocks":[
       {"type":"subtitle","name":"副标题","settings":[
         {"type":"text","id":"text","label":"副标题内容"}
+      ]},
+      {"type":"title","name":"标题","settings":[
+        {"type":"text","id":"text","label":"标题内容"}
+      ]},
+      {"type":"content","name":"内容","settings":[
+        {"type":"text","id":"content_num","label":"内容序号"},
+        {"type":"text","id":"text","label":"内容文案"},
+        {"type":"image_picker","id":"content_img","label":"内容后面图片"}
       ]}
     ],
     "presets":[
       {
         "name":"banner with email",
         "blocks":[
-          {"type":"subtitle"}
+          {"type":"subtitle"},
+          {"type":"content"}
         ]
       }
       
