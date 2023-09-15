@@ -3,7 +3,7 @@
     .banner-with-email {
     width: 100%;
     position: relative;
-    min-height:582px;
+    min-height:882px;
       /* padding-top:60px; */
   }
 
@@ -29,7 +29,7 @@
     max-width: 1650px;
     /* padding: 24px 0; */
     margin: 0 auto;
-    min-height: 862px;
+    min-height: 462px;
     padding: 24px;
   }
 
@@ -80,7 +80,7 @@
      font-size:24px;
    }
   .content-img{
-    max-width:120px;
+    max-width:100px;
     max-height:70px;
   }
   .banner-email{
@@ -111,9 +111,32 @@
     font-size:18px;
     color:#fff;
   }
-  @media screen and (max-width:750px){
+  .mobile-banner{
+    display:none;
+  }
+  .pc-banner{
+      display:block;
+    }
+  @media screen and (max-width:990px){
     .banner-with-email{
       padding-top:0;
+    }
+     .mobile-banner{
+      display:block;
+       min-height:unset;
+    }
+     .mobile-banner .banner-with-email-bg{
+       position:relative;
+       transform:unset;
+       left:unset;
+     }
+    .mobile-banner .banner-with-email-content{
+      position:absolute;
+      bottom:14px;
+      min-height:unset;
+    }
+    .pc-banner{
+      display:none;
     }
     .banner-with-email-content{
       padding:24px 14px;
@@ -121,9 +144,10 @@
     
     .banner-email{
       width:80%;
+      margin:unset;
     }
     .banner-with-email .title{
-      margin:60px 0 24px;
+      margin:40px 0 24px;
       display:block;
       font-size:24px;
     }
@@ -145,9 +169,6 @@
       /* max-width:unset; */
       font-size:14px;
     }
-     .content-text .color-text .color-num{
-       font-size:20px;
-     }
     .content-img{
       max-width:80px;
     }
@@ -161,9 +182,9 @@
   }
 </style>
 
-<div class="banner-with-email ">
+<div class="banner-with-email pc-banner">
   <img class="banner-with-email-bg" src="{{ section.settings.banner_bg|image_url }}" />
-  <div class="banner-with-email-content page-width">
+  <div class="banner-with-email-content page-width ">
    
       <div class="title">
         <div class="title-img">
@@ -263,7 +284,67 @@
       </div>
   </div>
 </div>
+<div class="banner-with-email mobile-banner">
+  <img class="banner-with-email-bg" src="{{ section.settings.banner_bg_mobile|image_url }}" />
+  <div class="banner-with-email-content page-width ">
+      <div class="banner-email">
+        {% form 'customer', class: 'newsletter-form' %}
+            
+            <input
+              type="hidden"
+              name="contact[tags]"
+              value="newsletter">
+        {%- if form.posted_successfully? !=true -%}
+            <div class="newsletter-form__field-wrapper">
+              <div class="field bottom-filed">
+          
+                <input
+                  style="border-radius:14px;"
+                  id="NewsletterForm--{{ section.id }}"
+                  type="email"
+                  name="contact[email]"
+                  class="field__input"
+                  value="{{ form.email }}"
+                  aria-required="true"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  autocomplete="email"
+                  {% if form.errors %}autofocusaria-invalid="true"aria-describedby="Newsletter-error--{{ section.id }}"{% elsif form.posted_successfully? %}aria-describedby="Newsletter-success--{{ section.id }}"{% endif %}placeholder="{{ 'newsletter.label' | t }}"required>
+                <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                  <!--               {{ 'newsletter.label' | t }} -->
+                  Enter Your E-mail
+                </label>
 
+              </div>
+              
+              {%- if form.errors -%}
+                <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+              {%- endif -%}
+            </div>
+        {%- endif -%}
+          <br />
+            {%- if form.posted_successfully? !=true -%}
+            <button type="submit"
+                  class="newsletter-form__button field__button bottom-filed-button"
+                  name="commit"
+                  id="Subscribe"
+                  aria-label="{{ 'newsletter.button_label' | t }}">{% comment %} {% render 'icon-arrow' %} {% endcomment %}Stay Tuned
+            </button>
+        {%- endif -%}
+          {%- if form.posted_successfully? -%}
+              <!-- <h3
+                class="newsletter-form__message newsletter-form__message--success form__message"
+                id="Newsletter-success--{{ section.id }}"
+                tabindex="-1"
+                autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3> -->
+              <div class="success-message">
+                Success! You will receive the most updated PODX GO floorplan, interior design, living tips, and promotion news. 
+              </div>
+            {%- endif -%}
+          {% endform %}
+      </div>
+  </div>
+</div>
 
 
 
@@ -276,6 +357,8 @@
     "settings": [
       {"type":"text","id":"title","label":"标题"},
       {"type":"image_picker","id":"banner_bg","label":"背景图片"},
+      {"type":"image_picker","id":"banner_bg_mobile","label":"手机端背景图片"},
+      
       {"type":"image_picker","id":"logo","label":"banner中的logo"},
       {"type":"image_picker","id":"content_img_1","label":"内容部分图片1"},
       {"type":"image_picker","id":"content_img_2","label":"内容部分图片2"},
