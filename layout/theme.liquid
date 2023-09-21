@@ -38,7 +38,7 @@
         crossorigin
       >
     {%- endunless -%}
-
+  
     <title>
       {{ page_title }}
       {%- if current_tags %}
@@ -598,6 +598,13 @@
     </script>
     <script src="https://shopoe.net/app.js"></script>
 {{shop.metafields.easycustomfield.custom_css_js}}
+<!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WTRWBK9R');</script>
+    <!-- End Google Tag Manager -->
 </head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NQWX9ZDY7"></script>
 <script>
@@ -622,6 +629,10 @@
 
   gtag('config', 'G-1NQWX9ZDY7');
 </script>
+   <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTRWBK9R"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
   <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
