@@ -633,6 +633,60 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTRWBK9R"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+  <!-- 神策数据 -->
+  <script charset="UTF-8" src="https://cdn.shopify.com/s/files/1/0596/2249/0212/files/sensorsdata.min.js?v=1695605846"></script>
+  <script charset="UTF-8">
+    // shence
+
+    let _isMobile_s = ('ontouchstart' in document) ? 'Mobile' : 'PCWeb';
+    let sensors = window['sensorsDataAnalytic201505'];
+    let _is_login_s = "{{customer.email}}" ? true : false;
+    sensors.init({
+      // server_url: 'https://dataaccess.renogy.cn/sa?project=production',
+      server_url: 'https://dataaccess.renogy.cn/sa',
+      heatmap: {
+        scroll_notice_map: 'default',
+        clickmap: 'default',
+        collect_tags: {
+          div: true
+        }
+      },
+      use_client_time: true,
+      send_type: 'beacon'
+    });
+    sensors.registerPage({
+      platform_type: _isMobile_s,
+      is_login: _is_login_s,
+      country_station: 'podx'
+    });
+    sensors.setProfile({
+      is_podx_station: true,
+    });
+    sensors.quick('autoTrack');
+    sensors.use('PageLeave');
+    try {
+      sensors
+    } catch (error) {
+      $.ajax({
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        type: 'POST',
+        url: ' https://recommend.renogy-dchome.com',
+        data: {
+          errLog: String(error)
+        },
+        success: (res) => {
+          console.log(res);
+        },
+        error: (error) => {
+          console.log(error);
+        }
+      })
+    }
+
+  </script>
   <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
