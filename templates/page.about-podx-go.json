@@ -348,7 +348,8 @@
             "text_2": "Ontario, CA 91762",
             "text_size": 14,
             "banner_button_link": "https:\/\/form.jotform.com\/PODX\/schedule-your-room-tour",
-            "banner_button_label": "Schedule a Tour"
+            "banner_button_label": "Schedule a Tour",
+            "text_3": ""
           }
         },
         "a702b323-a1ae-4d37-b4dd-7e42f5a81ee7": {
@@ -361,7 +362,8 @@
             "text_2": "8:30am to 5:00pm PST",
             "text_size": 14,
             "banner_button_link": "https:\/\/form.jotform.com\/PODX\/Schedule-Call",
-            "banner_button_label": "Schedule a Call"
+            "banner_button_label": "Schedule a Call",
+            "text_3": "or call 909-545-6752 directly"
           }
         },
         "template--15619111583844__ae5562b8-bef6-4424-a0a5-78ca060d5999-1677158786a8b776a2-0": {
@@ -374,7 +376,8 @@
             "text_2": "8:00am to 3:00pm PST",
             "text_size": 14,
             "banner_button_link": "",
-            "banner_button_label": ""
+            "banner_button_label": "",
+            "text_3": ""
           }
         },
         "5b686877-eb2a-4cac-9e46-b46f3295017b": {
@@ -387,7 +390,8 @@
             "text_2": "dealer@podxgo.com",
             "text_size": 14,
             "banner_button_link": "",
-            "banner_button_label": ""
+            "banner_button_label": "",
+            "text_3": ""
           }
         }
       },
