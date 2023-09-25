@@ -199,7 +199,6 @@
     },
     "c17fce45-651b-48b6-8d30-5140858d7f13": {
       "type": "lr-block-component",
-      "disabled": true,
       "blocks": {
         "template--15619111583844__c17fce45-651b-48b6-8d30-5140858d7f13-16771584801b59cb2c-0": {
           "type": "heading",
@@ -278,6 +277,7 @@
         "template--15619111583844__c17fce45-651b-48b6-8d30-5140858d7f13-16771584801b59cb2c-2",
         "2e658b18-adfb-42b9-95a0-0505ecc996ec"
       ],
+      "disabled": true,
       "settings": {
         "image_overlay_opacity": 0,
         "is_lr": "true",
@@ -325,6 +325,7 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
+        "subtitle": "",
         "cover_image": "shopify:\/\/shop_images\/tiny_house_expansion.png",
         "video_url": "https:\/\/www.youtube.com\/watch?v=wdj-P0sNPrM&t",
         "description": "",
@@ -345,7 +346,9 @@
             "heading_size": 20,
             "text_1": "5050 S Archibald Ave",
             "text_2": "Ontario, CA 91762",
-            "text_size": 14
+            "text_size": 14,
+            "banner_button_link": "https:\/\/form.jotform.com\/PODX\/schedule-your-room-tour",
+            "banner_button_label": "Schedule a Tour"
           }
         },
         "a702b323-a1ae-4d37-b4dd-7e42f5a81ee7": {
@@ -356,7 +359,9 @@
             "heading_size": 20,
             "text_1": "Monday to Friday",
             "text_2": "8:30am to 5:00pm PST",
-            "text_size": 14
+            "text_size": 14,
+            "banner_button_link": "https:\/\/form.jotform.com\/PODX\/Schedule-Call",
+            "banner_button_label": "Schedule a Call"
           }
         },
         "template--15619111583844__ae5562b8-bef6-4424-a0a5-78ca060d5999-1677158786a8b776a2-0": {
@@ -367,7 +372,9 @@
             "heading_size": 20,
             "text_1": "Monday to Friday",
             "text_2": "8:00am to 3:00pm PST",
-            "text_size": 14
+            "text_size": 14,
+            "banner_button_link": "",
+            "banner_button_label": ""
           }
         },
         "5b686877-eb2a-4cac-9e46-b46f3295017b": {
@@ -378,7 +385,9 @@
             "heading_size": 20,
             "text_1": "support@podxgo.com",
             "text_2": "dealer@podxgo.com",
-            "text_size": 14
+            "text_size": 14,
+            "banner_button_link": "",
+            "banner_button_label": ""
           }
         }
       },
