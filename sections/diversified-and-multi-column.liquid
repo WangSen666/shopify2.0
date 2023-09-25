@@ -127,6 +127,9 @@
                 {{ block.settings.text_2 }}
               </div>
                <a target="_blank" {% if block.settings.banner_button_link == blank %}  role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %}class="diversified-and-multi-column-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
+              <div style="font-size:{{ block.settings.text_size }}px;">
+                {{ block.settings.text_3 }}
+              </div>
             </div>
           {% endcase %}
         {% endfor %}
@@ -225,6 +228,11 @@
             "type": "text",
             "label": "按钮文案",
             "id": "banner_button_label"
+          },
+          {
+            "type":"text",
+            "id":"text_3",
+            "label":"多列文案3"
           }
         ]
       }
