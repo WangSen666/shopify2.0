@@ -21,18 +21,19 @@
     justify-content:space-between;
   }
   .diversified-and-multi-column-item{
-    width:362px;
-    height:390px;
-    margin:14px 0;
-    text-align:center;
-    border-radius:14px;
-    box-shadow:0 0 10px #D0D0D0;
+    width: 362px;
+    /* height: 390px; */
+    margin: 14px 0;
+    text-align: center;
+    border-radius: 14px;
+    box-shadow: 0 0 10px #d0d0d0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background:#EAEAEA;
-    color:#808080 !important;
+    background: #EAEAEA;
+    color: gray!important;
+    padding: 24px 0;
     
     
   }
@@ -47,8 +48,15 @@
     font-family: "KumbhSans-Bold" !important;
     
   }
-  
 
+  .diversified-and-multi-column-button{
+    text-decoration:none;
+    padding:10px 14px;
+    border:1px solid #333;
+    margin:14px auto;
+    border-radius:24px;
+    color:#333;
+  }
   @media screen and (max-width:990px){
   .diversified-and-multi-column{
     padding:44px 14px !important;
@@ -114,7 +122,7 @@
               <div style="font-size:{{ block.settings.text_size }}px;">
                 {{ block.settings.text_2 }}
               </div>
-              
+               <a target="_blank" {% if block.settings.banner_button_link == blank %}  role="link"aria-disabled="true"{% else %}href="{{ block.settings.banner_button_link }}"{% endif %}class="diversified-and-multi-column-button {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.banner_button_label | escape }}</a>
             </div>
           {% endcase %}
         {% endfor %}
@@ -204,6 +212,15 @@
             "step":2,
             "default":14,
             "label":"多列文案字体大小"
+          },
+          {
+            "type": "url",
+            "label": "按钮",
+            "id": "banner_button_link"
+          }, {
+            "type": "text",
+            "label": "按钮文案",
+            "id": "banner_button_label"
           }
         ]
       }
