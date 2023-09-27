@@ -649,9 +649,12 @@
         var bg_wrapper = document.getElementsByClassName("bg_wrapper")
       
         if (windowWidth >= 990) {
+          $('.mobile-banner-video').remove();
           for (let i = 0; i < bg_wrapper.length ; i++) {
             bg_wrapper[i].style.height = windowHeight-80 + 'px';
           }
+        }else{
+          $('.pc-banner-video').remove();
         }
       }
       
