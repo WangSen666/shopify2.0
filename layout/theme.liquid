@@ -645,9 +645,7 @@
         var windowHeight = window.screen.availHeight;
         var windowWidth = document.documentElement.clientWidth;
         var bg_wrapper = document.getElementsByClassName("bg_wrapper")
-        console.log("windowWidth",windowWidth)
-        console.log("windowHeight",windowHeight)
-        console.log("bg_wrapper",bg_wrapper)
+      
         if (windowWidth >= 990) {
           for (let i = 0; i < bg_wrapper.length ; i++) {
             bg_wrapper[i].style.height = windowHeight-80 + 'px';
