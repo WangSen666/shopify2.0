@@ -230,6 +230,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "6614979280454233053": {
+        "type": "shopify:\/\/apps\/prequik-preorder-now-sale\/blocks\/app-embed\/551fab2c-3af6-4a8f-ba21-736a71cb4540",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
