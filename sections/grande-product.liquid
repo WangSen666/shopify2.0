@@ -1994,7 +1994,7 @@
               }
                if(i==0&&checkBoxs[i].checked){
                  $('.IOT-Kit').css("display","block")
-               }else{
+               }else if(i==0&&!checkBoxs[i].checked){
                  $('.IOT-Kit').css("display","none")
                }
             })
