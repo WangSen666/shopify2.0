@@ -1923,7 +1923,7 @@
   <script>
     window.onload=function(){
       let windowWidth=document.documentElement.clientWidth;
-      // let product_media_list_height=$(".product__media-list").height()+70;
+      let product_media_list_height=$(".product__media-list").height()+70;
       $('#fieldset-1').children('input')[0].click();
       $('.product__media-item:gt(7)').css("display","none");
       $('.global-media-settings--no-shadow:gt(7)').css("display","none");
@@ -1938,7 +1938,7 @@
       $('.bottom-button-box button').css({"display": "block"})
       $('.step-3').css({"display": "none"});
       if(windowWidth>990){
-        // $(".product__info-wrapper").css({height:product_media_list_height+'px'});
+        $(".product__info-wrapper").css({height:product_media_list_height+'px'});
       }
           // $('.slider-buttons').css({display:"none"})
       
