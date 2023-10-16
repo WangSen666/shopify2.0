@@ -2032,8 +2032,10 @@
     .children('input') 
     .click(function(event) {
       // console.log("event",$(this).val());
-      now_floor_style=$(this).val();
       
+      now_floor_style=$(this).val();
+      debugger;
+       $('.IOT-Kit').css("display","none")
       if(now_floor_style.search('coming')!=-1){
         $('.product__media-list').addClass('product__media-list_hidden')
         $('.product__media-list').removeClass('product__media-list_display');
@@ -2058,7 +2060,7 @@
       
       // 每次选择flooaplan时默认去选中pay way的第一项
       $('#fieldset-2').children('label').trigger("click")
-      $('.IOT-Kit').css("display","none")
+     
       // return;
     })
 
