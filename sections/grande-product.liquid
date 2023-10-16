@@ -1990,6 +1990,11 @@
                  $('.global-media-settings--no-shadow:gt(3):lt(6)').css("display","block");
                 $('.global-media-settings--no-shadow:gt(7)').css("display","none");
               }
+               if(i==0&&checkBoxs[i].checked){
+                 checkBoxs[4].css("display","block")
+               }else{
+                 checkBoxs[4].css("display","none")
+               }
             })
           }
           let spb_helptexts=$('.spb-helptext');
