@@ -1955,6 +1955,7 @@
           $('#step-2').css({"display": "flex"});
           let checkBoxs=$("fieldset label input");
           let checkBoxs_Value="";
+          $('.IOT-Kit').css("display","none")
           for(let i=0;i<checkBoxs.length;i++){
             // 给选装组件的每个元素绑定点击函数
             checkBoxs[i].addEventListener("change",function(){
@@ -2034,8 +2035,6 @@
       // console.log("event",$(this).val());
       
       now_floor_style=$(this).val();
-      debugger;
-       $('.IOT-Kit').css("display","none")
       if(now_floor_style.search('coming')!=-1){
         $('.product__media-list').addClass('product__media-list_hidden')
         $('.product__media-list').removeClass('product__media-list_display');
