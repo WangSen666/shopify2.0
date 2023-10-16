@@ -3,14 +3,9 @@
   href="{{ 'component-rte.css' | asset_url }}"
   media="print"
   onload="this.media='all'">
-<link
-  rel="stylesheet"
-  href="{{ 'section-rich-text-bottom-img.css' | asset_url }}"
-  media="print"
-  onload="this.media='all'">
+
 
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'section-rich-text-bottom-img.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
   .section-{{ section.id }}-padding {
