@@ -1943,6 +1943,8 @@
           // $('.slider-buttons').css({display:"none"})
       
      let now_floor_style="";
+     $('.IOT-Kit)'.css("display","none")
+      
     $('#step-1')
       .find("button")
       .click(function() {
@@ -1990,6 +1992,11 @@
                  $('.global-media-settings--no-shadow:gt(3):lt(6)').css("display","block");
                 $('.global-media-settings--no-shadow:gt(7)').css("display","none");
               }
+               if(i==0&&checkBoxs[i].checked){
+                 $('.IOT-Kit)'.css("display","block")
+               }else{
+                 $('.IOT-Kit)'.css("display","none")
+               }
             })
           }
           let spb_helptexts=$('.spb-helptext');
