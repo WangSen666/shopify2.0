@@ -2058,13 +2058,14 @@
       
       // 每次选择flooaplan时默认去选中pay way的第一项
       $('#fieldset-2').children('label').trigger("click")
-      $('.IOT-Kit').css("display","none")
       // return;
     })
 
     $('#step-2')
         .find("button")
         .click(function() {
+      $('.IOT-Kit').css("display","none")
+          
           $('.step-3').css({"display": "block"});
           $(".shopify-payment-button__button")[0].innerHTML="Pay Reservation Fee";
       })
