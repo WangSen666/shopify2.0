@@ -1962,7 +1962,7 @@
           })
           for(let i=0;i<checkBoxs.length;i++){
             // 给选装组件的每个元素绑定点击函数
-            checkBoxs[i].addEventListener("change",function(){
+            checkBoxs[i].click(function(){
               let base_price=$('#base-price')[0].innerHTML.substr($('#base-price')[0].innerHTML.indexOf('$')+1)
               let base_price_new="";
   
