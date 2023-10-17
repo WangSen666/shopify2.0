@@ -1955,6 +1955,7 @@
           $('#step-2').css({"display": "flex"});
           let checkBoxs=$("fieldset label input");
           let checkBoxs_Value="";
+          // 选到iot选装的值
           $('.IOT-Kit').css("display","none");
           let floorPlan_kit=$('.Folding-Furniture-Kit label input');
           floorPlan_kit.click(function(event){
@@ -1995,7 +1996,8 @@
                 
                 $('#base-price')[0].innerHTML=`Base Price $ ${base_price_new.toLocaleString()}`;
               }
-           
+              
+              // IOT选装处理逻辑
                if(i==0&&checkBoxs[i].checked){
                  $('.IOT-Kit').css("display","block")
                }else if(i==0&&!checkBoxs[i].checked){
