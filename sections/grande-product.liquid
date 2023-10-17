@@ -1956,13 +1956,13 @@
           let checkBoxs=$("fieldset label input");
           let checkBoxs_Value="";
           $('.IOT-Kit').css("display","none");
-          let floor_kit=$('.Folding-Furniture-Kit label input');
-          floor_kit.addEventListener("click",function(event){
+          let floorPlan_kit=$('.Folding-Furniture-Kit label input');
+          floorPlan_kit.click(function(event){
             console.log("event",event)
           })
           for(let i=0;i<checkBoxs.length;i++){
             // 给选装组件的每个元素绑定点击函数
-            checkBoxs[i].click(function(){
+            checkBoxs[i].addEventListener("change",function(){
               let base_price=$('#base-price')[0].innerHTML.substr($('#base-price')[0].innerHTML.indexOf('$')+1)
               let base_price_new="";
   
