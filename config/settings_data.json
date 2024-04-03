@@ -121,20 +121,6 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
-        "blocks": {
-          "6f317483-d139-41e1-8c47-8ea9186138ca": {
-            "type": "announcement",
-            "settings": {
-              "text": "Join us at our Open House every Friday and receive an exclusive offer. Schedule your visit now!",
-              "text_alignment": "center",
-              "color_scheme": "accent-1",
-              "link": "https:\/\/form.jotform.com\/PODX\/schedule-your-room-tour"
-            }
-          }
-        },
-        "block_order": [
-          "6f317483-d139-41e1-8c47-8ea9186138ca"
-        ],
         "settings": {
         }
       },
@@ -169,8 +155,8 @@
           "footer-2": {
             "type": "text",
             "settings": {
-              "heading": "Showroom",
-              "subtext": "<p>5050 S Archibald Ave<br\/>Ontario, CA 91762<\/p><p><\/p><p><\/p><p>Book a 30 min meeting with us to go over your tiny house questions.<br\/><br\/><\/p>"
+              "heading": "",
+              "subtext": ""
             }
           },
           "a67b8eee-bbe8-47a4-a1c6-9b7ae6ea743c": {
@@ -187,7 +173,7 @@
           "a67b8eee-bbe8-47a4-a1c6-9b7ae6ea743c"
         ],
         "settings": {
-          "button_label": "Make an Appointment",
+          "button_label": "Email us",
           "button_link": "https:\/\/form.jotform.com\/PODX\/Schedule-Call",
           "color_scheme": "inverse",
           "newsletter_enable": true,
